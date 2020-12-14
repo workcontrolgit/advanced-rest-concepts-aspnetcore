@@ -44,6 +44,14 @@ namespace AccountOwnerServer.Extensions
 			services.AddDbContext<RepositoryContext>(o => o.UseMySql(connectionString));
 		}
 
+		public static void ConfigureMsSqlContext(this IServiceCollection services, IConfiguration config)
+		{
+			services.AddDbContext<RepositoryContext>(options =>
+		   options.UseSqlServer(
+			   config.GetConnectionString("DefaultConnection"),
+			   b => b.MigrationsAssembly(typeof(RepositoryContext).Assembly.FullName)));
+		}
+
 		public static void ConfigureRepositoryWrapper(this IServiceCollection services)
 		{
 			services.AddScoped<ISortHelper<Owner>, SortHelper<Owner>>();
