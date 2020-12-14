@@ -10,20 +10,31 @@ using System.Linq;
 
 namespace AccountOwnerServer.Controllers
 {
+	/// <summary>
+	/// OwnerController
+	/// </summary>
 	[Route("api/owners")]
 	[ApiController]
 	public class OwnerController : ControllerBase
 	{
 		private ILoggerManager _logger;
 		private IRepositoryWrapper _repository;
-
+		/// <summary>
+		/// OwnerController
+		/// </summary>
+		/// <param name="logger"></param>
+		/// <param name="repository"></param>
 		public OwnerController(ILoggerManager logger,
 			IRepositoryWrapper repository)
 		{
 			_logger = logger;
 			_repository = repository;
 		}
-
+		/// <summary>
+		/// GetOwners
+		/// </summary>
+		/// <param name="ownerParameters"></param>
+		/// <returns></returns>
 		[HttpGet]
 		public IActionResult GetOwners([FromQuery] OwnerParameters ownerParameters)
 		{
@@ -50,7 +61,12 @@ namespace AccountOwnerServer.Controllers
 
 			return Ok(owners);
 		}
-
+		/// <summary>
+		/// GetOwnerById
+		/// </summary>
+		/// <param name="id"></param>
+		/// <param name="fields"></param>
+		/// <returns></returns>
 		[HttpGet("{id}", Name = "OwnerById")]
 		public IActionResult GetOwnerById(Guid id, [FromQuery] string fields)
 		{
@@ -64,7 +80,11 @@ namespace AccountOwnerServer.Controllers
 
 			return Ok(owner);
 		}
-
+		/// <summary>
+		/// CreateOwner
+		/// </summary>
+		/// <param name="owner"></param>
+		/// <returns></returns>
 		[HttpPost]
 		public IActionResult CreateOwner([FromBody]Owner owner)
 		{
@@ -85,7 +105,12 @@ namespace AccountOwnerServer.Controllers
 
 			return CreatedAtRoute("OwnerById", new { id = owner.Id }, owner);
 		}
-
+		/// <summary>
+		/// UpdateOwner
+		/// </summary>
+		/// <param name="id"></param>
+		/// <param name="owner"></param>
+		/// <returns></returns>
 		[HttpPut("{id}")]
 		public IActionResult UpdateOwner(Guid id, [FromBody]Owner owner)
 		{
@@ -113,7 +138,11 @@ namespace AccountOwnerServer.Controllers
 
 			return NoContent();
 		}
-
+		/// <summary>
+		/// DeleteOwner
+		/// </summary>
+		/// <param name="id"></param>
+		/// <returns></returns>
 		[HttpDelete("{id}")]
 		public IActionResult DeleteOwner(Guid id)
 		{

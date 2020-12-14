@@ -11,8 +11,15 @@ using Repository;
 
 namespace AccountOwnerServer.Extensions
 {
+	/// <summary>
+	/// ServiceExtensions
+	/// </summary>
 	public static class ServiceExtensions
 	{
+		/// <summary>
+		/// ConfigureCors
+		/// </summary>
+		/// <param name="services"></param>
 		public static void ConfigureCors(this IServiceCollection services)
 		{
 			services.AddCors(options =>
@@ -24,7 +31,10 @@ namespace AccountOwnerServer.Extensions
 					.AllowCredentials());
 			});
 		}
-
+		/// <summary>
+		/// ConfigureIISIntegration
+		/// </summary>
+		/// <param name="services"></param>
 		public static void ConfigureIISIntegration(this IServiceCollection services)
 		{
 			services.Configure<IISOptions>(options =>
@@ -32,18 +42,29 @@ namespace AccountOwnerServer.Extensions
 
 			});
 		}
-
+		/// <summary>
+		/// ConfigureLoggerService
+		/// </summary>
+		/// <param name="services"></param>
 		public static void ConfigureLoggerService(this IServiceCollection services)
 		{
 			services.AddSingleton<ILoggerManager, LoggerManager>();
 		}
-
+		/// <summary>
+		/// ConfigureMySqlContext
+		/// </summary>
+		/// <param name="services"></param>
+		/// <param name="config"></param>
 		public static void ConfigureMySqlContext(this IServiceCollection services, IConfiguration config)
 		{
 			var connectionString = config["mysqlconnection:connectionString"];
 			services.AddDbContext<RepositoryContext>(o => o.UseMySql(connectionString));
 		}
-
+		/// <summary>
+		/// ConfigureMsSqlContext
+		/// </summary>
+		/// <param name="services"></param>
+		/// <param name="config"></param>
 		public static void ConfigureMsSqlContext(this IServiceCollection services, IConfiguration config)
 		{
 			services.AddDbContext<RepositoryContext>(options =>
@@ -51,7 +72,10 @@ namespace AccountOwnerServer.Extensions
 			   config.GetConnectionString("DefaultConnection"),
 			   b => b.MigrationsAssembly(typeof(RepositoryContext).Assembly.FullName)));
 		}
-
+		/// <summary>
+		/// ConfigureRepositoryWrapper
+		/// </summary>
+		/// <param name="services"></param>
 		public static void ConfigureRepositoryWrapper(this IServiceCollection services)
 		{
 			services.AddScoped<ISortHelper<Owner>, SortHelper<Owner>>();

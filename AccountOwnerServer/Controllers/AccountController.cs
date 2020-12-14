@@ -8,20 +8,33 @@ using System.Linq;
 
 namespace AccountOwnerServer.Controllers
 {
+	/// <summary>
+	/// AccountController
+	/// </summary>
 	[Route("api/owners/{ownerId}/accounts")]
 	[ApiController]
+	
 	public class AccountController : ControllerBase
 	{
 		private ILoggerManager _logger;
 		private IRepositoryWrapper _repository;
-
+		/// <summary>
+		/// AccountController
+		/// </summary>
+		/// <param name="logger"></param>
+		/// <param name="repository"></param>
 		public AccountController(ILoggerManager logger,
 			IRepositoryWrapper repository)
 		{
 			_logger = logger;
 			_repository = repository;
 		}
-
+		/// <summary>
+		/// GetAccountsForOwner
+		/// </summary>
+		/// <param name="ownerId"></param>
+		/// <param name="parameters"></param>
+		/// <returns></returns>
 		[HttpGet]
 		public IActionResult GetAccountsForOwner(Guid ownerId, [FromQuery] AccountParameters parameters)
 		{
@@ -43,7 +56,13 @@ namespace AccountOwnerServer.Controllers
 
 			return Ok(accounts);
 		}
-
+		/// <summary>
+		/// GetAccountForOwner
+		/// </summary>
+		/// <param name="ownerId"></param>
+		/// <param name="id"></param>
+		/// <param name="fields"></param>
+		/// <returns></returns>
 		[HttpGet("{id}")]
 		public IActionResult GetAccountForOwner(Guid ownerId, Guid id, [FromQuery] string fields)
 		{

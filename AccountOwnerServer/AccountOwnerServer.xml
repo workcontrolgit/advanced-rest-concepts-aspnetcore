@@ -4,5 +4,173 @@
         <name>AccountOwnerServer</name>
     </assembly>
     <members>
+        <member name="T:AccountOwnerServer.Controllers.AccountController">
+            <summary>
+            AccountController
+            </summary>
+        </member>
+        <member name="M:AccountOwnerServer.Controllers.AccountController.#ctor(Contracts.ILoggerManager,Contracts.IRepositoryWrapper)">
+            <summary>
+            AccountController
+            </summary>
+            <param name="logger"></param>
+            <param name="repository"></param>
+        </member>
+        <member name="M:AccountOwnerServer.Controllers.AccountController.GetAccountsForOwner(System.Guid,Entities.Models.AccountParameters)">
+            <summary>
+            GetAccountsForOwner
+            </summary>
+            <param name="ownerId"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccountOwnerServer.Controllers.AccountController.GetAccountForOwner(System.Guid,System.Guid,System.String)">
+            <summary>
+            GetAccountForOwner
+            </summary>
+            <param name="ownerId"></param>
+            <param name="id"></param>
+            <param name="fields"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AccountOwnerServer.Controllers.OwnerController">
+            <summary>
+            OwnerController
+            </summary>
+        </member>
+        <member name="M:AccountOwnerServer.Controllers.OwnerController.#ctor(Contracts.ILoggerManager,Contracts.IRepositoryWrapper)">
+            <summary>
+            OwnerController
+            </summary>
+            <param name="logger"></param>
+            <param name="repository"></param>
+        </member>
+        <member name="M:AccountOwnerServer.Controllers.OwnerController.GetOwners(Entities.Models.OwnerParameters)">
+            <summary>
+            GetOwners
+            </summary>
+            <param name="ownerParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccountOwnerServer.Controllers.OwnerController.GetOwnerById(System.Guid,System.String)">
+            <summary>
+            GetOwnerById
+            </summary>
+            <param name="id"></param>
+            <param name="fields"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccountOwnerServer.Controllers.OwnerController.CreateOwner(Entities.Models.Owner)">
+            <summary>
+            CreateOwner
+            </summary>
+            <param name="owner"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccountOwnerServer.Controllers.OwnerController.UpdateOwner(System.Guid,Entities.Models.Owner)">
+            <summary>
+            UpdateOwner
+            </summary>
+            <param name="id"></param>
+            <param name="owner"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccountOwnerServer.Controllers.OwnerController.DeleteOwner(System.Guid)">
+            <summary>
+            DeleteOwner
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AccountOwnerServer.Extensions.ServiceExtensions">
+            <summary>
+            ServiceExtensions
+            </summary>
+        </member>
+        <member name="M:AccountOwnerServer.Extensions.ServiceExtensions.ConfigureCors(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            ConfigureCors
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:AccountOwnerServer.Extensions.ServiceExtensions.ConfigureIISIntegration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            ConfigureIISIntegration
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:AccountOwnerServer.Extensions.ServiceExtensions.ConfigureLoggerService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            ConfigureLoggerService
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:AccountOwnerServer.Extensions.ServiceExtensions.ConfigureMySqlContext(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            ConfigureMySqlContext
+            </summary>
+            <param name="services"></param>
+            <param name="config"></param>
+        </member>
+        <member name="M:AccountOwnerServer.Extensions.ServiceExtensions.ConfigureMsSqlContext(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            ConfigureMsSqlContext
+            </summary>
+            <param name="services"></param>
+            <param name="config"></param>
+        </member>
+        <member name="M:AccountOwnerServer.Extensions.ServiceExtensions.ConfigureRepositoryWrapper(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            ConfigureRepositoryWrapper
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="T:AccountOwnerServer.Program">
+            <summary>
+            Program
+            </summary>
+        </member>
+        <member name="M:AccountOwnerServer.Program.Main(System.String[])">
+            <summary>
+            Main
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:AccountOwnerServer.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            CreateWebHostBuilder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AccountOwnerServer.Startup">
+            <summary>
+            Startup
+            </summary>
+        </member>
+        <member name="M:AccountOwnerServer.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Startup
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:AccountOwnerServer.Startup.Configuration">
+            <summary>
+            Configuration
+            </summary>
+        </member>
+        <member name="M:AccountOwnerServer.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:AccountOwnerServer.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
     </members>
 </doc>
