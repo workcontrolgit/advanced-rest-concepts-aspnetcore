@@ -17,8 +17,9 @@ namespace Entities
         .RuleFor(m => m.Name, f => f.Name.FullName())
         .RuleFor(m => m.Address, f => f.Address.FullAddress())
         .RuleFor(m => m.DateOfBirth, f => f.Date.Past());
-            modelBuilder.Entity<Owner>()
-                .HasData(owner.Generate(1000));
+        
+        modelBuilder.Entity<Owner>()
+            .HasData(owner.Generate(1000));
         }
         public DbSet<Owner> Owners { get; set; }
         public DbSet<Account> Accounts { get; set; }
