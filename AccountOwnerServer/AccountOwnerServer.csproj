@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\apps\patterns\advanced-rest-concepts-aspnetcore\AccountEmployeeServer\AccountEmployeeServer.xml</DocumentationFile>
+    <DocumentationFile>C:\apps\patterns\advanced-rest-concepts-aspnetcore\GtmWebAPI\GtmWebAPI.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

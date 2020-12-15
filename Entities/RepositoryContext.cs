@@ -24,9 +24,9 @@ namespace Entities
             FakeData.Init(1000);
 
             modelBuilder.Entity<Employee>().HasData(FakeData.Employees);
-            modelBuilder.Entity<Account>().HasData(FakeData.Accounts);
+            modelBuilder.Entity<Assignment>().HasData(FakeData.Assignments);
         }
         public DbSet<Employee> Employees { get; set; }
-        public DbSet<Account> Accounts { get; set; }
+        public DbSet<Assignment> Assignments { get; set; }
 	}
 }

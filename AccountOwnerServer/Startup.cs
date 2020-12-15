@@ -1,4 +1,4 @@
-﻿using AccountEmployeeServer.Extensions;
+﻿using GtmWebAPI.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 
-namespace AccountEmployeeServer
+namespace GtmWebAPI
 {
 	/// <summary>
 	/// Startup
@@ -56,11 +56,11 @@ namespace AccountEmployeeServer
 			services.ConfigureRepositoryWrapper();
 			services.AddSwaggerGen(c =>
 			{
-				c.IncludeXmlComments(string.Format(@"{0}\AccountEmployeeServer.xml", System.AppDomain.CurrentDomain.BaseDirectory));
+				c.IncludeXmlComments(string.Format(@"{0}\GtmWebAPI.xml", System.AppDomain.CurrentDomain.BaseDirectory));
 				c.SwaggerDoc("v1", new OpenApiInfo
 				{
 					Version = "v1",
-					Title = "Clean Architecture - AccountEmployeeServer",
+					Title = "Clean Architecture - GtmWebAPI",
 					Description = "This Api will be responsible for overall data distribution and authorization.",
 					Contact = new OpenApiContact
 					{
@@ -159,7 +159,7 @@ namespace AccountEmployeeServer
 			app.UseSwagger();
 			app.UseSwaggerUI(c =>
 			{
-				c.SwaggerEndpoint("/swagger/v1/swagger.json", "AccountEmployeeServer");
+				c.SwaggerEndpoint("/swagger/v1/swagger.json", "GtmWebAPI");
 			});
 
 			app.UseEndpoints(endpoints =>

@@ -12,7 +12,7 @@ namespace Entities.ExtendedModels
         public DateTime DateOfBirth { get; set; }
         public string Address { get; set; }
 
-        public IEnumerable<Account> Accounts { get; set; }
+        public IEnumerable<Assignment> Assignments { get; set; }
 
         public EmployeeExtended()
         {

@@ -7,18 +7,18 @@ using System.Text;
 
 namespace Entities.Models
 {
-    [Table("account")]
-    public class Account : IEntity
+    [Table("assignment")]
+    public class Assignment : IEntity
     {
         [Key]
-        [Column("AccountId")]
+        [Column("AssignmentId")]
         public Guid Id { get; set; }
 
         [Required(ErrorMessage = "Date created is required")]
         public DateTime DateCreated { get; set; }
 
-        [Required(ErrorMessage = "Account type is required")]
-        public string AccountType { get; set; }
+        [Required(ErrorMessage = "Assignment type is required")]
+        public string AssignmentType { get; set; }
 
         [Required(ErrorMessage = "Employee Id is required")]
         public Guid EmployeeId { get; set; }

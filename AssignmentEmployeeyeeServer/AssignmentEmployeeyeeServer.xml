@@ -1,22 +1,22 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>GtmWebAPI</name>
+        <name>AccountOwnerServer</name>
     </assembly>
     <members>
-        <member name="T:GtmWebAPI.Controllers.AssignmentController">
+        <member name="T:AssignmentEmployeeServer.Controllers.AssignmentController">
             <summary>
             AssignmentController
             </summary>
         </member>
-        <member name="M:GtmWebAPI.Controllers.AssignmentController.#ctor(Contracts.ILoggerManager,Contracts.IRepositoryWrapper)">
+        <member name="M:AssignmentEmployeeServer.Controllers.AssignmentController.#ctor(Contracts.ILoggerManager,Contracts.IRepositoryWrapper)">
             <summary>
             AssignmentController
             </summary>
             <param name="logger"></param>
             <param name="repository"></param>
         </member>
-        <member name="M:GtmWebAPI.Controllers.AssignmentController.GetAssignmentsForEmployee(System.Guid,Entities.Models.AssignmentParameters)">
+        <member name="M:AssignmentEmployeeServer.Controllers.AssignmentController.GetAssignmentsForEmployee(System.Guid,Entities.Models.AssignmentParameters)">
             <summary>
             GetAssignmentsForEmployee
             </summary>
@@ -24,7 +24,7 @@
             <param name="parameters"></param>
             <returns></returns>
         </member>
-        <member name="M:GtmWebAPI.Controllers.AssignmentController.GetAssignmentForEmployee(System.Guid,System.Guid,System.String)">
+        <member name="M:AssignmentEmployeeServer.Controllers.AssignmentController.GetAssignmentForEmployee(System.Guid,System.Guid,System.String)">
             <summary>
             GetAssignmentForEmployee
             </summary>
@@ -33,26 +33,26 @@
             <param name="fields"></param>
             <returns></returns>
         </member>
-        <member name="T:GtmWebAPI.Controllers.EmployeeController">
+        <member name="T:AssignmentEmployeeServer.Controllers.EmployeeController">
             <summary>
             EmployeeController
             </summary>
         </member>
-        <member name="M:GtmWebAPI.Controllers.EmployeeController.#ctor(Contracts.ILoggerManager,Contracts.IRepositoryWrapper)">
+        <member name="M:AssignmentEmployeeServer.Controllers.EmployeeController.#ctor(Contracts.ILoggerManager,Contracts.IRepositoryWrapper)">
             <summary>
             EmployeeController
             </summary>
             <param name="logger"></param>
             <param name="repository"></param>
         </member>
-        <member name="M:GtmWebAPI.Controllers.EmployeeController.GetEmployees(Entities.Models.EmployeeParameters)">
+        <member name="M:AssignmentEmployeeServer.Controllers.EmployeeController.GetEmployees(Entities.Models.EmployeeParameters)">
             <summary>
             GetEmployees
             </summary>
             <param name="employeeParameters"></param>
             <returns></returns>
         </member>
-        <member name="M:GtmWebAPI.Controllers.EmployeeController.GetEmployeeById(System.Guid,System.String)">
+        <member name="M:AssignmentEmployeeServer.Controllers.EmployeeController.GetEmployeeById(System.Guid,System.String)">
             <summary>
             GetEmployeeById
             </summary>
@@ -60,14 +60,14 @@
             <param name="fields"></param>
             <returns></returns>
         </member>
-        <member name="M:GtmWebAPI.Controllers.EmployeeController.CreateEmployee(Entities.Models.Employee)">
+        <member name="M:AssignmentEmployeeServer.Controllers.EmployeeController.CreateEmployee(Entities.Models.Employee)">
             <summary>
             CreateEmployee
             </summary>
             <param name="employee"></param>
             <returns></returns>
         </member>
-        <member name="M:GtmWebAPI.Controllers.EmployeeController.UpdateEmployee(System.Guid,Entities.Models.Employee)">
+        <member name="M:AssignmentEmployeeServer.Controllers.EmployeeController.UpdateEmployee(System.Guid,Entities.Models.Employee)">
             <summary>
             UpdateEmployee
             </summary>
@@ -75,97 +75,97 @@
             <param name="employee"></param>
             <returns></returns>
         </member>
-        <member name="M:GtmWebAPI.Controllers.EmployeeController.DeleteEmployee(System.Guid)">
+        <member name="M:AssignmentEmployeeServer.Controllers.EmployeeController.DeleteEmployee(System.Guid)">
             <summary>
             DeleteEmployee
             </summary>
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="T:GtmWebAPI.Extensions.ServiceExtensions">
+        <member name="T:AssignmentEmployeeServer.Extensions.ServiceExtensions">
             <summary>
             ServiceExtensions
             </summary>
         </member>
-        <member name="M:GtmWebAPI.Extensions.ServiceExtensions.ConfigureCors(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:AssignmentEmployeeServer.Extensions.ServiceExtensions.ConfigureCors(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             ConfigureCors
             </summary>
             <param name="services"></param>
         </member>
-        <member name="M:GtmWebAPI.Extensions.ServiceExtensions.ConfigureIISIntegration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:AssignmentEmployeeServer.Extensions.ServiceExtensions.ConfigureIISIntegration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             ConfigureIISIntegration
             </summary>
             <param name="services"></param>
         </member>
-        <member name="M:GtmWebAPI.Extensions.ServiceExtensions.ConfigureLoggerService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:AssignmentEmployeeServer.Extensions.ServiceExtensions.ConfigureLoggerService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             ConfigureLoggerService
             </summary>
             <param name="services"></param>
         </member>
-        <member name="M:GtmWebAPI.Extensions.ServiceExtensions.ConfigureMySqlContext(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+        <member name="M:AssignmentEmployeeServer.Extensions.ServiceExtensions.ConfigureMySqlContext(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
             <summary>
             ConfigureMySqlContext
             </summary>
             <param name="services"></param>
             <param name="config"></param>
         </member>
-        <member name="M:GtmWebAPI.Extensions.ServiceExtensions.ConfigureMsSqlContext(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+        <member name="M:AssignmentEmployeeServer.Extensions.ServiceExtensions.ConfigureMsSqlContext(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
             <summary>
             ConfigureMsSqlContext
             </summary>
             <param name="services"></param>
             <param name="config"></param>
         </member>
-        <member name="M:GtmWebAPI.Extensions.ServiceExtensions.ConfigureRepositoryWrapper(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:AssignmentEmployeeServer.Extensions.ServiceExtensions.ConfigureRepositoryWrapper(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             ConfigureRepositoryWrapper
             </summary>
             <param name="services"></param>
         </member>
-        <member name="T:GtmWebAPI.Program">
+        <member name="T:AssignmentEmployeeServer.Program">
             <summary>
             Program
             </summary>
         </member>
-        <member name="M:GtmWebAPI.Program.Main(System.String[])">
+        <member name="M:AssignmentEmployeeServer.Program.Main(System.String[])">
             <summary>
             Main
             </summary>
             <param name="args"></param>
         </member>
-        <member name="M:GtmWebAPI.Program.CreateWebHostBuilder(System.String[])">
+        <member name="M:AssignmentEmployeeServer.Program.CreateWebHostBuilder(System.String[])">
             <summary>
             CreateWebHostBuilder
             </summary>
             <param name="args"></param>
             <returns></returns>
         </member>
-        <member name="T:GtmWebAPI.Startup">
+        <member name="T:AssignmentEmployeeServer.Startup">
             <summary>
             Startup
             </summary>
         </member>
-        <member name="M:GtmWebAPI.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+        <member name="M:AssignmentEmployeeServer.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
             <summary>
             Startup
             </summary>
             <param name="configuration"></param>
         </member>
-        <member name="P:GtmWebAPI.Startup.Configuration">
+        <member name="P:AssignmentEmployeeServer.Startup.Configuration">
             <summary>
             Configuration
             </summary>
         </member>
-        <member name="M:GtmWebAPI.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:AssignmentEmployeeServer.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             This method gets called by the runtime. Use this method to add services to the container.
             </summary>
             <param name="services"></param>
         </member>
-        <member name="M:GtmWebAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+        <member name="M:AssignmentEmployeeServer.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
             <summary>
             This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
             </summary>

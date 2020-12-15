@@ -9,11 +9,11 @@ namespace Repository
 	{
 		private RepositoryContext _repoContext;
 		private IEmployeeRepository _employee;
-		private IAccountRepository _account;
+		private IAssignmentRepository _assignment;
 		private ISortHelper<Employee> _employeeSortHelper;
-		private ISortHelper<Account> _accountSortHelper;
+		private ISortHelper<Assignment> _assignmentSortHelper;
 		private IDataShaper<Employee> _employeeDataShaper;
-		private IDataShaper<Account> _accountDataShaper;
+		private IDataShaper<Assignment> _assignmentDataShaper;
 
 		public IEmployeeRepository Employee
 		{
@@ -28,30 +28,30 @@ namespace Repository
 			}
 		}
 
-		public IAccountRepository Account
+		public IAssignmentRepository Assignment
 		{
 			get
 			{
-				if (_account == null)
+				if (_assignment == null)
 				{
-					_account = new AccountRepository(_repoContext, _accountSortHelper, _accountDataShaper);
+					_assignment = new AssignmentRepository(_repoContext, _assignmentSortHelper, _assignmentDataShaper);
 				}
 
-				return _account;
+				return _assignment;
 			}
 		}
 
 		public RepositoryWrapper(RepositoryContext repositoryContext,
 			ISortHelper<Employee> employeeSortHelper,
-			ISortHelper<Account> accountSortHelper,
+			ISortHelper<Assignment> assignmentSortHelper,
 			IDataShaper<Employee> employeeDataShaper,
-			IDataShaper<Account> accountDataShaper)
+			IDataShaper<Assignment> assignmentDataShaper)
 		{
 			_repoContext = repositoryContext;
 			_employeeSortHelper = employeeSortHelper;
-			_accountSortHelper = accountSortHelper;
+			_assignmentSortHelper = assignmentSortHelper;
 			_employeeDataShaper = employeeDataShaper;
-			_accountDataShaper = accountDataShaper;
+			_assignmentDataShaper = assignmentDataShaper;
 		}
 
 		public void Save()

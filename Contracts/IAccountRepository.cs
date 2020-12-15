@@ -4,10 +4,10 @@ using System;
 
 namespace Contracts
 {
-	public interface IAccountRepository : IRepositoryBase<Account>
+	public interface IAssignmentRepository : IRepositoryBase<Assignment>
 	{
-		PagedList<Entity> GetAccountsByEmployee(Guid employeeId, AccountParameters parameters);
-		Entity GetAccountByEmployee(Guid employeeId, Guid id, string fields);
-		Account GetAccountByEmployee(Guid employeeId, Guid id);
+		PagedList<Entity> GetAssignmentsByEmployee(Guid employeeId, AssignmentParameters parameters);
+		Entity GetAssignmentByEmployee(Guid employeeId, Guid id, string fields);
+		Assignment GetAssignmentByEmployee(Guid employeeId, Guid id);
 	}
 }

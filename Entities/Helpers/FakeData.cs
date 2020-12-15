@@ -10,7 +10,7 @@ namespace Entities.Helpers
     static class FakeData
     {
         public static List<Employee> Employees = new List<Employee>();
-        public static List<Account> Accounts = new List<Account>();
+        public static List<Assignment> Assignments = new List<Assignment>();
 
         public static void Init(int count)
         {
@@ -25,20 +25,20 @@ namespace Entities.Helpers
             Employees.AddRange(employees);
 
 
-            var accountFaker = new Faker<Account>()
+            var assignmentFaker = new Faker<Assignment>()
                .RuleFor(p => p.Id, f => f.Random.Guid())
-               .RuleFor(p => p.AccountType, f => f.Commerce.ProductMaterial())
+               .RuleFor(p => p.AssignmentType, f => f.Commerce.ProductMaterial())
                .RuleFor(p => p.DateCreated, f => f.Date.Recent())
                .RuleFor(p => p.EmployeeId, f => f.PickRandom(employees).Id);
 
-            var accounts = accountFaker.Generate(count);
+            var assignments = assignmentFaker.Generate(count);
 
-            Accounts.AddRange(accounts);
+            Assignments.AddRange(assignments);
 
 
-            //var accountFaker = new Faker<Account>()
+            //var assignmentFaker = new Faker<Assignment>()
             //   .RuleFor(p => p.Id, f => f.Random.Guid())
-            //   .RuleFor(p => p.AccountType, f => f.Commerce.ProductMaterial())
+            //   .RuleFor(p => p.AssignmentType, f => f.Commerce.ProductMaterial())
             //   .RuleFor(p => p.DateCreated, f => f.Date.Recent())
             //   .RuleFor(p => p.EmployeeId, (f, b) =>
             //   {
@@ -52,13 +52,13 @@ namespace Entities.Helpers
             //   .RuleFor(b => b.Name, f => f.Name.FullName())
             //   .RuleFor(b => b.Id, (f, b) =>
             //   {
-            //       accountFaker.RuleFor(p => p.EmployeeId, _ => b.Id);
+            //       assignmentFaker.RuleFor(p => p.EmployeeId, _ => b.Id);
 
-            //       var accounts = accountFaker.GenerateBetween(3, 5);
+            //       var assignments = assignmentFaker.GenerateBetween(3, 5);
 
-            //       FakeData.Accounts.AddRange(accounts);
+            //       FakeData.Assignments.AddRange(assignments);
 
-            //       return default; // Employee.Accounts is a getter only. The return value has no impact.
+            //       return default; // Employee.Assignments is a getter only. The return value has no impact.
             //   });
 
         }

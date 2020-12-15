@@ -19,14 +19,14 @@ namespace Entities.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.1");
 
-            modelBuilder.Entity("Entities.Models.Account", b =>
+            modelBuilder.Entity("Entities.Models.Assignment", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
-                        .HasColumnName("AccountId");
+                        .HasColumnName("AssignmentId");
 
-                    b.Property<string>("AccountType")
+                    b.Property<string>("AssignmentType")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -38,7006 +38,7006 @@ namespace Entities.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("account");
+                    b.ToTable("assignment");
 
                     b.HasData(
                         new
                         {
                             Id = new Guid("ddd14f1c-32ec-9986-5d26-8c3a9ac0a8ac"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 8, 27, 53, 872, DateTimeKind.Local).AddTicks(4299),
                             EmployeeId = new Guid("8c6fb286-d634-6329-6215-ebbb2302d8b1")
                         },
                         new
                         {
                             Id = new Guid("402fd160-0a88-83f2-60a0-5624b05c4c14"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 11, 57, 6, 278, DateTimeKind.Local).AddTicks(8708),
                             EmployeeId = new Guid("02692b1b-fcae-657f-ab6f-82eebad38584")
                         },
                         new
                         {
                             Id = new Guid("3915cf05-8725-6dd5-1529-ab6e0762dd3f"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 3, 6, 50, 205, DateTimeKind.Local).AddTicks(4888),
                             EmployeeId = new Guid("07fe2367-2809-d706-b12d-a9c256230603")
                         },
                         new
                         {
                             Id = new Guid("affad348-f825-0206-dbdd-4dacb9199d4c"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 22, 56, 50, 403, DateTimeKind.Local).AddTicks(1182),
                             EmployeeId = new Guid("aac6e810-de76-b61c-3b35-220576ba2e5e")
                         },
                         new
                         {
                             Id = new Guid("9cb3b90a-59dc-32b5-4fc2-d31c6d27e04a"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 22, 33, 5, 1, DateTimeKind.Local).AddTicks(7180),
                             EmployeeId = new Guid("bee0c972-f5fc-4c18-906a-f032e9d61d58")
                         },
                         new
                         {
                             Id = new Guid("851f41ef-8ff9-7dc8-f154-6916edf447e2"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 9, 13, 50, 436, DateTimeKind.Local).AddTicks(564),
                             EmployeeId = new Guid("dccddd44-c8d8-25fd-d3b6-fcd08d200bd1")
                         },
                         new
                         {
                             Id = new Guid("c56f561d-40b6-c108-df84-d8ce0c41cf5b"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 2, 37, 31, 689, DateTimeKind.Local).AddTicks(2651),
                             EmployeeId = new Guid("850cb5e4-cf29-799b-219d-ed2c09833646")
                         },
                         new
                         {
                             Id = new Guid("dc140dba-ddc3-abe5-e528-25448bb459ed"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 8, 55, 54, 521, DateTimeKind.Local).AddTicks(7992),
                             EmployeeId = new Guid("5343d322-eb05-7eb9-d4e0-67bcb990dad7")
                         },
                         new
                         {
                             Id = new Guid("cef04569-f8e8-8619-5dd5-1d99f2f721db"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 2, 16, 40, 678, DateTimeKind.Local).AddTicks(3110),
                             EmployeeId = new Guid("9724e7a5-4cdf-2ca8-b6c4-7a1e120fe84e")
                         },
                         new
                         {
                             Id = new Guid("94d0e7ac-9822-40ba-4c19-b35306dbd981"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 12, 48, 0, 9, DateTimeKind.Local).AddTicks(209),
                             EmployeeId = new Guid("a67e5327-67ff-9726-f2ae-f106c3734212")
                         },
                         new
                         {
                             Id = new Guid("57aae32c-d688-8fc7-334c-6ad92fe44ed3"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 4, 12, 13, 347, DateTimeKind.Local).AddTicks(6955),
                             EmployeeId = new Guid("c8fdd9ef-1998-0487-42fd-b018930c3afe")
                         },
                         new
                         {
                             Id = new Guid("b82d35cd-6ccc-81a9-16bd-18753212eadc"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 7, 42, 2, 171, DateTimeKind.Local).AddTicks(7595),
                             EmployeeId = new Guid("c9ed8316-6cec-f5ee-f816-e15871df9616")
                         },
                         new
                         {
                             Id = new Guid("095bbe47-f387-40e2-836f-b70845e83efb"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 15, 15, 9, 8, DateTimeKind.Local).AddTicks(1376),
                             EmployeeId = new Guid("9724e7a5-4cdf-2ca8-b6c4-7a1e120fe84e")
                         },
                         new
                         {
                             Id = new Guid("54dfebdd-d2b1-d71a-38c7-4507b7d10351"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 10, 44, 28, 783, DateTimeKind.Local).AddTicks(2042),
                             EmployeeId = new Guid("8484b89c-0cd2-ceff-0c16-5f866c22ede9")
                         },
                         new
                         {
                             Id = new Guid("2beac4a6-1225-b55e-d28d-f316e1de6b24"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 20, 49, 44, 527, DateTimeKind.Local).AddTicks(2625),
                             EmployeeId = new Guid("50f652d9-1149-7b74-c152-f8e00973625b")
                         },
                         new
                         {
                             Id = new Guid("1c6c37aa-79a9-673e-0036-41974b89dc57"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 9, 27, 32, 872, DateTimeKind.Local).AddTicks(2944),
                             EmployeeId = new Guid("52653ace-686b-e90f-0423-6c47a883b390")
                         },
                         new
                         {
                             Id = new Guid("1d5241b9-4948-b144-6329-4cad5fe988c8"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 9, 2, 2, 923, DateTimeKind.Local).AddTicks(6439),
                             EmployeeId = new Guid("07375620-0831-d0b0-1844-10cf11ac6c32")
                         },
                         new
                         {
                             Id = new Guid("abe7b241-7e5e-f591-a78c-04860431e4ae"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 2, 32, 34, 497, DateTimeKind.Local).AddTicks(8619),
                             EmployeeId = new Guid("651013fb-dfe7-dea0-d41f-8d5deb645ccf")
                         },
                         new
                         {
                             Id = new Guid("c864d224-3dda-88b3-e2ae-c3c0e71cbeb1"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 1, 45, 7, 361, DateTimeKind.Local).AddTicks(9878),
                             EmployeeId = new Guid("a5094880-d6c6-7a2c-cbd7-8e5a5d05826a")
                         },
                         new
                         {
                             Id = new Guid("54b69ef3-249d-a35f-477c-7a3a5f70db16"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 5, 39, 42, 866, DateTimeKind.Local).AddTicks(6197),
                             EmployeeId = new Guid("cb17412d-620d-d242-db56-bdb1f595a258")
                         },
                         new
                         {
                             Id = new Guid("f5ab6e0d-47ae-cce4-1c69-4680d7dc9364"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 18, 32, 14, 985, DateTimeKind.Local).AddTicks(9772),
                             EmployeeId = new Guid("5f283378-dba0-2aa4-df17-098c90f0db20")
                         },
                         new
                         {
                             Id = new Guid("9a7aa3c7-0c6c-7367-6450-0c06e8d422c4"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 5, 48, 41, 752, DateTimeKind.Local).AddTicks(130),
                             EmployeeId = new Guid("f7771f2d-0ae5-09f6-eb4e-54d4be81bfbd")
                         },
                         new
                         {
                             Id = new Guid("58b80d08-3942-fb00-a25d-cc0b5fa95715"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 13, 36, 17, 682, DateTimeKind.Local).AddTicks(7721),
                             EmployeeId = new Guid("2a2da448-3e3c-e6b2-fa10-49bf560e39fa")
                         },
                         new
                         {
                             Id = new Guid("d346e93f-7c80-6310-5eab-b5186c1cd364"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 7, 45, 36, 723, DateTimeKind.Local).AddTicks(9484),
                             EmployeeId = new Guid("308084c5-9765-cb76-3902-470d4147eb72")
                         },
                         new
                         {
                             Id = new Guid("106b6038-15c5-4497-ad5d-90bfdb325208"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 8, 54, 51, 474, DateTimeKind.Local).AddTicks(8224),
                             EmployeeId = new Guid("9ef0da8f-4d0d-7a07-a8a5-38a85ca08d42")
                         },
                         new
                         {
                             Id = new Guid("d532dc38-4fa2-45ed-5fee-8c44e606fa5a"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 21, 4, 31, 552, DateTimeKind.Local).AddTicks(2052),
                             EmployeeId = new Guid("9187da57-530c-da08-98fa-38bb7148c5fe")
                         },
                         new
                         {
                             Id = new Guid("37e8bd81-0663-eccd-d9e5-1a1414a337d5"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 22, 27, 26, 873, DateTimeKind.Local).AddTicks(6840),
                             EmployeeId = new Guid("651013fb-dfe7-dea0-d41f-8d5deb645ccf")
                         },
                         new
                         {
                             Id = new Guid("d0d8c1c8-5537-1920-a9b8-e1d8de34e640"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 14, 47, 6, 304, DateTimeKind.Local).AddTicks(5183),
                             EmployeeId = new Guid("01bde411-80ec-1bfc-9196-ec633c6421a6")
                         },
                         new
                         {
                             Id = new Guid("63d4cfcf-6013-da45-77a0-af308b54e80b"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 2, 59, 58, 159, DateTimeKind.Local).AddTicks(1754),
                             EmployeeId = new Guid("aec4c050-c174-27f2-0008-cef7580b329e")
                         },
                         new
                         {
                             Id = new Guid("ed42e2b0-3324-0df8-3be0-2d62ba85cb37"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 11, 22, 0, 10, DateTimeKind.Local).AddTicks(5342),
                             EmployeeId = new Guid("28fc6b05-ec13-9f3d-53b3-d77827b28182")
                         },
                         new
                         {
                             Id = new Guid("7af270c4-78a8-88f9-5683-f529cf978f9f"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 6, 17, 37, 297, DateTimeKind.Local).AddTicks(2741),
                             EmployeeId = new Guid("6ab488b6-7a27-9001-1da2-90318f254aa6")
                         },
                         new
                         {
                             Id = new Guid("521b2fb0-fa09-3e4a-f5ab-bf1d2d16b9e4"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 14, 37, 41, 537, DateTimeKind.Local).AddTicks(6032),
                             EmployeeId = new Guid("3f67a0de-ee1e-f591-9833-5d368a8a6027")
                         },
                         new
                         {
                             Id = new Guid("ab2a7599-89a1-b745-5ecb-2be50aaad944"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 11, 45, 8, 575, DateTimeKind.Local).AddTicks(6100),
                             EmployeeId = new Guid("2320d429-978e-4607-08fc-f1131d8a1f9f")
                         },
                         new
                         {
                             Id = new Guid("395e80e8-dd04-6696-c812-15b312e159f3"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 20, 51, 44, 980, DateTimeKind.Local).AddTicks(8799),
                             EmployeeId = new Guid("0d51328b-0484-afde-9bed-73ae2e7dd2ca")
                         },
                         new
                         {
                             Id = new Guid("42c4c879-72eb-c5c9-b572-54d28a3c5fd6"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 6, 55, 2, 827, DateTimeKind.Local).AddTicks(863),
                             EmployeeId = new Guid("86bf789d-31d5-a953-d9b0-4d25f6a51da2")
                         },
                         new
                         {
                             Id = new Guid("220bce25-a47c-1848-1904-b0b66bbeab2e"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 1, 16, 54, 883, DateTimeKind.Local).AddTicks(9756),
                             EmployeeId = new Guid("8b1b84de-1916-ce65-f169-8291708f1ce5")
                         },
                         new
                         {
                             Id = new Guid("173ac772-f4e1-4074-8b77-b20b72b83260"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 8, 12, 39, 908, DateTimeKind.Local).AddTicks(8953),
                             EmployeeId = new Guid("1723f704-2bba-7b6d-0819-c2bbf2ea4e85")
                         },
                         new
                         {
                             Id = new Guid("5aa39d47-c1b0-bb05-e814-de0d09b2a8c7"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 7, 56, 38, 356, DateTimeKind.Local).AddTicks(4377),
                             EmployeeId = new Guid("0c0f7946-2e25-5146-f4aa-c74c2d0f0882")
                         },
                         new
                         {
                             Id = new Guid("64082e29-a1bd-f966-3dfe-395df7bfafdc"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 7, 35, 41, 487, DateTimeKind.Local).AddTicks(2554),
                             EmployeeId = new Guid("179f25cc-5e60-66e6-cd8e-2ec3e8fab906")
                         },
                         new
                         {
                             Id = new Guid("38dc5689-2b8c-69ac-a958-caf0bd76fd44"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 0, 25, 33, 568, DateTimeKind.Local).AddTicks(455),
                             EmployeeId = new Guid("877c1f23-0854-6d07-f21a-932caad566cf")
                         },
                         new
                         {
                             Id = new Guid("c84ab9e5-bdc7-b6ae-e74d-59d508f80760"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 5, 4, 3, 700, DateTimeKind.Local).AddTicks(4320),
                             EmployeeId = new Guid("0f2f6024-77cd-1035-0e3d-e1cb52b3f055")
                         },
                         new
                         {
                             Id = new Guid("3711397b-a0bd-0d73-7be7-f97b389d67ea"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 14, 8, 11, 902, DateTimeKind.Local).AddTicks(7641),
                             EmployeeId = new Guid("7cdf3ada-9c2e-ddf6-0795-e6fae866efae")
                         },
                         new
                         {
                             Id = new Guid("74dd7a14-1cc4-834f-c1f8-b6159cf680c3"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 16, 23, 28, 922, DateTimeKind.Local).AddTicks(1505),
                             EmployeeId = new Guid("fc468891-859e-441f-eb75-00d5964eb172")
                         },
                         new
                         {
                             Id = new Guid("b054288d-cf33-d2ed-2037-a10e5521d239"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 4, 58, 56, 715, DateTimeKind.Local).AddTicks(1785),
                             EmployeeId = new Guid("4a8f7359-1940-781e-aa68-c174bd77211d")
                         },
                         new
                         {
                             Id = new Guid("1c6d1b4c-14b1-d2c5-5d84-b8da671530b2"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 11, 4, 55, 966, DateTimeKind.Local).AddTicks(7525),
                             EmployeeId = new Guid("053b8a22-c0b3-73c6-5557-41ba566ec979")
                         },
                         new
                         {
                             Id = new Guid("4ad6a5aa-4b2e-ea1f-60f3-cabd05253b87"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 13, 41, 32, 940, DateTimeKind.Local).AddTicks(1302),
                             EmployeeId = new Guid("f31a7c7a-b60c-13c9-b991-498f189fdaa9")
                         },
                         new
                         {
                             Id = new Guid("fd6d9ba2-4d90-5d68-3af8-246f6c7ab0f2"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 2, 49, 54, 507, DateTimeKind.Local).AddTicks(1646),
                             EmployeeId = new Guid("02c32381-1855-9b94-e3cd-1ca33777da46")
                         },
                         new
                         {
                             Id = new Guid("2a91d13f-de64-c693-b2b4-2b8ec9925a1c"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 17, 2, 36, 442, DateTimeKind.Local).AddTicks(1979),
                             EmployeeId = new Guid("faad7a8e-3096-f5a2-25ce-fbd0c261feb5")
                         },
                         new
                         {
                             Id = new Guid("eec5fc45-f2e5-843c-5d43-54321c1195e0"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 21, 9, 42, 919, DateTimeKind.Local).AddTicks(5017),
                             EmployeeId = new Guid("c2a1b897-afba-ea53-733d-ccf17534bff1")
                         },
                         new
                         {
                             Id = new Guid("87fd1f08-a8b6-6a0f-5adc-115d81b5772f"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 14, 53, 54, 767, DateTimeKind.Local).AddTicks(7259),
                             EmployeeId = new Guid("ce1daa19-5546-d92a-5497-bef3ebad68a8")
                         },
                         new
                         {
                             Id = new Guid("592838ac-8335-825d-0e7c-34b2200bbe34"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 14, 18, 27, 123, DateTimeKind.Local).AddTicks(611),
                             EmployeeId = new Guid("b5192173-b6e5-aa9d-9de6-6d613ef9f4f4")
                         },
                         new
                         {
                             Id = new Guid("87d6450f-a8e1-e54c-d37c-a5e1c0665764"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 7, 9, 49, 530, DateTimeKind.Local).AddTicks(4182),
                             EmployeeId = new Guid("8c79571e-a741-4cc0-8354-1cd1ceb4b993")
                         },
                         new
                         {
                             Id = new Guid("255803c8-ed00-2926-f051-c281eee76069"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 21, 45, 6, 57, DateTimeKind.Local).AddTicks(2598),
                             EmployeeId = new Guid("8c85f846-a564-f81b-ea2d-3e5574633b19")
                         },
                         new
                         {
                             Id = new Guid("9de9b146-058a-9a68-734b-c9a68653c280"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 12, 18, 29, 494, DateTimeKind.Local).AddTicks(3911),
                             EmployeeId = new Guid("145c65b3-4f38-d63c-da2f-c1022d3007fa")
                         },
                         new
                         {
                             Id = new Guid("7eba9ad5-945b-fb10-b7fa-60fdba8e879a"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 22, 32, 3, 442, DateTimeKind.Local).AddTicks(3856),
                             EmployeeId = new Guid("6ca2b1ea-bbb4-d85e-4cfc-fd303e6540f2")
                         },
                         new
                         {
                             Id = new Guid("539820ce-deb2-ab27-3c2d-2c67eeb27d00"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 4, 39, 40, 525, DateTimeKind.Local).AddTicks(523),
                             EmployeeId = new Guid("e3ec496b-32bb-ee06-4416-542d5c16f3ca")
                         },
                         new
                         {
                             Id = new Guid("0979098d-9fb1-4e13-0f17-feb9ada10be9"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 6, 47, 27, 570, DateTimeKind.Local).AddTicks(7776),
                             EmployeeId = new Guid("53e01b3e-0c38-f6f8-81c1-87929180f9af")
                         },
                         new
                         {
                             Id = new Guid("e834a007-cdd4-938a-714b-3d8d710ee151"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 8, 25, 59, 906, DateTimeKind.Local).AddTicks(9290),
                             EmployeeId = new Guid("57a5cacd-f107-f10c-ed8e-08920f189bc8")
                         },
                         new
                         {
                             Id = new Guid("8f9fb3e7-9318-743d-7ec5-e3c87dc4cf83"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 4, 18, 37, 816, DateTimeKind.Local).AddTicks(9232),
                             EmployeeId = new Guid("01fb88d4-943e-fbd7-86e2-f30a4b11ad11")
                         },
                         new
                         {
                             Id = new Guid("0c263ca4-03a1-8ad1-8dab-cb4fae94e855"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 17, 31, 11, 996, DateTimeKind.Local).AddTicks(8304),
                             EmployeeId = new Guid("e2651e9a-f9c7-b018-0fe5-59415ad06aa0")
                         },
                         new
                         {
                             Id = new Guid("5997551c-cd0c-828e-bfc9-a18a4ef83baf"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 13, 22, 4, 712, DateTimeKind.Local).AddTicks(7824),
                             EmployeeId = new Guid("22c0e9c3-b079-eb18-500b-5f3baa40cf15")
                         },
                         new
                         {
                             Id = new Guid("09468cfd-c8af-76b3-3433-946e3d1b823c"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 18, 23, 52, 293, DateTimeKind.Local).AddTicks(3129),
                             EmployeeId = new Guid("eeeae6a8-f7dc-e1a0-87a5-c721e33a0d5a")
                         },
                         new
                         {
                             Id = new Guid("80133f1a-c012-21ec-7c56-73e40e95eb6a"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 5, 40, 52, 461, DateTimeKind.Local).AddTicks(9438),
                             EmployeeId = new Guid("ea0d916b-24d9-d8a3-5743-9b8a493fa4cf")
                         },
                         new
                         {
                             Id = new Guid("565991e7-4e59-5b2a-646e-ccbc70a2f8a5"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 6, 27, 2, 488, DateTimeKind.Local).AddTicks(6844),
                             EmployeeId = new Guid("ce9c90e9-85df-6b63-f95d-5f35d0c5ed22")
                         },
                         new
                         {
                             Id = new Guid("a7c34834-1f36-4fc1-86d9-51b1fe667e25"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 10, 56, 18, 696, DateTimeKind.Local).AddTicks(528),
                             EmployeeId = new Guid("aadc2450-a2f3-fa05-4b59-b5e9b0080a43")
                         },
                         new
                         {
                             Id = new Guid("65e732ba-b288-9ab0-0242-16ef848079a1"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 0, 58, 45, 805, DateTimeKind.Local).AddTicks(8952),
                             EmployeeId = new Guid("026eab39-22d1-7561-40f7-c2b3a85ebeb7")
                         },
                         new
                         {
                             Id = new Guid("ff983622-81a4-bd12-ce55-f17da7e47e2f"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 16, 15, 11, 906, DateTimeKind.Local).AddTicks(1462),
                             EmployeeId = new Guid("753f7da7-1b0e-4e30-8e31-fa842fe87084")
                         },
                         new
                         {
                             Id = new Guid("8586f43b-0dbe-ea6f-cd30-85c57a01679e"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 18, 33, 38, 725, DateTimeKind.Local).AddTicks(5090),
                             EmployeeId = new Guid("3c76d360-caa9-0a67-9ccd-339275a6a548")
                         },
                         new
                         {
                             Id = new Guid("f475e342-44e2-c410-6f0a-0551a05420e8"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 9, 6, 38, 611, DateTimeKind.Local).AddTicks(4100),
                             EmployeeId = new Guid("652d0708-f41f-c8c3-48b2-2fdf5667cec8")
                         },
                         new
                         {
                             Id = new Guid("9734f2d9-8d44-9048-767b-3f45cc0da60b"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 3, 47, 12, 836, DateTimeKind.Local).AddTicks(7431),
                             EmployeeId = new Guid("00b68eb6-f096-cb3c-96b8-c848e24b60aa")
                         },
                         new
                         {
                             Id = new Guid("48ad41a3-df00-dec8-e571-5a1972020148"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 16, 25, 19, 198, DateTimeKind.Local).AddTicks(6154),
                             EmployeeId = new Guid("46a31664-f29e-02a4-45ad-3baac2b7e96d")
                         },
                         new
                         {
                             Id = new Guid("b4996730-4999-c52f-3844-fa482022f4f8"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 10, 27, 17, 901, DateTimeKind.Local).AddTicks(2425),
                             EmployeeId = new Guid("0ab03e3f-7d5b-d59c-b538-d74427200402")
                         },
                         new
                         {
                             Id = new Guid("ae7cb834-1e63-621c-cd43-cbc465fdb494"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 9, 30, 39, 408, DateTimeKind.Local).AddTicks(9944),
                             EmployeeId = new Guid("370df0f5-2c1c-9292-4372-829071879019")
                         },
                         new
                         {
                             Id = new Guid("19d1fe13-9a8f-28ea-39f6-7d09911d95d9"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 16, 25, 56, 167, DateTimeKind.Local).AddTicks(7632),
                             EmployeeId = new Guid("c0f54da1-aceb-40fd-6a82-43bcd5adf07c")
                         },
                         new
                         {
                             Id = new Guid("e77d9535-8262-806d-944b-6c8d5ceee217"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 20, 37, 36, 185, DateTimeKind.Local).AddTicks(5268),
                             EmployeeId = new Guid("4e4656d0-3da2-2979-c6a2-a809077023ff")
                         },
                         new
                         {
                             Id = new Guid("f67814ed-6be2-394f-39a7-cf2421e0dfd5"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 15, 21, 56, 550, DateTimeKind.Local).AddTicks(2892),
                             EmployeeId = new Guid("4caf9b2e-795b-b844-1df4-436868b09fe8")
                         },
                         new
                         {
                             Id = new Guid("1a21976e-dd56-69cd-211b-ae05ea75f3c6"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 15, 0, 23, 547, DateTimeKind.Local).AddTicks(2053),
                             EmployeeId = new Guid("27ddcac8-8e99-757a-c6ca-c1c613a0381c")
                         },
                         new
                         {
                             Id = new Guid("48127b9b-d934-26c4-4aad-7c18ec8194f4"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 19, 53, 43, 366, DateTimeKind.Local).AddTicks(1365),
                             EmployeeId = new Guid("b749e575-e522-d8a1-9ebd-09b7e96a1f6b")
                         },
                         new
                         {
                             Id = new Guid("02141922-1e2d-a18a-e5ae-2d193b1857fb"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 3, 39, 28, 78, DateTimeKind.Local).AddTicks(1464),
                             EmployeeId = new Guid("dc8a5d55-521a-ce88-6812-08d19af3b97a")
                         },
                         new
                         {
                             Id = new Guid("b69141ec-bc82-02a4-c284-5581ebfaa999"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 19, 11, 28, 40, DateTimeKind.Local).AddTicks(2809),
                             EmployeeId = new Guid("ed4a9761-e317-ffd5-8863-af1ea92d0688")
                         },
                         new
                         {
                             Id = new Guid("37a92ae5-77de-931c-4100-9485f898b9df"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 11, 46, 39, 481, DateTimeKind.Local).AddTicks(6711),
                             EmployeeId = new Guid("13b28c2c-d902-2d25-6cdd-ddcc267b9215")
                         },
                         new
                         {
                             Id = new Guid("1b894692-1dc7-2d8f-421e-927ed0752276"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 7, 34, 21, 474, DateTimeKind.Local).AddTicks(7811),
                             EmployeeId = new Guid("2a2da448-3e3c-e6b2-fa10-49bf560e39fa")
                         },
                         new
                         {
                             Id = new Guid("28653fb3-0263-fe2d-5de9-311bef0924f4"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 23, 16, 56, 196, DateTimeKind.Local).AddTicks(7401),
                             EmployeeId = new Guid("45b961a5-26d3-d7c8-b276-ebb8f9fbe232")
                         },
                         new
                         {
                             Id = new Guid("4a4f1ae2-74da-81ae-c310-d521959cb0dd"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 18, 48, 5, 453, DateTimeKind.Local).AddTicks(7316),
                             EmployeeId = new Guid("fe87582f-e540-ed91-9c98-135ff6d97a87")
                         },
                         new
                         {
                             Id = new Guid("1e991925-4432-0310-a275-ac80ef1a1560"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 0, 58, 24, 225, DateTimeKind.Local).AddTicks(5233),
                             EmployeeId = new Guid("ba25a3b0-4ad0-cfad-39c0-699f36effbc7")
                         },
                         new
                         {
                             Id = new Guid("81b5b48b-ed69-c787-9c7e-3f2b00c71436"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 21, 48, 52, 573, DateTimeKind.Local).AddTicks(6618),
                             EmployeeId = new Guid("ab7ba991-ceda-6517-c8ad-aea6775a14d0")
                         },
                         new
                         {
                             Id = new Guid("70c9061c-0b0c-8f17-e606-7f3cc0792ea0"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 18, 40, 39, 783, DateTimeKind.Local).AddTicks(7343),
                             EmployeeId = new Guid("a0e9a8da-8251-ce35-c257-733e81ce0b7a")
                         },
                         new
                         {
                             Id = new Guid("7cab312f-8573-4962-abb9-dae32118f447"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 10, 48, 7, 710, DateTimeKind.Local).AddTicks(2279),
                             EmployeeId = new Guid("51dad4ee-d028-11c8-1038-8b605e44b812")
                         },
                         new
                         {
                             Id = new Guid("5d5275a8-c0a1-421d-7fb2-d227abc65c18"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 8, 14, 55, 123, DateTimeKind.Local).AddTicks(1121),
                             EmployeeId = new Guid("7f954980-ec2e-377d-cc5c-1dc7f14926dc")
                         },
                         new
                         {
                             Id = new Guid("c1a9eb56-d66b-230b-5e23-cc3240df25c7"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 17, 21, 51, 431, DateTimeKind.Local).AddTicks(9555),
                             EmployeeId = new Guid("c7f706e1-35ea-e53f-862a-ad02dec43bbd")
                         },
                         new
                         {
                             Id = new Guid("4356bc09-97e3-91d9-2f1d-c4002ad5656b"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 1, 51, 31, 208, DateTimeKind.Local).AddTicks(8935),
                             EmployeeId = new Guid("c87b42e7-35a8-3602-6c70-3e4eeda5d92a")
                         },
                         new
                         {
                             Id = new Guid("9d9586e7-1ebf-80b2-9247-85fe3a3af567"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 3, 1, 48, 290, DateTimeKind.Local).AddTicks(3085),
                             EmployeeId = new Guid("37606ee7-0344-07f9-9861-dcc8c76ca0e9")
                         },
                         new
                         {
                             Id = new Guid("44912ac6-05db-2399-a15c-da73cdc86ef6"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 5, 25, 31, 375, DateTimeKind.Local).AddTicks(6284),
                             EmployeeId = new Guid("598c49d9-6790-f0e7-d212-f34a44970106")
                         },
                         new
                         {
                             Id = new Guid("16302496-4a47-1ea9-8ac5-356d986bb038"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 16, 20, 19, 495, DateTimeKind.Local).AddTicks(5995),
                             EmployeeId = new Guid("925cb134-268f-63f8-b856-a3aa8deaa1de")
                         },
                         new
                         {
                             Id = new Guid("fb2597b9-2310-d4b7-b836-cb44a8f4ad69"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 15, 48, 12, 51, DateTimeKind.Local).AddTicks(6192),
                             EmployeeId = new Guid("d3830894-4d76-b7c3-b7d6-56bd4b311519")
                         },
                         new
                         {
                             Id = new Guid("e732fa4a-5d0f-ee6c-4208-1c8fe5a00bb9"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 23, 31, 23, 769, DateTimeKind.Local).AddTicks(859),
                             EmployeeId = new Guid("a8960f22-cbc3-a914-fffe-3eac0242c46c")
                         },
                         new
                         {
                             Id = new Guid("7590f320-e8f0-80be-8c79-ea022da3750b"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 11, 13, 30, 57, DateTimeKind.Local).AddTicks(1681),
                             EmployeeId = new Guid("2d0f0f13-3c88-2834-6cd5-2eea31df32e8")
                         },
                         new
                         {
                             Id = new Guid("34a39d16-cb74-a69c-e5a3-9c3a26f85a75"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 6, 6, 15, 250, DateTimeKind.Local).AddTicks(6149),
                             EmployeeId = new Guid("cfe26660-01c6-bd26-7b20-f20cb2b11d7a")
                         },
                         new
                         {
                             Id = new Guid("dc50ff41-75df-0558-efec-7095c432d65a"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 23, 43, 44, 964, DateTimeKind.Local).AddTicks(7094),
                             EmployeeId = new Guid("ca51c6e6-e993-1e15-5213-e27f2f200fa9")
                         },
                         new
                         {
                             Id = new Guid("4154aa1c-dcd8-3ff0-c30a-d32e5451c245"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 23, 57, 11, 25, DateTimeKind.Local).AddTicks(1958),
                             EmployeeId = new Guid("dba4944b-390f-3c18-7984-8609506d975c")
                         },
                         new
                         {
                             Id = new Guid("c61cbfc4-b9ac-0e75-d708-4f9dcef9629d"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 8, 6, 17, 147, DateTimeKind.Local).AddTicks(1469),
                             EmployeeId = new Guid("c90be549-9c64-75b8-f702-a48558deca3b")
                         },
                         new
                         {
                             Id = new Guid("36ef0077-fb94-be1c-1b44-02ec2594cbb7"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 22, 43, 40, 781, DateTimeKind.Local).AddTicks(1648),
                             EmployeeId = new Guid("853d5ee1-d1c9-d2da-fae3-48f76dc22ab4")
                         },
                         new
                         {
                             Id = new Guid("ce6387a8-3719-6c74-0434-f2b3e759f34e"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 22, 16, 54, 145, DateTimeKind.Local).AddTicks(7041),
                             EmployeeId = new Guid("abd336e4-4c04-ff5a-ed4f-41a095d59b06")
                         },
                         new
                         {
                             Id = new Guid("fb90ca87-c959-1bd4-2908-0341639df644"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 15, 14, 31, 217, DateTimeKind.Local).AddTicks(8970),
                             EmployeeId = new Guid("740d4fe6-69e2-20db-872e-03e726016571")
                         },
                         new
                         {
                             Id = new Guid("8e20fed5-8917-9029-1b92-32460ae27578"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 23, 40, 55, 600, DateTimeKind.Local).AddTicks(7630),
                             EmployeeId = new Guid("175b09cf-44ae-1257-503a-59419904770c")
                         },
                         new
                         {
                             Id = new Guid("1b450409-644a-f301-8e16-f014bd3a8fff"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 2, 8, 11, 5, DateTimeKind.Local).AddTicks(2315),
                             EmployeeId = new Guid("43c1bff6-11ee-1c29-bd72-dd3e5ebc5b3b")
                         },
                         new
                         {
                             Id = new Guid("39307178-88b8-c2f7-f85e-ee24dd2ca90b"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 16, 53, 40, 484, DateTimeKind.Local).AddTicks(6932),
                             EmployeeId = new Guid("039de179-28f5-ee6f-b14d-9dd3ec397c2e")
                         },
                         new
                         {
                             Id = new Guid("96152ad6-7a9b-7d2b-740c-7be3ea11dc9f"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 21, 36, 57, 347, DateTimeKind.Local).AddTicks(6106),
                             EmployeeId = new Guid("e974daa7-c98d-b6d9-ae8e-2863d96d2a75")
                         },
                         new
                         {
                             Id = new Guid("a152928c-9409-f1a0-12e8-142f626fa690"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 14, 50, 28, 476, DateTimeKind.Local).AddTicks(3876),
                             EmployeeId = new Guid("aa42e9e7-5680-990f-eb85-757c40d6961f")
                         },
                         new
                         {
                             Id = new Guid("0a8dbe95-b683-7b7d-0313-018d8e316103"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 13, 11, 57, 641, DateTimeKind.Local).AddTicks(7405),
                             EmployeeId = new Guid("b3dcdde5-b8f6-0d2d-91b5-4c4b61be388b")
                         },
                         new
                         {
                             Id = new Guid("89fa010c-9518-dd5f-1973-4380ca3b3f43"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 22, 2, 4, 550, DateTimeKind.Local).AddTicks(1441),
                             EmployeeId = new Guid("de22abec-2200-5a21-b6de-2c262bdcb79b")
                         },
                         new
                         {
                             Id = new Guid("198ceacf-dd9c-5b11-85fd-006b550d8957"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 14, 23, 55, 82, DateTimeKind.Local).AddTicks(3798),
                             EmployeeId = new Guid("ab25426a-0f15-599f-267c-d31f1e9cfc1d")
                         },
                         new
                         {
                             Id = new Guid("d9237574-0763-92bf-3751-4fed5404c9b4"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 4, 50, 31, 290, DateTimeKind.Local).AddTicks(4984),
                             EmployeeId = new Guid("9e141955-fae3-5029-2d9f-a63c41d7f8e1")
                         },
                         new
                         {
                             Id = new Guid("3a07ab5e-dfda-0818-ed73-41e465a9d88a"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 8, 19, 9, 914, DateTimeKind.Local).AddTicks(3766),
                             EmployeeId = new Guid("8b6bc108-10e7-799a-9c95-0c375120a86f")
                         },
                         new
                         {
                             Id = new Guid("4bdc1128-09d9-0f35-ac66-8c59ead7f03c"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 2, 11, 57, 278, DateTimeKind.Local).AddTicks(7346),
                             EmployeeId = new Guid("148d68db-20b3-c381-7fee-c695877c0dd2")
                         },
                         new
                         {
                             Id = new Guid("fe4bf949-1ed1-6df6-e944-7c7ab7088e57"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 19, 17, 35, 213, DateTimeKind.Local).AddTicks(9400),
                             EmployeeId = new Guid("00a87c59-6f8f-d58a-6de5-5c816f2cb649")
                         },
                         new
                         {
                             Id = new Guid("d0a4302d-a16b-1a61-560d-746d4e1dd662"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 6, 4, 3, 670, DateTimeKind.Local).AddTicks(7993),
                             EmployeeId = new Guid("d3830894-4d76-b7c3-b7d6-56bd4b311519")
                         },
                         new
                         {
                             Id = new Guid("9ce32d0a-ca4c-ec30-d450-5c801abb293f"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 10, 14, 37, 851, DateTimeKind.Local).AddTicks(9857),
                             EmployeeId = new Guid("3e653949-20de-c4a6-62c0-1c457fa95b27")
                         },
                         new
                         {
                             Id = new Guid("04705de0-609f-d774-2d5c-e1a6777ac376"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 22, 57, 26, 936, DateTimeKind.Local).AddTicks(3641),
                             EmployeeId = new Guid("677a30b4-7148-60e5-3503-cb3b9c744748")
                         },
                         new
                         {
                             Id = new Guid("b53b0658-c98d-8cfa-5ab2-25decbbdeefc"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 10, 49, 30, 706, DateTimeKind.Local).AddTicks(7018),
                             EmployeeId = new Guid("fbb495af-f4f2-01e6-893b-4904c050b528")
                         },
                         new
                         {
                             Id = new Guid("f3d73c44-8f02-aaf3-e505-5644f6f5784c"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 9, 30, 43, 481, DateTimeKind.Local).AddTicks(5677),
                             EmployeeId = new Guid("3e2b0aa3-a937-e57f-011c-7c50c7e0a3c0")
                         },
                         new
                         {
                             Id = new Guid("d3a43ae3-251a-7e08-15e8-887d0edb0905"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 23, 55, 24, 395, DateTimeKind.Local).AddTicks(4011),
                             EmployeeId = new Guid("13241911-9c0b-f0e7-3bc6-4099d95f5155")
                         },
                         new
                         {
                             Id = new Guid("1f992538-8715-6d04-2ee9-5371cb580db7"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 6, 12, 47, 484, DateTimeKind.Local).AddTicks(2237),
                             EmployeeId = new Guid("308084c5-9765-cb76-3902-470d4147eb72")
                         },
                         new
                         {
                             Id = new Guid("11facebd-c2dd-875c-4869-ecef21cb0f6b"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 2, 17, 27, 251, DateTimeKind.Local).AddTicks(914),
                             EmployeeId = new Guid("07fe2367-2809-d706-b12d-a9c256230603")
                         },
                         new
                         {
                             Id = new Guid("b8154b8f-94d9-76c2-bd25-00241b65ecc3"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 16, 49, 8, 463, DateTimeKind.Local).AddTicks(1080),
                             EmployeeId = new Guid("82485e44-a984-afab-02e7-1cb2a855b48e")
                         },
                         new
                         {
                             Id = new Guid("ffb85dbb-04bc-f942-31a6-bbec8b6dd410"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 6, 36, 53, 610, DateTimeKind.Local).AddTicks(8458),
                             EmployeeId = new Guid("fcb9fc9e-f5d6-d162-1d4f-abddd4e8fb10")
                         },
                         new
                         {
                             Id = new Guid("4c1b7c20-619e-4447-d189-3507ca2d6e8e"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 8, 9, 8, 81, DateTimeKind.Local).AddTicks(6155),
                             EmployeeId = new Guid("f97e457f-7f43-e99e-c262-ebe87a837af9")
                         },
                         new
                         {
                             Id = new Guid("9a97b359-cf91-3901-75b7-4655ce1b2e1d"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 12, 50, 9, 694, DateTimeKind.Local).AddTicks(2103),
                             EmployeeId = new Guid("50f652d9-1149-7b74-c152-f8e00973625b")
                         },
                         new
                         {
                             Id = new Guid("bf749e19-7070-9ffc-f0be-1cdf1639d24e"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 8, 23, 9, 43, DateTimeKind.Local).AddTicks(5087),
                             EmployeeId = new Guid("9a5b248d-85d9-525e-78ec-ea8885076d92")
                         },
                         new
                         {
                             Id = new Guid("289c7c89-8dd2-348a-66eb-9c10d7edacbc"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 9, 54, 4, 678, DateTimeKind.Local).AddTicks(7374),
                             EmployeeId = new Guid("0e62404c-677a-4a5f-6654-597c59e9e0cc")
                         },
                         new
                         {
                             Id = new Guid("30942a26-7a11-d859-301c-fbcdcc93b516"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 15, 0, 20, 29, 817, DateTimeKind.Local).AddTicks(7952),
                             EmployeeId = new Guid("e0e55081-0e77-779f-3b50-861a81543c8a")
                         },
                         new
                         {
                             Id = new Guid("3ce632a2-b395-ae54-44f1-6a7c25696d63"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 17, 21, 9, 264, DateTimeKind.Local).AddTicks(1751),
                             EmployeeId = new Guid("761b1220-320e-4cc0-a5c8-cc7a0c0051e0")
                         },
                         new
                         {
                             Id = new Guid("b578ad8b-185a-1e6a-cf7c-22d7173f3741"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 12, 13, 49, 59, DateTimeKind.Local).AddTicks(5823),
                             EmployeeId = new Guid("ac0d3f32-312a-a84f-d8f6-a654c5940e3c")
                         },
                         new
                         {
                             Id = new Guid("ccbc7dfe-e614-9fc6-d663-5e30fd2149f1"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 7, 22, 8, 416, DateTimeKind.Local).AddTicks(5805),
                             EmployeeId = new Guid("c7f706e1-35ea-e53f-862a-ad02dec43bbd")
                         },
                         new
                         {
                             Id = new Guid("952a248b-3185-1921-523d-ed27ab22c9f6"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 2, 1, 17, 98, DateTimeKind.Local).AddTicks(604),
                             EmployeeId = new Guid("741e4ea8-c4c9-d2ff-7a7d-e29401a924db")
                         },
                         new
                         {
                             Id = new Guid("7894ce64-ba94-4b70-25b6-ce4e6f1844b4"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 20, 45, 17, 390, DateTimeKind.Local).AddTicks(5922),
                             EmployeeId = new Guid("6d6cbb68-6582-3e76-c927-86c42bf6af1b")
                         },
                         new
                         {
                             Id = new Guid("cdf29a37-6173-3be9-b30e-342a7a22e7c5"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 10, 2, 11, 822, DateTimeKind.Local).AddTicks(750),
                             EmployeeId = new Guid("75d7ece1-cfeb-4752-70d1-5ba350970aad")
                         },
                         new
                         {
                             Id = new Guid("e614db96-63fc-ee84-7e0f-666dfe22e697"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 13, 56, 50, 628, DateTimeKind.Local).AddTicks(4391),
                             EmployeeId = new Guid("b84e9e10-accf-e16d-6184-919172117857")
                         },
                         new
                         {
                             Id = new Guid("7eab1620-3dbd-8bf0-532c-885295bd1f3d"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 19, 53, 7, 262, DateTimeKind.Local).AddTicks(3722),
                             EmployeeId = new Guid("8e03aa77-01af-254b-6cc6-422f4bee1baa")
                         },
                         new
                         {
                             Id = new Guid("73ef69f6-2c6a-a04c-3608-948ba054add6"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 1, 50, 27, 259, DateTimeKind.Local).AddTicks(677),
                             EmployeeId = new Guid("ad994fb5-26a2-443f-ac8d-c3c7618bd745")
                         },
                         new
                         {
                             Id = new Guid("d80ca857-c230-bcf6-d0b0-dfe4d973927b"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 16, 1, 22, 772, DateTimeKind.Local).AddTicks(6704),
                             EmployeeId = new Guid("578fa79c-d316-a49a-38d2-7768adeef64c")
                         },
                         new
                         {
                             Id = new Guid("9d715240-82ba-a0bf-e7fe-e8e68b52b0cb"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 0, 34, 59, 322, DateTimeKind.Local).AddTicks(9370),
                             EmployeeId = new Guid("5fd0ab4a-8292-e201-35a4-688a1d27c93d")
                         },
                         new
                         {
                             Id = new Guid("6f74b0be-ef7b-2456-ba17-0ed816a5f0aa"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 15, 0, 18, 46, 754, DateTimeKind.Local).AddTicks(9688),
                             EmployeeId = new Guid("1c129471-852d-f69f-b73f-d7f92e599c1d")
                         },
                         new
                         {
                             Id = new Guid("21715551-bd0e-cae8-5491-29a886910672"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 13, 52, 55, 29, DateTimeKind.Local).AddTicks(8893),
                             EmployeeId = new Guid("78ed3dd3-9eec-8abc-ee64-9dcec7adc211")
                         },
                         new
                         {
                             Id = new Guid("5e63aef5-8904-26d8-d140-9aa8a5e50198"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 10, 0, 23, 105, DateTimeKind.Local).AddTicks(4801),
                             EmployeeId = new Guid("e8a89b1a-43ba-9b0e-29ba-d825cd40df25")
                         },
                         new
                         {
                             Id = new Guid("2492b166-9202-6f90-8847-0f33fddf27f0"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 2, 40, 26, 135, DateTimeKind.Local).AddTicks(1499),
                             EmployeeId = new Guid("3a48fa38-9085-d146-0527-fc9d0de62f48")
                         },
                         new
                         {
                             Id = new Guid("9735986c-8916-e9b9-83c2-84f8cb246465"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 10, 45, 28, 872, DateTimeKind.Local).AddTicks(4222),
                             EmployeeId = new Guid("850cb5e4-cf29-799b-219d-ed2c09833646")
                         },
                         new
                         {
                             Id = new Guid("1a74cb61-de50-0dc2-9dc9-7ef5a4aa43e1"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 7, 56, 41, 896, DateTimeKind.Local).AddTicks(9321),
                             EmployeeId = new Guid("aadc2450-a2f3-fa05-4b59-b5e9b0080a43")
                         },
                         new
                         {
                             Id = new Guid("a9499b7b-ad0d-4e03-430e-987af68cd38c"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 18, 58, 28, 700, DateTimeKind.Local).AddTicks(478),
                             EmployeeId = new Guid("8c85f846-a564-f81b-ea2d-3e5574633b19")
                         },
                         new
                         {
                             Id = new Guid("7c54b9e5-1f1b-cc05-df4e-87436d3417e8"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 11, 20, 38, 755, DateTimeKind.Local).AddTicks(1708),
                             EmployeeId = new Guid("17727356-efae-41da-f85a-f30237ea1755")
                         },
                         new
                         {
                             Id = new Guid("904c6d66-ff7e-4f04-8769-d11d18e9794b"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 18, 7, 6, 744, DateTimeKind.Local).AddTicks(7289),
                             EmployeeId = new Guid("6943a910-0fe3-9565-5590-80a5f6d21fe1")
                         },
                         new
                         {
                             Id = new Guid("e107892d-ff23-cabb-2a45-dfa4e5750991"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 10, 24, 12, 574, DateTimeKind.Local).AddTicks(8273),
                             EmployeeId = new Guid("5343d322-eb05-7eb9-d4e0-67bcb990dad7")
                         },
                         new
                         {
                             Id = new Guid("d0167cd5-627d-300e-6f5a-f4e8b6c0cfe9"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 21, 22, 21, 447, DateTimeKind.Local).AddTicks(4),
                             EmployeeId = new Guid("4b6f3127-691d-0b48-7482-2e4bd924094c")
                         },
                         new
                         {
                             Id = new Guid("35c29028-09d9-c5a8-eba8-0e5769b23751"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 14, 37, 11, 78, DateTimeKind.Local).AddTicks(1075),
                             EmployeeId = new Guid("7d83d6e8-be7c-5b6d-8038-40073282bad9")
                         },
                         new
                         {
                             Id = new Guid("ce157e8a-6f4c-5c36-29e3-168b7132836f"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 5, 49, 34, 952, DateTimeKind.Local).AddTicks(2734),
                             EmployeeId = new Guid("cf3bb559-f0a3-05ad-29dd-b31c010c7612")
                         },
                         new
                         {
                             Id = new Guid("9dd5c73c-8822-0261-8b36-7e6f2dd2dfd4"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 10, 24, 25, 877, DateTimeKind.Local).AddTicks(779),
                             EmployeeId = new Guid("af964599-be23-4e29-c114-6c7b38f78c65")
                         },
                         new
                         {
                             Id = new Guid("aca3c576-e17f-1cd5-9d25-e5439f3e5ada"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 2, 52, 41, 751, DateTimeKind.Local).AddTicks(981),
                             EmployeeId = new Guid("4bdebae4-5fb6-115d-4ff0-a1847292e9d8")
                         },
                         new
                         {
                             Id = new Guid("6deb46f2-26ab-74aa-e8b9-915d755cd79c"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 22, 5, 49, 66, DateTimeKind.Local).AddTicks(8241),
                             EmployeeId = new Guid("ab7ba991-ceda-6517-c8ad-aea6775a14d0")
                         },
                         new
                         {
                             Id = new Guid("6c4cbc56-ddc3-f2a5-df30-d2f7ed202c21"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 15, 54, 52, 915, DateTimeKind.Local).AddTicks(7981),
                             EmployeeId = new Guid("9960959e-b32b-462d-2344-fb21bda8164c")
                         },
                         new
                         {
                             Id = new Guid("6cd486f8-62ec-c80b-6fe6-c7a2d841d75e"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 12, 26, 58, 21, DateTimeKind.Local).AddTicks(5596),
                             EmployeeId = new Guid("0472b702-0973-fa9f-9dee-c244588a679c")
                         },
                         new
                         {
                             Id = new Guid("33058f27-44cb-c216-a43d-493b5c1029a0"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 14, 35, 3, 604, DateTimeKind.Local).AddTicks(9836),
                             EmployeeId = new Guid("8524fc57-e082-0ca9-74e1-3e73c4024e70")
                         },
                         new
                         {
                             Id = new Guid("14b8095f-0c36-8d17-f9b5-15c1077ba063"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 5, 34, 43, 619, DateTimeKind.Local).AddTicks(398),
                             EmployeeId = new Guid("6fd36d07-f90a-a2bc-ffd3-9dfe52db9aca")
                         },
                         new
                         {
                             Id = new Guid("a0d62809-8b66-ab26-6b91-aea043ddd545"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 1, 54, 21, 911, DateTimeKind.Local).AddTicks(4710),
                             EmployeeId = new Guid("1acdab8a-68db-edec-4622-3987a960c46f")
                         },
                         new
                         {
                             Id = new Guid("b7b327cf-0c1c-7c8f-41bf-bbac61ae4177"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 13, 53, 40, 897, DateTimeKind.Local).AddTicks(704),
                             EmployeeId = new Guid("87c1b8cb-282d-9d9d-a75c-b2ef6530aec2")
                         },
                         new
                         {
                             Id = new Guid("600f8951-fbac-144a-d1e3-3236cff54d23"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 17, 16, 1, 866, DateTimeKind.Local).AddTicks(3081),
                             EmployeeId = new Guid("ff0f74f5-02df-0182-7dfb-19b1cb4393d6")
                         },
                         new
                         {
                             Id = new Guid("0fd794b9-ece5-e4af-4df2-0265adbc681d"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 18, 22, 13, 625, DateTimeKind.Local).AddTicks(6981),
                             EmployeeId = new Guid("62fcc8b8-7775-1cb1-425f-d2e91ca48aee")
                         },
                         new
                         {
                             Id = new Guid("f7d1bb06-98bd-890e-ebb7-138a1621b6cf"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 10, 30, 52, 780, DateTimeKind.Local).AddTicks(5320),
                             EmployeeId = new Guid("053b8a22-c0b3-73c6-5557-41ba566ec979")
                         },
                         new
                         {
                             Id = new Guid("16fd732a-21fd-7ecf-8479-67d75c64634f"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 7, 28, 27, 931, DateTimeKind.Local).AddTicks(7067),
                             EmployeeId = new Guid("934425d1-d0f2-3c26-4229-0f62201ffcbe")
                         },
                         new
                         {
                             Id = new Guid("63d67619-2cc3-6839-eb44-f7ec93a27694"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 6, 35, 29, 170, DateTimeKind.Local).AddTicks(1920),
                             EmployeeId = new Guid("87c1b8cb-282d-9d9d-a75c-b2ef6530aec2")
                         },
                         new
                         {
                             Id = new Guid("19eed6d4-0f8a-df84-b726-b2d100e83861"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 9, 0, 14, 384, DateTimeKind.Local).AddTicks(8470),
                             EmployeeId = new Guid("807fcc89-6d87-1ef5-3f2e-4ab88a3454d2")
                         },
                         new
                         {
                             Id = new Guid("b9c3e939-3ae3-8d8d-d335-e5d010451013"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 7, 36, 2, 598, DateTimeKind.Local).AddTicks(2063),
                             EmployeeId = new Guid("d2c58770-b2f5-55f0-2f4e-82d9b89e840a")
                         },
                         new
                         {
                             Id = new Guid("4d3f534c-4282-7239-f604-5b41733f42d0"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 3, 39, 34, 34, DateTimeKind.Local).AddTicks(5655),
                             EmployeeId = new Guid("316a9298-eb4a-6767-e327-dcf79cbd7451")
                         },
                         new
                         {
                             Id = new Guid("81fcdf0b-aab0-56d2-a18c-efd47236a608"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 11, 55, 42, 188, DateTimeKind.Local).AddTicks(5065),
                             EmployeeId = new Guid("f9fec262-b4d4-9fee-7f40-5467b0db7b0a")
                         },
                         new
                         {
                             Id = new Guid("c7a97741-8996-f478-7290-ce755602a91f"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 17, 25, 40, 966, DateTimeKind.Local).AddTicks(2618),
                             EmployeeId = new Guid("0920938a-3ead-a482-8bd1-08728af66252")
                         },
                         new
                         {
                             Id = new Guid("ecafa28f-e597-2f06-e90a-cc3785d61dcf"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 2, 49, 16, 461, DateTimeKind.Local).AddTicks(1967),
                             EmployeeId = new Guid("fe87582f-e540-ed91-9c98-135ff6d97a87")
                         },
                         new
                         {
                             Id = new Guid("b637f866-c55f-16d3-99d2-c81729b9ea69"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 4, 29, 17, 816, DateTimeKind.Local).AddTicks(5415),
                             EmployeeId = new Guid("d72ebf19-43c1-d83b-9be5-b99818eb71d8")
                         },
                         new
                         {
                             Id = new Guid("598fe211-e98f-59a5-499e-383304bd65e8"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 21, 2, 21, 925, DateTimeKind.Local).AddTicks(6913),
                             EmployeeId = new Guid("280aa16a-ab00-8d39-e9cd-fffd21216259")
                         },
                         new
                         {
                             Id = new Guid("cfc42650-5c6c-f320-a37e-9a6d233d1950"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 15, 28, 34, 167, DateTimeKind.Local).AddTicks(1660),
                             EmployeeId = new Guid("724c9143-7cdd-9ca8-5243-a2dffc1bb764")
                         },
                         new
                         {
                             Id = new Guid("6cb9cda7-788a-9f61-c35a-c3d011110e41"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 19, 34, 18, 951, DateTimeKind.Local).AddTicks(1290),
                             EmployeeId = new Guid("5544e921-c22e-fbae-157e-f4dde0e4a95e")
                         },
                         new
                         {
                             Id = new Guid("f56ffd23-da02-31ae-15f5-eb6d2f123bb0"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 14, 28, 37, 623, DateTimeKind.Local).AddTicks(5699),
                             EmployeeId = new Guid("69d6537f-3881-c314-56b1-a940b67c344e")
                         },
                         new
                         {
                             Id = new Guid("bd0b563a-995c-addf-895b-14fbb40222b3"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 1, 50, 48, 349, DateTimeKind.Local).AddTicks(7598),
                             EmployeeId = new Guid("a1e3d1d3-5a0a-b3a3-60b6-fc1eb2fc8fd1")
                         },
                         new
                         {
                             Id = new Guid("47db91b7-a94b-ecd8-93bd-d661efabab12"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 15, 41, 31, 996, DateTimeKind.Local).AddTicks(5899),
                             EmployeeId = new Guid("aec4c050-c174-27f2-0008-cef7580b329e")
                         },
                         new
                         {
                             Id = new Guid("2d235c12-d525-fa00-366a-0d5f997746df"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 7, 54, 40, 327, DateTimeKind.Local).AddTicks(9964),
                             EmployeeId = new Guid("5f283378-dba0-2aa4-df17-098c90f0db20")
                         },
                         new
                         {
                             Id = new Guid("ac8313bf-f04b-f9b2-2450-08f0669b6026"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 3, 58, 7, 425, DateTimeKind.Local).AddTicks(108),
                             EmployeeId = new Guid("74ee111c-0ec1-613a-6c57-ea36a04da9fb")
                         },
                         new
                         {
                             Id = new Guid("af4b71b6-82a2-5e86-3cea-a9cb83b4ad57"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 7, 17, 39, 930, DateTimeKind.Local).AddTicks(7888),
                             EmployeeId = new Guid("5b3a0652-8c0c-6b6c-f1e9-a912527b4191")
                         },
                         new
                         {
                             Id = new Guid("dc723cd7-a9db-7a2d-a6c3-3850cb4bc3a8"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 17, 51, 4, 658, DateTimeKind.Local).AddTicks(6459),
                             EmployeeId = new Guid("fdd817e9-1528-6831-8e37-0629375d895a")
                         },
                         new
                         {
                             Id = new Guid("91c429e1-0f76-847b-853b-b8443397ccbc"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 4, 28, 45, 159, DateTimeKind.Local).AddTicks(4065),
                             EmployeeId = new Guid("526e764a-e6d9-aa98-470b-84b35cc6e88b")
                         },
                         new
                         {
                             Id = new Guid("0874066f-9adf-9903-de80-c00b0fe3c9ad"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 4, 4, 48, 953, DateTimeKind.Local).AddTicks(355),
                             EmployeeId = new Guid("d3f75d03-1a25-9ac5-c619-934408a6855d")
                         },
                         new
                         {
                             Id = new Guid("255fccfb-3ea8-7fee-04b8-fe8f9b640804"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 11, 22, 48, 177, DateTimeKind.Local).AddTicks(6392),
                             EmployeeId = new Guid("57a5cacd-f107-f10c-ed8e-08920f189bc8")
                         },
                         new
                         {
                             Id = new Guid("7573f6e4-049d-30c4-a961-6aea46a97d47"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 20, 26, 24, 701, DateTimeKind.Local).AddTicks(2856),
                             EmployeeId = new Guid("8cd64721-6fc1-f85e-5425-223f3188cf77")
                         },
                         new
                         {
                             Id = new Guid("1bf1cacc-e0fe-f1df-25a7-07df6c40642e"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 5, 11, 1, 319, DateTimeKind.Local).AddTicks(5875),
                             EmployeeId = new Guid("90fae1cd-2387-46a3-a0de-64d22e09810a")
                         },
                         new
                         {
                             Id = new Guid("0ee320c2-1d45-ce9a-b8e5-1e1c3ff47c9f"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 15, 0, 6, 53, 213, DateTimeKind.Local).AddTicks(1281),
                             EmployeeId = new Guid("6ca2b1ea-bbb4-d85e-4cfc-fd303e6540f2")
                         },
                         new
                         {
                             Id = new Guid("13be9574-889f-82a1-fea9-e27bc9bf714d"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 15, 0, 4, 1, 301, DateTimeKind.Local).AddTicks(5296),
                             EmployeeId = new Guid("9aa8e55f-f4ea-37f3-f429-e508ae794cde")
                         },
                         new
                         {
                             Id = new Guid("1263feac-0b27-8a07-c7ea-efa00c3bd814"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 1, 29, 39, 60, DateTimeKind.Local).AddTicks(2285),
                             EmployeeId = new Guid("0184d758-9be2-7136-e3f3-0ce3d5b56d82")
                         },
                         new
                         {
                             Id = new Guid("9ba38544-249c-6ad5-545d-cea6bcb69b46"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 6, 40, 45, 514, DateTimeKind.Local).AddTicks(4126),
                             EmployeeId = new Guid("4ea4238c-43d5-c1e9-15e0-557ca85feeb7")
                         },
                         new
                         {
                             Id = new Guid("fe980797-97da-080e-d540-f0aaaf49b2a4"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 19, 12, 1, 262, DateTimeKind.Local).AddTicks(162),
                             EmployeeId = new Guid("4999b6de-1626-eafb-0de3-bcc7a83735d6")
                         },
                         new
                         {
                             Id = new Guid("a051edc7-2db2-44f9-33e9-71f4fb033e6c"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 21, 32, 8, 793, DateTimeKind.Local).AddTicks(6873),
                             EmployeeId = new Guid("026eab39-22d1-7561-40f7-c2b3a85ebeb7")
                         },
                         new
                         {
                             Id = new Guid("1c8d04c9-2aff-b264-1e5c-0a12643d7a49"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 15, 11, 23, 597, DateTimeKind.Local).AddTicks(931),
                             EmployeeId = new Guid("06255908-7ff3-34e2-8f2e-4bf4d9a0b45d")
                         },
                         new
                         {
                             Id = new Guid("52e0d1e5-1edb-4b64-f4a7-71ddacf8b03f"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 16, 47, 38, 52, DateTimeKind.Local).AddTicks(8034),
                             EmployeeId = new Guid("d41020ef-6be2-9cd6-6ea5-8d74f53de0df")
                         },
                         new
                         {
                             Id = new Guid("7a4d7652-e8db-d728-0db7-80baa9279ec6"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 1, 43, 26, 167, DateTimeKind.Local).AddTicks(410),
                             EmployeeId = new Guid("838a49a6-1439-0b4d-bca9-d2d72c266efd")
                         },
                         new
                         {
                             Id = new Guid("de9bfdb1-0b70-7fac-5e19-b3fd1d0ec4f3"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 21, 42, 42, 585, DateTimeKind.Local).AddTicks(4716),
                             EmployeeId = new Guid("9a9c5f0b-b9cd-62a0-cbb9-b295c76b0bde")
                         },
                         new
                         {
                             Id = new Guid("47b26904-9457-ed73-c7b5-0d32fa56aa88"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 17, 29, 5, 194, DateTimeKind.Local).AddTicks(5401),
                             EmployeeId = new Guid("04cb2ddd-4dd4-7c94-a0bb-2ff2e60998c6")
                         },
                         new
                         {
                             Id = new Guid("692e6fdd-beca-ba59-63ab-e434ae2e5ee4"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 7, 9, 1, 399, DateTimeKind.Local).AddTicks(961),
                             EmployeeId = new Guid("d3830894-4d76-b7c3-b7d6-56bd4b311519")
                         },
                         new
                         {
                             Id = new Guid("1dfc4a43-c9e4-e750-b8a6-7286f03b58ba"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 17, 53, 21, 702, DateTimeKind.Local).AddTicks(3152),
                             EmployeeId = new Guid("82ada9c7-b08a-e928-2d46-07aa959c891d")
                         },
                         new
                         {
                             Id = new Guid("d9fd89e8-4110-81e3-5e04-9c7262891e73"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 21, 23, 0, 281, DateTimeKind.Local).AddTicks(9738),
                             EmployeeId = new Guid("6c0e29d4-a752-aec1-ff30-28bdc68201e8")
                         },
                         new
                         {
                             Id = new Guid("d7799f49-13a0-25f0-f4f8-5673760d4716"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 14, 21, 13, 957, DateTimeKind.Local).AddTicks(7098),
                             EmployeeId = new Guid("7086b97d-be43-5bda-4bf0-c9f25569f6a7")
                         },
                         new
                         {
                             Id = new Guid("4801dcec-e2f2-331c-10fc-d1c80ad9958c"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 5, 51, 53, 36, DateTimeKind.Local).AddTicks(5172),
                             EmployeeId = new Guid("6a4ddf7b-5535-5b94-0b3f-ff861f39c84e")
                         },
                         new
                         {
                             Id = new Guid("1b1fc65c-88ee-9008-2565-1a73f12cddf4"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 0, 39, 26, 729, DateTimeKind.Local).AddTicks(9434),
                             EmployeeId = new Guid("9ebf30b7-9c4d-1628-efc3-6e64aa837143")
                         },
                         new
                         {
                             Id = new Guid("e084f487-29e0-3022-4b9a-e181e7a77ae9"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 3, 16, 2, 970, DateTimeKind.Local).AddTicks(5550),
                             EmployeeId = new Guid("a4a31491-75db-4c30-137d-c1c1da146866")
                         },
                         new
                         {
                             Id = new Guid("52e9bf13-cef6-88f5-e09b-2de4204408e7"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 8, 58, 53, 568, DateTimeKind.Local).AddTicks(3045),
                             EmployeeId = new Guid("64606bfc-b503-903e-deaf-711bb7553ae3")
                         },
                         new
                         {
                             Id = new Guid("58cbf23e-f6bd-e344-33cc-76433227b434"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 23, 44, 50, 685, DateTimeKind.Local).AddTicks(8380),
                             EmployeeId = new Guid("d7beeffd-49d6-7cc3-f97e-ccdc66197c04")
                         },
                         new
                         {
                             Id = new Guid("a0eb118d-9442-b51d-c03c-dec0bd10c48e"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 2, 33, 9, 940, DateTimeKind.Local).AddTicks(980),
                             EmployeeId = new Guid("9fc69a7d-0621-2ae9-c8ac-8ce9274595c2")
                         },
                         new
                         {
                             Id = new Guid("eab15c2c-bcc1-5869-fbbc-6b0f70491c4a"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 17, 33, 7, 879, DateTimeKind.Local).AddTicks(7057),
                             EmployeeId = new Guid("a8cbeccd-9645-9de5-ed9b-af1dd39c6370")
                         },
                         new
                         {
                             Id = new Guid("409fc488-a784-0b55-b932-6d99e6ec3171"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 1, 8, 8, 666, DateTimeKind.Local).AddTicks(1394),
                             EmployeeId = new Guid("82995e3a-bded-988c-4a14-103da9e2f07c")
                         },
                         new
                         {
                             Id = new Guid("3cd9e42a-f922-2c54-6e76-a0c5f03a7cbf"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 12, 17, 3, 40, DateTimeKind.Local).AddTicks(9052),
                             EmployeeId = new Guid("d89accc0-2e66-c0a6-b648-24fe86594dc2")
                         },
                         new
                         {
                             Id = new Guid("b06c432d-25af-228d-8523-3ed7d66ead29"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 13, 58, 13, 33, DateTimeKind.Local).AddTicks(8560),
                             EmployeeId = new Guid("a2a46f51-50dd-3153-4109-4906665e39bb")
                         },
                         new
                         {
                             Id = new Guid("7a2f477c-94e7-6c18-7d5e-692d8fe529ae"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 2, 44, 20, 557, DateTimeKind.Local).AddTicks(9950),
                             EmployeeId = new Guid("6c0e29d4-a752-aec1-ff30-28bdc68201e8")
                         },
                         new
                         {
                             Id = new Guid("d6951629-09cf-9f30-c957-43110f0f1a0f"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 4, 51, 48, 492, DateTimeKind.Local).AddTicks(557),
                             EmployeeId = new Guid("04cb2ddd-4dd4-7c94-a0bb-2ff2e60998c6")
                         },
                         new
                         {
                             Id = new Guid("b8971b85-c310-f51b-aef1-adc0c96b3986"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 21, 5, 40, 3, DateTimeKind.Local).AddTicks(5137),
                             EmployeeId = new Guid("a023d9c9-d423-c815-2772-24be3a8db62c")
                         },
                         new
                         {
                             Id = new Guid("f5b77060-154f-4d39-5a1d-74d554b01a38"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 20, 49, 33, 937, DateTimeKind.Local).AddTicks(9042),
                             EmployeeId = new Guid("45871ed0-39bd-90ab-51a9-11bc64111485")
                         },
                         new
                         {
                             Id = new Guid("14b31285-ad81-961c-7aa6-d589a928649d"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 1, 41, 40, 833, DateTimeKind.Local).AddTicks(3120),
                             EmployeeId = new Guid("c6e468b4-4bec-e384-2327-a670be9b1da7")
                         },
                         new
                         {
                             Id = new Guid("76d6a348-d8c0-1c3a-590f-af3221f41261"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 3, 36, 15, 615, DateTimeKind.Local).AddTicks(2997),
                             EmployeeId = new Guid("9294dd57-413e-4216-09f4-cdd54897abcb")
                         },
                         new
                         {
                             Id = new Guid("7e324735-a7bf-9384-caad-ef13c26af14a"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 7, 46, 34, 839, DateTimeKind.Local).AddTicks(155),
                             EmployeeId = new Guid("2e76c2af-0319-3d4c-db04-7f37c3b8d517")
                         },
                         new
                         {
                             Id = new Guid("91473bf2-86c2-73cb-b495-96c605f0fb98"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 22, 4, 12, 780, DateTimeKind.Local).AddTicks(5306),
                             EmployeeId = new Guid("fac14c37-3c2d-d811-63b9-9b03e60a457e")
                         },
                         new
                         {
                             Id = new Guid("443ccf17-6f6f-fc69-ecc7-30a958b3c2ba"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 8, 42, 38, 970, DateTimeKind.Local).AddTicks(2811),
                             EmployeeId = new Guid("0a76ef35-00e0-1bf3-beea-e5f08a8c4d74")
                         },
                         new
                         {
                             Id = new Guid("33f4f870-fed0-e633-e923-c6d211349697"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 11, 15, 36, 988, DateTimeKind.Local).AddTicks(8213),
                             EmployeeId = new Guid("90441891-4a38-b017-7c1f-bc0129917130")
                         },
                         new
                         {
                             Id = new Guid("8a5822d7-acde-eb83-3e13-4336daa929a4"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 13, 33, 23, 695, DateTimeKind.Local).AddTicks(1045),
                             EmployeeId = new Guid("01fb88d4-943e-fbd7-86e2-f30a4b11ad11")
                         },
                         new
                         {
                             Id = new Guid("883b456b-d97f-f426-1e75-c11bf5032816"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 15, 0, 14, 20, 557, DateTimeKind.Local).AddTicks(8257),
                             EmployeeId = new Guid("9b11625e-d198-f1fc-fea4-886be392dacc")
                         },
                         new
                         {
                             Id = new Guid("124d8715-d2f4-eca6-eb29-e8906a73314a"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 11, 6, 40, 984, DateTimeKind.Local).AddTicks(895),
                             EmployeeId = new Guid("1d9ae1a8-88e7-d994-1679-64dde6633e28")
                         },
                         new
                         {
                             Id = new Guid("b7b7b0d8-7664-f87d-4e32-b292958cbe0d"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 7, 39, 6, 860, DateTimeKind.Local).AddTicks(1267),
                             EmployeeId = new Guid("9a5b248d-85d9-525e-78ec-ea8885076d92")
                         },
                         new
                         {
                             Id = new Guid("ecd9b646-cb3b-e436-57a8-c4b8767af93f"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 18, 27, 46, 649, DateTimeKind.Local).AddTicks(3655),
                             EmployeeId = new Guid("88d14542-a4c4-7874-e46d-07784291ce10")
                         },
                         new
                         {
                             Id = new Guid("da779ce8-b957-9639-5203-ac661c2c7f56"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 23, 32, 56, 223, DateTimeKind.Local).AddTicks(8920),
                             EmployeeId = new Guid("b735c918-9d9f-1fc6-6dcd-f8dd9f8fa9a9")
                         },
                         new
                         {
                             Id = new Guid("922dec7c-4f26-7a89-3b18-9c4d00af4435"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 4, 17, 58, 653, DateTimeKind.Local).AddTicks(1249),
                             EmployeeId = new Guid("3beb862c-fb06-6323-d6c8-122dbfa12892")
                         },
                         new
                         {
                             Id = new Guid("34023281-e0e3-41ab-a78c-f7241740f9e1"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 6, 29, 6, 674, DateTimeKind.Local).AddTicks(1835),
                             EmployeeId = new Guid("61b9d75a-855a-e812-00c8-6c7dc4f37ece")
                         },
                         new
                         {
                             Id = new Guid("3fce8a51-7efd-b6b6-abb6-d8f6e887067d"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 15, 16, 49, 250, DateTimeKind.Local).AddTicks(3987),
                             EmployeeId = new Guid("5c28687d-6b00-9ae6-6d26-b8456b2f0e09")
                         },
                         new
                         {
                             Id = new Guid("0e7bb14a-ede2-f444-850c-07cd607b8d7d"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 10, 8, 18, 380, DateTimeKind.Local).AddTicks(4076),
                             EmployeeId = new Guid("f6057a9a-4806-746a-2a9a-a35264498c9a")
                         },
                         new
                         {
                             Id = new Guid("292db604-8bff-96cf-0e9c-11c268672c70"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 12, 8, 6, 857, DateTimeKind.Local).AddTicks(930),
                             EmployeeId = new Guid("62b6816c-cee1-f77c-dc66-a5a08484d625")
                         },
                         new
                         {
                             Id = new Guid("89b852ec-a931-e9a3-777a-5b09b3c99e75"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 10, 12, 27, 813, DateTimeKind.Local).AddTicks(9006),
                             EmployeeId = new Guid("7507f09c-7565-8bd0-a47c-539e814e49b1")
                         },
                         new
                         {
                             Id = new Guid("5612827b-5735-4a73-9f66-340a34a6d6c7"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 11, 25, 27, 92, DateTimeKind.Local).AddTicks(8667),
                             EmployeeId = new Guid("b2b2fe35-e33f-a4a7-783e-3194b42b4e03")
                         },
                         new
                         {
                             Id = new Guid("a15c7ffc-1b58-92b3-5df9-c9f12b54d05b"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 7, 51, 36, 618, DateTimeKind.Local).AddTicks(181),
                             EmployeeId = new Guid("3beb862c-fb06-6323-d6c8-122dbfa12892")
                         },
                         new
                         {
                             Id = new Guid("5fbd3183-8303-7042-2663-dc02fd2ad320"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 16, 37, 50, 796, DateTimeKind.Local).AddTicks(9657),
                             EmployeeId = new Guid("856d7b9e-2783-8737-27f6-9f45def1a600")
                         },
                         new
                         {
                             Id = new Guid("c4823ab9-5016-74d5-08b6-644bddeda5c8"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 7, 52, 10, 736, DateTimeKind.Local).AddTicks(8068),
                             EmployeeId = new Guid("2de520ee-d002-b62c-39af-5bec5ceb0d6d")
                         },
                         new
                         {
                             Id = new Guid("ab151e58-2f8c-f780-ccc7-5833c83b181f"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 19, 12, 18, 143, DateTimeKind.Local).AddTicks(6092),
                             EmployeeId = new Guid("40f601d9-faf8-7806-05db-f3338572be57")
                         },
                         new
                         {
                             Id = new Guid("0e2e0fa7-b93a-17c2-ff14-5862d7e1e7c7"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 18, 18, 42, 988, DateTimeKind.Local).AddTicks(1258),
                             EmployeeId = new Guid("9010fa72-b654-3e6a-49d6-7cbec4d50e4c")
                         },
                         new
                         {
                             Id = new Guid("599595f5-ad09-82af-9b0f-c4cee4c68e97"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 4, 5, 4, 906, DateTimeKind.Local).AddTicks(4286),
                             EmployeeId = new Guid("5c039c76-23c8-ab37-b8f1-8cae68290dcb")
                         },
                         new
                         {
                             Id = new Guid("18caf1db-e281-6574-8151-e074567b310b"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 7, 7, 27, 681, DateTimeKind.Local).AddTicks(6048),
                             EmployeeId = new Guid("bb6a40ab-eb1c-742b-6b13-467e986a5747")
                         },
                         new
                         {
                             Id = new Guid("368a6125-0726-463a-749b-484ad69db2c9"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 7, 35, 57, 798, DateTimeKind.Local).AddTicks(7048),
                             EmployeeId = new Guid("107e17d2-d017-74d1-2a33-4cb83fd1da86")
                         },
                         new
                         {
                             Id = new Guid("47947714-312e-9bbb-6e52-b2bbb7855b04"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 14, 24, 39, 909, DateTimeKind.Local).AddTicks(8449),
                             EmployeeId = new Guid("0e5edcec-4e14-11c1-4bc1-4e8d82bfe907")
                         },
                         new
                         {
                             Id = new Guid("9c4610a4-ca00-0738-09d7-a3b294e15afd"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 14, 8, 56, 662, DateTimeKind.Local).AddTicks(3373),
                             EmployeeId = new Guid("524e5aab-b747-ef78-91df-dd8f36f8e1d9")
                         },
                         new
                         {
                             Id = new Guid("6c6b055c-f3cc-e0c1-91c4-7b980478e286"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 18, 7, 53, 622, DateTimeKind.Local).AddTicks(3605),
                             EmployeeId = new Guid("08265414-cb1e-734c-164d-8d3f93432a85")
                         },
                         new
                         {
                             Id = new Guid("29f67d94-c4b1-a0cb-1ed9-5c881d7494f4"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 3, 0, 40, 155, DateTimeKind.Local).AddTicks(9293),
                             EmployeeId = new Guid("70e938ab-9604-e755-8714-28c04e724354")
                         },
                         new
                         {
                             Id = new Guid("e93ea87a-43a6-3e8e-9f39-b15aed2e63fb"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 7, 35, 13, 466, DateTimeKind.Local).AddTicks(5062),
                             EmployeeId = new Guid("27c5b53a-53d9-e112-fcea-b878b7b660aa")
                         },
                         new
                         {
                             Id = new Guid("5300a8b9-06a3-3c35-5d24-70842d4dc954"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 5, 49, 41, 541, DateTimeKind.Local).AddTicks(5661),
                             EmployeeId = new Guid("05b4868a-5b20-e014-5e54-67423aced2b9")
                         },
                         new
                         {
                             Id = new Guid("8523e650-662b-7f6c-6f59-b978f88ed87f"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 16, 21, 22, 713, DateTimeKind.Local).AddTicks(9195),
                             EmployeeId = new Guid("c87b42e7-35a8-3602-6c70-3e4eeda5d92a")
                         },
                         new
                         {
                             Id = new Guid("0671e39b-1a30-b52f-840c-23da31a60815"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 12, 8, 0, 298, DateTimeKind.Local).AddTicks(8472),
                             EmployeeId = new Guid("9a5b248d-85d9-525e-78ec-ea8885076d92")
                         },
                         new
                         {
                             Id = new Guid("8736edd5-e2c5-aca4-77f5-54cecedaddba"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 19, 54, 42, 702, DateTimeKind.Local).AddTicks(1958),
                             EmployeeId = new Guid("73ed5979-37f1-65f8-c37b-51fe15140e38")
                         },
                         new
                         {
                             Id = new Guid("b0fc6bf3-72e7-7e4b-88d2-f079e3ead8a4"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 14, 50, 39, 229, DateTimeKind.Local).AddTicks(5074),
                             EmployeeId = new Guid("f23291aa-fdea-98a1-4935-191c0b68d2ba")
                         },
                         new
                         {
                             Id = new Guid("6d8b24ab-bfb7-3e30-5500-54eb573616a1"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 11, 48, 41, 695, DateTimeKind.Local).AddTicks(1588),
                             EmployeeId = new Guid("2430cfe4-b808-14b6-3ae3-71d400cd9cf6")
                         },
                         new
                         {
                             Id = new Guid("637a154f-da1c-7c87-71e4-f53675565433"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 11, 37, 8, 757, DateTimeKind.Local).AddTicks(6595),
                             EmployeeId = new Guid("5608d6ab-40b4-417a-1af5-a7ed65e3f7fe")
                         },
                         new
                         {
                             Id = new Guid("33b7f145-7ef5-e633-9842-cc4820cb2a15"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 11, 50, 17, 890, DateTimeKind.Local).AddTicks(6175),
                             EmployeeId = new Guid("4299037c-f8d9-374b-6935-375403216fc6")
                         },
                         new
                         {
                             Id = new Guid("422f936f-5abf-c95f-de95-03025b3ab993"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 0, 54, 21, 99, DateTimeKind.Local).AddTicks(7692),
                             EmployeeId = new Guid("94ff804b-4cae-ac3b-aa13-d087edc651b3")
                         },
                         new
                         {
                             Id = new Guid("f3e8e584-39ef-9ba4-d56a-4b400c02faf7"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 16, 47, 19, 370, DateTimeKind.Local).AddTicks(7904),
                             EmployeeId = new Guid("b68b0d6c-b617-f374-bea6-b5efc87dad65")
                         },
                         new
                         {
                             Id = new Guid("b495d8f8-5054-4094-710d-6638de7d65ad"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 20, 51, 10, 734, DateTimeKind.Local).AddTicks(8496),
                             EmployeeId = new Guid("f8c9fcd2-652b-19d4-5f10-992b30b0ddca")
                         },
                         new
                         {
                             Id = new Guid("be1a0840-5f8a-5492-f600-6042507e9d9f"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 11, 17, 9, 694, DateTimeKind.Local).AddTicks(860),
                             EmployeeId = new Guid("8a819d4c-9f7c-5e63-516d-361dbb69b4f2")
                         },
                         new
                         {
                             Id = new Guid("f95aa393-8e32-326e-6dc3-a7541f70c9d4"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 18, 18, 17, 483, DateTimeKind.Local).AddTicks(8613),
                             EmployeeId = new Guid("c7c94c1c-14d1-8230-a450-2ca0d871fa4c")
                         },
                         new
                         {
                             Id = new Guid("fbc2550b-3f9e-ca10-16ba-41dd5dbeaaf3"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 19, 56, 49, 717, DateTimeKind.Local).AddTicks(6195),
                             EmployeeId = new Guid("55162d41-59aa-8b7b-aea7-6002e0ab9013")
                         },
                         new
                         {
                             Id = new Guid("2c1c30e7-9125-ab4f-41d2-86a9f7c2eee3"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 8, 30, 19, 351, DateTimeKind.Local).AddTicks(3205),
                             EmployeeId = new Guid("ac8b5c61-90eb-2d3b-fe24-289e49d349fa")
                         },
                         new
                         {
                             Id = new Guid("c322b9bc-7858-e62b-4996-757dccee96f5"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 21, 16, 22, 559, DateTimeKind.Local).AddTicks(2895),
                             EmployeeId = new Guid("5fd0ab4a-8292-e201-35a4-688a1d27c93d")
                         },
                         new
                         {
                             Id = new Guid("944e6a9c-f8cf-108f-491a-6edbce21552a"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 5, 51, 44, 803, DateTimeKind.Local).AddTicks(6921),
                             EmployeeId = new Guid("ec84dea9-1657-8b8a-6014-2eb559d8089c")
                         },
                         new
                         {
                             Id = new Guid("aafab4c4-1505-55cb-baba-61cd05f4b235"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 11, 42, 52, 426, DateTimeKind.Local).AddTicks(9514),
                             EmployeeId = new Guid("71ce0d38-9793-f4b0-7dd5-565d974e8ac5")
                         },
                         new
                         {
                             Id = new Guid("67c8ca52-cbe1-bbda-a65b-76c4402f7b2b"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 5, 21, 13, 542, DateTimeKind.Local).AddTicks(1756),
                             EmployeeId = new Guid("7c0440e8-08a6-ad2f-8373-2b82a32e3c95")
                         },
                         new
                         {
                             Id = new Guid("a3037f48-56d5-4de8-69e7-1cec18bc3073"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 11, 48, 51, 746, DateTimeKind.Local).AddTicks(2699),
                             EmployeeId = new Guid("8e67ec9f-cc26-a4ad-b898-97531706c0fe")
                         },
                         new
                         {
                             Id = new Guid("5a2bde18-f924-f643-209d-89c93d937c24"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 6, 43, 39, 947, DateTimeKind.Local).AddTicks(4985),
                             EmployeeId = new Guid("677e3ed3-aa6f-d2ff-6e49-9d644fabc83a")
                         },
                         new
                         {
                             Id = new Guid("7ef811f3-d370-6f8a-5d08-10bcd82f2789"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 5, 1, 26, 890, DateTimeKind.Local).AddTicks(1580),
                             EmployeeId = new Guid("542ac988-cf6d-65e7-cdf6-c3e68e6924f8")
                         },
                         new
                         {
                             Id = new Guid("5f91aade-afc8-1de0-de58-9c9789247c08"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 5, 37, 18, 308, DateTimeKind.Local).AddTicks(3852),
                             EmployeeId = new Guid("fc468891-859e-441f-eb75-00d5964eb172")
                         },
                         new
                         {
                             Id = new Guid("8a9a86ba-eee6-e110-b099-160a9b06816f"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 14, 50, 59, 849, DateTimeKind.Local).AddTicks(5912),
                             EmployeeId = new Guid("753f7da7-1b0e-4e30-8e31-fa842fe87084")
                         },
                         new
                         {
                             Id = new Guid("b590cf30-16ac-70c1-8697-5c27eb698163"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 16, 37, 1, 336, DateTimeKind.Local).AddTicks(4749),
                             EmployeeId = new Guid("1596ad90-fdeb-d9bd-cf19-b40dd892d4a6")
                         },
                         new
                         {
                             Id = new Guid("ceb871aa-8430-4dc7-0090-08b4ffa58aef"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 22, 4, 10, 235, DateTimeKind.Local).AddTicks(7712),
                             EmployeeId = new Guid("a5c51371-b94e-2e8d-7013-be8f14a4bf87")
                         },
                         new
                         {
                             Id = new Guid("7d2474ee-4989-7153-2ba1-1aa3e22b5db7"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 14, 38, 50, 878, DateTimeKind.Local).AddTicks(3744),
                             EmployeeId = new Guid("1c3bbee0-9524-6663-c968-202b24892235")
                         },
                         new
                         {
                             Id = new Guid("c8e4315f-dfc1-e37d-5c81-607af039ce55"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 13, 38, 20, 249, DateTimeKind.Local).AddTicks(9883),
                             EmployeeId = new Guid("9ef0da8f-4d0d-7a07-a8a5-38a85ca08d42")
                         },
                         new
                         {
                             Id = new Guid("12dd842e-ac9c-ede5-2589-a2ee4b768fca"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 20, 27, 36, 438, DateTimeKind.Local).AddTicks(9962),
                             EmployeeId = new Guid("753f7da7-1b0e-4e30-8e31-fa842fe87084")
                         },
                         new
                         {
                             Id = new Guid("660b9e63-f0f6-27ca-2a69-14d5b1314b49"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 15, 0, 7, 25, 898, DateTimeKind.Local).AddTicks(7453),
                             EmployeeId = new Guid("821cf50b-d86e-f585-e763-28790e0a9ca9")
                         },
                         new
                         {
                             Id = new Guid("f1db1c47-5a57-93b9-1503-606e2f4b0023"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 1, 52, 9, 625, DateTimeKind.Local).AddTicks(6404),
                             EmployeeId = new Guid("c5fefc3a-b8d9-5cd5-59e0-d81b45d39f83")
                         },
                         new
                         {
                             Id = new Guid("85d122e6-84bb-b311-f1bd-ff2c13487fc2"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 13, 0, 20, 219, DateTimeKind.Local).AddTicks(5131),
                             EmployeeId = new Guid("466fc6ab-5b36-fc74-bef8-1d82abd31337")
                         },
                         new
                         {
                             Id = new Guid("5c3d0bb3-23b4-faca-e48a-b10df6265d9b"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 22, 17, 33, 628, DateTimeKind.Local).AddTicks(5701),
                             EmployeeId = new Guid("fc147293-eb5e-c86d-18a1-268661b65211")
                         },
                         new
                         {
                             Id = new Guid("a6466d20-d6c8-d616-4c25-af89709ba86f"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 21, 49, 59, 137, DateTimeKind.Local).AddTicks(21),
                             EmployeeId = new Guid("b3dcdde5-b8f6-0d2d-91b5-4c4b61be388b")
                         },
                         new
                         {
                             Id = new Guid("89f1611d-292c-af40-0906-b5ad834cf867"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 19, 29, 56, 9, DateTimeKind.Local).AddTicks(4549),
                             EmployeeId = new Guid("cfec6575-0a17-cfbc-c16a-68dc2ace589d")
                         },
                         new
                         {
                             Id = new Guid("4d9e8574-d57d-0035-4071-4db74af23659"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 4, 41, 4, 523, DateTimeKind.Local).AddTicks(1666),
                             EmployeeId = new Guid("72dbcd71-9fbf-b4a4-ad90-1d654bfecf55")
                         },
                         new
                         {
                             Id = new Guid("27887d19-d00d-7896-2c3d-78346901ad34"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 9, 23, 54, 513, DateTimeKind.Local).AddTicks(9305),
                             EmployeeId = new Guid("4266298f-5185-e879-e768-04fffe21bbed")
                         },
                         new
                         {
                             Id = new Guid("28f7b473-3dff-4ebb-6aba-4df3c3385a53"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 13, 24, 51, 277, DateTimeKind.Local).AddTicks(9309),
                             EmployeeId = new Guid("71c760e0-f21f-1f04-8fab-c810c9e11bb3")
                         },
                         new
                         {
                             Id = new Guid("5ce77c90-c309-3dc7-e3b5-9dbef5da20bb"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 7, 58, 58, 420, DateTimeKind.Local).AddTicks(687),
                             EmployeeId = new Guid("640288fa-7ea1-aebb-30cb-a05f5abebf6f")
                         },
                         new
                         {
                             Id = new Guid("8151e988-be2b-4adf-b4fc-0faec647e2ed"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 14, 13, 7, 284, DateTimeKind.Local).AddTicks(7585),
                             EmployeeId = new Guid("a10ae1ed-f370-4ac7-63d9-aadc59f829dc")
                         },
                         new
                         {
                             Id = new Guid("003765ee-98d7-fccd-5718-a37d2a309263"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 22, 24, 16, 863, DateTimeKind.Local).AddTicks(3748),
                             EmployeeId = new Guid("60df3db6-5b49-7064-8a72-9c985946954e")
                         },
                         new
                         {
                             Id = new Guid("79299ebb-4113-06d4-d676-13ec882ed834"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 1, 52, 36, 73, DateTimeKind.Local).AddTicks(3974),
                             EmployeeId = new Guid("4bdebae4-5fb6-115d-4ff0-a1847292e9d8")
                         },
                         new
                         {
                             Id = new Guid("c25de87a-3187-7e11-e57e-34e46dae9cd0"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 13, 27, 26, 701, DateTimeKind.Local).AddTicks(7625),
                             EmployeeId = new Guid("9e48aa75-409b-772a-8575-4efdf48431d2")
                         },
                         new
                         {
                             Id = new Guid("9203bf24-85f7-2b43-1a4e-51fca2128bc4"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 0, 42, 50, 456, DateTimeKind.Local).AddTicks(9551),
                             EmployeeId = new Guid("f4de4493-0927-6f7a-3f22-97066a6a3288")
                         },
                         new
                         {
                             Id = new Guid("c20147a1-88ef-92a2-a63e-ec5e1e6f032c"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 8, 17, 37, 631, DateTimeKind.Local).AddTicks(7147),
                             EmployeeId = new Guid("33556666-0bb2-22eb-dc9e-04aedae0d3d0")
                         },
                         new
                         {
                             Id = new Guid("05443c66-30f7-8293-91d1-e1e98972dd22"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 18, 30, 12, 711, DateTimeKind.Local).AddTicks(6724),
                             EmployeeId = new Guid("24a2e1ca-1834-993f-2161-8c74b9f851ff")
                         },
                         new
                         {
                             Id = new Guid("f3540914-ed9d-f02d-328c-9fe6624ebbf7"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 9, 5, 32, 109, DateTimeKind.Local).AddTicks(3500),
                             EmployeeId = new Guid("8b03c190-6d3e-9470-3c22-48a1d66e1180")
                         },
                         new
                         {
                             Id = new Guid("065b920a-c110-54c5-62eb-404d5e092c62"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 23, 35, 44, 839, DateTimeKind.Local).AddTicks(3684),
                             EmployeeId = new Guid("c40eb5b0-b91d-62ed-76b5-969990ad3c8c")
                         },
                         new
                         {
                             Id = new Guid("3fc918a7-f560-eaf2-7f9b-cd7b3ec46219"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 20, 33, 15, 353, DateTimeKind.Local).AddTicks(3529),
                             EmployeeId = new Guid("18690c12-753e-beb4-ae27-1b39985ea874")
                         },
                         new
                         {
                             Id = new Guid("98d73243-05ca-3ef2-40dd-35ec6ee556b6"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 13, 19, 39, 19, DateTimeKind.Local).AddTicks(1000),
                             EmployeeId = new Guid("98b12375-ce0c-e799-a8cb-ca40418cebd2")
                         },
                         new
                         {
                             Id = new Guid("d61e10fa-b946-6f95-0288-fcefc2a94ace"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 14, 28, 15, 168, DateTimeKind.Local).AddTicks(2121),
                             EmployeeId = new Guid("aec4c050-c174-27f2-0008-cef7580b329e")
                         },
                         new
                         {
                             Id = new Guid("b76e3afe-0db2-af49-5e96-e70e39d817be"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 13, 51, 42, 640, DateTimeKind.Local).AddTicks(4150),
                             EmployeeId = new Guid("e3b9cb7f-7cec-c398-4dad-8a9f9c7fa970")
                         },
                         new
                         {
                             Id = new Guid("9535df91-b6ef-ed44-7342-24173fe6aa41"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 3, 13, 24, 378, DateTimeKind.Local).AddTicks(8490),
                             EmployeeId = new Guid("40f21310-943f-be8d-8132-3bbe8294b852")
                         },
                         new
                         {
                             Id = new Guid("0afcc96b-d936-7a1b-c217-aaea57a8bb3d"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 9, 14, 14, 278, DateTimeKind.Local).AddTicks(3691),
                             EmployeeId = new Guid("4f7a8ed5-c4b9-312c-6b2d-6b3ffeaa7b7c")
                         },
                         new
                         {
                             Id = new Guid("1f6e007f-6cd6-7f39-a727-8e96ff3298b9"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 12, 23, 50, 928, DateTimeKind.Local).AddTicks(7588),
                             EmployeeId = new Guid("5503f364-a30a-18f4-aace-001781abf5c9")
                         },
                         new
                         {
                             Id = new Guid("3cd4bbff-d681-58c9-cd6e-84a90a79720c"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 6, 18, 23, 312, DateTimeKind.Local).AddTicks(2615),
                             EmployeeId = new Guid("afb21a72-717d-a29c-02e0-ae3f381650f4")
                         },
                         new
                         {
                             Id = new Guid("5afc9d26-5273-8034-aab7-beef28a8cac8"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 8, 11, 13, 667, DateTimeKind.Local).AddTicks(7787),
                             EmployeeId = new Guid("4be30239-8fcd-646e-494d-3b7f098e2b23")
                         },
                         new
                         {
                             Id = new Guid("130c48ec-106c-7e22-841d-8c2540bbe86f"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 14, 1, 12, 420, DateTimeKind.Local).AddTicks(2368),
                             EmployeeId = new Guid("31e636b4-9692-33d1-9042-b1fc1773ee50")
                         },
                         new
                         {
                             Id = new Guid("564de960-a01e-7e0e-5c01-40b089629310"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 21, 50, 33, 8, DateTimeKind.Local).AddTicks(2033),
                             EmployeeId = new Guid("1a787689-e1b1-9385-7202-3b60140d74a6")
                         },
                         new
                         {
                             Id = new Guid("d4514a8f-62af-911d-7e33-403892c5894a"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 3, 24, 3, 689, DateTimeKind.Local).AddTicks(6574),
                             EmployeeId = new Guid("77f4e574-80d4-0d3e-2923-5081a3e8e4a2")
                         },
                         new
                         {
                             Id = new Guid("925e72ee-7cc6-6d43-03c3-acaa8756ad73"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 19, 32, 43, 125, DateTimeKind.Local).AddTicks(6405),
                             EmployeeId = new Guid("9960959e-b32b-462d-2344-fb21bda8164c")
                         },
                         new
                         {
                             Id = new Guid("0f01f39d-4b8f-c81b-adea-ff18b8706e2b"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 9, 40, 46, 327, DateTimeKind.Local).AddTicks(13),
                             EmployeeId = new Guid("6471034e-79fb-15d7-564d-d86dff4a27d1")
                         },
                         new
                         {
                             Id = new Guid("f56c578a-cd19-88d2-b9e2-e551723ac502"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 11, 8, 11, 329, DateTimeKind.Local).AddTicks(8580),
                             EmployeeId = new Guid("c043e6ff-1b8a-348c-350b-508897549b0e")
                         },
                         new
                         {
                             Id = new Guid("b4aa46ce-8296-ab04-f33a-182b95425e84"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 3, 17, 4, 775, DateTimeKind.Local).AddTicks(1413),
                             EmployeeId = new Guid("cf3bb559-f0a3-05ad-29dd-b31c010c7612")
                         },
                         new
                         {
                             Id = new Guid("c2bd41e7-e662-99c8-8ddd-f26e6f3eb463"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 0, 43, 54, 917, DateTimeKind.Local).AddTicks(4817),
                             EmployeeId = new Guid("179f25cc-5e60-66e6-cd8e-2ec3e8fab906")
                         },
                         new
                         {
                             Id = new Guid("221572d6-4ede-b7a0-4f0f-14b607d10004"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 11, 40, 14, 526, DateTimeKind.Local).AddTicks(3550),
                             EmployeeId = new Guid("c043e6ff-1b8a-348c-350b-508897549b0e")
                         },
                         new
                         {
                             Id = new Guid("e9cdcd48-ce77-cb00-a9ec-e1deeda41a5a"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 17, 7, 25, 641, DateTimeKind.Local).AddTicks(5313),
                             EmployeeId = new Guid("02c32381-1855-9b94-e3cd-1ca33777da46")
                         },
                         new
                         {
                             Id = new Guid("2fc273de-8979-2678-ea9c-6f399152ec97"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 9, 11, 51, 769, DateTimeKind.Local).AddTicks(4131),
                             EmployeeId = new Guid("4dcd4591-be79-c803-7e7a-3b83bfbb3ec6")
                         },
                         new
                         {
                             Id = new Guid("82de539e-caf6-306d-2612-ed7774320231"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 5, 9, 51, 920, DateTimeKind.Local).AddTicks(7053),
                             EmployeeId = new Guid("ea2d9ace-d131-e78e-13b6-cbd9b40cac57")
                         },
                         new
                         {
                             Id = new Guid("a8fe5f54-2f15-b239-4f8b-000c45510133"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 11, 51, 7, 454, DateTimeKind.Local).AddTicks(7864),
                             EmployeeId = new Guid("c7f706e1-35ea-e53f-862a-ad02dec43bbd")
                         },
                         new
                         {
                             Id = new Guid("580b64cb-1452-25fd-fa07-8f21dc1136b4"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 16, 15, 31, 699, DateTimeKind.Local).AddTicks(3044),
                             EmployeeId = new Guid("5b23e422-8c57-ffce-86f1-7182596e20ef")
                         },
                         new
                         {
                             Id = new Guid("17bc53c8-a51d-0525-a825-73fe37311fba"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 4, 25, 50, 497, DateTimeKind.Local).AddTicks(4588),
                             EmployeeId = new Guid("bd283c08-df9c-87eb-1f12-a7747dffcb81")
                         },
                         new
                         {
                             Id = new Guid("0a1893ac-ab3f-6ac0-24fa-0e9dd7932037"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 1, 53, 22, 434, DateTimeKind.Local).AddTicks(9859),
                             EmployeeId = new Guid("14221983-6be3-a49d-1503-fc99b7181373")
                         },
                         new
                         {
                             Id = new Guid("0e2cb3ee-ff55-0887-58ef-bc57fc6b23f4"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 10, 13, 1, 704, DateTimeKind.Local).AddTicks(3782),
                             EmployeeId = new Guid("a4443441-8de7-e7a6-4dd8-c7f223f71c8d")
                         },
                         new
                         {
                             Id = new Guid("3a5c6c7d-0a01-8799-9b6b-16f981abec5a"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 23, 55, 24, 323, DateTimeKind.Local).AddTicks(7506),
                             EmployeeId = new Guid("47f7761a-04be-9903-f0af-b445d473806a")
                         },
                         new
                         {
                             Id = new Guid("a2b80ac2-7a68-a268-1132-b49f08875591"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 4, 8, 6, 166, DateTimeKind.Local).AddTicks(5260),
                             EmployeeId = new Guid("01f415de-35f2-1fe2-2504-f509d45b988f")
                         },
                         new
                         {
                             Id = new Guid("78bb032a-9dec-f641-3bac-1010cf7492ed"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 19, 6, 48, 247, DateTimeKind.Local).AddTicks(3619),
                             EmployeeId = new Guid("d65af759-2c10-f1e1-dac3-51d5f77d1a7e")
                         },
                         new
                         {
                             Id = new Guid("6799c0f3-5488-cbe6-0d72-2c190bc8da55"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 18, 7, 54, 73, DateTimeKind.Local).AddTicks(4115),
                             EmployeeId = new Guid("448e2c9c-81a7-510d-65c1-3eff9a53d35e")
                         },
                         new
                         {
                             Id = new Guid("832704cb-f62d-2101-e52b-769917cc179e"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 5, 43, 46, 313, DateTimeKind.Local).AddTicks(5528),
                             EmployeeId = new Guid("62fcc8b8-7775-1cb1-425f-d2e91ca48aee")
                         },
                         new
                         {
                             Id = new Guid("d1052333-8433-930f-0548-f41f10e6abf9"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 21, 35, 38, 164, DateTimeKind.Local).AddTicks(6162),
                             EmployeeId = new Guid("eeeae6a8-f7dc-e1a0-87a5-c721e33a0d5a")
                         },
                         new
                         {
                             Id = new Guid("3286716b-a001-d896-144d-f32a22c3e5d3"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 9, 28, 42, 356, DateTimeKind.Local).AddTicks(3522),
                             EmployeeId = new Guid("eaded138-8b1e-1726-db36-9bb924be3e56")
                         },
                         new
                         {
                             Id = new Guid("631efff4-d9fc-0bf0-66b2-6bd353d27c25"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 15, 22, 42, 404, DateTimeKind.Local).AddTicks(1019),
                             EmployeeId = new Guid("401a85a8-32b5-f0c3-0c21-7cca7346b55c")
                         },
                         new
                         {
                             Id = new Guid("ab9c3003-46fa-1d11-d25b-2b123d3291d8"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 3, 49, 4, 439, DateTimeKind.Local).AddTicks(1566),
                             EmployeeId = new Guid("e58874e7-2842-3584-ffe2-901cb65f3d71")
                         },
                         new
                         {
                             Id = new Guid("9410598a-2530-79a8-9f58-a69dba277dc2"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 13, 38, 30, 397, DateTimeKind.Local).AddTicks(1771),
                             EmployeeId = new Guid("c3342e8c-ac87-ffac-74ad-b888adc1182e")
                         },
                         new
                         {
                             Id = new Guid("bcea1d23-b01e-a03a-2ea0-c2fa3fd71c21"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 18, 46, 38, 156, DateTimeKind.Local).AddTicks(4142),
                             EmployeeId = new Guid("25755f06-6967-22a0-4c95-0132ec3b1c26")
                         },
                         new
                         {
                             Id = new Guid("cc52866b-c572-be2b-70eb-c06f8e80e92a"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 12, 9, 49, 516, DateTimeKind.Local).AddTicks(4032),
                             EmployeeId = new Guid("41368733-8bfc-76f7-f894-97a63656b13b")
                         },
                         new
                         {
                             Id = new Guid("85f5e4f1-d979-5edd-66c5-9e05e5cf66eb"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 15, 10, 33, 823, DateTimeKind.Local).AddTicks(6733),
                             EmployeeId = new Guid("793afe8d-0378-4b98-b3f0-6e7182e07fe7")
                         },
                         new
                         {
                             Id = new Guid("f2f2f678-b5c9-306e-3379-56ad2a81fb01"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 23, 12, 34, 203, DateTimeKind.Local).AddTicks(1759),
                             EmployeeId = new Guid("0b34cdab-79aa-816c-f839-989eb73ca972")
                         },
                         new
                         {
                             Id = new Guid("6694f3d8-f8c5-e5d2-dba0-27951c58a028"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 22, 7, 47, 416, DateTimeKind.Local).AddTicks(7343),
                             EmployeeId = new Guid("24ccbf4e-a4bf-02c7-9764-c02db42ef263")
                         },
                         new
                         {
                             Id = new Guid("a80bd02b-e5a9-1810-7384-eaceaf75ccf9"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 16, 28, 23, 184, DateTimeKind.Local).AddTicks(735),
                             EmployeeId = new Guid("3030fe67-f331-7dc5-6ff2-66ac3a9d3bea")
                         },
                         new
                         {
                             Id = new Guid("d0f7f92d-9093-e40c-3954-8a585402c44a"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 12, 26, 49, 687, DateTimeKind.Local).AddTicks(9083),
                             EmployeeId = new Guid("860a26a8-3afd-e52f-7c05-3770ed0cc164")
                         },
                         new
                         {
                             Id = new Guid("e0b481eb-605e-d2f0-771f-4f5f424516d1"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 12, 47, 30, 764, DateTimeKind.Local).AddTicks(5829),
                             EmployeeId = new Guid("9b11625e-d198-f1fc-fea4-886be392dacc")
                         },
                         new
                         {
                             Id = new Guid("009d1878-c3d6-2ce9-95cb-eb2b9c2c13f7"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 17, 35, 22, 804, DateTimeKind.Local).AddTicks(2828),
                             EmployeeId = new Guid("1f8ad19e-9270-adf9-3c78-70f70a4d2a9e")
                         },
                         new
                         {
                             Id = new Guid("bea27098-c494-f4ea-4713-3e30cc153054"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 17, 35, 6, 285, DateTimeKind.Local).AddTicks(3245),
                             EmployeeId = new Guid("80a77839-effc-d0de-2e50-7ff77df1f1bc")
                         },
                         new
                         {
                             Id = new Guid("33751ddd-065b-f48c-b333-2f4d0758df9b"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 21, 23, 38, 741, DateTimeKind.Local).AddTicks(7148),
                             EmployeeId = new Guid("10259ac9-6462-bc52-f5c8-e20a484775d8")
                         },
                         new
                         {
                             Id = new Guid("ceec3c08-18a2-9b56-1f15-6bd8e1a98d9b"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 21, 56, 57, 917, DateTimeKind.Local).AddTicks(3158),
                             EmployeeId = new Guid("658f66ed-7f1b-161a-9ed4-4ef366ab5aa6")
                         },
                         new
                         {
                             Id = new Guid("d008b746-c136-c617-36d8-ec79a07dd745"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 23, 0, 24, 918, DateTimeKind.Local).AddTicks(9198),
                             EmployeeId = new Guid("cdfceb1d-7d44-2d0a-a090-3a39b57ef123")
                         },
                         new
                         {
                             Id = new Guid("6b041bd3-de6d-5a47-4ea3-7abce378538f"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 16, 8, 27, 729, DateTimeKind.Local).AddTicks(6628),
                             EmployeeId = new Guid("79c147d2-da0f-b638-4205-68f491f1cf28")
                         },
                         new
                         {
                             Id = new Guid("518a0cb5-c220-9c32-ca5a-096348aaad4f"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 5, 9, 13, 485, DateTimeKind.Local).AddTicks(882),
                             EmployeeId = new Guid("b9f586cc-5c90-79a6-3a84-0adbb3d98921")
                         },
                         new
                         {
                             Id = new Guid("67eff19a-23c9-1cbb-0900-4cee3545d93b"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 19, 16, 50, 361, DateTimeKind.Local).AddTicks(5473),
                             EmployeeId = new Guid("08ddf005-b3ec-8d1e-c096-726a19a84297")
                         },
                         new
                         {
                             Id = new Guid("423ba8e4-ff7c-3f45-3211-3529334d5565"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 11, 52, 32, 38, DateTimeKind.Local).AddTicks(1794),
                             EmployeeId = new Guid("c38ba45d-d315-0f4d-ea5c-96ae95864555")
                         },
                         new
                         {
                             Id = new Guid("a6642ec1-9b28-6c7e-d31e-6e6f6b06575c"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 15, 35, 38, 673, DateTimeKind.Local).AddTicks(7255),
                             EmployeeId = new Guid("4cb58426-a064-e42e-c93a-49e25eb9c3a4")
                         },
                         new
                         {
                             Id = new Guid("e3836772-0a88-d7d4-19a0-dfdf5f749c88"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 11, 13, 25, 124, DateTimeKind.Local).AddTicks(4194),
                             EmployeeId = new Guid("e58874e7-2842-3584-ffe2-901cb65f3d71")
                         },
                         new
                         {
                             Id = new Guid("93fea712-2171-a2c3-c922-dbf0b106ca54"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 15, 47, 58, 398, DateTimeKind.Local).AddTicks(3044),
                             EmployeeId = new Guid("a0e9a8da-8251-ce35-c257-733e81ce0b7a")
                         },
                         new
                         {
                             Id = new Guid("c3549bdb-cb64-3ef4-0ffa-ce7ebcdca14c"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 11, 51, 28, 379, DateTimeKind.Local).AddTicks(1905),
                             EmployeeId = new Guid("e93f7a66-7785-c0eb-4144-0ac389cc2a35")
                         },
                         new
                         {
                             Id = new Guid("68c4c212-b50a-b03e-2ed9-94205f4a4fa5"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 7, 52, 56, 29, DateTimeKind.Local).AddTicks(9007),
                             EmployeeId = new Guid("c38ba45d-d315-0f4d-ea5c-96ae95864555")
                         },
                         new
                         {
                             Id = new Guid("e27dc89a-a8b4-a4fb-1f14-0fb9c2e0682b"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 12, 39, 10, 541, DateTimeKind.Local).AddTicks(1405),
                             EmployeeId = new Guid("80fb4151-bbe2-b12b-d9bd-3d2674c46702")
                         },
                         new
                         {
                             Id = new Guid("1b260e49-65c5-d97a-6f33-6d373a8d23d9"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 10, 49, 35, 816, DateTimeKind.Local).AddTicks(686),
                             EmployeeId = new Guid("70e938ab-9604-e755-8714-28c04e724354")
                         },
                         new
                         {
                             Id = new Guid("100fbf10-9b1e-1f1e-d23f-f61fc68e3375"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 1, 12, 46, 865, DateTimeKind.Local).AddTicks(504),
                             EmployeeId = new Guid("62fcc8b8-7775-1cb1-425f-d2e91ca48aee")
                         },
                         new
                         {
                             Id = new Guid("ce397db7-708c-ddb1-d42b-9e075c96a905"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 17, 16, 51, 594, DateTimeKind.Local).AddTicks(6979),
                             EmployeeId = new Guid("1c97aad4-1b14-0227-b72c-10c016596b12")
                         },
                         new
                         {
                             Id = new Guid("45a77f07-99a8-1478-a6a8-07184e655fdc"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 1, 56, 21, 590, DateTimeKind.Local).AddTicks(20),
                             EmployeeId = new Guid("06255908-7ff3-34e2-8f2e-4bf4d9a0b45d")
                         },
                         new
                         {
                             Id = new Guid("be6d9f83-f349-3833-9a88-1d88bf3ad86c"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 5, 56, 4, 116, DateTimeKind.Local).AddTicks(224),
                             EmployeeId = new Guid("88ba5682-4ef2-778b-96e7-cde5bbeb4b10")
                         },
                         new
                         {
                             Id = new Guid("5c143490-340b-13cd-50a2-fdb9462f82b7"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 19, 13, 9, 471, DateTimeKind.Local).AddTicks(3244),
                             EmployeeId = new Guid("c4445830-1740-30eb-7a17-16810a6af79d")
                         },
                         new
                         {
                             Id = new Guid("6175515e-8bdd-1f89-48de-75f831cd2a46"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 21, 39, 2, 9, DateTimeKind.Local).AddTicks(4526),
                             EmployeeId = new Guid("39ca155e-f4a4-6674-7417-d8e2954e4b4c")
                         },
                         new
                         {
                             Id = new Guid("e07c8a62-95e3-cf9d-d659-3c8379d26db1"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 7, 48, 19, 860, DateTimeKind.Local).AddTicks(7875),
                             EmployeeId = new Guid("ac0d3f32-312a-a84f-d8f6-a654c5940e3c")
                         },
                         new
                         {
                             Id = new Guid("1481d136-3584-a9da-ccec-1ce8c6481b38"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 11, 43, 8, 551, DateTimeKind.Local).AddTicks(7488),
                             EmployeeId = new Guid("90b7a876-14e2-7519-3f71-723ab04eac1f")
                         },
                         new
                         {
                             Id = new Guid("bc40cb92-c6b2-5a0b-fb26-c31c442ae838"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 16, 32, 24, 989, DateTimeKind.Local).AddTicks(9037),
                             EmployeeId = new Guid("640288fa-7ea1-aebb-30cb-a05f5abebf6f")
                         },
                         new
                         {
                             Id = new Guid("ec08abf7-e2d0-70b9-763b-5e9a38ce7489"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 12, 8, 57, 633, DateTimeKind.Local).AddTicks(5540),
                             EmployeeId = new Guid("77f4e574-80d4-0d3e-2923-5081a3e8e4a2")
                         },
                         new
                         {
                             Id = new Guid("da784ece-83de-d008-d8be-dd0faa57bfeb"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 6, 38, 47, 341, DateTimeKind.Local).AddTicks(6423),
                             EmployeeId = new Guid("10259ac9-6462-bc52-f5c8-e20a484775d8")
                         },
                         new
                         {
                             Id = new Guid("55f9d96f-1e95-8c9d-8b4d-cfa0e0435b11"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 5, 31, 5, 85, DateTimeKind.Local).AddTicks(4625),
                             EmployeeId = new Guid("013bfa78-ca8e-6aef-f859-ff9a7b372eb9")
                         },
                         new
                         {
                             Id = new Guid("12c76829-b2e0-2c98-b442-78e3afff2885"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 14, 17, 11, 580, DateTimeKind.Local).AddTicks(1629),
                             EmployeeId = new Guid("08ddf005-b3ec-8d1e-c096-726a19a84297")
                         },
                         new
                         {
                             Id = new Guid("f741bbe2-827d-1d09-fccb-4e46976cf45f"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 20, 9, 44, 915, DateTimeKind.Local).AddTicks(6490),
                             EmployeeId = new Guid("50f652d9-1149-7b74-c152-f8e00973625b")
                         },
                         new
                         {
                             Id = new Guid("f2fda318-49e8-6912-20a1-b8bd1f3c2f9b"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 10, 29, 1, 807, DateTimeKind.Local).AddTicks(7435),
                             EmployeeId = new Guid("9e3b7e61-edba-1ac1-21b9-7f8e4c7c9920")
                         },
                         new
                         {
                             Id = new Guid("94d78f49-609b-fc66-e077-ba9fb2dd75bd"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 13, 48, 6, 401, DateTimeKind.Local).AddTicks(3011),
                             EmployeeId = new Guid("71fdd40f-c2d4-1ba1-3cb4-ddad20eed923")
                         },
                         new
                         {
                             Id = new Guid("196bad58-7ce9-0e44-2e0a-68d0df77045e"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 5, 45, 56, 226, DateTimeKind.Local).AddTicks(8062),
                             EmployeeId = new Guid("d72ebf19-43c1-d83b-9be5-b99818eb71d8")
                         },
                         new
                         {
                             Id = new Guid("4d829162-f231-0165-05e0-aa7fdab64b90"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 13, 44, 39, 223, DateTimeKind.Local).AddTicks(4705),
                             EmployeeId = new Guid("f6057a9a-4806-746a-2a9a-a35264498c9a")
                         },
                         new
                         {
                             Id = new Guid("525617ee-f237-a678-da28-ad7f3d7c4583"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 5, 12, 13, 239, DateTimeKind.Local).AddTicks(5519),
                             EmployeeId = new Guid("ce9c90e9-85df-6b63-f95d-5f35d0c5ed22")
                         },
                         new
                         {
                             Id = new Guid("7b832639-2d3e-8b84-8d19-94e7407fc152"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 12, 34, 5, 938, DateTimeKind.Local).AddTicks(8095),
                             EmployeeId = new Guid("55162d41-59aa-8b7b-aea7-6002e0ab9013")
                         },
                         new
                         {
                             Id = new Guid("4bb95b4b-d88b-6158-6c02-953313ba63a4"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 9, 29, 57, 619, DateTimeKind.Local).AddTicks(9358),
                             EmployeeId = new Guid("01bde411-80ec-1bfc-9196-ec633c6421a6")
                         },
                         new
                         {
                             Id = new Guid("66b22417-8dea-4146-6cff-7b294d77f88a"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 19, 26, 25, 843, DateTimeKind.Local).AddTicks(8616),
                             EmployeeId = new Guid("06255908-7ff3-34e2-8f2e-4bf4d9a0b45d")
                         },
                         new
                         {
                             Id = new Guid("cce6a2f8-8817-e6f8-802c-dddb72e75bf3"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 7, 5, 46, 296, DateTimeKind.Local).AddTicks(6735),
                             EmployeeId = new Guid("fdd817e9-1528-6831-8e37-0629375d895a")
                         },
                         new
                         {
                             Id = new Guid("9744bece-62eb-d9f1-47bb-1b2f5e247472"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 14, 27, 27, 765, DateTimeKind.Local).AddTicks(2939),
                             EmployeeId = new Guid("4dcd4591-be79-c803-7e7a-3b83bfbb3ec6")
                         },
                         new
                         {
                             Id = new Guid("a6f2de9b-14c5-248f-0941-f284ddf110b1"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 8, 11, 7, 982, DateTimeKind.Local).AddTicks(1466),
                             EmployeeId = new Guid("3080ed8c-0473-7bce-d1fb-5de8b4423d8f")
                         },
                         new
                         {
                             Id = new Guid("af2669fa-2bb0-fc64-7eb6-fd7562c2c1fd"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 1, 53, 24, 672, DateTimeKind.Local).AddTicks(1540),
                             EmployeeId = new Guid("bb1b7793-3a14-c46e-747b-96b2bb678d62")
                         },
                         new
                         {
                             Id = new Guid("3e5c827e-97e7-3755-3d3e-4e7357beed36"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 6, 30, 55, 544, DateTimeKind.Local).AddTicks(9564),
                             EmployeeId = new Guid("3080ed8c-0473-7bce-d1fb-5de8b4423d8f")
                         },
                         new
                         {
                             Id = new Guid("17617a41-6d11-cc0b-8fc1-1cf4fad40434"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 14, 49, 28, 674, DateTimeKind.Local).AddTicks(6147),
                             EmployeeId = new Guid("fa139a8e-3b02-bfc1-bb51-107db2d29634")
                         },
                         new
                         {
                             Id = new Guid("f45b183e-be27-432f-a5b7-748bd288e69b"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 7, 49, 29, 311, DateTimeKind.Local).AddTicks(5088),
                             EmployeeId = new Guid("8a7c8ad8-ba28-9c60-b7ee-9aeb25b46e7a")
                         },
                         new
                         {
                             Id = new Guid("cbdcd04b-75c5-4a21-549e-53896598c236"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 13, 1, 29, 172, DateTimeKind.Local).AddTicks(3235),
                             EmployeeId = new Guid("6115ac0a-643e-39aa-dc0c-9573adb085d5")
                         },
                         new
                         {
                             Id = new Guid("2ae15839-1465-361b-496b-143866171d53"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 0, 26, 5, 753, DateTimeKind.Local).AddTicks(8479),
                             EmployeeId = new Guid("61b9d75a-855a-e812-00c8-6c7dc4f37ece")
                         },
                         new
                         {
                             Id = new Guid("74057f96-a4db-2d52-0ff3-1052ceb617e3"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 15, 35, 26, 375, DateTimeKind.Local).AddTicks(5778),
                             EmployeeId = new Guid("eb7c9d25-a3da-37e3-83ce-596bc3a89bb8")
                         },
                         new
                         {
                             Id = new Guid("3ea9b676-dfd7-6640-ed72-474567d4ca4f"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 2, 35, 18, 707, DateTimeKind.Local).AddTicks(9001),
                             EmployeeId = new Guid("45b961a5-26d3-d7c8-b276-ebb8f9fbe232")
                         },
                         new
                         {
                             Id = new Guid("e7138606-430c-1839-4581-4e330be9b5eb"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 15, 20, 14, 889, DateTimeKind.Local).AddTicks(5976),
                             EmployeeId = new Guid("4caf9b2e-795b-b844-1df4-436868b09fe8")
                         },
                         new
                         {
                             Id = new Guid("3d9a952e-bb65-aec7-a87e-046710af2e62"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 13, 55, 0, 680, DateTimeKind.Local).AddTicks(4025),
                             EmployeeId = new Guid("3d978c0a-68cd-5951-d2e6-c93c803bde42")
                         },
                         new
                         {
                             Id = new Guid("c69efb9d-e4fa-3f9e-3c5b-b2e93462c605"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 3, 56, 8, 517, DateTimeKind.Local).AddTicks(2088),
                             EmployeeId = new Guid("d7ab9463-ff2e-5f55-7a8c-aff43d6e126b")
                         },
                         new
                         {
                             Id = new Guid("95452bae-9a90-1a41-3d83-dc879587c74f"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 13, 33, 14, 534, DateTimeKind.Local).AddTicks(6840),
                             EmployeeId = new Guid("b9f586cc-5c90-79a6-3a84-0adbb3d98921")
                         },
                         new
                         {
                             Id = new Guid("7cc6599f-538a-95f6-d004-4aaadff6d7b5"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 18, 21, 24, 799, DateTimeKind.Local).AddTicks(5104),
                             EmployeeId = new Guid("0be9e7c3-bced-d66d-065a-70bd52e456dc")
                         },
                         new
                         {
                             Id = new Guid("c9b92c0e-bb60-d35f-1c61-6c13817680cb"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 2, 29, 45, 485, DateTimeKind.Local).AddTicks(3371),
                             EmployeeId = new Guid("e8a89b1a-43ba-9b0e-29ba-d825cd40df25")
                         },
                         new
                         {
                             Id = new Guid("059941ba-1670-d9f3-fd90-bdd223f6de81"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 19, 38, 3, 715, DateTimeKind.Local).AddTicks(3883),
                             EmployeeId = new Guid("f8027e6a-f4b6-81fe-ce4f-56bed32187d4")
                         },
                         new
                         {
                             Id = new Guid("7f2bc065-33da-f063-c833-5e2ae8cdf39e"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 20, 54, 13, 658, DateTimeKind.Local).AddTicks(2570),
                             EmployeeId = new Guid("d329a2c7-2eb2-66f6-fca7-1ab4bad42808")
                         },
                         new
                         {
                             Id = new Guid("e26db248-4361-8e5e-481d-a3f4dde55f82"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 20, 18, 9, 580, DateTimeKind.Local).AddTicks(5572),
                             EmployeeId = new Guid("6236f934-bfd9-b04c-4a9b-4a6b67b5d795")
                         },
                         new
                         {
                             Id = new Guid("260dd1bf-a52a-659f-d505-3058b90d7b9d"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 4, 32, 8, 179, DateTimeKind.Local).AddTicks(9403),
                             EmployeeId = new Guid("c6f2528c-2cd0-0ae4-e2a7-73b9f1ac2acb")
                         },
                         new
                         {
                             Id = new Guid("a57b3bc9-d31a-3e25-8045-884a040e61b4"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 15, 56, 9, 580, DateTimeKind.Local).AddTicks(421),
                             EmployeeId = new Guid("b2d09adf-38c2-7989-a63c-a6863cbf54ee")
                         },
                         new
                         {
                             Id = new Guid("dec23c43-8988-c418-e9e7-6248838a11c5"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 16, 43, 14, 216, DateTimeKind.Local).AddTicks(1425),
                             EmployeeId = new Guid("3287f808-b5bf-bbca-0d99-0ed5d22f6d57")
                         },
                         new
                         {
                             Id = new Guid("670553f2-201e-ba4d-2b4a-5758266250b4"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 4, 15, 18, 254, DateTimeKind.Local).AddTicks(2625),
                             EmployeeId = new Guid("da2aa88a-e4d5-5d51-f5fd-0ce1270bd398")
                         },
                         new
                         {
                             Id = new Guid("0f011bf2-563b-fc1e-05c0-f349da702848"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 22, 57, 39, 997, DateTimeKind.Local).AddTicks(4192),
                             EmployeeId = new Guid("69d6537f-3881-c314-56b1-a940b67c344e")
                         },
                         new
                         {
                             Id = new Guid("ce3bbda4-7aed-8e92-3ce6-32d56fbe2951"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 20, 6, 56, 276, DateTimeKind.Local).AddTicks(726),
                             EmployeeId = new Guid("43fd1d78-52d4-52e8-7cc2-1a7f9f47e625")
                         },
                         new
                         {
                             Id = new Guid("23ff10c9-fa47-0138-7ce8-fd191776cc62"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 20, 55, 32, 190, DateTimeKind.Local).AddTicks(6561),
                             EmployeeId = new Guid("6c6929d2-71ec-a4d2-f21a-04f1718bb232")
                         },
                         new
                         {
                             Id = new Guid("c8a99414-16e2-ead2-838a-b11e1757f574"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 21, 30, 44, 151, DateTimeKind.Local).AddTicks(6456),
                             EmployeeId = new Guid("a4abf888-7c29-eb8f-fc6c-0aba98c45c92")
                         },
                         new
                         {
                             Id = new Guid("79b4d4f3-a515-cc3e-1b5f-a35c899ac3dc"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 11, 3, 48, 438, DateTimeKind.Local).AddTicks(9024),
                             EmployeeId = new Guid("88d14542-a4c4-7874-e46d-07784291ce10")
                         },
                         new
                         {
                             Id = new Guid("10750c1d-77b4-cacb-e5c2-210106be05c3"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 18, 17, 33, 97, DateTimeKind.Local).AddTicks(5562),
                             EmployeeId = new Guid("524e5aab-b747-ef78-91df-dd8f36f8e1d9")
                         },
                         new
                         {
                             Id = new Guid("49a32294-8ab6-2de0-2883-547a45557d86"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 19, 17, 18, 972, DateTimeKind.Local).AddTicks(545),
                             EmployeeId = new Guid("3fff56a3-804e-95fe-072b-13516fcb5290")
                         },
                         new
                         {
                             Id = new Guid("db4902ff-0a58-5df9-9d9d-83d64a7c938b"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 4, 43, 50, 5, DateTimeKind.Local).AddTicks(4057),
                             EmployeeId = new Guid("a8e154eb-4d7b-dd2c-1766-744077bf65ad")
                         },
                         new
                         {
                             Id = new Guid("49d485be-46a3-4791-dcac-88387745b560"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 10, 17, 2, 371, DateTimeKind.Local).AddTicks(468),
                             EmployeeId = new Guid("6dde1921-fe98-70d4-c0c7-6384725af144")
                         },
                         new
                         {
                             Id = new Guid("2dbd3f4a-9043-aca4-0afe-b2ca580ccabf"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 10, 50, 39, 328, DateTimeKind.Local).AddTicks(2849),
                             EmployeeId = new Guid("a67e5327-67ff-9726-f2ae-f106c3734212")
                         },
                         new
                         {
                             Id = new Guid("c2c794a6-b01d-6514-0b91-951b7940de2e"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 11, 40, 5, 772, DateTimeKind.Local).AddTicks(4272),
                             EmployeeId = new Guid("85333317-a611-d2b0-c342-64b649ce512b")
                         },
                         new
                         {
                             Id = new Guid("99feb991-4887-e229-302b-ad85763660a3"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 21, 1, 54, 125, DateTimeKind.Local).AddTicks(5977),
                             EmployeeId = new Guid("e8a89b1a-43ba-9b0e-29ba-d825cd40df25")
                         },
                         new
                         {
                             Id = new Guid("2a2e7c9f-1b98-e374-3989-79dd47bee698"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 15, 8, 37, 78, DateTimeKind.Local).AddTicks(5839),
                             EmployeeId = new Guid("be7050b0-4618-52a8-7a2f-b24f48f6eda9")
                         },
                         new
                         {
                             Id = new Guid("cef47940-3ae3-0b5e-1ee5-189c2cab0662"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 21, 23, 52, 795, DateTimeKind.Local).AddTicks(2548),
                             EmployeeId = new Guid("8459207f-2936-51db-3202-ea4be311aec7")
                         },
                         new
                         {
                             Id = new Guid("65127e65-58f0-4db7-65c7-909d61fbb742"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 1, 21, 22, 887, DateTimeKind.Local).AddTicks(3525),
                             EmployeeId = new Guid("e8a89b1a-43ba-9b0e-29ba-d825cd40df25")
                         },
                         new
                         {
                             Id = new Guid("0f3af04b-fd56-ec20-4d31-405b0b357142"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 15, 18, 18, 438, DateTimeKind.Local).AddTicks(7838),
                             EmployeeId = new Guid("66f77b5d-3be5-7b0b-b749-b93ef8fe6b9b")
                         },
                         new
                         {
                             Id = new Guid("ec2c7504-44f8-478d-b7a1-746903b72c17"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 9, 14, 9, 444, DateTimeKind.Local).AddTicks(689),
                             EmployeeId = new Guid("72dd5100-0473-e57b-ba7b-48b3d93e1f1d")
                         },
                         new
                         {
                             Id = new Guid("6bcf67bb-1b69-6b25-8468-efb83b14efa6"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 7, 43, 21, 829, DateTimeKind.Local).AddTicks(1585),
                             EmployeeId = new Guid("8f5c6443-8bce-901c-e67b-038df4bcf5e5")
                         },
                         new
                         {
                             Id = new Guid("b6c8cb41-4b68-c8d8-3da4-df1dd3160d72"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 22, 15, 19, 24, DateTimeKind.Local).AddTicks(9548),
                             EmployeeId = new Guid("19be3043-fb1b-a44e-5e3b-0ae37f55d804")
                         },
                         new
                         {
                             Id = new Guid("d8d3d0c2-df09-e8c8-3955-1410f2f999ea"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 9, 36, 14, 572, DateTimeKind.Local).AddTicks(6347),
                             EmployeeId = new Guid("1ed8f6fb-f1eb-0ef4-435a-6b92a958e3e8")
                         },
                         new
                         {
                             Id = new Guid("53912067-c7e8-4aa4-1ba1-2ea143722f5b"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 21, 50, 2, 260, DateTimeKind.Local).AddTicks(4630),
                             EmployeeId = new Guid("c043e6ff-1b8a-348c-350b-508897549b0e")
                         },
                         new
                         {
                             Id = new Guid("62a0d6bf-739e-9428-ec24-3a2c6880facc"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 14, 17, 33, 865, DateTimeKind.Local).AddTicks(793),
                             EmployeeId = new Guid("92b8faa1-384e-7611-49d4-dd95d7735437")
                         },
                         new
                         {
                             Id = new Guid("956411eb-46ac-b30b-d19d-c39d657bb133"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 2, 52, 50, 557, DateTimeKind.Local).AddTicks(1416),
                             EmployeeId = new Guid("af1553f7-0e38-32c3-cd3f-b7a5aa416f63")
                         },
                         new
                         {
                             Id = new Guid("32bfdff2-26b7-74e1-c520-48a6462ab682"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 3, 45, 19, 328, DateTimeKind.Local).AddTicks(9614),
                             EmployeeId = new Guid("aa56a3a6-51ce-51e0-3fc2-1fb8dd2fdef0")
                         },
                         new
                         {
                             Id = new Guid("bf931bf4-f656-8729-d5b0-b74d1e052b3f"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 0, 36, 47, 137, DateTimeKind.Local).AddTicks(9321),
                             EmployeeId = new Guid("0e0406f7-4d86-05b0-d069-9e719abb5b3a")
                         },
                         new
                         {
                             Id = new Guid("d2cb6fac-9246-f788-7d72-aef9d0d899d2"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 1, 37, 14, 375, DateTimeKind.Local).AddTicks(1110),
                             EmployeeId = new Guid("6e95882d-2a30-6f36-d9cf-0224209e825c")
                         },
                         new
                         {
                             Id = new Guid("9e8e3c68-c30c-d30d-29a0-1aeb185602ae"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 23, 13, 47, 66, DateTimeKind.Local).AddTicks(4141),
                             EmployeeId = new Guid("9294dd57-413e-4216-09f4-cdd54897abcb")
                         },
                         new
                         {
                             Id = new Guid("ffce2c4d-14ac-b726-e674-84338ae07ec3"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 12, 40, 37, 367, DateTimeKind.Local).AddTicks(2913),
                             EmployeeId = new Guid("7ddee191-b53b-21cf-5cb0-5ebd49f01309")
                         },
                         new
                         {
                             Id = new Guid("bf380ebe-575e-8763-96a2-ce2ac7a95811"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 18, 56, 36, 818, DateTimeKind.Local).AddTicks(9494),
                             EmployeeId = new Guid("1c129471-852d-f69f-b73f-d7f92e599c1d")
                         },
                         new
                         {
                             Id = new Guid("0ce58ae1-5e27-6da4-8f0b-9a935f8f016a"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 15, 30, 15, 956, DateTimeKind.Local).AddTicks(9508),
                             EmployeeId = new Guid("374bc1c0-f0d5-e407-5a7c-3e65329f4dc3")
                         },
                         new
                         {
                             Id = new Guid("8d49a86f-148f-4a17-bd89-32ce8b29663c"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 20, 22, 47, 802, DateTimeKind.Local).AddTicks(9779),
                             EmployeeId = new Guid("4dcd4591-be79-c803-7e7a-3b83bfbb3ec6")
                         },
                         new
                         {
                             Id = new Guid("eab96011-7bd3-0ffc-6f9a-c63f1cfd842a"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 11, 31, 24, 767, DateTimeKind.Local).AddTicks(2499),
                             EmployeeId = new Guid("dce6d6b3-14eb-862c-96bc-ae6882cf70c1")
                         },
                         new
                         {
                             Id = new Guid("140ff755-e3e7-3d5d-0e69-f952bb903903"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 9, 55, 29, 952, DateTimeKind.Local).AddTicks(3158),
                             EmployeeId = new Guid("17727356-efae-41da-f85a-f30237ea1755")
                         },
                         new
                         {
                             Id = new Guid("05931175-b0a8-49f6-15d0-06fed1a44883"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 5, 35, 53, 842, DateTimeKind.Local).AddTicks(2275),
                             EmployeeId = new Guid("d62921fb-5d77-9420-4e94-04470a53d575")
                         },
                         new
                         {
                             Id = new Guid("3e7506d2-a5ed-4776-0aae-e2fa7775d622"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 17, 56, 30, 537, DateTimeKind.Local).AddTicks(9764),
                             EmployeeId = new Guid("cfec6575-0a17-cfbc-c16a-68dc2ace589d")
                         },
                         new
                         {
                             Id = new Guid("9af16467-6c47-6b08-27ae-730d2f01c2e3"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 18, 14, 34, 813, DateTimeKind.Local).AddTicks(9724),
                             EmployeeId = new Guid("ee0b44b6-3f54-ad13-77c2-67d6607402df")
                         },
                         new
                         {
                             Id = new Guid("68325fa6-9aec-d633-8f89-fa815cc0189a"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 1, 14, 3, 562, DateTimeKind.Local).AddTicks(5628),
                             EmployeeId = new Guid("821cf50b-d86e-f585-e763-28790e0a9ca9")
                         },
                         new
                         {
                             Id = new Guid("3ae5d12d-984e-a197-b2f9-b4911e22181c"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 3, 16, 18, 282, DateTimeKind.Local).AddTicks(4703),
                             EmployeeId = new Guid("a321845f-aadb-1904-29d7-71e5979bdb68")
                         },
                         new
                         {
                             Id = new Guid("9614ff04-e278-2d2d-164c-1766da024cd2"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 10, 3, 15, 755, DateTimeKind.Local).AddTicks(309),
                             EmployeeId = new Guid("25df95bd-b87f-83f7-88ab-2511e033146d")
                         },
                         new
                         {
                             Id = new Guid("f955cfe4-dc80-f7da-dc5f-44a48665ecdc"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 21, 11, 19, 170, DateTimeKind.Local).AddTicks(5075),
                             EmployeeId = new Guid("c8aa4535-b95e-0cd4-e724-a871e82faf14")
                         },
                         new
                         {
                             Id = new Guid("6b20586d-5480-929b-da8e-d24f175b6c50"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 9, 44, 2, 459, DateTimeKind.Local).AddTicks(566),
                             EmployeeId = new Guid("ea0d916b-24d9-d8a3-5743-9b8a493fa4cf")
                         },
                         new
                         {
                             Id = new Guid("ea9db994-ce51-a7d2-9000-ee26dfb9c553"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 15, 16, 43, 109, DateTimeKind.Local).AddTicks(2793),
                             EmployeeId = new Guid("148d68db-20b3-c381-7fee-c695877c0dd2")
                         },
                         new
                         {
                             Id = new Guid("4ae4a5d4-6800-0f09-2c49-1915c02c6784"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 19, 29, 22, 346, DateTimeKind.Local).AddTicks(4763),
                             EmployeeId = new Guid("4bdebae4-5fb6-115d-4ff0-a1847292e9d8")
                         },
                         new
                         {
                             Id = new Guid("acae9dcf-910a-68ec-f396-51089e8dc7db"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 4, 46, 9, 399, DateTimeKind.Local).AddTicks(2087),
                             EmployeeId = new Guid("7b71a116-e01d-71d8-2193-d063b980a7fc")
                         },
                         new
                         {
                             Id = new Guid("be47819d-5ea5-eb76-2df9-783444845ff3"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 21, 24, 10, 245, DateTimeKind.Local).AddTicks(4737),
                             EmployeeId = new Guid("db76ba5b-afcb-594f-5436-91f5b6df983f")
                         },
                         new
                         {
                             Id = new Guid("0013b8d9-7816-41da-7b87-f95107d41131"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 14, 16, 52, 312, DateTimeKind.Local).AddTicks(7085),
                             EmployeeId = new Guid("343ff6a1-a323-bba0-11ce-82ba9093a051")
                         },
                         new
                         {
                             Id = new Guid("a5944d09-6ebe-617b-0d83-3f99ffb667d6"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 22, 7, 48, 389, DateTimeKind.Local).AddTicks(8373),
                             EmployeeId = new Guid("0920938a-3ead-a482-8bd1-08728af66252")
                         },
                         new
                         {
                             Id = new Guid("1dca4531-64fb-a834-705f-3252726be81b"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 14, 44, 47, 527, DateTimeKind.Local).AddTicks(8872),
                             EmployeeId = new Guid("fb394a96-6229-6b31-f18b-3f17c39a93ac")
                         },
                         new
                         {
                             Id = new Guid("169b9155-bdcd-ee3b-f99a-a0fe5aa76b57"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 17, 4, 50, 874, DateTimeKind.Local).AddTicks(3868),
                             EmployeeId = new Guid("92772f46-1be1-d440-5f64-a81cf3224c6e")
                         },
                         new
                         {
                             Id = new Guid("c68a4198-020a-30da-cc2e-179abb90a435"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 15, 0, 21, 38, 506, DateTimeKind.Local).AddTicks(172),
                             EmployeeId = new Guid("09d7cbd4-886d-13c6-0d79-509c5b5f5a66")
                         },
                         new
                         {
                             Id = new Guid("75c05ffc-0d3a-60d0-d8ab-07134fdc7aad"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 14, 9, 24, 129, DateTimeKind.Local).AddTicks(6749),
                             EmployeeId = new Guid("e867ee24-b161-cc3e-f36e-f6b88892210a")
                         },
                         new
                         {
                             Id = new Guid("8cf31490-bf6e-ffe2-e46d-b5727bc16942"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 22, 3, 3, 919, DateTimeKind.Local).AddTicks(7762),
                             EmployeeId = new Guid("184419d0-81dc-20b6-305a-08d6cdb9a3de")
                         },
                         new
                         {
                             Id = new Guid("a139b850-8501-1ac5-c7be-41e3d36a2405"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 1, 38, 43, 594, DateTimeKind.Local).AddTicks(4789),
                             EmployeeId = new Guid("b0cc141d-351c-813a-9a91-d1fbf2fa5452")
                         },
                         new
                         {
                             Id = new Guid("0d58b651-f3ec-3922-8b52-e699aad4057a"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 22, 0, 53, 829, DateTimeKind.Local).AddTicks(6788),
                             EmployeeId = new Guid("a377379d-77da-a7e6-bef7-1e0735717748")
                         },
                         new
                         {
                             Id = new Guid("a4a907f1-411a-8aa3-e207-57bc4e39fd86"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 6, 25, 6, 514, DateTimeKind.Local).AddTicks(4862),
                             EmployeeId = new Guid("94105602-3ccc-69d5-d6ac-096b74479b0b")
                         },
                         new
                         {
                             Id = new Guid("4bdfae4d-c83a-25e1-970e-cef012aea717"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 21, 9, 35, 385, DateTimeKind.Local).AddTicks(1839),
                             EmployeeId = new Guid("69e0b1b4-0459-8bc4-b640-318ebc719fcb")
                         },
                         new
                         {
                             Id = new Guid("6949cc3e-3140-9633-975f-ac4eef826809"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 11, 19, 57, 186, DateTimeKind.Local).AddTicks(4771),
                             EmployeeId = new Guid("85f453ae-3996-3885-6d7a-51a9cebad6f1")
                         },
                         new
                         {
                             Id = new Guid("1b38dc6e-7b0b-1713-450e-a72232de03b9"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 17, 16, 21, 357, DateTimeKind.Local).AddTicks(2031),
                             EmployeeId = new Guid("fa82bd78-8fbd-549b-f4fe-d9db5a3f2bc5")
                         },
                         new
                         {
                             Id = new Guid("3106199e-c54a-c0ea-de6d-a9a4e3040f39"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 12, 32, 7, 915, DateTimeKind.Local).AddTicks(1554),
                             EmployeeId = new Guid("ce55b692-2ed6-40f2-f36b-aa88d4b97d8d")
                         },
                         new
                         {
                             Id = new Guid("1a2ded3d-88ee-3cf0-7a6f-ecc88a057e73"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 18, 49, 49, 190, DateTimeKind.Local).AddTicks(4817),
                             EmployeeId = new Guid("06b4d189-251a-0756-5374-c1818b205184")
                         },
                         new
                         {
                             Id = new Guid("ba2155ee-a934-699b-c31d-22a5ceb42cc7"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 10, 5, 55, 763, DateTimeKind.Local).AddTicks(8219),
                             EmployeeId = new Guid("5b23e422-8c57-ffce-86f1-7182596e20ef")
                         },
                         new
                         {
                             Id = new Guid("885aa918-5070-a4f2-1f9f-64906dd18a17"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 22, 17, 13, 537, DateTimeKind.Local).AddTicks(8786),
                             EmployeeId = new Guid("26f9878f-1640-0f16-0bee-c79f62b85337")
                         },
                         new
                         {
                             Id = new Guid("1e5371f8-1e2c-ca57-1e14-5d3e2702a250"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 20, 12, 53, 730, DateTimeKind.Local).AddTicks(4215),
                             EmployeeId = new Guid("00b68eb6-f096-cb3c-96b8-c848e24b60aa")
                         },
                         new
                         {
                             Id = new Guid("044169b0-ca7b-8d5f-b5d4-439cd1aa2479"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 5, 38, 57, 374, DateTimeKind.Local).AddTicks(7842),
                             EmployeeId = new Guid("80fb4151-bbe2-b12b-d9bd-3d2674c46702")
                         },
                         new
                         {
                             Id = new Guid("86186a2d-90d4-60c1-3d8e-ca8089838e6b"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 6, 50, 27, 636, DateTimeKind.Local).AddTicks(477),
                             EmployeeId = new Guid("6fd36d07-f90a-a2bc-ffd3-9dfe52db9aca")
                         },
                         new
                         {
                             Id = new Guid("91cd54d7-f6a1-77da-8c93-0289148b7666"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 21, 42, 55, 996, DateTimeKind.Local).AddTicks(1986),
                             EmployeeId = new Guid("02c32381-1855-9b94-e3cd-1ca33777da46")
                         },
                         new
                         {
                             Id = new Guid("69b9746d-fe21-53eb-b919-433f5ac221ed"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 2, 14, 39, 551, DateTimeKind.Local).AddTicks(4701),
                             EmployeeId = new Guid("bdd19a07-58e3-c399-38b5-44525a73e340")
                         },
                         new
                         {
                             Id = new Guid("18f99077-cd35-053a-b5f5-131c2bd3e649"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 13, 12, 44, 417, DateTimeKind.Local).AddTicks(4271),
                             EmployeeId = new Guid("01fb88d4-943e-fbd7-86e2-f30a4b11ad11")
                         },
                         new
                         {
                             Id = new Guid("a2b693ab-5d21-5348-a8c6-f29e40068a21"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 17, 52, 6, 323, DateTimeKind.Local).AddTicks(4615),
                             EmployeeId = new Guid("b95054cc-cffe-dad4-36f1-14f22dc52599")
                         },
                         new
                         {
                             Id = new Guid("f9e79c84-5d35-fda5-186c-747829cf4bb4"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 6, 19, 35, 196, DateTimeKind.Local).AddTicks(5363),
                             EmployeeId = new Guid("72a41741-f7b8-b489-4cf0-9398b86f1cf4")
                         },
                         new
                         {
                             Id = new Guid("79ecbad8-3e91-57c2-d315-a0b193d69c99"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 2, 47, 3, 396, DateTimeKind.Local).AddTicks(2559),
                             EmployeeId = new Guid("dba4944b-390f-3c18-7984-8609506d975c")
                         },
                         new
                         {
                             Id = new Guid("607b4580-e730-4e33-c9ce-f4524560659b"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 16, 21, 46, 680, DateTimeKind.Local).AddTicks(5214),
                             EmployeeId = new Guid("9b8ff361-a3f6-1ecc-053f-8580ef74b416")
                         },
                         new
                         {
                             Id = new Guid("0673ba55-e7d2-ba77-e1a2-8d36fdf0ab40"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 11, 12, 5, 46, DateTimeKind.Local).AddTicks(781),
                             EmployeeId = new Guid("88d14542-a4c4-7874-e46d-07784291ce10")
                         },
                         new
                         {
                             Id = new Guid("f05e92bc-89f9-c3de-5b51-2d3bfa012b6e"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 21, 56, 15, 51, DateTimeKind.Local).AddTicks(1857),
                             EmployeeId = new Guid("b1d49289-fc50-9cd4-1a58-4c1f1ef4322b")
                         },
                         new
                         {
                             Id = new Guid("2cb878a8-ab52-973b-f762-991fbd3e48da"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 12, 55, 19, 258, DateTimeKind.Local).AddTicks(6768),
                             EmployeeId = new Guid("cb2a0bf9-aa94-2db6-cde4-901f477ff92f")
                         },
                         new
                         {
                             Id = new Guid("24f47d79-691c-66b3-9334-d182cc3369b3"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 10, 2, 56, 821, DateTimeKind.Local).AddTicks(5914),
                             EmployeeId = new Guid("d231bf15-e10c-2394-19ec-777dfb87c340")
                         },
                         new
                         {
                             Id = new Guid("f1bd440b-60e6-31c1-70fc-b2269b761393"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 21, 58, 50, 281, DateTimeKind.Local).AddTicks(2888),
                             EmployeeId = new Guid("1d9ae1a8-88e7-d994-1679-64dde6633e28")
                         },
                         new
                         {
                             Id = new Guid("449fc39c-62a8-df26-ccec-538a66d729eb"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 15, 23, 19, 245, DateTimeKind.Local).AddTicks(7252),
                             EmployeeId = new Guid("3dda2845-22d2-9034-4c59-df452da5e95c")
                         },
                         new
                         {
                             Id = new Guid("375bc30e-6a43-0de1-350b-b9a0a8ff8d67"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 11, 55, 14, 931, DateTimeKind.Local).AddTicks(5418),
                             EmployeeId = new Guid("a65d0391-aebb-ca40-89b8-18469ceb0727")
                         },
                         new
                         {
                             Id = new Guid("81bf8e15-45f4-721c-4b4f-728a8dd635a5"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 22, 16, 57, 427, DateTimeKind.Local).AddTicks(7218),
                             EmployeeId = new Guid("7a120fce-a7ef-0261-4ef1-8446bd5134ca")
                         },
                         new
                         {
                             Id = new Guid("54c7da5b-d4f1-4c13-ab8b-d870867f86a7"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 12, 22, 11, 189, DateTimeKind.Local).AddTicks(8487),
                             EmployeeId = new Guid("b5063ace-2fa4-c318-4141-7961c630f9d7")
                         },
                         new
                         {
                             Id = new Guid("f827f266-be95-80c3-2bc9-7359fe261610"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 21, 19, 20, 462, DateTimeKind.Local).AddTicks(3264),
                             EmployeeId = new Guid("90b7a876-14e2-7519-3f71-723ab04eac1f")
                         },
                         new
                         {
                             Id = new Guid("f8e0acce-e671-df72-eb0b-062f38574cda"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 4, 15, 3, 791, DateTimeKind.Local).AddTicks(8217),
                             EmployeeId = new Guid("412ebe39-53a1-a0fb-2c8e-4c9c05a83656")
                         },
                         new
                         {
                             Id = new Guid("532e9631-83e8-3138-da49-6f6e6159c27f"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 13, 47, 54, 519, DateTimeKind.Local).AddTicks(5127),
                             EmployeeId = new Guid("34b998d7-8716-9ff9-e71f-b37345dde376")
                         },
                         new
                         {
                             Id = new Guid("de2311b5-75d7-9924-3a02-b14b7ddb421c"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 13, 25, 24, 817, DateTimeKind.Local).AddTicks(1586),
                             EmployeeId = new Guid("8e67ec9f-cc26-a4ad-b898-97531706c0fe")
                         },
                         new
                         {
                             Id = new Guid("b53875f7-9598-9c7b-a4d6-75d7b6539f7e"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 1, 18, 37, 779, DateTimeKind.Local).AddTicks(5974),
                             EmployeeId = new Guid("9ebf30b7-9c4d-1628-efc3-6e64aa837143")
                         },
                         new
                         {
                             Id = new Guid("e9c3de56-2efd-fd28-f292-1f3c1edf3c8e"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 23, 18, 37, 534, DateTimeKind.Local).AddTicks(8040),
                             EmployeeId = new Guid("14221983-6be3-a49d-1503-fc99b7181373")
                         },
                         new
                         {
                             Id = new Guid("d85b488a-c37f-2bc4-fbf8-dd5c700feb4a"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 1, 50, 16, 205, DateTimeKind.Local).AddTicks(2733),
                             EmployeeId = new Guid("2891fb3d-77c8-4794-ddbc-081f2d051315")
                         },
                         new
                         {
                             Id = new Guid("976f873b-0a89-9a85-57f7-79c51b017683"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 12, 9, 3, 473, DateTimeKind.Local).AddTicks(5160),
                             EmployeeId = new Guid("36af9871-c53d-d9ad-4845-f1ef13cab9c7")
                         },
                         new
                         {
                             Id = new Guid("03382644-052d-3515-ae2d-3295c25af841"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 14, 16, 14, 115, DateTimeKind.Local).AddTicks(6567),
                             EmployeeId = new Guid("ca399277-db5d-16bb-3031-b502979d9c07")
                         },
                         new
                         {
                             Id = new Guid("28facdd2-336d-3281-c15b-fa8b7c4f74ef"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 19, 9, 25, 191, DateTimeKind.Local).AddTicks(7666),
                             EmployeeId = new Guid("709b0c14-a032-dc73-cdee-c01319bf59ff")
                         },
                         new
                         {
                             Id = new Guid("d4749241-6dd6-6224-b76a-23c0a167be27"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 17, 12, 26, 531, DateTimeKind.Local).AddTicks(9873),
                             EmployeeId = new Guid("c918419e-205a-e29b-bd0b-0351aa541393")
                         },
                         new
                         {
                             Id = new Guid("d2acd0ca-da53-a1b3-b645-4d6b933e50d9"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 16, 50, 18, 757, DateTimeKind.Local).AddTicks(8989),
                             EmployeeId = new Guid("039de179-28f5-ee6f-b14d-9dd3ec397c2e")
                         },
                         new
                         {
                             Id = new Guid("d049bb23-c8ca-9a9e-5924-be273ca56738"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 10, 1, 9, 81, DateTimeKind.Local).AddTicks(701),
                             EmployeeId = new Guid("f97e457f-7f43-e99e-c262-ebe87a837af9")
                         },
                         new
                         {
                             Id = new Guid("cc23f920-1c6d-ff69-9082-518e9fc93e27"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 2, 17, 13, 334, DateTimeKind.Local).AddTicks(7573),
                             EmployeeId = new Guid("ca325ed9-1918-a101-fc0a-043699b0ecdf")
                         },
                         new
                         {
                             Id = new Guid("3fb40ae2-7c5a-1ef7-11c5-2b059d435e3d"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 3, 43, 5, 962, DateTimeKind.Local).AddTicks(1745),
                             EmployeeId = new Guid("f23291aa-fdea-98a1-4935-191c0b68d2ba")
                         },
                         new
                         {
                             Id = new Guid("c860b4db-180e-9607-1e5d-fd7e25b7b4b3"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 2, 19, 1, 368, DateTimeKind.Local).AddTicks(9769),
                             EmployeeId = new Guid("efbc74a5-d548-4046-aaa9-07df91ba1d39")
                         },
                         new
                         {
                             Id = new Guid("fe754fc8-3957-7c64-b44a-408c3f2752a4"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 12, 48, 1, 732, DateTimeKind.Local).AddTicks(9507),
                             EmployeeId = new Guid("9b154e45-a75e-5ea5-9f33-190afad60a64")
                         },
                         new
                         {
                             Id = new Guid("e65227a6-c0d9-4714-054d-e890a9d14537"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 1, 10, 30, 642, DateTimeKind.Local).AddTicks(2933),
                             EmployeeId = new Guid("45b961a5-26d3-d7c8-b276-ebb8f9fbe232")
                         },
                         new
                         {
                             Id = new Guid("9ba98e09-4c53-d1dd-be56-d212693173c5"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 4, 13, 22, 151, DateTimeKind.Local).AddTicks(9714),
                             EmployeeId = new Guid("598c49d9-6790-f0e7-d212-f34a44970106")
                         },
                         new
                         {
                             Id = new Guid("f2423d9c-2e5f-b9cb-97ba-f9f0b33f9478"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 0, 29, 40, 650, DateTimeKind.Local).AddTicks(7164),
                             EmployeeId = new Guid("d3bc592b-22ba-23e3-7b86-49af44e37bce")
                         },
                         new
                         {
                             Id = new Guid("eefb9aff-f056-3b32-7e5e-360cb2c136c9"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 16, 59, 41, 198, DateTimeKind.Local).AddTicks(8017),
                             EmployeeId = new Guid("f2c2a8b9-630a-364b-abf0-51d9f6d49970")
                         },
                         new
                         {
                             Id = new Guid("92876d49-1746-66c4-1fd3-d5b9c0c80776"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 11, 10, 3, 599, DateTimeKind.Local).AddTicks(8032),
                             EmployeeId = new Guid("9aa8e55f-f4ea-37f3-f429-e508ae794cde")
                         },
                         new
                         {
                             Id = new Guid("f32c01ec-5a4c-ae61-462e-7c751bb215b3"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 10, 1, 38, 714, DateTimeKind.Local).AddTicks(4842),
                             EmployeeId = new Guid("29cc8097-35dc-16e3-5400-cdc645790725")
                         },
                         new
                         {
                             Id = new Guid("8a91d7b4-6712-a4a9-7543-ab4a672729d9"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 3, 16, 32, 208, DateTimeKind.Local).AddTicks(7365),
                             EmployeeId = new Guid("69e0b1b4-0459-8bc4-b640-318ebc719fcb")
                         },
                         new
                         {
                             Id = new Guid("68e5373b-377e-5da3-b907-aa15e9fec7ec"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 2, 36, 6, 661, DateTimeKind.Local).AddTicks(8854),
                             EmployeeId = new Guid("b39b6ad0-7caa-cc70-9ffb-fe4759a5676d")
                         },
                         new
                         {
                             Id = new Guid("b6a38b1a-6aeb-e39a-144e-f2d87a96a43c"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 3, 0, 20, 14, DateTimeKind.Local).AddTicks(5359),
                             EmployeeId = new Guid("b01570c8-8529-899f-4d83-e909778e5c79")
                         },
                         new
                         {
                             Id = new Guid("096f5212-9def-2eca-c24c-a03ab17f2402"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 5, 22, 43, 129, DateTimeKind.Local).AddTicks(7002),
                             EmployeeId = new Guid("05b4868a-5b20-e014-5e54-67423aced2b9")
                         },
                         new
                         {
                             Id = new Guid("54e3fef9-0f8e-2fc7-307f-45c2f81e0947"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 17, 11, 56, 957, DateTimeKind.Local).AddTicks(7690),
                             EmployeeId = new Guid("aadc2450-a2f3-fa05-4b59-b5e9b0080a43")
                         },
                         new
                         {
                             Id = new Guid("3c2118b3-97d8-1374-4059-5593b6a44dd5"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 17, 43, 22, 680, DateTimeKind.Local).AddTicks(1123),
                             EmployeeId = new Guid("bc9c2815-ad61-f653-a794-f7fd34175da7")
                         },
                         new
                         {
                             Id = new Guid("6d28fae0-af99-897d-a71c-a837ff586ce4"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 16, 43, 55, 512, DateTimeKind.Local).AddTicks(1345),
                             EmployeeId = new Guid("5b6f9f25-5597-06e9-998e-b6694a8af696")
                         },
                         new
                         {
                             Id = new Guid("fb1abc0a-d687-ebda-8e1d-aa49981826c9"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 20, 57, 1, 27, DateTimeKind.Local).AddTicks(4027),
                             EmployeeId = new Guid("efe995a4-fc75-5eb5-b3a1-76fac7e2ac6d")
                         },
                         new
                         {
                             Id = new Guid("0e5b8d87-f7cc-2297-553a-4ac0e4fcae24"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 8, 42, 41, 753, DateTimeKind.Local).AddTicks(3885),
                             EmployeeId = new Guid("4eef5d33-5492-0180-e73a-4d86fec75c81")
                         },
                         new
                         {
                             Id = new Guid("c3be97a1-6cee-d3fc-0f1e-d98fe459be50"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 15, 0, 5, 59, 349, DateTimeKind.Local).AddTicks(1748),
                             EmployeeId = new Guid("f4de4493-0927-6f7a-3f22-97066a6a3288")
                         },
                         new
                         {
                             Id = new Guid("b4ef044d-b084-5d44-c64c-e9f4e40288e9"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 18, 49, 51, 689, DateTimeKind.Local).AddTicks(5066),
                             EmployeeId = new Guid("7b855198-3554-5bc9-a1d0-a4386ecc4d99")
                         },
                         new
                         {
                             Id = new Guid("23cfa16d-0388-ab7c-6567-25ac7a759478"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 2, 0, 34, 541, DateTimeKind.Local).AddTicks(7031),
                             EmployeeId = new Guid("7ebaf69f-f40f-584e-090f-63678eb9e06a")
                         },
                         new
                         {
                             Id = new Guid("0fa91239-8736-2a25-f48c-5b6faa876a41"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 16, 50, 31, 384, DateTimeKind.Local).AddTicks(680),
                             EmployeeId = new Guid("69e0b1b4-0459-8bc4-b640-318ebc719fcb")
                         },
                         new
                         {
                             Id = new Guid("0508b066-f5df-a0a0-6f7e-50898e38308f"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 20, 20, 15, 852, DateTimeKind.Local).AddTicks(7712),
                             EmployeeId = new Guid("85333317-a611-d2b0-c342-64b649ce512b")
                         },
                         new
                         {
                             Id = new Guid("d9629c99-1e87-f709-7a25-103487fa194a"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 8, 59, 10, 405, DateTimeKind.Local).AddTicks(3296),
                             EmployeeId = new Guid("03057982-c621-f63e-fcff-dfb4b4bbd80c")
                         },
                         new
                         {
                             Id = new Guid("e79519c9-abb6-02a4-cd37-7af7b37d79e5"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 13, 27, 45, 290, DateTimeKind.Local).AddTicks(5723),
                             EmployeeId = new Guid("ae924e0d-c036-873d-6877-b5c2726b6e28")
                         },
                         new
                         {
                             Id = new Guid("fdd6e680-7a25-4a5f-c88f-75edfd5da9fa"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 13, 8, 16, 451, DateTimeKind.Local).AddTicks(7336),
                             EmployeeId = new Guid("d7beeffd-49d6-7cc3-f97e-ccdc66197c04")
                         },
                         new
                         {
                             Id = new Guid("1ce32eac-c03c-2d00-5cb6-0e15d5465cb1"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 4, 51, 54, 116, DateTimeKind.Local).AddTicks(7026),
                             EmployeeId = new Guid("5a6d0d0d-49a4-b1d0-89b5-0f12d437bead")
                         },
                         new
                         {
                             Id = new Guid("60576c6f-73dc-4a57-7d99-0983ffe18e58"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 10, 30, 59, 0, DateTimeKind.Local).AddTicks(8904),
                             EmployeeId = new Guid("2e4424ff-a2c8-bf48-c71e-75b70f0aa197")
                         },
                         new
                         {
                             Id = new Guid("4d253d9a-9302-79b9-a0a6-a1ac82065e93"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 1, 40, 50, 401, DateTimeKind.Local).AddTicks(2505),
                             EmployeeId = new Guid("ab25426a-0f15-599f-267c-d31f1e9cfc1d")
                         },
                         new
                         {
                             Id = new Guid("76e4a807-9383-3353-0e33-46eeb3145c59"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 13, 29, 47, 545, DateTimeKind.Local).AddTicks(2),
                             EmployeeId = new Guid("a1e3d1d3-5a0a-b3a3-60b6-fc1eb2fc8fd1")
                         },
                         new
                         {
                             Id = new Guid("f922cc54-a3b7-eddb-867c-a14e4503da95"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 7, 29, 54, 70, DateTimeKind.Local).AddTicks(6858),
                             EmployeeId = new Guid("57edd67a-5d20-ce2f-21d0-d35fd4c1112b")
                         },
                         new
                         {
                             Id = new Guid("60afb9a2-46aa-b859-ed97-26ac80492a00"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 22, 52, 41, 722, DateTimeKind.Local).AddTicks(4383),
                             EmployeeId = new Guid("1b411bb8-55e0-741b-c3be-94ec6d2fb94b")
                         },
                         new
                         {
                             Id = new Guid("a5a7d32c-b7cc-e56d-01ea-d97f3ba417a7"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 17, 48, 32, 891, DateTimeKind.Local).AddTicks(5409),
                             EmployeeId = new Guid("13b28c2c-d902-2d25-6cdd-ddcc267b9215")
                         },
                         new
                         {
                             Id = new Guid("eb5db377-56ee-cf60-2105-1a03d8b07288"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 17, 48, 25, 884, DateTimeKind.Local).AddTicks(2986),
                             EmployeeId = new Guid("cd7f01e3-2f47-c86b-e682-4f14896352e4")
                         },
                         new
                         {
                             Id = new Guid("603da9e2-cd58-1714-eb08-68a1c55b956d"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 22, 8, 17, 102, DateTimeKind.Local).AddTicks(7375),
                             EmployeeId = new Guid("3f0e853e-2bbb-ae35-2812-91b899cd79d2")
                         },
                         new
                         {
                             Id = new Guid("e76c4fb9-e04c-e7e7-00cf-c81b24ac51c2"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 12, 6, 10, 621, DateTimeKind.Local).AddTicks(7483),
                             EmployeeId = new Guid("a30febbd-6a4d-7675-77a6-f0080fb86ff9")
                         },
                         new
                         {
                             Id = new Guid("3ed91d05-c775-63b8-54a8-434276b90b42"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 14, 4, 32, 683, DateTimeKind.Local).AddTicks(907),
                             EmployeeId = new Guid("61b9d75a-855a-e812-00c8-6c7dc4f37ece")
                         },
                         new
                         {
                             Id = new Guid("e57080f0-4713-ed22-44f4-7498d132a9c9"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 16, 18, 36, 576, DateTimeKind.Local).AddTicks(5006),
                             EmployeeId = new Guid("ac4e88c7-65c3-0623-1c5d-8190400e0aba")
                         },
                         new
                         {
                             Id = new Guid("7c941ff7-3f92-8dbc-5261-196a8c4c0149"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 6, 47, 42, 760, DateTimeKind.Local).AddTicks(2291),
                             EmployeeId = new Guid("e2651e9a-f9c7-b018-0fe5-59415ad06aa0")
                         },
                         new
                         {
                             Id = new Guid("da52f6c5-6f73-0fe0-720f-ccf04062b27f"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 16, 36, 29, 468, DateTimeKind.Local).AddTicks(8145),
                             EmployeeId = new Guid("1b411bb8-55e0-741b-c3be-94ec6d2fb94b")
                         },
                         new
                         {
                             Id = new Guid("ba57a6de-8bd0-892b-e74c-d0e9d8349319"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 6, 35, 28, 927, DateTimeKind.Local).AddTicks(8015),
                             EmployeeId = new Guid("b5032a92-ffe9-9c3b-892d-5e20a774b809")
                         },
                         new
                         {
                             Id = new Guid("30b20c20-7d4a-7185-d807-d9cc5fedcdb6"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 8, 5, 4, 942, DateTimeKind.Local).AddTicks(177),
                             EmployeeId = new Guid("58d9b3dd-9e26-a4eb-a9c6-a0718e911da6")
                         },
                         new
                         {
                             Id = new Guid("e5484e82-c3f8-26a1-f4bb-ac4998da5c3b"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 15, 0, 1, 10, 994, DateTimeKind.Local).AddTicks(2775),
                             EmployeeId = new Guid("2c791fa7-43b0-9df6-e29a-758635f1f235")
                         },
                         new
                         {
                             Id = new Guid("1a4a3d0c-8252-7f0d-71fb-0a7e02aade22"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 14, 29, 40, 357, DateTimeKind.Local).AddTicks(27),
                             EmployeeId = new Guid("7d244f43-5d7a-bbef-2ae6-1722bf214a21")
                         },
                         new
                         {
                             Id = new Guid("56a86db9-b591-be2c-41f2-02b1d68a1a61"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 19, 48, 29, 788, DateTimeKind.Local).AddTicks(8810),
                             EmployeeId = new Guid("4f995597-396c-7eaa-7a66-99c605e19e30")
                         },
                         new
                         {
                             Id = new Guid("43ea63f5-2b30-3de9-aa9e-bab86563d072"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 16, 42, 57, 179, DateTimeKind.Local).AddTicks(4566),
                             EmployeeId = new Guid("fe87582f-e540-ed91-9c98-135ff6d97a87")
                         },
                         new
                         {
                             Id = new Guid("c32665b8-8ccc-496e-34f4-e748dfeac3e2"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 18, 28, 20, 16, DateTimeKind.Local).AddTicks(4193),
                             EmployeeId = new Guid("860a26a8-3afd-e52f-7c05-3770ed0cc164")
                         },
                         new
                         {
                             Id = new Guid("78a82b77-1f81-3a86-9c4e-051811fd187f"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 14, 53, 15, 533, DateTimeKind.Local).AddTicks(7643),
                             EmployeeId = new Guid("cde7e075-b30c-8a40-b68c-f6b6c4f8f8d6")
                         },
                         new
                         {
                             Id = new Guid("e1c1b61e-49b4-55c3-dbcd-a2800ca2dfec"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 15, 0, 11, 1, 301, DateTimeKind.Local).AddTicks(1270),
                             EmployeeId = new Guid("c0bda8fa-e886-160f-653c-951819bf27f7")
                         },
                         new
                         {
                             Id = new Guid("5245a4a4-fad1-db2f-d54b-c76af41323b0"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 19, 52, 32, 712, DateTimeKind.Local).AddTicks(1371),
                             EmployeeId = new Guid("b137f01c-447c-2d61-37c6-63ffbbbc2aa2")
                         },
                         new
                         {
                             Id = new Guid("c9be2ff3-6cab-cefa-f875-31115c6fe22a"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 12, 45, 4, 389, DateTimeKind.Local).AddTicks(6073),
                             EmployeeId = new Guid("22c0e9c3-b079-eb18-500b-5f3baa40cf15")
                         },
                         new
                         {
                             Id = new Guid("6d85e6ef-0aed-6314-ad6d-e9f16c36721c"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 12, 12, 28, 530, DateTimeKind.Local).AddTicks(8144),
                             EmployeeId = new Guid("ad994fb5-26a2-443f-ac8d-c3c7618bd745")
                         },
                         new
                         {
                             Id = new Guid("2cd7e59a-6636-3aa4-6afa-12e828d80ec6"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 19, 1, 8, 454, DateTimeKind.Local).AddTicks(4789),
                             EmployeeId = new Guid("acdf67f8-66c7-ad12-d811-5358594043c7")
                         },
                         new
                         {
                             Id = new Guid("0996bfd1-604d-830f-c5db-ea532443203d"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 3, 49, 19, 973, DateTimeKind.Local).AddTicks(6475),
                             EmployeeId = new Guid("18690c12-753e-beb4-ae27-1b39985ea874")
                         },
                         new
                         {
                             Id = new Guid("d049064f-68aa-849a-c019-5e6f0faefb15"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 19, 13, 52, 355, DateTimeKind.Local).AddTicks(3086),
                             EmployeeId = new Guid("5df02df5-19f5-9ea2-a022-6b302ab97004")
                         },
                         new
                         {
                             Id = new Guid("e226cc89-5fdf-a77f-eea4-079a90ada81e"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 18, 6, 41, 950, DateTimeKind.Local).AddTicks(2938),
                             EmployeeId = new Guid("5bcf8263-394d-3236-b1bd-0fe9e13a22f5")
                         },
                         new
                         {
                             Id = new Guid("dbb2a0ec-6a4e-6b66-daa5-292e0539a18f"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 6, 15, 34, 282, DateTimeKind.Local).AddTicks(9347),
                             EmployeeId = new Guid("971acfdb-8c83-9270-6fb4-90aa61f5e904")
                         },
                         new
                         {
                             Id = new Guid("c12a706a-dfac-7eb9-cdc2-668f408c2b17"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 0, 45, 23, 145, DateTimeKind.Local).AddTicks(4033),
                             EmployeeId = new Guid("d72ebf19-43c1-d83b-9be5-b99818eb71d8")
                         },
                         new
                         {
                             Id = new Guid("f47878d7-01a5-76c4-0161-ef1ebaf6971e"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 12, 43, 44, 691, DateTimeKind.Local).AddTicks(5637),
                             EmployeeId = new Guid("e58874e7-2842-3584-ffe2-901cb65f3d71")
                         },
                         new
                         {
                             Id = new Guid("eb94fc06-a899-1673-e9a1-da2164b8fd50"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 15, 0, 6, 35, 766, DateTimeKind.Local).AddTicks(2373),
                             EmployeeId = new Guid("4266298f-5185-e879-e768-04fffe21bbed")
                         },
                         new
                         {
                             Id = new Guid("69e7c084-1db8-a4dd-ac98-a96ead555ed0"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 0, 56, 3, 832, DateTimeKind.Local).AddTicks(8210),
                             EmployeeId = new Guid("6471034e-79fb-15d7-564d-d86dff4a27d1")
                         },
                         new
                         {
                             Id = new Guid("eb314bde-d4db-3f27-8b66-bda5eb2c023d"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 15, 32, 50, 19, DateTimeKind.Local).AddTicks(4460),
                             EmployeeId = new Guid("934fd6f4-3a98-6de8-56a5-6b59c7347828")
                         },
                         new
                         {
                             Id = new Guid("04bbcedc-7dc7-333f-2ccc-06e7090d1e13"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 5, 2, 54, 312, DateTimeKind.Local).AddTicks(2655),
                             EmployeeId = new Guid("a30febbd-6a4d-7675-77a6-f0080fb86ff9")
                         },
                         new
                         {
                             Id = new Guid("de91950b-3e52-f3ee-bd42-ab1740b26266"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 9, 42, 30, 303, DateTimeKind.Local).AddTicks(3975),
                             EmployeeId = new Guid("c1ccf385-95c7-8d41-2bc7-f26fe33ef19d")
                         },
                         new
                         {
                             Id = new Guid("a19b6d69-72fa-7e85-b497-cc18d1e94812"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 16, 55, 29, 922, DateTimeKind.Local).AddTicks(5047),
                             EmployeeId = new Guid("3bd3436b-4561-745a-6d90-e3c62aba884e")
                         },
                         new
                         {
                             Id = new Guid("89d8c669-f082-b481-c534-a6a75ff0e9ea"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 20, 18, 55, 755, DateTimeKind.Local).AddTicks(6032),
                             EmployeeId = new Guid("761b1220-320e-4cc0-a5c8-cc7a0c0051e0")
                         },
                         new
                         {
                             Id = new Guid("bfcd6b96-5c3a-29f1-d92d-f7a0651bceb9"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 8, 21, 34, 19, DateTimeKind.Local).AddTicks(2206),
                             EmployeeId = new Guid("524e5aab-b747-ef78-91df-dd8f36f8e1d9")
                         },
                         new
                         {
                             Id = new Guid("bd78b019-49bf-ef0d-6c27-e7ffe1a208b4"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 3, 26, 5, 751, DateTimeKind.Local).AddTicks(8648),
                             EmployeeId = new Guid("b98257f1-c164-36a4-7c9c-fccf83b69081")
                         },
                         new
                         {
                             Id = new Guid("c6912d9e-86a7-94ce-418c-903768598356"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 16, 37, 25, 7, DateTimeKind.Local).AddTicks(2535),
                             EmployeeId = new Guid("eeeae6a8-f7dc-e1a0-87a5-c721e33a0d5a")
                         },
                         new
                         {
                             Id = new Guid("6c2d750e-0284-2ef2-16fd-5d66491d7af2"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 11, 37, 43, 260, DateTimeKind.Local).AddTicks(8863),
                             EmployeeId = new Guid("b1305004-54df-324f-3ad0-eb302c55da7d")
                         },
                         new
                         {
                             Id = new Guid("b5f036d0-63cb-f0dc-7ea5-5d4bc396d78d"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 2, 43, 50, 332, DateTimeKind.Local).AddTicks(2276),
                             EmployeeId = new Guid("ca325ed9-1918-a101-fc0a-043699b0ecdf")
                         },
                         new
                         {
                             Id = new Guid("58b5c40d-96b8-25e4-471a-ee67cdcd5a4d"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 18, 15, 30, 503, DateTimeKind.Local).AddTicks(4414),
                             EmployeeId = new Guid("cf78ff25-694d-6b50-a888-3a1d0dbebc4e")
                         },
                         new
                         {
                             Id = new Guid("12a80861-8873-b2b8-99d0-728fe981f57b"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 20, 39, 56, 172, DateTimeKind.Local).AddTicks(3988),
                             EmployeeId = new Guid("58e283a6-b37d-6404-6db6-a4de4a333a3e")
                         },
                         new
                         {
                             Id = new Guid("3ee71e38-d594-3e90-907d-69486170d00f"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 22, 40, 17, 482, DateTimeKind.Local).AddTicks(9035),
                             EmployeeId = new Guid("fac14c37-3c2d-d811-63b9-9b03e60a457e")
                         },
                         new
                         {
                             Id = new Guid("e4ffcf41-544a-8ad4-04e5-d852353297e4"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 6, 13, 15, 893, DateTimeKind.Local).AddTicks(1753),
                             EmployeeId = new Guid("ec5e2128-5be0-2161-1810-d1caa8c0f6bb")
                         },
                         new
                         {
                             Id = new Guid("4ae23c13-3428-8830-101f-18723c1672d9"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 9, 23, 26, 110, DateTimeKind.Local).AddTicks(7940),
                             EmployeeId = new Guid("05b4868a-5b20-e014-5e54-67423aced2b9")
                         },
                         new
                         {
                             Id = new Guid("4bc0e99d-588b-2bb7-3415-c98b2e95ee52"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 5, 34, 52, 318, DateTimeKind.Local).AddTicks(7485),
                             EmployeeId = new Guid("850cb5e4-cf29-799b-219d-ed2c09833646")
                         },
                         new
                         {
                             Id = new Guid("cc1ab0d7-6bc3-73eb-9b3c-c25988ac68dc"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 4, 23, 42, 60, DateTimeKind.Local).AddTicks(5183),
                             EmployeeId = new Guid("542ac988-cf6d-65e7-cdf6-c3e68e6924f8")
                         },
                         new
                         {
                             Id = new Guid("0970f157-72fb-9347-e9dc-4ec4fc7a8961"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 5, 51, 36, 505, DateTimeKind.Local).AddTicks(4603),
                             EmployeeId = new Guid("fa82bd78-8fbd-549b-f4fe-d9db5a3f2bc5")
                         },
                         new
                         {
                             Id = new Guid("e59fe0fc-ef1c-bc72-41df-c6b90dff8507"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 18, 15, 54, 282, DateTimeKind.Local).AddTicks(4481),
                             EmployeeId = new Guid("19be3043-fb1b-a44e-5e3b-0ae37f55d804")
                         },
                         new
                         {
                             Id = new Guid("d77c5a1e-9602-774d-c5de-fe4bde59c456"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 23, 57, 13, 76, DateTimeKind.Local).AddTicks(3904),
                             EmployeeId = new Guid("7d244f43-5d7a-bbef-2ae6-1722bf214a21")
                         },
                         new
                         {
                             Id = new Guid("b5891a53-b306-2323-40c5-7772f6f9e363"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 15, 5, 40, 173, DateTimeKind.Local).AddTicks(2044),
                             EmployeeId = new Guid("7ebaf69f-f40f-584e-090f-63678eb9e06a")
                         },
                         new
                         {
                             Id = new Guid("77ce4e9d-dead-9442-e85f-48a874508713"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 14, 52, 41, 598, DateTimeKind.Local).AddTicks(7123),
                             EmployeeId = new Guid("02e92533-bb29-6f28-0bcf-f8d8d8b475c6")
                         },
                         new
                         {
                             Id = new Guid("73de2476-b20c-6b4d-0851-fbf502d70819"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 0, 26, 9, 903, DateTimeKind.Local).AddTicks(5883),
                             EmployeeId = new Guid("d2cec5fc-36f8-b150-fc6e-cbeb89a0f893")
                         },
                         new
                         {
                             Id = new Guid("1fc3d7dc-c43a-1cf7-0322-6ee656ce1c08"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 19, 26, 54, 340, DateTimeKind.Local).AddTicks(9456),
                             EmployeeId = new Guid("42213dd9-5e80-ec25-7388-3840db8912d3")
                         },
                         new
                         {
                             Id = new Guid("725fc4c2-4339-69ed-46d1-6b37ca8ee9b9"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 21, 47, 6, 936, DateTimeKind.Local).AddTicks(8016),
                             EmployeeId = new Guid("6e95882d-2a30-6f36-d9cf-0224209e825c")
                         },
                         new
                         {
                             Id = new Guid("9614afa4-494a-6a99-a427-e5ce2459e2c2"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 3, 27, 20, 261, DateTimeKind.Local).AddTicks(527),
                             EmployeeId = new Guid("fcff6fba-6077-2060-da2b-b9e9fb08ea36")
                         },
                         new
                         {
                             Id = new Guid("5a4ddc89-4bb1-ea97-a458-6d154f55df1b"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 14, 9, 45, 842, DateTimeKind.Local).AddTicks(8260),
                             EmployeeId = new Guid("0e62404c-677a-4a5f-6654-597c59e9e0cc")
                         },
                         new
                         {
                             Id = new Guid("d89f2815-4249-0260-47dd-e7cb0a3c6829"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 23, 57, 8, 620, DateTimeKind.Local).AddTicks(5047),
                             EmployeeId = new Guid("639119e2-3ab5-4501-6296-ed5d91854429")
                         },
                         new
                         {
                             Id = new Guid("5fb24b63-12f5-1137-9679-443eb715b067"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 2, 17, 20, 839, DateTimeKind.Local).AddTicks(1751),
                             EmployeeId = new Guid("77f81010-fb98-99bb-0efa-7468273a038c")
                         },
                         new
                         {
                             Id = new Guid("48501803-0c50-8cbd-62d9-e72cb6c4d64a"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 1, 5, 12, 186, DateTimeKind.Local).AddTicks(6932),
                             EmployeeId = new Guid("fac14c37-3c2d-d811-63b9-9b03e60a457e")
                         },
                         new
                         {
                             Id = new Guid("3011c5aa-89ca-9f02-2fb6-5ad42b3f2553"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 14, 32, 2, 953, DateTimeKind.Local).AddTicks(8674),
                             EmployeeId = new Guid("cb2a0bf9-aa94-2db6-cde4-901f477ff92f")
                         },
                         new
                         {
                             Id = new Guid("86385262-38d4-4cae-8e7a-e1cbcd04733f"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 23, 24, 32, 127, DateTimeKind.Local).AddTicks(7636),
                             EmployeeId = new Guid("659a9d28-b7cd-cfb1-2226-41109ef15be7")
                         },
                         new
                         {
                             Id = new Guid("6d4ebe86-d68d-0407-bbec-91719937e000"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 15, 27, 54, 271, DateTimeKind.Local).AddTicks(399),
                             EmployeeId = new Guid("184419d0-81dc-20b6-305a-08d6cdb9a3de")
                         },
                         new
                         {
                             Id = new Guid("3c1bf83c-2474-eb4e-8dd0-b8ffe761558b"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 15, 0, 12, 7, 280, DateTimeKind.Local).AddTicks(8197),
                             EmployeeId = new Guid("e79906fa-81e7-3c7d-9b43-d6bc1d829baf")
                         },
                         new
                         {
                             Id = new Guid("33cdafaa-60f2-09fc-4893-ec03fccdfdb5"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 8, 46, 31, 141, DateTimeKind.Local).AddTicks(4733),
                             EmployeeId = new Guid("18690c12-753e-beb4-ae27-1b39985ea874")
                         },
                         new
                         {
                             Id = new Guid("eb3f48d9-347a-ec03-aa0f-43ab9cec90c7"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 9, 56, 38, 571, DateTimeKind.Local).AddTicks(9248),
                             EmployeeId = new Guid("d2c58770-b2f5-55f0-2f4e-82d9b89e840a")
                         },
                         new
                         {
                             Id = new Guid("1a78dc29-5706-cca0-bb32-e9ab6621c13a"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 12, 5, 35, 786, DateTimeKind.Local).AddTicks(3703),
                             EmployeeId = new Guid("6fd36d07-f90a-a2bc-ffd3-9dfe52db9aca")
                         },
                         new
                         {
                             Id = new Guid("73eefe53-f951-e704-5016-6b056d452941"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 10, 41, 44, 731, DateTimeKind.Local).AddTicks(7032),
                             EmployeeId = new Guid("8b1b84de-1916-ce65-f169-8291708f1ce5")
                         },
                         new
                         {
                             Id = new Guid("67d99338-ba48-64c0-dc8a-dab2f45ccb1c"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 19, 57, 43, 777, DateTimeKind.Local).AddTicks(9369),
                             EmployeeId = new Guid("c043e6ff-1b8a-348c-350b-508897549b0e")
                         },
                         new
                         {
                             Id = new Guid("6f012126-b550-2d4f-7b66-3ddf1cd86e32"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 21, 26, 39, 917, DateTimeKind.Local).AddTicks(3340),
                             EmployeeId = new Guid("374bc1c0-f0d5-e407-5a7c-3e65329f4dc3")
                         },
                         new
                         {
                             Id = new Guid("9590b9a6-5d28-6475-77a8-a22963073b3b"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 2, 12, 41, 168, DateTimeKind.Local).AddTicks(8187),
                             EmployeeId = new Guid("6357db64-e26d-a63a-4c63-aca82395d9de")
                         },
                         new
                         {
                             Id = new Guid("8cf9b288-fd45-aa9f-bdd9-85299aa22f93"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 9, 24, 28, 760, DateTimeKind.Local).AddTicks(727),
                             EmployeeId = new Guid("e8852dae-7780-3b11-f436-fb88544a96e4")
                         },
                         new
                         {
                             Id = new Guid("51da12d9-84d7-3dd9-d9d8-e09d61fb0df1"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 14, 20, 17, 481, DateTimeKind.Local).AddTicks(1937),
                             EmployeeId = new Guid("01f415de-35f2-1fe2-2504-f509d45b988f")
                         },
                         new
                         {
                             Id = new Guid("b288984b-8ab7-7ff1-0787-34738ba5815d"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 8, 8, 40, 89, DateTimeKind.Local).AddTicks(6750),
                             EmployeeId = new Guid("7d244f43-5d7a-bbef-2ae6-1722bf214a21")
                         },
                         new
                         {
                             Id = new Guid("c06b0721-d2c5-3cdd-242d-8db04ae6834a"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 5, 53, 53, 709, DateTimeKind.Local).AddTicks(5951),
                             EmployeeId = new Guid("cd29da86-0ce1-88f6-8177-f518d9631824")
                         },
                         new
                         {
                             Id = new Guid("05e5c723-b6d1-64a5-54f7-e09efb43848c"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 9, 29, 53, 959, DateTimeKind.Local).AddTicks(2818),
                             EmployeeId = new Guid("5681e916-21c9-d852-601a-b0eaf1006cff")
                         },
                         new
                         {
                             Id = new Guid("4ddae0c3-52cd-d67a-e98d-085b8e0cb18a"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 13, 59, 1, 499, DateTimeKind.Local).AddTicks(3062),
                             EmployeeId = new Guid("c0bda8fa-e886-160f-653c-951819bf27f7")
                         },
                         new
                         {
                             Id = new Guid("6d200a9a-4488-8e44-916c-c55a5e6a1b8d"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 11, 57, 18, 86, DateTimeKind.Local).AddTicks(5348),
                             EmployeeId = new Guid("403afc47-f562-c7df-3cda-9838ae81309f")
                         },
                         new
                         {
                             Id = new Guid("df57b317-d7bb-9c4c-5191-49b9ec502245"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 7, 26, 25, 853, DateTimeKind.Local).AddTicks(2175),
                             EmployeeId = new Guid("4b3755de-a573-e8f9-e8ab-d24477d428ae")
                         },
                         new
                         {
                             Id = new Guid("c3890952-69e8-3324-a9f0-727e32421e23"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 15, 7, 58, 624, DateTimeKind.Local).AddTicks(471),
                             EmployeeId = new Guid("3b621dbd-6915-a4dd-12d9-0ed06767ba7e")
                         },
                         new
                         {
                             Id = new Guid("a73b9664-fcf2-b347-d909-3c244eeb0cf6"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 18, 7, 27, 927, DateTimeKind.Local).AddTicks(9420),
                             EmployeeId = new Guid("640288fa-7ea1-aebb-30cb-a05f5abebf6f")
                         },
                         new
                         {
                             Id = new Guid("a497766f-aba3-13df-1777-ce2dd203a33d"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 17, 22, 55, 443, DateTimeKind.Local).AddTicks(2228),
                             EmployeeId = new Guid("ff2b640c-887b-3fb5-1e81-8b7f222eac05")
                         },
                         new
                         {
                             Id = new Guid("b6a0c697-294b-cb6c-2493-264bad955fd3"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 19, 0, 49, 149, DateTimeKind.Local).AddTicks(1674),
                             EmployeeId = new Guid("aadc2450-a2f3-fa05-4b59-b5e9b0080a43")
                         },
                         new
                         {
                             Id = new Guid("e912fc98-3c30-dc0a-6921-aaad2fe00ef6"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 3, 31, 37, 667, DateTimeKind.Local).AddTicks(4746),
                             EmployeeId = new Guid("2430cfe4-b808-14b6-3ae3-71d400cd9cf6")
                         },
                         new
                         {
                             Id = new Guid("df367a4c-7fbb-2bf1-2098-7330ef70ea7d"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 23, 37, 52, 314, DateTimeKind.Local).AddTicks(5358),
                             EmployeeId = new Guid("71c760e0-f21f-1f04-8fab-c810c9e11bb3")
                         },
                         new
                         {
                             Id = new Guid("4d407970-aa02-e679-f66b-9f9e3504f480"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 5, 56, 2, 743, DateTimeKind.Local).AddTicks(3551),
                             EmployeeId = new Guid("90b7a876-14e2-7519-3f71-723ab04eac1f")
                         },
                         new
                         {
                             Id = new Guid("103e6a57-44ea-f1f6-bb3c-4462a8714d5e"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 14, 34, 11, 195, DateTimeKind.Local).AddTicks(5064),
                             EmployeeId = new Guid("a377379d-77da-a7e6-bef7-1e0735717748")
                         },
                         new
                         {
                             Id = new Guid("98413533-c0fa-f981-3d2b-fbf0731c492d"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 19, 22, 58, 659, DateTimeKind.Local).AddTicks(850),
                             EmployeeId = new Guid("37606ee7-0344-07f9-9861-dcc8c76ca0e9")
                         },
                         new
                         {
                             Id = new Guid("b80c0955-aabe-09b2-f62c-e8a5ae744a2e"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 20, 12, 25, 30, DateTimeKind.Local).AddTicks(6096),
                             EmployeeId = new Guid("404a7fce-ab8c-d16b-68d9-8dee66fd95e7")
                         },
                         new
                         {
                             Id = new Guid("4a695044-c5b9-4cc0-d046-5f43db2ddcb6"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 11, 58, 18, 186, DateTimeKind.Local).AddTicks(5354),
                             EmployeeId = new Guid("3d6bee70-7200-3c7b-5055-72da9dc239d6")
                         },
                         new
                         {
                             Id = new Guid("b648ed83-cc8a-8654-4d7b-29ee62189fec"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 20, 29, 22, 198, DateTimeKind.Local).AddTicks(197),
                             EmployeeId = new Guid("b3849386-1b85-d7a8-da8d-21ac93fe7f0b")
                         },
                         new
                         {
                             Id = new Guid("5efef252-c3e1-e996-0c77-d1bd27066991"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 4, 4, 18, 24, DateTimeKind.Local).AddTicks(8746),
                             EmployeeId = new Guid("95823a1a-9709-3ea9-58ef-46127cda7276")
                         },
                         new
                         {
                             Id = new Guid("3f647dde-d073-58a7-fc2b-3b40c4ca64d5"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 5, 34, 8, 739, DateTimeKind.Local).AddTicks(3127),
                             EmployeeId = new Guid("27ddcac8-8e99-757a-c6ca-c1c613a0381c")
                         },
                         new
                         {
                             Id = new Guid("e3f4f367-0e47-be7b-01e7-f987bbf17e0d"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 5, 9, 38, 537, DateTimeKind.Local).AddTicks(8334),
                             EmployeeId = new Guid("4dcd4591-be79-c803-7e7a-3b83bfbb3ec6")
                         },
                         new
                         {
                             Id = new Guid("6b398d8b-be9a-37d1-0cf2-c331df0b5494"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 20, 15, 8, 982, DateTimeKind.Local).AddTicks(6986),
                             EmployeeId = new Guid("d7f4c2a4-4bf5-a8c6-8268-85791239a5ce")
                         },
                         new
                         {
                             Id = new Guid("12f7301c-70a6-a303-804f-46bc22e7d6fa"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 1, 48, 2, 474, DateTimeKind.Local).AddTicks(6943),
                             EmployeeId = new Guid("9b8ff361-a3f6-1ecc-053f-8580ef74b416")
                         },
                         new
                         {
                             Id = new Guid("d776255a-cb6f-b53e-1a7b-665cd723a7d1"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 1, 18, 36, 44, DateTimeKind.Local).AddTicks(1236),
                             EmployeeId = new Guid("e4bc1a07-b055-b78a-2550-30809182ed59")
                         },
                         new
                         {
                             Id = new Guid("1a97fa93-e751-35c5-a04a-081052661d90"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 22, 12, 3, 100, DateTimeKind.Local).AddTicks(2045),
                             EmployeeId = new Guid("f7771f2d-0ae5-09f6-eb4e-54d4be81bfbd")
                         },
                         new
                         {
                             Id = new Guid("ba674687-27e8-f319-6e99-7a165366869a"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 2, 50, 55, 510, DateTimeKind.Local).AddTicks(2413),
                             EmployeeId = new Guid("8aebf336-454a-ce15-1858-cd309c7fa5d7")
                         },
                         new
                         {
                             Id = new Guid("95a9ef25-6b9e-6a12-14f5-ba93332a290c"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 1, 52, 21, 851, DateTimeKind.Local).AddTicks(6896),
                             EmployeeId = new Guid("70e938ab-9604-e755-8714-28c04e724354")
                         },
                         new
                         {
                             Id = new Guid("f438f2ae-9c56-3425-b4aa-cccb8fcd6980"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 12, 58, 25, 354, DateTimeKind.Local).AddTicks(6803),
                             EmployeeId = new Guid("a475a06a-144b-a224-9b7f-55e91f2fac37")
                         },
                         new
                         {
                             Id = new Guid("bcd64fc9-fd05-05b4-47eb-295a516e4e14"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 15, 12, 46, 977, DateTimeKind.Local).AddTicks(4247),
                             EmployeeId = new Guid("82ada9c7-b08a-e928-2d46-07aa959c891d")
                         },
                         new
                         {
                             Id = new Guid("3778f953-c05d-2947-2ac6-caaabf2f8362"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 21, 18, 7, 514, DateTimeKind.Local).AddTicks(7044),
                             EmployeeId = new Guid("7b855198-3554-5bc9-a1d0-a4386ecc4d99")
                         },
                         new
                         {
                             Id = new Guid("96a2f733-49de-4f8b-7b5d-41b850936f8a"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 0, 46, 56, 764, DateTimeKind.Local).AddTicks(7572),
                             EmployeeId = new Guid("cf3bb559-f0a3-05ad-29dd-b31c010c7612")
                         },
                         new
                         {
                             Id = new Guid("d3bdfb79-3f89-407d-6a2b-cd0c5e3ce2ba"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 11, 3, 13, 466, DateTimeKind.Local).AddTicks(835),
                             EmployeeId = new Guid("ebbebf5f-5172-376b-007f-ba2a378a25f0")
                         },
                         new
                         {
                             Id = new Guid("71d1ee9a-cccb-0de9-7917-50a4cc11d75e"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 17, 4, 54, 44, DateTimeKind.Local).AddTicks(8699),
                             EmployeeId = new Guid("62c61132-cbd3-9cf0-2490-e947f0e8a7d1")
                         },
                         new
                         {
                             Id = new Guid("08605618-2421-51ae-e27c-6dd86cd954b6"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 11, 34, 25, 454, DateTimeKind.Local).AddTicks(3651),
                             EmployeeId = new Guid("5551ca6a-e30a-2840-c5e3-3eeeae005f09")
                         },
                         new
                         {
                             Id = new Guid("32a006f1-2904-861a-00fa-86dda845df97"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 5, 3, 46, 677, DateTimeKind.Local).AddTicks(434),
                             EmployeeId = new Guid("856d7b9e-2783-8737-27f6-9f45def1a600")
                         },
                         new
                         {
                             Id = new Guid("7b1d4cb0-9006-3e0b-e3ca-775aadb7af83"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 6, 54, 34, 532, DateTimeKind.Local).AddTicks(5611),
                             EmployeeId = new Guid("b68b0d6c-b617-f374-bea6-b5efc87dad65")
                         },
                         new
                         {
                             Id = new Guid("9d06de5c-56ad-9f5c-c593-8d42487c44f6"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 0, 37, 15, 620, DateTimeKind.Local).AddTicks(5050),
                             EmployeeId = new Guid("05417ec3-44d6-927d-e764-63f35190acdb")
                         },
                         new
                         {
                             Id = new Guid("ebf8a199-bb36-9f89-d926-f9c1c21fe7dd"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 3, 53, 35, 214, DateTimeKind.Local).AddTicks(7161),
                             EmployeeId = new Guid("fc9c8d84-9a5a-f35f-f887-6ff7e33c102e")
                         },
                         new
                         {
                             Id = new Guid("f1aa2470-aa46-8856-2edd-68c071af91df"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 18, 1, 12, 341, DateTimeKind.Local).AddTicks(5073),
                             EmployeeId = new Guid("a2f0bc91-0460-bf6d-5589-a8ccc1e8f126")
                         },
                         new
                         {
                             Id = new Guid("b723e2d0-7983-d2cb-cb23-619f3c4c8f63"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 17, 48, 26, 193, DateTimeKind.Local).AddTicks(9848),
                             EmployeeId = new Guid("fc147293-eb5e-c86d-18a1-268661b65211")
                         },
                         new
                         {
                             Id = new Guid("33df41b2-c15a-6570-8812-303f647a14d9"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 1, 54, 36, 374, DateTimeKind.Local).AddTicks(5444),
                             EmployeeId = new Guid("5bcf8263-394d-3236-b1bd-0fe9e13a22f5")
                         },
                         new
                         {
                             Id = new Guid("d87a7826-658b-3ecd-2b73-e24c2af0d1b0"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 1, 19, 34, 995, DateTimeKind.Local).AddTicks(8004),
                             EmployeeId = new Guid("c2aa40ec-42cf-3686-04f6-53380cf6f52f")
                         },
                         new
                         {
                             Id = new Guid("1313f5c9-c043-e39a-fc24-2773c216f9c8"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 9, 48, 39, 134, DateTimeKind.Local).AddTicks(3479),
                             EmployeeId = new Guid("1a787689-e1b1-9385-7202-3b60140d74a6")
                         },
                         new
                         {
                             Id = new Guid("828ccd54-f244-c5a6-054f-92c963e81e83"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 5, 37, 28, 732, DateTimeKind.Local).AddTicks(8826),
                             EmployeeId = new Guid("263e772c-f3e2-8849-a8d8-5180aedf5e8f")
                         },
                         new
                         {
                             Id = new Guid("82f01737-19d1-ff04-1f35-31279979489c"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 5, 53, 26, 395, DateTimeKind.Local).AddTicks(7252),
                             EmployeeId = new Guid("5df02df5-19f5-9ea2-a022-6b302ab97004")
                         },
                         new
                         {
                             Id = new Guid("fa9c21ce-9395-5b69-c48b-a49281b4d3ff"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 13, 12, 35, 660, DateTimeKind.Local).AddTicks(2224),
                             EmployeeId = new Guid("466fc6ab-5b36-fc74-bef8-1d82abd31337")
                         },
                         new
                         {
                             Id = new Guid("f24068bb-8f86-28d4-f950-1b4b3d460445"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 1, 32, 53, 677, DateTimeKind.Local).AddTicks(8588),
                             EmployeeId = new Guid("94105602-3ccc-69d5-d6ac-096b74479b0b")
                         },
                         new
                         {
                             Id = new Guid("be67ee5b-743f-a37b-af72-c579f7399581"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 14, 33, 58, 676, DateTimeKind.Local).AddTicks(2290),
                             EmployeeId = new Guid("eb7c9d25-a3da-37e3-83ce-596bc3a89bb8")
                         },
                         new
                         {
                             Id = new Guid("6bc06a16-0a6f-3fa9-674c-7d6f90643307"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 10, 21, 52, 708, DateTimeKind.Local).AddTicks(9014),
                             EmployeeId = new Guid("e2651e9a-f9c7-b018-0fe5-59415ad06aa0")
                         },
                         new
                         {
                             Id = new Guid("ec0a7d00-b525-d734-2412-a7c5fab61484"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 19, 53, 52, 360, DateTimeKind.Local).AddTicks(8686),
                             EmployeeId = new Guid("2320d429-978e-4607-08fc-f1131d8a1f9f")
                         },
                         new
                         {
                             Id = new Guid("3496b3f7-5714-0332-3414-c331382d5f8d"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 0, 47, 21, 661, DateTimeKind.Local).AddTicks(9048),
                             EmployeeId = new Guid("511be75e-cb66-742c-aace-0253931a3306")
                         },
                         new
                         {
                             Id = new Guid("333bb69b-2d85-86bf-82b8-7ce0806cda5b"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 7, 53, 32, 453, DateTimeKind.Local).AddTicks(5370),
                             EmployeeId = new Guid("741e4ea8-c4c9-d2ff-7a7d-e29401a924db")
                         },
                         new
                         {
                             Id = new Guid("b1f395f6-c2ff-e060-6f97-9b29627835ff"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 22, 36, 29, 629, DateTimeKind.Local).AddTicks(9824),
                             EmployeeId = new Guid("d866258e-737f-2fc0-ca3e-125347a391fe")
                         },
                         new
                         {
                             Id = new Guid("d0550610-4aaf-34b8-42c5-5dd269226815"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 19, 19, 0, 0, DateTimeKind.Local).AddTicks(4276),
                             EmployeeId = new Guid("7d94129b-3ca5-4507-20aa-6f225b3e28e0")
                         },
                         new
                         {
                             Id = new Guid("4d24703c-ef4f-8fe7-1968-4b6c0d9f7659"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 10, 7, 24, 792, DateTimeKind.Local).AddTicks(7587),
                             EmployeeId = new Guid("8ec96f0d-1893-cd31-d44b-9c3610dc1865")
                         },
                         new
                         {
                             Id = new Guid("8e466743-1b1e-c512-3206-fa624d57c87f"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 9, 33, 18, 984, DateTimeKind.Local).AddTicks(3429),
                             EmployeeId = new Guid("42213dd9-5e80-ec25-7388-3840db8912d3")
                         },
                         new
                         {
                             Id = new Guid("bac8e006-cc9f-58f7-4f32-f2c926752264"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 8, 59, 1, 364, DateTimeKind.Local).AddTicks(8868),
                             EmployeeId = new Guid("53e01b3e-0c38-f6f8-81c1-87929180f9af")
                         },
                         new
                         {
                             Id = new Guid("293d3105-89b5-051e-fd15-451f666d889a"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 19, 9, 11, 622, DateTimeKind.Local).AddTicks(5759),
                             EmployeeId = new Guid("3a8242f0-4adc-12db-06e7-984b9df7dc29")
                         },
                         new
                         {
                             Id = new Guid("c327c2a7-93c2-3d3f-d4ed-2bf22b8a2de6"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 3, 19, 59, 411, DateTimeKind.Local).AddTicks(1250),
                             EmployeeId = new Guid("1a787689-e1b1-9385-7202-3b60140d74a6")
                         },
                         new
                         {
                             Id = new Guid("c6803013-43f9-120a-8c5b-9dda3de9ef4e"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 1, 43, 8, 236, DateTimeKind.Local).AddTicks(6092),
                             EmployeeId = new Guid("90fae1cd-2387-46a3-a0de-64d22e09810a")
                         },
                         new
                         {
                             Id = new Guid("4c75967a-184a-22d2-1995-3986ffd12d67"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 18, 46, 17, 977, DateTimeKind.Local).AddTicks(9291),
                             EmployeeId = new Guid("86bf789d-31d5-a953-d9b0-4d25f6a51da2")
                         },
                         new
                         {
                             Id = new Guid("80b7802d-e1b2-1236-ed09-3c3b0d071a4d"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 9, 55, 41, 345, DateTimeKind.Local).AddTicks(1700),
                             EmployeeId = new Guid("9b11625e-d198-f1fc-fea4-886be392dacc")
                         },
                         new
                         {
                             Id = new Guid("2127ad36-7cf0-d552-9e09-1081732823b1"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 20, 5, 39, 710, DateTimeKind.Local).AddTicks(5882),
                             EmployeeId = new Guid("667030fe-1fef-14f5-d186-cb67bae836f2")
                         },
                         new
                         {
                             Id = new Guid("06136bc2-18e4-5add-2c7e-e5830cca98ef"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 17, 31, 56, 373, DateTimeKind.Local).AddTicks(459),
                             EmployeeId = new Guid("a5df142b-ddcf-7fe4-9e5b-da4eb1389fe6")
                         },
                         new
                         {
                             Id = new Guid("0b6004c7-0898-88dd-c813-e9552c8a0ada"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 19, 59, 16, 218, DateTimeKind.Local).AddTicks(6466),
                             EmployeeId = new Guid("877c1f23-0854-6d07-f21a-932caad566cf")
                         },
                         new
                         {
                             Id = new Guid("22120843-5626-85b8-03b7-da38d5ac8efb"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 9, 29, 18, 337, DateTimeKind.Local).AddTicks(8307),
                             EmployeeId = new Guid("8aebf336-454a-ce15-1858-cd309c7fa5d7")
                         },
                         new
                         {
                             Id = new Guid("9006fd7b-4614-2843-b8f8-02ef20cca7c1"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 10, 3, 26, 683, DateTimeKind.Local).AddTicks(9149),
                             EmployeeId = new Guid("a10ae1ed-f370-4ac7-63d9-aadc59f829dc")
                         },
                         new
                         {
                             Id = new Guid("83dfb439-d0da-daee-14a9-9e8ef87818a8"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 20, 40, 55, 414, DateTimeKind.Local).AddTicks(9949),
                             EmployeeId = new Guid("403afc47-f562-c7df-3cda-9838ae81309f")
                         },
                         new
                         {
                             Id = new Guid("2de3dbfd-8c00-c700-ba6c-2dea37472f28"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 13, 24, 8, 950, DateTimeKind.Local).AddTicks(2498),
                             EmployeeId = new Guid("acdf67f8-66c7-ad12-d811-5358594043c7")
                         },
                         new
                         {
                             Id = new Guid("6c26bf2c-7f2f-6a19-0a77-0724fd84deb6"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 6, 22, 55, 447, DateTimeKind.Local).AddTicks(6143),
                             EmployeeId = new Guid("88d14542-a4c4-7874-e46d-07784291ce10")
                         },
                         new
                         {
                             Id = new Guid("08d9f7de-6e33-bee6-6647-c84f6c0c2f10"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 1, 4, 48, 317, DateTimeKind.Local).AddTicks(8236),
                             EmployeeId = new Guid("ae498bea-6906-4450-8d2c-d538d17f1e4f")
                         },
                         new
                         {
                             Id = new Guid("22e7aeb4-50f6-48b2-2f66-599029d124bc"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 15, 12, 30, 483, DateTimeKind.Local).AddTicks(6519),
                             EmployeeId = new Guid("f4d26cb0-ba48-4dc6-06d2-1f9fa954d54f")
                         },
                         new
                         {
                             Id = new Guid("c048fef2-22b3-2741-9b17-ce7326df97a2"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 7, 47, 45, 698, DateTimeKind.Local).AddTicks(7893),
                             EmployeeId = new Guid("2b09669b-26fb-7f50-aeaf-280b615c281b")
                         },
                         new
                         {
                             Id = new Guid("2581b8e3-57b6-b70d-9e7d-4850acbe01e4"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 14, 48, 29, 567, DateTimeKind.Local).AddTicks(3505),
                             EmployeeId = new Guid("e4bc1a07-b055-b78a-2550-30809182ed59")
                         },
                         new
                         {
                             Id = new Guid("28b4ff34-3017-f361-32b0-922f4cc4ae6f"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 16, 57, 54, 508, DateTimeKind.Local).AddTicks(1393),
                             EmployeeId = new Guid("1464762c-2580-6c0e-c40b-96fc8e8f40c3")
                         },
                         new
                         {
                             Id = new Guid("6ba56892-aaa2-c752-21b4-25fb2637eac3"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 12, 36, 5, 352, DateTimeKind.Local).AddTicks(5043),
                             EmployeeId = new Guid("095019cb-06c6-9401-a04c-e55e76408a0a")
                         },
                         new
                         {
                             Id = new Guid("6454f46a-06da-4e0c-fc8b-fe4f027298d9"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 17, 18, 27, 131, DateTimeKind.Local).AddTicks(7937),
                             EmployeeId = new Guid("40f601d9-faf8-7806-05db-f3338572be57")
                         },
                         new
                         {
                             Id = new Guid("69c47e12-3e3f-b40d-6bf8-6101d9406e07"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 16, 39, 33, 814, DateTimeKind.Local).AddTicks(542),
                             EmployeeId = new Guid("b901e23b-1a9b-5a0d-3f41-8c4a7581e619")
                         },
                         new
                         {
                             Id = new Guid("5c9565cb-3c56-6523-2288-8d5e6635411c"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 3, 3, 9, 683, DateTimeKind.Local).AddTicks(1858),
                             EmployeeId = new Guid("1b4f7775-8d4d-d3b1-2a9d-b99a47ef776c")
                         },
                         new
                         {
                             Id = new Guid("52cd2615-56a0-899a-250e-946bb59b80c3"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 16, 53, 1, 430, DateTimeKind.Local).AddTicks(2371),
                             EmployeeId = new Guid("80a77839-effc-d0de-2e50-7ff77df1f1bc")
                         },
                         new
                         {
                             Id = new Guid("d81b2c6d-2bea-99de-fbcb-97245d615727"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 8, 2, 16, 279, DateTimeKind.Local).AddTicks(2362),
                             EmployeeId = new Guid("374e6071-d32a-60b9-8404-598ed656059b")
                         },
                         new
                         {
                             Id = new Guid("b2bc06f4-56fe-1d8e-d8c2-e57212a0ef38"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 8, 20, 48, 243, DateTimeKind.Local).AddTicks(4346),
                             EmployeeId = new Guid("9ea4d165-cde5-3772-0093-f06d8f9573f9")
                         },
                         new
                         {
                             Id = new Guid("bcc226e2-bd9f-ea8d-360a-5d73a3c51b87"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 22, 14, 25, 668, DateTimeKind.Local).AddTicks(789),
                             EmployeeId = new Guid("ebcfbe93-e842-a75c-cc16-73d887e673ef")
                         },
                         new
                         {
                             Id = new Guid("0e5c821d-d706-5915-8584-6d28f92e8f1b"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 13, 33, 16, 753, DateTimeKind.Local).AddTicks(4218),
                             EmployeeId = new Guid("80a77839-effc-d0de-2e50-7ff77df1f1bc")
                         },
                         new
                         {
                             Id = new Guid("6b71f41d-1257-4e7a-42ac-f618d387e4dc"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 21, 22, 15, 647, DateTimeKind.Local).AddTicks(7622),
                             EmployeeId = new Guid("a53f4b1b-9749-326e-6891-c06b753399ec")
                         },
                         new
                         {
                             Id = new Guid("6489e4bc-6607-e1c8-6445-13aa2f54d194"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 14, 0, 51, 485, DateTimeKind.Local).AddTicks(2696),
                             EmployeeId = new Guid("8c79571e-a741-4cc0-8354-1cd1ceb4b993")
                         },
                         new
                         {
                             Id = new Guid("898bfc04-add3-6b8e-9aa1-1451c495d576"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 10, 16, 33, 869, DateTimeKind.Local).AddTicks(4247),
                             EmployeeId = new Guid("29d57ac0-0f59-beb5-bf89-95b5a4512a54")
                         },
                         new
                         {
                             Id = new Guid("308f0569-0816-022e-c7c3-01f35e31b481"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 6, 39, 12, 765, DateTimeKind.Local).AddTicks(4628),
                             EmployeeId = new Guid("0c0f7946-2e25-5146-f4aa-c74c2d0f0882")
                         },
                         new
                         {
                             Id = new Guid("fa79b6b6-402e-f44f-4f15-59de6c00f441"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 10, 15, 22, 668, DateTimeKind.Local).AddTicks(9293),
                             EmployeeId = new Guid("5503f364-a30a-18f4-aace-001781abf5c9")
                         },
                         new
                         {
                             Id = new Guid("aba48075-a7c6-ad99-b620-1013b9450add"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 13, 21, 9, 897, DateTimeKind.Local).AddTicks(1877),
                             EmployeeId = new Guid("c994f095-76fc-ffe0-48c2-e3ff7f0e45d0")
                         },
                         new
                         {
                             Id = new Guid("14c7f060-ecdf-e56d-95f2-69efa20b50bb"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 19, 31, 54, 233, DateTimeKind.Local).AddTicks(7171),
                             EmployeeId = new Guid("de22abec-2200-5a21-b6de-2c262bdcb79b")
                         },
                         new
                         {
                             Id = new Guid("929553b2-d399-013e-a099-61221a510714"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 19, 28, 48, 101, DateTimeKind.Local).AddTicks(8376),
                             EmployeeId = new Guid("668f0f4d-0aa8-46b7-65d8-31312a9f586d")
                         },
                         new
                         {
                             Id = new Guid("c259bec5-bb03-304c-6e07-69892fccce3e"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 9, 35, 11, 932, DateTimeKind.Local).AddTicks(617),
                             EmployeeId = new Guid("cb2a0bf9-aa94-2db6-cde4-901f477ff92f")
                         },
                         new
                         {
                             Id = new Guid("eaa0402d-4bcd-d033-4e9e-9af7740d6e4b"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 14, 14, 8, 158, DateTimeKind.Local).AddTicks(7344),
                             EmployeeId = new Guid("179f25cc-5e60-66e6-cd8e-2ec3e8fab906")
                         },
                         new
                         {
                             Id = new Guid("a24cd791-fad0-0f36-3156-4c1350497d80"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 23, 37, 23, 510, DateTimeKind.Local).AddTicks(3466),
                             EmployeeId = new Guid("8c85f846-a564-f81b-ea2d-3e5574633b19")
                         },
                         new
                         {
                             Id = new Guid("eacf778b-92fd-10d3-f47c-c08081e4263a"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 15, 25, 16, 218, DateTimeKind.Local).AddTicks(1487),
                             EmployeeId = new Guid("2320d429-978e-4607-08fc-f1131d8a1f9f")
                         },
                         new
                         {
                             Id = new Guid("3c96f0cf-7902-8b02-4aad-f78d432679cd"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 4, 19, 20, 753, DateTimeKind.Local).AddTicks(3396),
                             EmployeeId = new Guid("a5094880-d6c6-7a2c-cbd7-8e5a5d05826a")
                         },
                         new
                         {
                             Id = new Guid("e9fd104f-9242-d570-cb2e-290ff79e8d55"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 20, 19, 59, 660, DateTimeKind.Local).AddTicks(439),
                             EmployeeId = new Guid("a475a06a-144b-a224-9b7f-55e91f2fac37")
                         },
                         new
                         {
                             Id = new Guid("07fa71cd-6289-effd-7d59-07160d789992"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 1, 11, 13, 783, DateTimeKind.Local).AddTicks(7002),
                             EmployeeId = new Guid("b41d9d58-da27-5198-96e3-1de969701ccc")
                         },
                         new
                         {
                             Id = new Guid("a391a953-5c37-9e20-00ee-b6d196d8def4"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 20, 30, 44, 313, DateTimeKind.Local).AddTicks(3608),
                             EmployeeId = new Guid("297d91aa-db2b-676d-bbb0-a79c93c0c137")
                         },
                         new
                         {
                             Id = new Guid("a3458774-7cf3-17c3-1b96-5d0cff83dba1"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 12, 28, 52, 260, DateTimeKind.Local).AddTicks(6343),
                             EmployeeId = new Guid("79c147d2-da0f-b638-4205-68f491f1cf28")
                         },
                         new
                         {
                             Id = new Guid("c368abc3-01fc-88c6-703e-2f841e3e845d"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 11, 38, 45, 743, DateTimeKind.Local).AddTicks(9307),
                             EmployeeId = new Guid("973c1326-ed3d-48cd-ee59-75e823811367")
                         },
                         new
                         {
                             Id = new Guid("4474279d-0704-e1a2-b74d-bb374cb7ad90"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 15, 0, 0, 17, 736, DateTimeKind.Local).AddTicks(2212),
                             EmployeeId = new Guid("a2f20197-f295-27ed-f82f-da2aa5e0fe42")
                         },
                         new
                         {
                             Id = new Guid("f32da248-d952-12ec-3ece-7b265b928b9e"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 15, 6, 21, 847, DateTimeKind.Local).AddTicks(8925),
                             EmployeeId = new Guid("c7423288-097d-46fe-c70d-a8777d82881e")
                         },
                         new
                         {
                             Id = new Guid("1f59bb63-3b0f-06b5-e2cc-71ad2651bbc5"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 19, 18, 53, 956, DateTimeKind.Local).AddTicks(8642),
                             EmployeeId = new Guid("36af9871-c53d-d9ad-4845-f1ef13cab9c7")
                         },
                         new
                         {
                             Id = new Guid("f4186a21-1364-273c-5fa4-c1180741f7a8"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 7, 56, 35, 247, DateTimeKind.Local).AddTicks(961),
                             EmployeeId = new Guid("f4f21801-db00-7c2c-a2ab-d83b84b53bbb")
                         },
                         new
                         {
                             Id = new Guid("d39db81e-4609-21cd-54d4-a0cc272e712d"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 4, 3, 40, 767, DateTimeKind.Local).AddTicks(9109),
                             EmployeeId = new Guid("52aaa494-ab84-39a3-8bac-bca6867ce814")
                         },
                         new
                         {
                             Id = new Guid("13d30cf5-6156-b321-6a6c-2fa9b3d7e152"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 13, 38, 53, 663, DateTimeKind.Local).AddTicks(867),
                             EmployeeId = new Guid("39ca155e-f4a4-6674-7417-d8e2954e4b4c")
                         },
                         new
                         {
                             Id = new Guid("f297ae0f-53e7-d7bf-99e9-9513fb5d41f9"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 22, 5, 22, 178, DateTimeKind.Local).AddTicks(5816),
                             EmployeeId = new Guid("668f0f4d-0aa8-46b7-65d8-31312a9f586d")
                         },
                         new
                         {
                             Id = new Guid("92e77146-b462-2b25-ecf5-46dcf5a9633b"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 14, 5, 24, 378, DateTimeKind.Local).AddTicks(5044),
                             EmployeeId = new Guid("5737f560-5fca-a2f9-90ab-b2e071814f59")
                         },
                         new
                         {
                             Id = new Guid("8996c0eb-c988-58d5-334b-72de6b06d73d"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 1, 29, 58, 670, DateTimeKind.Local).AddTicks(4014),
                             EmployeeId = new Guid("013bfa78-ca8e-6aef-f859-ff9a7b372eb9")
                         },
                         new
                         {
                             Id = new Guid("27c13d34-e2d3-0d52-9f6a-9822289a5b5f"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 20, 52, 15, 14, DateTimeKind.Local).AddTicks(4110),
                             EmployeeId = new Guid("7bf42981-e9c5-c735-efcd-d23b750ed7ab")
                         },
                         new
                         {
                             Id = new Guid("5c8dc85e-e0f2-1779-dad5-1e6b3d13fc2a"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 4, 33, 37, 559, DateTimeKind.Local).AddTicks(1847),
                             EmployeeId = new Guid("86f3e538-7ef1-974b-496e-16a4bdb8aa17")
                         },
                         new
                         {
                             Id = new Guid("bc35a7c3-ee35-299a-4943-10a7f28d3fc9"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 8, 38, 56, 274, DateTimeKind.Local).AddTicks(4096),
                             EmployeeId = new Guid("90441891-4a38-b017-7c1f-bc0129917130")
                         },
                         new
                         {
                             Id = new Guid("cb5947cf-3778-fe81-5b0e-2c707e354bec"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 20, 10, 51, 55, DateTimeKind.Local).AddTicks(6897),
                             EmployeeId = new Guid("fdfc5948-239d-de86-e805-49836ce67441")
                         },
                         new
                         {
                             Id = new Guid("b6576d58-d32f-2eca-2bde-fd4aa983fc5a"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 4, 53, 36, 223, DateTimeKind.Local).AddTicks(3792),
                             EmployeeId = new Guid("d65af759-2c10-f1e1-dac3-51d5f77d1a7e")
                         },
                         new
                         {
                             Id = new Guid("f0b485bd-1a3f-d21d-9171-a6a0ff9f464e"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 2, 44, 5, 410, DateTimeKind.Local).AddTicks(9702),
                             EmployeeId = new Guid("71f41440-04ad-7a33-5e90-588a421565c0")
                         },
                         new
                         {
                             Id = new Guid("09adf72a-1f55-c45d-83ed-81dbfa82636b"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 2, 35, 28, 45, DateTimeKind.Local).AddTicks(8440),
                             EmployeeId = new Guid("02e92533-bb29-6f28-0bcf-f8d8d8b475c6")
                         },
                         new
                         {
                             Id = new Guid("00129c17-bc38-3d85-fdaa-623588e2c03f"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 19, 40, 51, 702, DateTimeKind.Local).AddTicks(1489),
                             EmployeeId = new Guid("7fc3336e-5a12-7075-291b-f66f611dcbe2")
                         },
                         new
                         {
                             Id = new Guid("56e2d15f-e599-9610-ab1e-9c34bfaaf660"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 11, 28, 22, 334, DateTimeKind.Local).AddTicks(7136),
                             EmployeeId = new Guid("1ad1d581-0fb2-e63c-6ba1-c250fd6002d0")
                         },
                         new
                         {
                             Id = new Guid("e1d04c74-1960-b820-f8f8-3a437e5b0a44"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 16, 16, 10, 987, DateTimeKind.Local).AddTicks(3862),
                             EmployeeId = new Guid("12207909-1db0-b330-d831-b41a9ada363a")
                         },
                         new
                         {
                             Id = new Guid("25281b78-1fd9-7660-a28a-9282cc28ee9b"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 21, 55, 5, 873, DateTimeKind.Local).AddTicks(7607),
                             EmployeeId = new Guid("bc9c2815-ad61-f653-a794-f7fd34175da7")
                         },
                         new
                         {
                             Id = new Guid("2d783c82-9e17-db71-1ed8-b4654a2aae9e"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 4, 38, 34, 621, DateTimeKind.Local).AddTicks(2814),
                             EmployeeId = new Guid("bf55a316-fae0-691a-f91e-a8dcdb81b02d")
                         },
                         new
                         {
                             Id = new Guid("a3ffc2f6-2d7e-7666-6d1a-8fbfdbb5bcb3"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 3, 7, 22, 279, DateTimeKind.Local).AddTicks(3676),
                             EmployeeId = new Guid("65eaa143-cca6-3d78-ac75-15625c74de84")
                         },
                         new
                         {
                             Id = new Guid("44678711-9d42-24ed-4757-1e89134f0898"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 4, 1, 20, 30, DateTimeKind.Local).AddTicks(8296),
                             EmployeeId = new Guid("c9b4cf4a-a533-2232-1ae7-ff8c55c6e2ec")
                         },
                         new
                         {
                             Id = new Guid("27b1fffa-c003-198f-d9b0-8d77a49eed3a"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 11, 51, 53, 417, DateTimeKind.Local).AddTicks(3151),
                             EmployeeId = new Guid("486ac186-df2d-ded1-e55e-3edb07935d3a")
                         },
                         new
                         {
                             Id = new Guid("089106bd-1f1e-914f-7b6f-d31d8f307005"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 23, 33, 44, 866, DateTimeKind.Local).AddTicks(3710),
                             EmployeeId = new Guid("021d5afa-083b-a780-b60e-f29e73752fc8")
                         },
                         new
                         {
                             Id = new Guid("84b38463-7414-dfb9-79ea-26156808afc5"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 19, 39, 16, 375, DateTimeKind.Local).AddTicks(221),
                             EmployeeId = new Guid("1dc5ab15-6b28-bbc5-a7a4-f7e383894f6b")
                         },
                         new
                         {
                             Id = new Guid("2eb40892-a913-9206-fe47-3399ffda3f2b"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 20, 42, 10, 213, DateTimeKind.Local).AddTicks(4579),
                             EmployeeId = new Guid("d41020ef-6be2-9cd6-6ea5-8d74f53de0df")
                         },
                         new
                         {
                             Id = new Guid("3f64947d-a6d6-5a55-6a14-df6ade9cf7cd"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 9, 12, 57, 228, DateTimeKind.Local).AddTicks(2863),
                             EmployeeId = new Guid("fc147293-eb5e-c86d-18a1-268661b65211")
                         },
                         new
                         {
                             Id = new Guid("e20dda9f-98bb-5146-273a-29dcb6bb0fec"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 20, 15, 47, 274, DateTimeKind.Local).AddTicks(3903),
                             EmployeeId = new Guid("6e141544-628d-43e6-f516-f3ba1a7b41e0")
                         },
                         new
                         {
                             Id = new Guid("4ebd87dd-7d9b-dc1e-55fc-070de87ca36a"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 18, 31, 0, 170, DateTimeKind.Local).AddTicks(4131),
                             EmployeeId = new Guid("4999b6de-1626-eafb-0de3-bcc7a83735d6")
                         },
                         new
                         {
                             Id = new Guid("5590a7a8-1f2e-3841-28af-ceb0949f8ed1"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 22, 43, 41, 865, DateTimeKind.Local).AddTicks(905),
                             EmployeeId = new Guid("a65257cd-1eaa-6da4-102e-50ec031380fd")
                         },
                         new
                         {
                             Id = new Guid("bb9c6472-54f0-2d1f-4060-1351687cb085"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 4, 6, 9, 608, DateTimeKind.Local).AddTicks(5590),
                             EmployeeId = new Guid("145c65b3-4f38-d63c-da2f-c1022d3007fa")
                         },
                         new
                         {
                             Id = new Guid("455a2e8f-2df5-4c86-736e-5aaad5881bfc"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 1, 57, 16, 763, DateTimeKind.Local).AddTicks(9987),
                             EmployeeId = new Guid("be8a086c-c51b-1f9e-b441-e48b28a7a66f")
                         },
                         new
                         {
                             Id = new Guid("f20f019f-d700-5d15-6633-e3196c839c52"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 22, 10, 47, 537, DateTimeKind.Local).AddTicks(3610),
                             EmployeeId = new Guid("23beeda2-4ccd-df4f-a240-49a1d3eeb330")
                         },
                         new
                         {
                             Id = new Guid("076a8da7-bfab-b6e6-3ec8-4d7f627935ae"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 7, 20, 51, 104, DateTimeKind.Local).AddTicks(8951),
                             EmployeeId = new Guid("8484b89c-0cd2-ceff-0c16-5f866c22ede9")
                         },
                         new
                         {
                             Id = new Guid("cfe06e59-1920-548f-ed26-3935bee42f64"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 9, 44, 13, 557, DateTimeKind.Local).AddTicks(3355),
                             EmployeeId = new Guid("c96af5d1-6c3e-1423-0159-60a5f24616a8")
                         },
                         new
                         {
                             Id = new Guid("211a3363-95d7-b319-80a0-37d56bd320be"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 23, 3, 21, 633, DateTimeKind.Local).AddTicks(342),
                             EmployeeId = new Guid("202dc18a-5e5b-a8ad-46b0-3be6084ede8f")
                         },
                         new
                         {
                             Id = new Guid("6b1cee4a-8ff8-9304-8e9a-3314d57a351c"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 14, 47, 37, 895, DateTimeKind.Local).AddTicks(7820),
                             EmployeeId = new Guid("370df0f5-2c1c-9292-4372-829071879019")
                         },
                         new
                         {
                             Id = new Guid("65073a08-b30e-51b5-cd62-9d267f9da1ea"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 7, 33, 48, 43, DateTimeKind.Local).AddTicks(1147),
                             EmployeeId = new Guid("4ea4238c-43d5-c1e9-15e0-557ca85feeb7")
                         },
                         new
                         {
                             Id = new Guid("01d29222-188a-8b4d-615b-35b7178063be"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 15, 0, 13, 15, 164, DateTimeKind.Local).AddTicks(4295),
                             EmployeeId = new Guid("5551ca6a-e30a-2840-c5e3-3eeeae005f09")
                         },
                         new
                         {
                             Id = new Guid("3d42b70d-3137-74f1-b477-348f2ad4411c"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 12, 26, 39, 570, DateTimeKind.Local).AddTicks(1470),
                             EmployeeId = new Guid("f584cc23-1549-0475-d0da-2162e1ae714f")
                         },
                         new
                         {
                             Id = new Guid("27c14c7d-f654-aa97-85a5-1bdf1ea7833a"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 6, 23, 48, 516, DateTimeKind.Local).AddTicks(5101),
                             EmployeeId = new Guid("ea9d4e47-920d-8a4b-5f31-c135948d6803")
                         },
                         new
                         {
                             Id = new Guid("a398d09b-1499-cb2d-0be2-d664a9874ac5"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 18, 14, 36, 119, DateTimeKind.Local).AddTicks(5683),
                             EmployeeId = new Guid("f4de4493-0927-6f7a-3f22-97066a6a3288")
                         },
                         new
                         {
                             Id = new Guid("869f47ee-cf6b-9798-16e8-a699303c669b"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 12, 0, 20, 714, DateTimeKind.Local).AddTicks(5032),
                             EmployeeId = new Guid("abd9664a-ad2f-2d9b-7d91-f3aa97c1db34")
                         },
                         new
                         {
                             Id = new Guid("2b271227-c78b-41af-7257-d3e147ee80f1"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 16, 35, 37, 140, DateTimeKind.Local).AddTicks(4368),
                             EmployeeId = new Guid("9b91b7b6-8552-fc28-a052-338a66a72779")
                         },
                         new
                         {
                             Id = new Guid("7d00d42c-e216-4965-a528-43ece2e19224"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 15, 36, 49, 6, DateTimeKind.Local).AddTicks(8479),
                             EmployeeId = new Guid("cd5507b4-0e65-c853-0e28-232581737787")
                         },
                         new
                         {
                             Id = new Guid("8ebcbe13-3f25-0642-5fab-b04a58a01db7"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 10, 1, 59, 698, DateTimeKind.Local).AddTicks(6667),
                             EmployeeId = new Guid("74ee111c-0ec1-613a-6c57-ea36a04da9fb")
                         },
                         new
                         {
                             Id = new Guid("7e264810-1909-6b2f-f100-b5c90329f0e7"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 14, 3, 55, 697, DateTimeKind.Local).AddTicks(5901),
                             EmployeeId = new Guid("4910cbb9-4d30-c43c-6687-72c11efdd3c2")
                         },
                         new
                         {
                             Id = new Guid("dcd43ddb-9d05-ddf4-ea4c-c429bdfee7b7"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 21, 18, 45, 190, DateTimeKind.Local).AddTicks(3320),
                             EmployeeId = new Guid("5b57435d-1724-3e23-6c57-ab214e9472c7")
                         },
                         new
                         {
                             Id = new Guid("d4f675b2-0650-e2aa-ad21-67b891478e4b"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 6, 48, 23, 406, DateTimeKind.Local).AddTicks(7758),
                             EmployeeId = new Guid("dc9037c0-f50d-c935-893a-d6565b7189ab")
                         },
                         new
                         {
                             Id = new Guid("3b15e120-1f45-d62c-f7cb-1b721dfa4cbd"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 4, 19, 15, 787, DateTimeKind.Local).AddTicks(5931),
                             EmployeeId = new Guid("f4b56c31-5d9e-46dc-4740-1d6376d5ed24")
                         },
                         new
                         {
                             Id = new Guid("ba5bd583-bc47-9382-33e2-2eb28f7b67cc"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 16, 25, 57, 982, DateTimeKind.Local).AddTicks(7784),
                             EmployeeId = new Guid("2c791fa7-43b0-9df6-e29a-758635f1f235")
                         },
                         new
                         {
                             Id = new Guid("3024b4b0-16b2-ae91-4abe-4489bd66eeb8"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 19, 4, 24, 598, DateTimeKind.Local).AddTicks(5305),
                             EmployeeId = new Guid("9cfbbf66-4040-a9e2-3ce2-da6bacd18870")
                         },
                         new
                         {
                             Id = new Guid("8cc37fcd-f3f9-18c8-8cf7-b52eee209733"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 16, 55, 28, 171, DateTimeKind.Local).AddTicks(1312),
                             EmployeeId = new Guid("51dad4ee-d028-11c8-1038-8b605e44b812")
                         },
                         new
                         {
                             Id = new Guid("0db5a3a8-d437-59ee-714b-a0c3d00637cf"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 7, 9, 23, 576, DateTimeKind.Local).AddTicks(939),
                             EmployeeId = new Guid("27c83261-358a-54c1-9c1d-42252fc11daf")
                         },
                         new
                         {
                             Id = new Guid("feea3c2b-b605-9095-5668-26323a58f21c"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 17, 4, 2, 849, DateTimeKind.Local).AddTicks(1321),
                             EmployeeId = new Guid("8cd64721-6fc1-f85e-5425-223f3188cf77")
                         },
                         new
                         {
                             Id = new Guid("9a0ab78b-cc57-34ec-e427-b751de468c34"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 8, 1, 2, 165, DateTimeKind.Local).AddTicks(4076),
                             EmployeeId = new Guid("2c37c6de-df85-bc5a-6a1e-43f9fcb97c9b")
                         },
                         new
                         {
                             Id = new Guid("44a157b0-f098-194b-666a-deeab4b74761"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 20, 21, 11, 519, DateTimeKind.Local).AddTicks(3212),
                             EmployeeId = new Guid("bea45041-7811-13fb-34aa-ec13d3071da3")
                         },
                         new
                         {
                             Id = new Guid("82193193-69b0-179e-47ec-ad248a5ddc68"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 4, 9, 6, 66, DateTimeKind.Local).AddTicks(7967),
                             EmployeeId = new Guid("c5fefc3a-b8d9-5cd5-59e0-d81b45d39f83")
                         },
                         new
                         {
                             Id = new Guid("b30caa72-c985-3c06-0399-96e41b14c62b"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 23, 39, 1, 795, DateTimeKind.Local).AddTicks(7620),
                             EmployeeId = new Guid("b2695041-94b5-748d-6959-c7bf02ba59cf")
                         },
                         new
                         {
                             Id = new Guid("d8f9dbf1-2c03-45b8-548d-d74f2c78fead"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 22, 10, 55, 298, DateTimeKind.Local).AddTicks(9075),
                             EmployeeId = new Guid("d3fd68f5-744a-1edf-e816-7aff2b96fdcc")
                         },
                         new
                         {
                             Id = new Guid("2caab993-7d9b-08b0-9210-c33168d146f8"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 1, 26, 48, 277, DateTimeKind.Local).AddTicks(6122),
                             EmployeeId = new Guid("486ac186-df2d-ded1-e55e-3edb07935d3a")
                         },
                         new
                         {
                             Id = new Guid("83cd8608-afb1-4a2c-6a6c-1c66cfa4f603"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 12, 46, 19, 377, DateTimeKind.Local).AddTicks(5908),
                             EmployeeId = new Guid("d51f5f5a-2a4a-8c9f-6676-b80e088f7743")
                         },
                         new
                         {
                             Id = new Guid("24525b5e-3526-5b91-6e7e-e67f6734257e"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 1, 50, 1, 193, DateTimeKind.Local).AddTicks(2961),
                             EmployeeId = new Guid("bb6a40ab-eb1c-742b-6b13-467e986a5747")
                         },
                         new
                         {
                             Id = new Guid("326e7df8-9c46-a975-f48d-71cd2bb2e81a"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 7, 33, 51, 509, DateTimeKind.Local).AddTicks(7319),
                             EmployeeId = new Guid("2c3bda47-f849-9c5c-54cf-3ebb8f8f9f3b")
                         },
                         new
                         {
                             Id = new Guid("54204ea6-ccbd-ec84-b532-a925ff3de64d"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 5, 23, 50, 795, DateTimeKind.Local).AddTicks(5740),
                             EmployeeId = new Guid("4299037c-f8d9-374b-6935-375403216fc6")
                         },
                         new
                         {
                             Id = new Guid("8bb1880c-cd9c-b0fd-bbcd-7e1aafc8951f"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 4, 41, 8, 812, DateTimeKind.Local).AddTicks(2873),
                             EmployeeId = new Guid("dc8a5d55-521a-ce88-6812-08d19af3b97a")
                         },
                         new
                         {
                             Id = new Guid("afc265b1-77bf-674a-718f-4564b72a4da9"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 16, 48, 37, 846, DateTimeKind.Local).AddTicks(3655),
                             EmployeeId = new Guid("62eb377b-c1e2-c56f-5230-55e613c518cb")
                         },
                         new
                         {
                             Id = new Guid("1cbf8683-1fc9-1736-f95c-6a1efe75073e"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 18, 58, 18, 243, DateTimeKind.Local).AddTicks(7996),
                             EmployeeId = new Guid("e8852dae-7780-3b11-f436-fb88544a96e4")
                         },
                         new
                         {
                             Id = new Guid("665213f1-218b-6875-c7ef-621fbb292453"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 3, 17, 0, 555, DateTimeKind.Local).AddTicks(7054),
                             EmployeeId = new Guid("3e653949-20de-c4a6-62c0-1c457fa95b27")
                         },
                         new
                         {
                             Id = new Guid("5f898ff8-0a50-7007-46ee-afec8b5fff03"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 15, 20, 23, 528, DateTimeKind.Local).AddTicks(9978),
                             EmployeeId = new Guid("8e578d08-5fce-b32e-39f2-682162af8a65")
                         },
                         new
                         {
                             Id = new Guid("b753fa34-276f-3d97-aef4-da22644c7851"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 9, 35, 5, 550, DateTimeKind.Local).AddTicks(3979),
                             EmployeeId = new Guid("2c97f8ed-a641-c64d-f5c4-026f86dd8e0c")
                         },
                         new
                         {
                             Id = new Guid("b0845b01-792f-0317-d7c0-bb26752283bd"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 6, 54, 56, 57, DateTimeKind.Local).AddTicks(3557),
                             EmployeeId = new Guid("eeeae6a8-f7dc-e1a0-87a5-c721e33a0d5a")
                         },
                         new
                         {
                             Id = new Guid("cdb9371a-7c58-cc6b-4ba0-120db59afa2f"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 18, 58, 11, 524, DateTimeKind.Local).AddTicks(3117),
                             EmployeeId = new Guid("7bb54f0a-e70c-7194-3c87-22515ce21b31")
                         },
                         new
                         {
                             Id = new Guid("24573d23-7cc0-cef2-64ff-e18e29ab714e"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 11, 39, 17, 52, DateTimeKind.Local).AddTicks(7776),
                             EmployeeId = new Guid("e30980db-8111-aff9-489c-477ce127597a")
                         },
                         new
                         {
                             Id = new Guid("adc4342b-63cb-b2c4-068b-7af2be0d0582"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 6, 14, 11, 333, DateTimeKind.Local).AddTicks(8269),
                             EmployeeId = new Guid("fc900227-b15a-f7f9-8f06-d846721f8fc8")
                         },
                         new
                         {
                             Id = new Guid("ad6550f8-cd06-116a-e862-444c7ee73684"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 23, 32, 37, 661, DateTimeKind.Local).AddTicks(850),
                             EmployeeId = new Guid("cb2a0bf9-aa94-2db6-cde4-901f477ff92f")
                         },
                         new
                         {
                             Id = new Guid("cafbc18b-43ec-0ce9-2281-2429d68b684f"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 14, 56, 43, 845, DateTimeKind.Local).AddTicks(6644),
                             EmployeeId = new Guid("8cd64721-6fc1-f85e-5425-223f3188cf77")
                         },
                         new
                         {
                             Id = new Guid("5161e0bd-50dc-3ec1-fc0b-8888ef230b37"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 15, 36, 28, 477, DateTimeKind.Local).AddTicks(4725),
                             EmployeeId = new Guid("452d6f84-a76f-5dc5-57f4-50e5f17a72d7")
                         },
                         new
                         {
                             Id = new Guid("c01c6a78-9048-39c4-6dc0-1697f8be8ea1"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 0, 38, 42, 917, DateTimeKind.Local).AddTicks(4362),
                             EmployeeId = new Guid("55edf125-5274-42f6-6cdc-2d1d01d18f24")
                         },
                         new
                         {
                             Id = new Guid("042a791f-00ed-f89a-3505-cb541652b74d"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 2, 3, 34, 828, DateTimeKind.Local).AddTicks(5462),
                             EmployeeId = new Guid("d083df3c-a658-606b-c17a-e2c16b7fa70f")
                         },
                         new
                         {
                             Id = new Guid("1717c119-7e54-74e5-8fca-60815b0de2dd"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 12, 15, 19, 172, DateTimeKind.Local).AddTicks(2670),
                             EmployeeId = new Guid("ac8b5c61-90eb-2d3b-fe24-289e49d349fa")
                         },
                         new
                         {
                             Id = new Guid("97adbf2e-338f-6ca1-ff45-407072008f10"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 5, 53, 27, 623, DateTimeKind.Local).AddTicks(7897),
                             EmployeeId = new Guid("1d11c90c-8bf9-e4d2-fdac-a025ce828ed2")
                         },
                         new
                         {
                             Id = new Guid("8c0785d6-2d0a-83d4-6f46-3474ab00b571"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 14, 46, 31, 945, DateTimeKind.Local).AddTicks(1921),
                             EmployeeId = new Guid("8a7c8ad8-ba28-9c60-b7ee-9aeb25b46e7a")
                         },
                         new
                         {
                             Id = new Guid("11b2e388-2fe6-5a4e-ee81-ccfc34d6a977"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 20, 5, 16, 89, DateTimeKind.Local).AddTicks(6318),
                             EmployeeId = new Guid("5b6f9f25-5597-06e9-998e-b6694a8af696")
                         },
                         new
                         {
                             Id = new Guid("afbb69a3-2532-d0cb-956f-bc8e2fa5837f"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 9, 27, 15, 928, DateTimeKind.Local).AddTicks(8727),
                             EmployeeId = new Guid("877c1f23-0854-6d07-f21a-932caad566cf")
                         },
                         new
                         {
                             Id = new Guid("d3bb5d21-02e5-4aa2-009e-0189d54a2cc8"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 16, 8, 53, 574, DateTimeKind.Local).AddTicks(4814),
                             EmployeeId = new Guid("b749e575-e522-d8a1-9ebd-09b7e96a1f6b")
                         },
                         new
                         {
                             Id = new Guid("5e1bec80-eab9-f332-9d57-b0562b536c05"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 21, 12, 33, 1, DateTimeKind.Local).AddTicks(3174),
                             EmployeeId = new Guid("753f7da7-1b0e-4e30-8e31-fa842fe87084")
                         },
                         new
                         {
                             Id = new Guid("db8facd5-32ca-e694-e643-02ddc3b149a3"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 23, 39, 34, 400, DateTimeKind.Local).AddTicks(1462),
                             EmployeeId = new Guid("3c98e7a7-4170-051d-d36a-d7f9206146ca")
                         },
                         new
                         {
                             Id = new Guid("0fb3e802-f305-474f-d535-694455e12af7"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 6, 50, 46, 616, DateTimeKind.Local).AddTicks(6575),
                             EmployeeId = new Guid("f7e210a0-1966-e370-2e2a-751626ab2bf2")
                         },
                         new
                         {
                             Id = new Guid("04242c50-af4b-7a9a-eda4-e1b0e4ffd8e4"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 14, 7, 31, 880, DateTimeKind.Local).AddTicks(8495),
                             EmployeeId = new Guid("e3b9cb7f-7cec-c398-4dad-8a9f9c7fa970")
                         },
                         new
                         {
                             Id = new Guid("ea7be889-b0be-fe7d-adfb-98bac2b276b5"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 21, 36, 29, 992, DateTimeKind.Local).AddTicks(8068),
                             EmployeeId = new Guid("5681e916-21c9-d852-601a-b0eaf1006cff")
                         },
                         new
                         {
                             Id = new Guid("786b5f67-a262-85f4-8445-7dfc7cd5e967"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 22, 37, 25, 93, DateTimeKind.Local).AddTicks(412),
                             EmployeeId = new Guid("ae498bea-6906-4450-8d2c-d538d17f1e4f")
                         },
                         new
                         {
                             Id = new Guid("b0ce5366-7eed-ea54-1ffd-6e4a0506caba"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 1, 30, 24, 790, DateTimeKind.Local).AddTicks(9622),
                             EmployeeId = new Guid("d75a8fef-e6a9-928e-0ddc-a75747671a0c")
                         },
                         new
                         {
                             Id = new Guid("2bca4818-b9f9-fe2f-1ce4-d84b4de09177"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 15, 19, 40, 441, DateTimeKind.Local).AddTicks(2870),
                             EmployeeId = new Guid("13b28c2c-d902-2d25-6cdd-ddcc267b9215")
                         },
                         new
                         {
                             Id = new Guid("b80dfa7e-87d5-fb16-78f6-b11aac49b9bc"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 21, 20, 22, 494, DateTimeKind.Local).AddTicks(7824),
                             EmployeeId = new Guid("33556666-0bb2-22eb-dc9e-04aedae0d3d0")
                         },
                         new
                         {
                             Id = new Guid("7fbdf6d5-0538-b147-2169-748e3a218e9f"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 22, 45, 18, 114, DateTimeKind.Local).AddTicks(999),
                             EmployeeId = new Guid("626f016c-5539-bc7a-d667-4470b2de83f0")
                         },
                         new
                         {
                             Id = new Guid("bee2a3f4-08b6-ca6a-2b02-932498db67c4"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 5, 14, 17, 300, DateTimeKind.Local).AddTicks(8973),
                             EmployeeId = new Guid("107e17d2-d017-74d1-2a33-4cb83fd1da86")
                         },
                         new
                         {
                             Id = new Guid("d68eb2d5-91f4-6803-77f8-1da945b168a7"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 21, 36, 5, 180, DateTimeKind.Local).AddTicks(794),
                             EmployeeId = new Guid("fc900227-b15a-f7f9-8f06-d846721f8fc8")
                         },
                         new
                         {
                             Id = new Guid("3bcd7706-af1b-458e-dcb2-d35dd5def935"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 2, 38, 37, 408, DateTimeKind.Local).AddTicks(1247),
                             EmployeeId = new Guid("5ea84a9f-3509-7073-07ff-36a0bba20cbc")
                         },
                         new
                         {
                             Id = new Guid("9fb22dee-d1f3-580d-4d73-2f34e1d27fb9"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 5, 34, 31, 146, DateTimeKind.Local).AddTicks(5450),
                             EmployeeId = new Guid("1a787689-e1b1-9385-7202-3b60140d74a6")
                         },
                         new
                         {
                             Id = new Guid("4c662673-b527-9ba4-47cb-4b7b8b40b803"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 23, 41, 49, 312, DateTimeKind.Local).AddTicks(5771),
                             EmployeeId = new Guid("5a6d0d0d-49a4-b1d0-89b5-0f12d437bead")
                         },
                         new
                         {
                             Id = new Guid("560d69da-d140-7dac-f18b-5524f52d66f3"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 7, 38, 1, 227, DateTimeKind.Local).AddTicks(4618),
                             EmployeeId = new Guid("4299037c-f8d9-374b-6935-375403216fc6")
                         },
                         new
                         {
                             Id = new Guid("364fe98b-8dc6-f701-a4f4-29ce74652c2d"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 1, 44, 9, 473, DateTimeKind.Local).AddTicks(3742),
                             EmployeeId = new Guid("b560867e-ae54-ea2a-6bed-3240a8237e1f")
                         },
                         new
                         {
                             Id = new Guid("377b7a26-10b2-a6f2-564d-244c117c2ac8"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 16, 42, 8, 244, DateTimeKind.Local).AddTicks(6078),
                             EmployeeId = new Guid("c2a1b897-afba-ea53-733d-ccf17534bff1")
                         },
                         new
                         {
                             Id = new Guid("da3ec947-8908-bcc7-e1be-c800588dd661"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 1, 56, 38, 624, DateTimeKind.Local).AddTicks(2534),
                             EmployeeId = new Guid("6471034e-79fb-15d7-564d-d86dff4a27d1")
                         },
                         new
                         {
                             Id = new Guid("e6d3259c-a9ab-a87f-1852-499c3fa1d91e"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 12, 21, 46, 907, DateTimeKind.Local).AddTicks(9712),
                             EmployeeId = new Guid("c2a4cb93-2b34-c6b5-7382-ecbe2c62d00a")
                         },
                         new
                         {
                             Id = new Guid("53ebae72-e710-4d8e-cbbe-3a1ac4b83bee"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 22, 33, 49, 668, DateTimeKind.Local).AddTicks(8523),
                             EmployeeId = new Guid("3dda2845-22d2-9034-4c59-df452da5e95c")
                         },
                         new
                         {
                             Id = new Guid("e1893093-6aae-2297-885e-7f6fd07ac59d"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 1, 8, 57, 201, DateTimeKind.Local).AddTicks(1540),
                             EmployeeId = new Guid("da2aa88a-e4d5-5d51-f5fd-0ce1270bd398")
                         },
                         new
                         {
                             Id = new Guid("5c1cfec3-e9b3-37dd-84e3-04b3cbab2354"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 7, 35, 55, 330, DateTimeKind.Local).AddTicks(5109),
                             EmployeeId = new Guid("953cabaa-1aa0-c3a9-4b96-d9e82ab5e215")
                         },
                         new
                         {
                             Id = new Guid("c579e93c-ee05-4f4c-69a0-ff1b373d3caf"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 11, 48, 40, 52, DateTimeKind.Local).AddTicks(2486),
                             EmployeeId = new Guid("017758c5-ba76-3eae-25b6-2a5a82d79272")
                         },
                         new
                         {
                             Id = new Guid("33d1f7d5-3e12-ab84-b3c3-ad2555b33674"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 22, 46, 3, 502, DateTimeKind.Local).AddTicks(2966),
                             EmployeeId = new Guid("cd5507b4-0e65-c853-0e28-232581737787")
                         },
                         new
                         {
                             Id = new Guid("9a676d16-9773-c885-cc75-8ffc3fdd9b14"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 17, 31, 37, 613, DateTimeKind.Local).AddTicks(5108),
                             EmployeeId = new Guid("08b60a86-017e-3625-13af-4504a8a9f28e")
                         },
                         new
                         {
                             Id = new Guid("43818766-8c99-7abc-aa68-01c95365aa5f"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 20, 6, 13, 981, DateTimeKind.Local).AddTicks(3467),
                             EmployeeId = new Guid("13669c7d-b6fa-ecb9-e4eb-534c510930ec")
                         },
                         new
                         {
                             Id = new Guid("768d9c5d-36b7-c724-6d48-b99f610932e3"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 3, 46, 30, 518, DateTimeKind.Local).AddTicks(7938),
                             EmployeeId = new Guid("c8aa4535-b95e-0cd4-e724-a871e82faf14")
                         },
                         new
                         {
                             Id = new Guid("1cb70ecd-5fdb-abcb-3b96-947d35a6770e"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 13, 1, 21, 211, DateTimeKind.Local).AddTicks(9884),
                             EmployeeId = new Guid("80fb4151-bbe2-b12b-d9bd-3d2674c46702")
                         },
                         new
                         {
                             Id = new Guid("c4750cca-324f-c9f0-9fc0-2082f9ca3ca0"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 0, 58, 3, 109, DateTimeKind.Local).AddTicks(9667),
                             EmployeeId = new Guid("1d11c90c-8bf9-e4d2-fdac-a025ce828ed2")
                         },
                         new
                         {
                             Id = new Guid("8aeb16b1-30e8-cad8-83f8-e9fb19099fca"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 7, 8, 53, 218, DateTimeKind.Local).AddTicks(7438),
                             EmployeeId = new Guid("02692b1b-fcae-657f-ab6f-82eebad38584")
                         },
                         new
                         {
                             Id = new Guid("96eaea67-eb2b-141a-9bb3-f90528689a27"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 6, 8, 58, 67, DateTimeKind.Local).AddTicks(9364),
                             EmployeeId = new Guid("02b8c41c-9d5c-193f-0625-5b4842e72e8b")
                         },
                         new
                         {
                             Id = new Guid("6776938c-d06c-c4b6-0778-59001e47053e"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 18, 33, 7, 337, DateTimeKind.Local).AddTicks(2256),
                             EmployeeId = new Guid("677a30b4-7148-60e5-3503-cb3b9c744748")
                         },
                         new
                         {
                             Id = new Guid("1cce9fc0-173d-f28a-c192-7fe2a4eb9bcc"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 17, 8, 11, 258, DateTimeKind.Local).AddTicks(5699),
                             EmployeeId = new Guid("511be75e-cb66-742c-aace-0253931a3306")
                         },
                         new
                         {
                             Id = new Guid("2675c67e-9b12-b242-dabe-222a05607c1e"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 12, 29, 19, 364, DateTimeKind.Local).AddTicks(4061),
                             EmployeeId = new Guid("66f77b5d-3be5-7b0b-b749-b93ef8fe6b9b")
                         },
                         new
                         {
                             Id = new Guid("dde25039-32f5-9688-b415-837b504c1249"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 6, 11, 43, 754, DateTimeKind.Local).AddTicks(5931),
                             EmployeeId = new Guid("a67e5327-67ff-9726-f2ae-f106c3734212")
                         },
                         new
                         {
                             Id = new Guid("64fa81bb-34b0-689e-7982-28ccb80d3eb7"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 23, 45, 41, 835, DateTimeKind.Local).AddTicks(3582),
                             EmployeeId = new Guid("90b7a876-14e2-7519-3f71-723ab04eac1f")
                         },
                         new
                         {
                             Id = new Guid("058af480-9d8d-4256-d2dd-f217c3d36903"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 7, 44, 8, 527, DateTimeKind.Local).AddTicks(4244),
                             EmployeeId = new Guid("88d14542-a4c4-7874-e46d-07784291ce10")
                         },
                         new
                         {
                             Id = new Guid("c956a831-130e-488c-cb6d-1194e0adcfca"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 7, 37, 47, 439, DateTimeKind.Local).AddTicks(7328),
                             EmployeeId = new Guid("01fb88d4-943e-fbd7-86e2-f30a4b11ad11")
                         },
                         new
                         {
                             Id = new Guid("f159c76d-8bcb-6a87-64f9-4e0a4979466a"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 12, 28, 16, 799, DateTimeKind.Local).AddTicks(8424),
                             EmployeeId = new Guid("993a7a32-4269-9f98-f1b5-fb6dfc8c8210")
                         },
                         new
                         {
                             Id = new Guid("5501f17b-d58b-48c1-1269-f409e5d279d1"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 8, 33, 45, 26, DateTimeKind.Local).AddTicks(5158),
                             EmployeeId = new Guid("24a2e1ca-1834-993f-2161-8c74b9f851ff")
                         },
                         new
                         {
                             Id = new Guid("a8873d8b-4f27-637c-c81b-9a438ea059b4"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 21, 31, 51, 607, DateTimeKind.Local).AddTicks(3466),
                             EmployeeId = new Guid("452d6f84-a76f-5dc5-57f4-50e5f17a72d7")
                         },
                         new
                         {
                             Id = new Guid("430a1ccd-0175-ef70-6937-cfa72191899e"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 10, 57, 28, 105, DateTimeKind.Local).AddTicks(786),
                             EmployeeId = new Guid("343ff6a1-a323-bba0-11ce-82ba9093a051")
                         },
                         new
                         {
                             Id = new Guid("710f06d9-2cf8-2677-6568-8c1def65b20b"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 2, 11, 35, 505, DateTimeKind.Local).AddTicks(8205),
                             EmployeeId = new Guid("58d9b3dd-9e26-a4eb-a9c6-a0718e911da6")
                         },
                         new
                         {
                             Id = new Guid("5fb7a711-2b12-74f9-78b1-05026bc04192"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 6, 52, 2, 105, DateTimeKind.Local).AddTicks(1673),
                             EmployeeId = new Guid("25755f06-6967-22a0-4c95-0132ec3b1c26")
                         },
                         new
                         {
                             Id = new Guid("dafd1611-870b-19dd-df42-6f86ef1df3e2"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 20, 29, 36, 852, DateTimeKind.Local).AddTicks(7155),
                             EmployeeId = new Guid("28568d81-2291-4f47-4062-4bb5eb650a10")
                         },
                         new
                         {
                             Id = new Guid("b8ff45fc-75ff-655f-215d-aed2464def6f"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 13, 44, 48, 28, DateTimeKind.Local).AddTicks(4253),
                             EmployeeId = new Guid("aadc2450-a2f3-fa05-4b59-b5e9b0080a43")
                         },
                         new
                         {
                             Id = new Guid("1235d7ab-3119-2b09-16e5-77dda070c5c0"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 6, 14, 20, 641, DateTimeKind.Local).AddTicks(6797),
                             EmployeeId = new Guid("53e01b3e-0c38-f6f8-81c1-87929180f9af")
                         },
                         new
                         {
                             Id = new Guid("21ab64fe-bcbc-6f31-2938-ffad10ced276"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 0, 58, 3, 510, DateTimeKind.Local).AddTicks(3675),
                             EmployeeId = new Guid("be7050b0-4618-52a8-7a2f-b24f48f6eda9")
                         },
                         new
                         {
                             Id = new Guid("49f686e5-8049-7fa9-0d61-808c8a5d8516"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 4, 32, 44, 352, DateTimeKind.Local).AddTicks(9617),
                             EmployeeId = new Guid("08ddf005-b3ec-8d1e-c096-726a19a84297")
                         },
                         new
                         {
                             Id = new Guid("c2e85579-f2df-3716-670f-cdfaf6f9302b"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 22, 19, 47, 890, DateTimeKind.Local).AddTicks(4582),
                             EmployeeId = new Guid("88d14542-a4c4-7874-e46d-07784291ce10")
                         },
                         new
                         {
                             Id = new Guid("3c12a161-0d23-aba8-7450-8bb86976184d"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 21, 48, 59, 293, DateTimeKind.Local).AddTicks(5659),
                             EmployeeId = new Guid("ab7ba991-ceda-6517-c8ad-aea6775a14d0")
                         },
                         new
                         {
                             Id = new Guid("48335716-7041-673f-8a92-5a31ad0e4e9d"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 20, 40, 49, 120, DateTimeKind.Local).AddTicks(5389),
                             EmployeeId = new Guid("39dce50c-fd10-25a2-01fb-5f308a400b2e")
                         },
                         new
                         {
                             Id = new Guid("4637b4c5-e7a1-57dc-6483-deac522e13f1"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 14, 25, 1, 150, DateTimeKind.Local).AddTicks(3352),
                             EmployeeId = new Guid("9960959e-b32b-462d-2344-fb21bda8164c")
                         },
                         new
                         {
                             Id = new Guid("a6e3ccd0-191e-1e1a-dea9-1bd803e6c437"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 13, 52, 31, 948, DateTimeKind.Local).AddTicks(8789),
                             EmployeeId = new Guid("d72ebf19-43c1-d83b-9be5-b99818eb71d8")
                         },
                         new
                         {
                             Id = new Guid("18656191-e4db-e5ac-0703-991c8a6fbc96"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 13, 51, 57, 733, DateTimeKind.Local).AddTicks(2548),
                             EmployeeId = new Guid("27c83261-358a-54c1-9c1d-42252fc11daf")
                         },
                         new
                         {
                             Id = new Guid("c9872d18-adfe-aa48-dbc6-8ef60312b39c"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 23, 12, 43, 680, DateTimeKind.Local).AddTicks(3268),
                             EmployeeId = new Guid("3bb090c3-b963-d695-4f16-ac3b3f604ee5")
                         },
                         new
                         {
                             Id = new Guid("3372c108-1b13-8d44-9069-464f785601c6"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 15, 10, 6, 796, DateTimeKind.Local).AddTicks(194),
                             EmployeeId = new Guid("1464762c-2580-6c0e-c40b-96fc8e8f40c3")
                         },
                         new
                         {
                             Id = new Guid("3a926a67-1fd1-0c78-950a-d7d2c62b98d8"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 5, 45, 47, 468, DateTimeKind.Local).AddTicks(8983),
                             EmployeeId = new Guid("d083df3c-a658-606b-c17a-e2c16b7fa70f")
                         },
                         new
                         {
                             Id = new Guid("20b9ad73-41b7-7794-15a0-024bd0925e03"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 21, 14, 58, 921, DateTimeKind.Local).AddTicks(5900),
                             EmployeeId = new Guid("3bc35ba8-9879-befe-4806-9feaf5411898")
                         },
                         new
                         {
                             Id = new Guid("0f9a14a0-82af-96b9-8024-df7db41fe996"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 17, 49, 54, 403, DateTimeKind.Local).AddTicks(4945),
                             EmployeeId = new Guid("a08a6d3f-3caa-f2fc-156f-3b816a4faacb")
                         },
                         new
                         {
                             Id = new Guid("a73cf8da-6b62-be92-0640-67274f62c505"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 20, 33, 50, 681, DateTimeKind.Local).AddTicks(677),
                             EmployeeId = new Guid("7507f09c-7565-8bd0-a47c-539e814e49b1")
                         },
                         new
                         {
                             Id = new Guid("aafe9d09-5214-2336-4d2b-e7fb7455fe9b"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 13, 53, 23, 462, DateTimeKind.Local).AddTicks(5600),
                             EmployeeId = new Guid("740d4fe6-69e2-20db-872e-03e726016571")
                         },
                         new
                         {
                             Id = new Guid("c41ca337-56b2-fc18-8f1a-ef1903bd4ba4"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 21, 40, 53, 716, DateTimeKind.Local).AddTicks(3834),
                             EmployeeId = new Guid("39dce50c-fd10-25a2-01fb-5f308a400b2e")
                         },
                         new
                         {
                             Id = new Guid("482c5427-9345-441f-f3d2-51c736a178a1"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 8, 47, 22, 140, DateTimeKind.Local).AddTicks(7839),
                             EmployeeId = new Guid("ec1873fc-49ef-fa8c-7093-82a24c9ff4a1")
                         },
                         new
                         {
                             Id = new Guid("56fc544b-08a7-115e-e33e-28b050bf403c"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 17, 24, 30, 366, DateTimeKind.Local).AddTicks(239),
                             EmployeeId = new Guid("f23291aa-fdea-98a1-4935-191c0b68d2ba")
                         },
                         new
                         {
                             Id = new Guid("119330d7-2925-533d-b878-8a1b50b8d490"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 20, 2, 22, 323, DateTimeKind.Local).AddTicks(6661),
                             EmployeeId = new Guid("2e4424ff-a2c8-bf48-c71e-75b70f0aa197")
                         },
                         new
                         {
                             Id = new Guid("81e64084-063b-22ca-0007-f6646196a014"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 11, 45, 59, 817, DateTimeKind.Local).AddTicks(5234),
                             EmployeeId = new Guid("baa8417a-2761-e0d4-aa03-01c4a15949ce")
                         },
                         new
                         {
                             Id = new Guid("b4692cd7-99a5-2258-d8f8-7c2f46111986"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 23, 55, 15, 441, DateTimeKind.Local).AddTicks(9308),
                             EmployeeId = new Guid("5b57435d-1724-3e23-6c57-ab214e9472c7")
                         },
                         new
                         {
                             Id = new Guid("075a0b57-4c3c-13c2-2985-b0a32bd7b653"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 18, 12, 19, 352, DateTimeKind.Local).AddTicks(2815),
                             EmployeeId = new Guid("45b961a5-26d3-d7c8-b276-ebb8f9fbe232")
                         },
                         new
                         {
                             Id = new Guid("e4e3e841-29f2-d884-af52-480f8423f861"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 20, 54, 4, 955, DateTimeKind.Local).AddTicks(5685),
                             EmployeeId = new Guid("5fd6a029-17ed-ce78-75c8-389328592f0d")
                         },
                         new
                         {
                             Id = new Guid("85e3682c-9c2f-5528-5057-90bd486b8faf"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 20, 34, 16, 434, DateTimeKind.Local).AddTicks(3560),
                             EmployeeId = new Guid("971acfdb-8c83-9270-6fb4-90aa61f5e904")
                         },
                         new
                         {
                             Id = new Guid("73b8de67-c012-75e1-2b7f-33767ed6abee"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 5, 45, 36, 461, DateTimeKind.Local).AddTicks(5035),
                             EmployeeId = new Guid("a542a0f8-59e7-d2a4-711d-f80f5969a990")
                         },
                         new
                         {
                             Id = new Guid("d4ca47b3-8133-951f-00a4-f47331ed1015"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 18, 42, 33, 833, DateTimeKind.Local).AddTicks(4960),
                             EmployeeId = new Guid("fe87582f-e540-ed91-9c98-135ff6d97a87")
                         },
                         new
                         {
                             Id = new Guid("274ec4d0-d5fc-e01d-11e7-9c7c6c5265c0"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 2, 33, 16, 395, DateTimeKind.Local).AddTicks(8318),
                             EmployeeId = new Guid("3c76d360-caa9-0a67-9ccd-339275a6a548")
                         },
                         new
                         {
                             Id = new Guid("2bf2f285-d0e1-0b36-0189-6ec1647a2e8c"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 5, 8, 59, 600, DateTimeKind.Local).AddTicks(7222),
                             EmployeeId = new Guid("0ab03e3f-7d5b-d59c-b538-d74427200402")
                         },
                         new
                         {
                             Id = new Guid("a015fecd-ad0e-2864-8721-cc2c30773def"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 2, 25, 13, 317, DateTimeKind.Local).AddTicks(5461),
                             EmployeeId = new Guid("af964599-be23-4e29-c114-6c7b38f78c65")
                         },
                         new
                         {
                             Id = new Guid("cac6566d-571b-25a2-3702-3ec5c75cbfd0"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 16, 51, 51, 712, DateTimeKind.Local).AddTicks(5770),
                             EmployeeId = new Guid("f97e457f-7f43-e99e-c262-ebe87a837af9")
                         },
                         new
                         {
                             Id = new Guid("a87c7de4-e9ae-5c35-3d4a-278b2baf04f7"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 14, 7, 34, 529, DateTimeKind.Local).AddTicks(1462),
                             EmployeeId = new Guid("1c7c76d2-3245-148c-18ef-8adb1437bb34")
                         },
                         new
                         {
                             Id = new Guid("886b49f9-252c-5c49-04d0-71a6327fb0f9"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 10, 17, 11, 181, DateTimeKind.Local).AddTicks(7906),
                             EmployeeId = new Guid("e8852dae-7780-3b11-f436-fb88544a96e4")
                         },
                         new
                         {
                             Id = new Guid("fae6e018-db65-770f-1316-c364f5cad775"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 6, 15, 19, 603, DateTimeKind.Local).AddTicks(2854),
                             EmployeeId = new Guid("0184d758-9be2-7136-e3f3-0ce3d5b56d82")
                         },
                         new
                         {
                             Id = new Guid("8c658350-8c30-a3cb-f50b-7ab5e8061cee"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 17, 25, 26, 457, DateTimeKind.Local).AddTicks(8028),
                             EmployeeId = new Guid("1135d46f-595e-ff3c-a7d7-cc5f7c9fe296")
                         },
                         new
                         {
                             Id = new Guid("ae1dac06-4635-6b40-7cdb-5b0aa88025a0"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 3, 0, 51, 80, DateTimeKind.Local).AddTicks(2133),
                             EmployeeId = new Guid("2f1662a5-fdbd-635b-b8c7-898088ba0ffa")
                         },
                         new
                         {
                             Id = new Guid("38996db5-6c1a-6098-da5e-d8dc8362b872"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 3, 42, 39, 99, DateTimeKind.Local).AddTicks(2843),
                             EmployeeId = new Guid("18192e69-eabd-9bf8-2449-24a0423771f3")
                         },
                         new
                         {
                             Id = new Guid("21f0462f-c74f-009a-d234-c366f23bff5d"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 4, 23, 59, 559, DateTimeKind.Local).AddTicks(2188),
                             EmployeeId = new Guid("838a49a6-1439-0b4d-bca9-d2d72c266efd")
                         },
                         new
                         {
                             Id = new Guid("e69d4102-0d65-ffa3-d7a8-f00edb6d5583"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 13, 21, 33, 846, DateTimeKind.Local).AddTicks(449),
                             EmployeeId = new Guid("10653a12-22ee-6a5d-7f09-74687b6a5cba")
                         },
                         new
                         {
                             Id = new Guid("6b807049-2bc6-f717-e6a0-8304d605d530"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 5, 52, 8, 269, DateTimeKind.Local).AddTicks(6656),
                             EmployeeId = new Guid("5af5bd1a-1ca0-6c9f-4774-075e0bdaa262")
                         },
                         new
                         {
                             Id = new Guid("c7ab138a-58c2-26e1-e7f8-9cb7f1989523"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 5, 56, 28, 975, DateTimeKind.Local).AddTicks(8375),
                             EmployeeId = new Guid("d8d0f8ed-61ba-ca25-b236-b6817a000c67")
                         },
                         new
                         {
                             Id = new Guid("154ebad7-5ebd-a353-1908-063dc2f1ad3b"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 20, 30, 11, 980, DateTimeKind.Local).AddTicks(321),
                             EmployeeId = new Guid("8e03aa77-01af-254b-6cc6-422f4bee1baa")
                         },
                         new
                         {
                             Id = new Guid("05e412bd-ff30-e949-926c-41e2d1adbcba"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 5, 4, 48, 516, DateTimeKind.Local).AddTicks(7365),
                             EmployeeId = new Guid("3452c660-f844-a47e-4eb1-4adcbc59f9b9")
                         },
                         new
                         {
                             Id = new Guid("b56f69ed-1dc8-bae0-dac6-445c5c845bc5"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 13, 36, 18, 741, DateTimeKind.Local).AddTicks(4358),
                             EmployeeId = new Guid("4bdebae4-5fb6-115d-4ff0-a1847292e9d8")
                         },
                         new
                         {
                             Id = new Guid("7574161e-37c1-25d8-3590-063707ff3bb0"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 23, 37, 22, 324, DateTimeKind.Local).AddTicks(6005),
                             EmployeeId = new Guid("b00eb400-dbbd-db05-e799-29a995a7f3c9")
                         },
                         new
                         {
                             Id = new Guid("444fe71b-226e-0f4d-e45d-75e7f7c6f01d"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 1, 0, 12, 877, DateTimeKind.Local).AddTicks(6079),
                             EmployeeId = new Guid("af964599-be23-4e29-c114-6c7b38f78c65")
                         },
                         new
                         {
                             Id = new Guid("f7f07dad-2aaa-8ed3-3c5d-21d41c7767d7"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 21, 22, 24, 976, DateTimeKind.Local).AddTicks(7687),
                             EmployeeId = new Guid("429e04c2-27c1-dc71-54d8-faa08a2c9c39")
                         },
                         new
                         {
                             Id = new Guid("28735205-c8f3-a8c0-0e70-16e153374ca0"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 11, 42, 6, 473, DateTimeKind.Local).AddTicks(6382),
                             EmployeeId = new Guid("07375620-0831-d0b0-1844-10cf11ac6c32")
                         },
                         new
                         {
                             Id = new Guid("949a1aa5-b111-89c3-5970-90ee234f1573"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 20, 11, 34, 798, DateTimeKind.Local).AddTicks(936),
                             EmployeeId = new Guid("39755764-8de2-4913-f338-47846af1977c")
                         },
                         new
                         {
                             Id = new Guid("81ea2ffc-1dc5-7b25-cd9c-d0d787acde29"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 22, 40, 24, 353, DateTimeKind.Local).AddTicks(1654),
                             EmployeeId = new Guid("4dcd4591-be79-c803-7e7a-3b83bfbb3ec6")
                         },
                         new
                         {
                             Id = new Guid("3e2f7662-3866-817e-f392-3dc4ab66892e"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 13, 40, 31, 13, DateTimeKind.Local).AddTicks(8684),
                             EmployeeId = new Guid("ea171949-8520-0907-f194-0ee8fd075466")
                         },
                         new
                         {
                             Id = new Guid("36eb76d5-ecf6-9989-0842-44265e07e1d7"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 20, 53, 56, 249, DateTimeKind.Local).AddTicks(1714),
                             EmployeeId = new Guid("ec66dd42-c869-f1ae-567b-cb940b7d424c")
                         },
                         new
                         {
                             Id = new Guid("9c474983-e932-d88f-2471-fe7d1e6e1e95"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 18, 24, 19, 389, DateTimeKind.Local).AddTicks(1495),
                             EmployeeId = new Guid("ed4a9761-e317-ffd5-8863-af1ea92d0688")
                         },
                         new
                         {
                             Id = new Guid("9fdd5239-3e75-6bae-dfbc-ca8eaa61ce36"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 12, 6, 13, 739, DateTimeKind.Local).AddTicks(8694),
                             EmployeeId = new Guid("43fd1d78-52d4-52e8-7cc2-1a7f9f47e625")
                         },
                         new
                         {
                             Id = new Guid("13664cb9-2764-c50a-26b8-3f7299609f93"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 16, 43, 59, 181, DateTimeKind.Local).AddTicks(5709),
                             EmployeeId = new Guid("a542a0f8-59e7-d2a4-711d-f80f5969a990")
                         },
                         new
                         {
                             Id = new Guid("7e835dd1-1cb0-e25a-531b-5038d0066ebe"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 18, 8, 44, 256, DateTimeKind.Local).AddTicks(7091),
                             EmployeeId = new Guid("3412534d-a04c-297e-f058-54bfbd15eb64")
                         },
                         new
                         {
                             Id = new Guid("796a7778-b388-499f-312d-0bcd2f90a4bc"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 6, 33, 37, 840, DateTimeKind.Local).AddTicks(5838),
                             EmployeeId = new Guid("c23c977b-4130-dfb3-2f9b-d62a460d6727")
                         },
                         new
                         {
                             Id = new Guid("450af7b6-a9b7-80d5-6f6b-2aa2abc1602d"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 15, 2, 54, 205, DateTimeKind.Local).AddTicks(6995),
                             EmployeeId = new Guid("10653a12-22ee-6a5d-7f09-74687b6a5cba")
                         },
                         new
                         {
                             Id = new Guid("d210cafa-b428-4e48-20a7-2b4af188251b"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 5, 5, 12, 8, DateTimeKind.Local).AddTicks(3302),
                             EmployeeId = new Guid("732b4951-9f98-1014-78c1-1e505706814a")
                         },
                         new
                         {
                             Id = new Guid("33b2d0b3-de30-8b06-5f0b-cf627155993b"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 10, 32, 41, 977, DateTimeKind.Local).AddTicks(4397),
                             EmployeeId = new Guid("f584cc23-1549-0475-d0da-2162e1ae714f")
                         },
                         new
                         {
                             Id = new Guid("5b6e90e1-d8b5-2143-3919-85a619bf00b4"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 10, 8, 48, 543, DateTimeKind.Local).AddTicks(5342),
                             EmployeeId = new Guid("2b53dc9d-d0b8-68fa-0dd7-60af68a6f39f")
                         },
                         new
                         {
                             Id = new Guid("2922f3df-42e8-4550-b9f5-584d2274218b"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 9, 50, 1, 233, DateTimeKind.Local).AddTicks(941),
                             EmployeeId = new Guid("2e76c2af-0319-3d4c-db04-7f37c3b8d517")
                         },
                         new
                         {
                             Id = new Guid("bcec5afd-71cc-65da-b6a2-71a186f36bc6"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 17, 19, 57, 128, DateTimeKind.Local).AddTicks(8862),
                             EmployeeId = new Guid("9aa8e55f-f4ea-37f3-f429-e508ae794cde")
                         },
                         new
                         {
                             Id = new Guid("93641986-2c89-cce1-6331-f7335e6f9e4a"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 19, 42, 37, 996, DateTimeKind.Local).AddTicks(3982),
                             EmployeeId = new Guid("8c6fb286-d634-6329-6215-ebbb2302d8b1")
                         },
                         new
                         {
                             Id = new Guid("dc0eb755-a299-5348-d159-b7aeefcc3bbe"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 11, 11, 40, 36, DateTimeKind.Local).AddTicks(8664),
                             EmployeeId = new Guid("c3301fbf-6a22-661a-e869-98782e6671c8")
                         },
                         new
                         {
                             Id = new Guid("a5eb9062-3477-6ebe-1231-e7a92ed3fb69"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 10, 45, 16, 317, DateTimeKind.Local).AddTicks(7973),
                             EmployeeId = new Guid("0be9e7c3-bced-d66d-065a-70bd52e456dc")
                         },
                         new
                         {
                             Id = new Guid("d841f0cb-720f-83ab-0867-23b042b17590"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 1, 21, 57, 909, DateTimeKind.Local).AddTicks(8383),
                             EmployeeId = new Guid("42213dd9-5e80-ec25-7388-3840db8912d3")
                         },
                         new
                         {
                             Id = new Guid("33daa897-2236-b0e9-88da-f4628b461fcd"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 9, 9, 57, 134, DateTimeKind.Local).AddTicks(940),
                             EmployeeId = new Guid("651013fb-dfe7-dea0-d41f-8d5deb645ccf")
                         },
                         new
                         {
                             Id = new Guid("b1cb32dc-07b6-80ef-a5f8-b94355ff9ee0"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 14, 59, 10, 58, DateTimeKind.Local).AddTicks(5165),
                             EmployeeId = new Guid("2c97f8ed-a641-c64d-f5c4-026f86dd8e0c")
                         },
                         new
                         {
                             Id = new Guid("c225b60a-a823-0414-9869-22e49d6eee8d"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 20, 35, 4, 757, DateTimeKind.Local).AddTicks(129),
                             EmployeeId = new Guid("5f283378-dba0-2aa4-df17-098c90f0db20")
                         },
                         new
                         {
                             Id = new Guid("a1472c24-b844-97cf-9e63-ed668adc1a17"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 11, 8, 20, 633, DateTimeKind.Local).AddTicks(8148),
                             EmployeeId = new Guid("b749e575-e522-d8a1-9ebd-09b7e96a1f6b")
                         },
                         new
                         {
                             Id = new Guid("02a108a8-1656-1382-1bd4-6771be139dcb"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 18, 17, 26, 780, DateTimeKind.Local).AddTicks(8427),
                             EmployeeId = new Guid("835f30e8-33e5-831e-f958-6b7f8d677b22")
                         },
                         new
                         {
                             Id = new Guid("11530ae1-a175-03ab-9707-8357ecd76f23"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 16, 18, 29, 196, DateTimeKind.Local).AddTicks(597),
                             EmployeeId = new Guid("753f7da7-1b0e-4e30-8e31-fa842fe87084")
                         },
                         new
                         {
                             Id = new Guid("a4c18af0-c3b3-f137-2e52-ed118953ecd5"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 9, 41, 7, 317, DateTimeKind.Local).AddTicks(5245),
                             EmployeeId = new Guid("095019cb-06c6-9401-a04c-e55e76408a0a")
                         },
                         new
                         {
                             Id = new Guid("13ab612b-0cea-7c97-7a9a-4ef0ae4867d2"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 16, 27, 53, 838, DateTimeKind.Local).AddTicks(9474),
                             EmployeeId = new Guid("72a41741-f7b8-b489-4cf0-9398b86f1cf4")
                         },
                         new
                         {
                             Id = new Guid("af3d4e9f-b07d-f6aa-fa04-ff020acff857"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 13, 26, 14, 177, DateTimeKind.Local).AddTicks(7265),
                             EmployeeId = new Guid("c50c05c3-f9ec-1c72-a07b-e90cf6019107")
                         },
                         new
                         {
                             Id = new Guid("471c97d6-56bd-62df-3fc9-228161b4feb4"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 1, 47, 34, 143, DateTimeKind.Local).AddTicks(4076),
                             EmployeeId = new Guid("374bc1c0-f0d5-e407-5a7c-3e65329f4dc3")
                         },
                         new
                         {
                             Id = new Guid("1640632e-789d-987a-4320-b6f09f8d134a"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 10, 2, 32, 56, DateTimeKind.Local).AddTicks(8523),
                             EmployeeId = new Guid("04cb2ddd-4dd4-7c94-a0bb-2ff2e60998c6")
                         },
                         new
                         {
                             Id = new Guid("4d9d5980-2d6b-82d7-9d4d-0c1a4f691517"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 9, 55, 23, 620, DateTimeKind.Local).AddTicks(2320),
                             EmployeeId = new Guid("5681e916-21c9-d852-601a-b0eaf1006cff")
                         },
                         new
                         {
                             Id = new Guid("be42ce7e-419b-d889-82f4-4e6a3031a16d"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 3, 51, 54, 536, DateTimeKind.Local).AddTicks(8676),
                             EmployeeId = new Guid("8f187039-3c0d-da80-7a00-648467f75843")
                         },
                         new
                         {
                             Id = new Guid("f5c5e9d5-4adc-0637-6687-8a7500b44c04"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 11, 56, 29, 61, DateTimeKind.Local).AddTicks(562),
                             EmployeeId = new Guid("7d6a5920-9738-ce81-3f78-4c891c9b29cd")
                         },
                         new
                         {
                             Id = new Guid("54e10b01-8e55-e24f-dbe9-aefcbd86fdc0"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 21, 33, 27, 999, DateTimeKind.Local).AddTicks(1492),
                             EmployeeId = new Guid("4eef5d33-5492-0180-e73a-4d86fec75c81")
                         },
                         new
                         {
                             Id = new Guid("3b637365-5122-7ef8-4db6-e32c692ebd8f"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 10, 2, 1, 760, DateTimeKind.Local).AddTicks(9910),
                             EmployeeId = new Guid("5503f364-a30a-18f4-aace-001781abf5c9")
                         },
                         new
                         {
                             Id = new Guid("688c6670-1d5c-8ab8-ccef-03f4b44b5ed9"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 0, 57, 59, 505, DateTimeKind.Local).AddTicks(6029),
                             EmployeeId = new Guid("a10ae1ed-f370-4ac7-63d9-aadc59f829dc")
                         },
                         new
                         {
                             Id = new Guid("105d03bf-2c02-bcf7-44cd-fff7f3cc0449"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 15, 45, 0, 630, DateTimeKind.Local).AddTicks(9566),
                             EmployeeId = new Guid("7034179b-6273-41cb-e0ea-3b15b13931dc")
                         },
                         new
                         {
                             Id = new Guid("c66a1e07-8e2b-c14a-2fe0-0a5595f13a34"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 2, 35, 43, 903, DateTimeKind.Local).AddTicks(2916),
                             EmployeeId = new Guid("baa8417a-2761-e0d4-aa03-01c4a15949ce")
                         },
                         new
                         {
                             Id = new Guid("60643b8a-bc73-f8cd-0f28-b002eb001d96"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 18, 32, 41, 654, DateTimeKind.Local).AddTicks(6071),
                             EmployeeId = new Guid("6dde1921-fe98-70d4-c0c7-6384725af144")
                         },
                         new
                         {
                             Id = new Guid("6bb78131-dcc8-783a-6a06-b89873361d4d"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 15, 31, 28, 235, DateTimeKind.Local).AddTicks(3279),
                             EmployeeId = new Guid("835f30e8-33e5-831e-f958-6b7f8d677b22")
                         },
                         new
                         {
                             Id = new Guid("965e09f6-993a-dd7f-1f54-785a89de53e1"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 11, 34, 42, 972, DateTimeKind.Local).AddTicks(9646),
                             EmployeeId = new Guid("ed14dafd-eb2e-66a8-550a-7f7b44eef84f")
                         },
                         new
                         {
                             Id = new Guid("4439839c-f262-8f57-3ccc-ceb24df2f35e"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 13, 19, 19, 939, DateTimeKind.Local).AddTicks(4057),
                             EmployeeId = new Guid("2947ba74-63e2-6d87-30d7-d9e996dc556a")
                         },
                         new
                         {
                             Id = new Guid("fe48d17d-231a-abf2-2fb9-1f54497bff07"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 22, 47, 35, 134, DateTimeKind.Local).AddTicks(1714),
                             EmployeeId = new Guid("afb21a72-717d-a29c-02e0-ae3f381650f4")
                         },
                         new
                         {
                             Id = new Guid("09e3a4fb-1142-a151-2a67-9580200de855"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 16, 2, 30, 472, DateTimeKind.Local).AddTicks(6704),
                             EmployeeId = new Guid("aa56a3a6-51ce-51e0-3fc2-1fb8dd2fdef0")
                         },
                         new
                         {
                             Id = new Guid("466f211e-d627-771d-8537-4debb9a16ed7"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 17, 7, 48, 252, DateTimeKind.Local).AddTicks(7918),
                             EmployeeId = new Guid("89920466-fa16-e9b1-6d4a-59a4948d40d4")
                         },
                         new
                         {
                             Id = new Guid("81c9ed05-43c7-3999-fe47-602600b4b49e"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 7, 10, 18, 240, DateTimeKind.Local).AddTicks(7919),
                             EmployeeId = new Guid("57edd67a-5d20-ce2f-21d0-d35fd4c1112b")
                         },
                         new
                         {
                             Id = new Guid("992433bb-69cb-7cdc-dcde-b235a1ba374d"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 23, 7, 40, 695, DateTimeKind.Local).AddTicks(6146),
                             EmployeeId = new Guid("06255908-7ff3-34e2-8f2e-4bf4d9a0b45d")
                         },
                         new
                         {
                             Id = new Guid("9d8e03a7-301f-1124-4c37-0403ca4ce9df"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 0, 27, 3, 561, DateTimeKind.Local).AddTicks(9189),
                             EmployeeId = new Guid("05d507e0-5ab7-5b83-f134-410a9f59cec4")
                         },
                         new
                         {
                             Id = new Guid("c7eb18fd-5abd-114c-be6b-c9661d4904e3"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 19, 6, 1, 978, DateTimeKind.Local).AddTicks(1961),
                             EmployeeId = new Guid("a67e5327-67ff-9726-f2ae-f106c3734212")
                         },
                         new
                         {
                             Id = new Guid("58a76905-4490-dbd8-e7e9-b8dba26c4357"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 2, 50, 35, 570, DateTimeKind.Local).AddTicks(8975),
                             EmployeeId = new Guid("faad7a8e-3096-f5a2-25ce-fbd0c261feb5")
                         },
                         new
                         {
                             Id = new Guid("1fd243d0-a566-d082-e6b9-c5688fb1fedb"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 8, 31, 10, 866, DateTimeKind.Local).AddTicks(3029),
                             EmployeeId = new Guid("5737f560-5fca-a2f9-90ab-b2e071814f59")
                         },
                         new
                         {
                             Id = new Guid("7ee4825a-2764-8f06-27fa-d9f17d261e5c"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 19, 51, 52, 858, DateTimeKind.Local).AddTicks(3935),
                             EmployeeId = new Guid("86bf789d-31d5-a953-d9b0-4d25f6a51da2")
                         },
                         new
                         {
                             Id = new Guid("730db240-21f1-8121-2829-a4915900c761"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 21, 28, 28, 760, DateTimeKind.Local).AddTicks(4550),
                             EmployeeId = new Guid("72dd5100-0473-e57b-ba7b-48b3d93e1f1d")
                         },
                         new
                         {
                             Id = new Guid("1660f76d-d65b-c80d-4841-7055aba7a016"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 9, 2, 16, 963, DateTimeKind.Local).AddTicks(1679),
                             EmployeeId = new Guid("aec4c050-c174-27f2-0008-cef7580b329e")
                         },
                         new
                         {
                             Id = new Guid("a5435df3-65dd-6982-7ff1-b6c465708ec5"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 19, 43, 1, 665, DateTimeKind.Local).AddTicks(9067),
                             EmployeeId = new Guid("6dbfc7cc-ccf4-a736-6210-d79438746dc2")
                         },
                         new
                         {
                             Id = new Guid("59e39cb1-40d9-d4b8-f8e9-b8eaba14a9f8"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 14, 20, 4, 653, DateTimeKind.Local).AddTicks(7212),
                             EmployeeId = new Guid("3d8be553-7f03-be8b-b2a8-ab992c8168ef")
                         },
                         new
                         {
                             Id = new Guid("6dd9b082-d68d-7c92-0be5-1de24d36709c"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 12, 33, 8, 879, DateTimeKind.Local).AddTicks(5073),
                             EmployeeId = new Guid("fc468891-859e-441f-eb75-00d5964eb172")
                         },
                         new
                         {
                             Id = new Guid("9125656a-7f89-06c6-fbb0-bb77279b005d"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 11, 38, 56, 767, DateTimeKind.Local).AddTicks(2337),
                             EmployeeId = new Guid("d75a8fef-e6a9-928e-0ddc-a75747671a0c")
                         },
                         new
                         {
                             Id = new Guid("c3478255-efac-06db-6ab4-497837e962c0"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 13, 32, 51, 208, DateTimeKind.Local).AddTicks(9875),
                             EmployeeId = new Guid("4cb58426-a064-e42e-c93a-49e25eb9c3a4")
                         },
                         new
                         {
                             Id = new Guid("d0c6ed4f-cc96-6d4f-f547-4dd885c343b9"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 22, 59, 24, 757, DateTimeKind.Local).AddTicks(6338),
                             EmployeeId = new Guid("4b6f3127-691d-0b48-7482-2e4bd924094c")
                         },
                         new
                         {
                             Id = new Guid("78ada178-525c-38b1-848d-c5da14ffcc89"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 23, 51, 10, 128, DateTimeKind.Local).AddTicks(2004),
                             EmployeeId = new Guid("b1e58d02-806a-9ce1-31f9-d56d94f4b61d")
                         },
                         new
                         {
                             Id = new Guid("815df7b0-bfe6-db1d-c4b4-f42fe19d49e4"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 10, 32, 40, 752, DateTimeKind.Local).AddTicks(742),
                             EmployeeId = new Guid("017758c5-ba76-3eae-25b6-2a5a82d79272")
                         },
                         new
                         {
                             Id = new Guid("93e57d6a-dfca-6c2f-39d8-b83a012ace72"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 18, 12, 3, 181, DateTimeKind.Local).AddTicks(9492),
                             EmployeeId = new Guid("6ab488b6-7a27-9001-1da2-90318f254aa6")
                         },
                         new
                         {
                             Id = new Guid("763eb9c7-83ec-5e90-e43d-ca1b4ee7cc24"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 6, 16, 16, 536, DateTimeKind.Local).AddTicks(7829),
                             EmployeeId = new Guid("51dad4ee-d028-11c8-1038-8b605e44b812")
                         },
                         new
                         {
                             Id = new Guid("52b7a192-03e4-7a0c-f205-122a9ec95dda"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 18, 27, 40, 514, DateTimeKind.Local).AddTicks(1855),
                             EmployeeId = new Guid("dccddd44-c8d8-25fd-d3b6-fcd08d200bd1")
                         },
                         new
                         {
                             Id = new Guid("813a10f8-2f4b-bd6e-6952-35069aa84788"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 1, 3, 5, 545, DateTimeKind.Local).AddTicks(8426),
                             EmployeeId = new Guid("3d7508bc-d907-5421-2102-d5d65405a97d")
                         },
                         new
                         {
                             Id = new Guid("09e0735a-589d-12d2-2b51-f10d10f72cd1"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 1, 24, 52, 346, DateTimeKind.Local).AddTicks(793),
                             EmployeeId = new Guid("6a4ddf7b-5535-5b94-0b3f-ff861f39c84e")
                         },
                         new
                         {
                             Id = new Guid("4575226b-27a2-febc-7782-5740deca54d2"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 5, 16, 16, 856, DateTimeKind.Local).AddTicks(3737),
                             EmployeeId = new Guid("06255908-7ff3-34e2-8f2e-4bf4d9a0b45d")
                         },
                         new
                         {
                             Id = new Guid("1c79289c-6c43-4578-240e-6dd6f3305ea4"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 11, 56, 26, 809, DateTimeKind.Local).AddTicks(1167),
                             EmployeeId = new Guid("578fa79c-d316-a49a-38d2-7768adeef64c")
                         },
                         new
                         {
                             Id = new Guid("5ae0e13d-905a-10d3-1342-bc2598b84cbb"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 19, 45, 48, 478, DateTimeKind.Local).AddTicks(8717),
                             EmployeeId = new Guid("2ae7270f-d666-9789-20cb-eb6716a6c8b7")
                         },
                         new
                         {
                             Id = new Guid("e12ad932-f098-ab0a-6410-7f260fed66da"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 5, 31, 43, 790, DateTimeKind.Local).AddTicks(3582),
                             EmployeeId = new Guid("e4bc1a07-b055-b78a-2550-30809182ed59")
                         },
                         new
                         {
                             Id = new Guid("5b6f8b1e-0364-e867-d51d-a77567b23db1"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 1, 58, 13, 886, DateTimeKind.Local).AddTicks(1482),
                             EmployeeId = new Guid("4266298f-5185-e879-e768-04fffe21bbed")
                         },
                         new
                         {
                             Id = new Guid("e4506948-006f-1c93-ac38-31de26ff28d3"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 18, 13, 53, 144, DateTimeKind.Local).AddTicks(9196),
                             EmployeeId = new Guid("7a996bf7-1d8c-840b-6577-a1b33d2255ce")
                         },
                         new
                         {
                             Id = new Guid("0730dec5-8e34-9abd-1773-d23b12c62673"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 8, 21, 11, 965, DateTimeKind.Local).AddTicks(8734),
                             EmployeeId = new Guid("5544e921-c22e-fbae-157e-f4dde0e4a95e")
                         },
                         new
                         {
                             Id = new Guid("e7d05aff-b0ba-3fa3-8076-3edec3eed64e"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 21, 58, 17, 792, DateTimeKind.Local).AddTicks(9989),
                             EmployeeId = new Guid("88d14542-a4c4-7874-e46d-07784291ce10")
                         },
                         new
                         {
                             Id = new Guid("66b2561b-a87c-fcda-1f17-008cc304d3c3"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 16, 32, 37, 967, DateTimeKind.Local).AddTicks(8561),
                             EmployeeId = new Guid("13669c7d-b6fa-ecb9-e4eb-534c510930ec")
                         },
                         new
                         {
                             Id = new Guid("4f905775-243c-94d9-0f4c-3b78055b02b3"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 7, 41, 54, 785, DateTimeKind.Local).AddTicks(7040),
                             EmployeeId = new Guid("01f415de-35f2-1fe2-2504-f509d45b988f")
                         },
                         new
                         {
                             Id = new Guid("b3e03e54-2884-e97f-7ada-ef2bb35a29a2"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 9, 1, 7, 417, DateTimeKind.Local).AddTicks(3023),
                             EmployeeId = new Guid("bd283c08-df9c-87eb-1f12-a7747dffcb81")
                         },
                         new
                         {
                             Id = new Guid("13a24175-afcb-9fe3-fb31-c05182752e9f"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 16, 36, 56, 586, DateTimeKind.Local).AddTicks(4146),
                             EmployeeId = new Guid("25df95bd-b87f-83f7-88ab-2511e033146d")
                         },
                         new
                         {
                             Id = new Guid("3abd270c-ba5e-211f-871d-dbb8f92849d8"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 4, 52, 50, 912, DateTimeKind.Local).AddTicks(6628),
                             EmployeeId = new Guid("0179ca76-6e4c-89f5-0574-5d4e3f219d41")
                         },
                         new
                         {
                             Id = new Guid("89a10314-b884-89ba-6cb5-85ba700d657e"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 20, 5, 16, 733, DateTimeKind.Local).AddTicks(265),
                             EmployeeId = new Guid("3bd3436b-4561-745a-6d90-e3c62aba884e")
                         },
                         new
                         {
                             Id = new Guid("8eab5844-815b-781f-c728-399d7bed8d80"),
-                            AccountType = "Plastic",
+                            AssignmentType = "Plastic",
                             DateCreated = new DateTime(2020, 12, 14, 20, 30, 23, 229, DateTimeKind.Local).AddTicks(5066),
                             EmployeeId = new Guid("8c79571e-a741-4cc0-8354-1cd1ceb4b993")
                         },
                         new
                         {
                             Id = new Guid("31a38239-6bb3-6202-6aab-93aa6920ab6c"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 5, 22, 8, 319, DateTimeKind.Local).AddTicks(5543),
                             EmployeeId = new Guid("8aebf336-454a-ce15-1858-cd309c7fa5d7")
                         },
                         new
                         {
                             Id = new Guid("3f640745-60f2-1833-0acd-e38cc313417f"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 1, 18, 52, 338, DateTimeKind.Local).AddTicks(3687),
                             EmployeeId = new Guid("03057982-c621-f63e-fcff-dfb4b4bbd80c")
                         },
                         new
                         {
                             Id = new Guid("1e5922f8-cdb5-7e34-cf7d-cf80ba172c25"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 7, 9, 1, 124, DateTimeKind.Local).AddTicks(2063),
                             EmployeeId = new Guid("02b8c41c-9d5c-193f-0625-5b4842e72e8b")
                         },
                         new
                         {
                             Id = new Guid("5380d1b1-95f8-1e87-cf96-27a026cbab70"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 19, 46, 37, 495, DateTimeKind.Local).AddTicks(3340),
                             EmployeeId = new Guid("53e01b3e-0c38-f6f8-81c1-87929180f9af")
                         },
                         new
                         {
                             Id = new Guid("e1be72af-9b63-4c3a-2974-97edabaa43ef"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 0, 24, 42, 728, DateTimeKind.Local).AddTicks(3583),
                             EmployeeId = new Guid("cd29da86-0ce1-88f6-8177-f518d9631824")
                         },
                         new
                         {
                             Id = new Guid("ae2d8861-e764-dca7-a8b4-0fa7d939ac25"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 11, 25, 7, 888, DateTimeKind.Local).AddTicks(9475),
                             EmployeeId = new Guid("4e4656d0-3da2-2979-c6a2-a809077023ff")
                         },
                         new
                         {
                             Id = new Guid("49bdb81c-aa5d-a937-7cf6-e3dc55f8848b"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 13, 20, 54, 215, DateTimeKind.Local).AddTicks(7895),
                             EmployeeId = new Guid("18690c12-753e-beb4-ae27-1b39985ea874")
                         },
                         new
                         {
                             Id = new Guid("bfbcf959-9792-cd1a-beb3-ff8573fb655b"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 10, 43, 13, 276, DateTimeKind.Local).AddTicks(1561),
                             EmployeeId = new Guid("347066e7-64e0-96af-b9ae-83198bf3d8f0")
                         },
                         new
                         {
                             Id = new Guid("3e2c04cf-e52b-d8c4-b9af-55ae4ca30b99"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 11, 18, 0, 210, DateTimeKind.Local).AddTicks(8461),
                             EmployeeId = new Guid("47f7761a-04be-9903-f0af-b445d473806a")
                         },
                         new
                         {
                             Id = new Guid("dd43b12b-f579-717d-70e0-ef9d6de721b1"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 16, 10, 34, 724, DateTimeKind.Local).AddTicks(1690),
                             EmployeeId = new Guid("77f81010-fb98-99bb-0efa-7468273a038c")
                         },
                         new
                         {
                             Id = new Guid("bfcdd990-1e60-0569-b2e1-68616efa1d78"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 1, 3, 45, 19, DateTimeKind.Local).AddTicks(5884),
                             EmployeeId = new Guid("58e36492-bc3c-016f-99dc-a67e0fb2c849")
                         },
                         new
                         {
                             Id = new Guid("74ae49b2-f754-11c9-e7c6-2af24b6c3ccf"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 7, 9, 14, 693, DateTimeKind.Local).AddTicks(6924),
                             EmployeeId = new Guid("61cada50-c12c-65dc-75dd-e4c4c9d15bc8")
                         },
                         new
                         {
                             Id = new Guid("ef10bfe3-90ca-7e08-81a2-506f9325987a"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 15, 15, 41, 661, DateTimeKind.Local).AddTicks(1657),
                             EmployeeId = new Guid("76c0b99e-6e46-7ec9-74fc-f6525d1e9ab9")
                         },
                         new
                         {
                             Id = new Guid("0c96c779-3e82-ee88-1cf5-312afd1a9ba8"),
-                            AccountType = "Concrete",
+                            AssignmentType = "Concrete",
                             DateCreated = new DateTime(2020, 12, 14, 2, 27, 30, 707, DateTimeKind.Local).AddTicks(6054),
                             EmployeeId = new Guid("9610ff1a-d6cc-939f-5f65-ccd89c9820ea")
                         },
                         new
                         {
                             Id = new Guid("784ce3e4-6f48-5796-97cc-b3f2cbedbae4"),
-                            AccountType = "Granite",
+                            AssignmentType = "Granite",
                             DateCreated = new DateTime(2020, 12, 14, 11, 47, 9, 66, DateTimeKind.Local).AddTicks(8721),
                             EmployeeId = new Guid("856d7b9e-2783-8737-27f6-9f45def1a600")
                         },
                         new
                         {
                             Id = new Guid("a142b08d-89eb-774f-5354-f87d30d718fe"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 5, 12, 30, 571, DateTimeKind.Local).AddTicks(5988),
                             EmployeeId = new Guid("4093f5ed-9d63-d10e-98c0-a90c9178b9df")
                         },
                         new
                         {
                             Id = new Guid("e7eb9c4e-21f0-0368-663d-4235705cb515"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 23, 7, 13, 233, DateTimeKind.Local).AddTicks(6618),
                             EmployeeId = new Guid("095019cb-06c6-9401-a04c-e55e76408a0a")
                         },
                         new
                         {
                             Id = new Guid("f8f8ee60-0242-4f9f-831a-b3ef38b7dafd"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 22, 15, 35, 624, DateTimeKind.Local).AddTicks(7145),
                             EmployeeId = new Guid("14b9e68b-3bed-5498-1ffd-b273971ce323")
                         },
                         new
                         {
                             Id = new Guid("85827f51-39e8-1e10-8721-7ac26f5c40cc"),
-                            AccountType = "Metal",
+                            AssignmentType = "Metal",
                             DateCreated = new DateTime(2020, 12, 14, 18, 19, 22, 533, DateTimeKind.Local).AddTicks(2087),
                             EmployeeId = new Guid("eaa07494-40f4-66aa-a2a6-1015e3a7fac2")
                         },
                         new
                         {
                             Id = new Guid("d251e4a8-e8e5-4eb3-0a7e-955e9e73de50"),
-                            AccountType = "Frozen",
+                            AssignmentType = "Frozen",
                             DateCreated = new DateTime(2020, 12, 14, 9, 37, 36, 405, DateTimeKind.Local).AddTicks(5568),
                             EmployeeId = new Guid("5fd0ab4a-8292-e201-35a4-688a1d27c93d")
                         },
                         new
                         {
                             Id = new Guid("e432be0f-2e17-5808-4393-f8eb7aa772f9"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 0, 40, 39, 398, DateTimeKind.Local).AddTicks(6367),
                             EmployeeId = new Guid("039de179-28f5-ee6f-b14d-9dd3ec397c2e")
                         },
                         new
                         {
                             Id = new Guid("eb359d9d-a006-c2f1-db4f-900b7eeef746"),
-                            AccountType = "Wooden",
+                            AssignmentType = "Wooden",
                             DateCreated = new DateTime(2020, 12, 14, 13, 36, 23, 515, DateTimeKind.Local).AddTicks(4240),
                             EmployeeId = new Guid("27c5b53a-53d9-e112-fcea-b878b7b660aa")
                         },
                         new
                         {
                             Id = new Guid("90dda339-bb70-9211-1bb6-2c79f9501440"),
-                            AccountType = "Fresh",
+                            AssignmentType = "Fresh",
                             DateCreated = new DateTime(2020, 12, 14, 6, 25, 46, 386, DateTimeKind.Local).AddTicks(7567),
                             EmployeeId = new Guid("eb0eea54-a83c-c009-83be-9785181e6391")
                         },
                         new
                         {
                             Id = new Guid("6b25432b-082c-87b2-7afc-82618b82e4c5"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 10, 51, 25, 414, DateTimeKind.Local).AddTicks(4971),
                             EmployeeId = new Guid("753f7da7-1b0e-4e30-8e31-fa842fe87084")
                         },
                         new
                         {
                             Id = new Guid("0df430c4-0bd6-d5af-96bb-69ae2b6b134a"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 15, 12, 58, 584, DateTimeKind.Local).AddTicks(3041),
                             EmployeeId = new Guid("2015ddc8-4014-8f09-c748-0544857060e1")
                         },
                         new
                         {
                             Id = new Guid("33bd87b1-9597-5599-a0f6-158a0a81bf15"),
-                            AccountType = "Steel",
+                            AssignmentType = "Steel",
                             DateCreated = new DateTime(2020, 12, 14, 16, 33, 33, 120, DateTimeKind.Local).AddTicks(247),
                             EmployeeId = new Guid("e0e55081-0e77-779f-3b50-861a81543c8a")
                         },
                         new
                         {
                             Id = new Guid("337d604f-cc1b-4e10-56f5-783828b1d20e"),
-                            AccountType = "Cotton",
+                            AssignmentType = "Cotton",
                             DateCreated = new DateTime(2020, 12, 14, 9, 19, 21, 969, DateTimeKind.Local).AddTicks(9070),
                             EmployeeId = new Guid("afb21a72-717d-a29c-02e0-ae3f381650f4")
                         },
                         new
                         {
                             Id = new Guid("b63d785c-de0e-3081-5f2d-6c55711386c5"),
-                            AccountType = "Rubber",
+                            AssignmentType = "Rubber",
                             DateCreated = new DateTime(2020, 12, 14, 4, 41, 33, 414, DateTimeKind.Local).AddTicks(9691),
                             EmployeeId = new Guid("7507f09c-7565-8bd0-a47c-539e814e49b1")
                         },
                         new
                         {
                             Id = new Guid("478767a1-6042-be28-ecd8-37723b0ea5da"),
-                            AccountType = "Soft",
+                            AssignmentType = "Soft",
                             DateCreated = new DateTime(2020, 12, 14, 22, 56, 58, 935, DateTimeKind.Local).AddTicks(5096),
                             EmployeeId = new Guid("403afc47-f562-c7df-3cda-9838ae81309f")
                         });

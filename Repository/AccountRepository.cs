@@ -7,38 +7,38 @@ using System.Linq;
 
 namespace Repository
 {
-	public class AccountRepository : RepositoryBase<Account>, IAccountRepository
+	public class AssignmentRepository : RepositoryBase<Assignment>, IAssignmentRepository
 	{
-		private ISortHelper<Account> _sortHelper;
-		private IDataShaper<Account> _dataShaper;
+		private ISortHelper<Assignment> _sortHelper;
+		private IDataShaper<Assignment> _dataShaper;
 
-		public AccountRepository(RepositoryContext repositoryContext, ISortHelper<Account> sortHelper, IDataShaper<Account> dataShaper)
+		public AssignmentRepository(RepositoryContext repositoryContext, ISortHelper<Assignment> sortHelper, IDataShaper<Assignment> dataShaper)
 			: base(repositoryContext)
 		{
 			_sortHelper = sortHelper;
 			_dataShaper = dataShaper;
 		}
 
-		public PagedList<Entity> GetAccountsByEmployee(Guid employeeId, AccountParameters parameters)
+		public PagedList<Entity> GetAssignmentsByEmployee(Guid employeeId, AssignmentParameters parameters)
 		{
-			var accounts = FindByCondition(a => a.EmployeeId.Equals(employeeId));
+			var assignments = FindByCondition(a => a.EmployeeId.Equals(employeeId));
 
-			var sortedAccounts = _sortHelper.ApplySort(accounts, parameters.OrderBy);
+			var sortedAssignments = _sortHelper.ApplySort(assignments, parameters.OrderBy);
 
-			var shapedAccounts = _dataShaper.ShapeData(sortedAccounts, parameters.Fields);
+			var shapedAssignments = _dataShaper.ShapeData(sortedAssignments, parameters.Fields);
 
-			return PagedList<Entity>.ToPagedList(shapedAccounts,
+			return PagedList<Entity>.ToPagedList(shapedAssignments,
 				parameters.PageNumber,
 				parameters.PageSize);
 		}
 
-		public Entity GetAccountByEmployee(Guid employeeId, Guid id, string fields)
+		public Entity GetAssignmentByEmployee(Guid employeeId, Guid id, string fields)
 		{
-			var account = FindByCondition(a => a.EmployeeId.Equals(employeeId) && a.Id.Equals(id)).SingleOrDefault();
-			return _dataShaper.ShapeData(account, fields);
+			var assignment = FindByCondition(a => a.EmployeeId.Equals(employeeId) && a.Id.Equals(id)).SingleOrDefault();
+			return _dataShaper.ShapeData(assignment, fields);
 		}
 
-		public Account GetAccountByEmployee(Guid employeeId, Guid id)
+		public Assignment GetAssignmentByEmployee(Guid employeeId, Guid id)
 		{
 			return FindByCondition(a => a.EmployeeId.Equals(employeeId) && a.Id.Equals(id)).SingleOrDefault();
 		}

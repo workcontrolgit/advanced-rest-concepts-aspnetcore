@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Entities.Enumerations
 {
-    public enum AccountType
+    public enum AssignmentType
     {
         Domestic,
         Savings,

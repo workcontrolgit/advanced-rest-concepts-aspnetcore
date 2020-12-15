@@ -1,8 +1,8 @@
 ﻿namespace Entities.Models
 {
-	public class AccountParameters : QueryStringParameters
+	public class AssignmentParameters : QueryStringParameters
 	{
-		public AccountParameters()
+		public AssignmentParameters()
 		{
 			OrderBy = "DateCreated";
 		}

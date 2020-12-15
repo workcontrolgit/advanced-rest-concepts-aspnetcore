@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Repository;
 
-namespace AccountEmployeeServer.Extensions
+namespace GtmWebAPI.Extensions
 {
 	/// <summary>
 	/// ServiceExtensions
@@ -79,10 +79,10 @@ namespace AccountEmployeeServer.Extensions
 		public static void ConfigureRepositoryWrapper(this IServiceCollection services)
 		{
 			services.AddScoped<ISortHelper<Employee>, SortHelper<Employee>>();
-			services.AddScoped<ISortHelper<Account>, SortHelper<Account>>();
+			services.AddScoped<ISortHelper<Assignment>, SortHelper<Assignment>>();
 
 			services.AddScoped<IDataShaper<Employee>, DataShaper<Employee>>();
-			services.AddScoped<IDataShaper<Account>, DataShaper<Account>>();
+			services.AddScoped<IDataShaper<Assignment>, DataShaper<Assignment>>();
 
 			services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
 		}

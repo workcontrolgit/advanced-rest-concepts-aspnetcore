@@ -7,7 +7,7 @@ namespace Contracts
     public interface IRepositoryWrapper
     {
         IEmployeeRepository Employee { get; }
-        IAccountRepository Account { get; }
+        IAssignmentRepository Assignment { get; }
 		void Save();
 	}
 }

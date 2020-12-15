@@ -8,17 +8,17 @@ namespace Entities.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "account",
+                name: "assignment",
                 columns: table => new
                 {
-                    AccountId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    AssignmentId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     DateCreated = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    AccountType = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AssignmentType = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EmployeeId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_account", x => x.AccountId);
+                    table.PrimaryKey("PK_assignment", x => x.AssignmentId);
                 });
 
             migrationBuilder.CreateTable(
@@ -36,8 +36,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("ddd14f1c-32ec-9986-5d26-8c3a9ac0a8ac"), "Rubber", new DateTime(2020, 12, 14, 8, 27, 53, 872, DateTimeKind.Local).AddTicks(4299), new Guid("8c6fb286-d634-6329-6215-ebbb2302d8b1") },
@@ -85,8 +85,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("71d1ee9a-cccb-0de9-7917-50a4cc11d75e"), "Fresh", new DateTime(2020, 12, 14, 17, 4, 54, 44, DateTimeKind.Local).AddTicks(8699), new Guid("62c61132-cbd3-9cf0-2490-e947f0e8a7d1") },
@@ -134,8 +134,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("cfe06e59-1920-548f-ed26-3935bee42f64"), "Steel", new DateTime(2020, 12, 14, 9, 44, 13, 557, DateTimeKind.Local).AddTicks(3355), new Guid("c96af5d1-6c3e-1423-0159-60a5f24616a8") },
@@ -183,8 +183,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("a5a7d32c-b7cc-e56d-01ea-d97f3ba417a7"), "Frozen", new DateTime(2020, 12, 14, 17, 48, 32, 891, DateTimeKind.Local).AddTicks(5409), new Guid("13b28c2c-d902-2d25-6cdd-ddcc267b9215") },
@@ -232,8 +232,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("096f5212-9def-2eca-c24c-a03ab17f2402"), "Steel", new DateTime(2020, 12, 14, 5, 22, 43, 129, DateTimeKind.Local).AddTicks(7002), new Guid("05b4868a-5b20-e014-5e54-67423aced2b9") },
@@ -281,8 +281,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("103e6a57-44ea-f1f6-bb3c-4462a8714d5e"), "Frozen", new DateTime(2020, 12, 14, 14, 34, 11, 195, DateTimeKind.Local).AddTicks(5064), new Guid("a377379d-77da-a7e6-bef7-1e0735717748") },
@@ -330,8 +330,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("c225b60a-a823-0414-9869-22e49d6eee8d"), "Granite", new DateTime(2020, 12, 14, 20, 35, 4, 757, DateTimeKind.Local).AddTicks(129), new Guid("5f283378-dba0-2aa4-df17-098c90f0db20") },
@@ -379,8 +379,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("81ea2ffc-1dc5-7b25-cd9c-d0d787acde29"), "Cotton", new DateTime(2020, 12, 14, 22, 40, 24, 353, DateTimeKind.Local).AddTicks(1654), new Guid("4dcd4591-be79-c803-7e7a-3b83bfbb3ec6") },
@@ -428,8 +428,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("0df430c4-0bd6-d5af-96bb-69ae2b6b134a"), "Rubber", new DateTime(2020, 12, 14, 15, 12, 58, 584, DateTimeKind.Local).AddTicks(3041), new Guid("2015ddc8-4014-8f09-c748-0544857060e1") },
@@ -477,8 +477,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("c01c6a78-9048-39c4-6dc0-1697f8be8ea1"), "Plastic", new DateTime(2020, 12, 14, 0, 38, 42, 917, DateTimeKind.Local).AddTicks(4362), new Guid("55edf125-5274-42f6-6cdc-2d1d01d18f24") },
@@ -526,8 +526,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("377b7a26-10b2-a6f2-564d-244c117c2ac8"), "Concrete", new DateTime(2020, 12, 14, 16, 42, 8, 244, DateTimeKind.Local).AddTicks(6078), new Guid("c2a1b897-afba-ea53-733d-ccf17534bff1") },
@@ -575,8 +575,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("a015fecd-ad0e-2864-8721-cc2c30773def"), "Cotton", new DateTime(2020, 12, 14, 2, 25, 13, 317, DateTimeKind.Local).AddTicks(5461), new Guid("af964599-be23-4e29-c114-6c7b38f78c65") },
@@ -624,8 +624,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("6cd486f8-62ec-c80b-6fe6-c7a2d841d75e"), "Fresh", new DateTime(2020, 12, 14, 12, 26, 58, 21, DateTimeKind.Local).AddTicks(5596), new Guid("0472b702-0973-fa9f-9dee-c244588a679c") },
@@ -673,8 +673,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("73ef69f6-2c6a-a04c-3608-948ba054add6"), "Wooden", new DateTime(2020, 12, 14, 1, 50, 27, 259, DateTimeKind.Local).AddTicks(677), new Guid("ad994fb5-26a2-443f-ac8d-c3c7618bd745") },
@@ -722,8 +722,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("599595f5-ad09-82af-9b0f-c4cee4c68e97"), "Frozen", new DateTime(2020, 12, 14, 4, 5, 4, 906, DateTimeKind.Local).AddTicks(4286), new Guid("5c039c76-23c8-ab37-b8f1-8cae68290dcb") },
@@ -771,8 +771,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("42c4c879-72eb-c5c9-b572-54d28a3c5fd6"), "Fresh", new DateTime(2020, 12, 14, 6, 55, 2, 827, DateTimeKind.Local).AddTicks(863), new Guid("86bf789d-31d5-a953-d9b0-4d25f6a51da2") },
@@ -820,8 +820,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("2beac4a6-1225-b55e-d28d-f316e1de6b24"), "Metal", new DateTime(2020, 12, 14, 20, 49, 44, 527, DateTimeKind.Local).AddTicks(2625), new Guid("50f652d9-1149-7b74-c152-f8e00973625b") },
@@ -869,8 +869,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("b53b0658-c98d-8cfa-5ab2-25decbbdeefc"), "Metal", new DateTime(2020, 12, 14, 10, 49, 30, 706, DateTimeKind.Local).AddTicks(7018), new Guid("fbb495af-f4f2-01e6-893b-4904c050b528") },
@@ -918,8 +918,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("10750c1d-77b4-cacb-e5c2-210106be05c3"), "Wooden", new DateTime(2020, 12, 14, 18, 17, 33, 97, DateTimeKind.Local).AddTicks(5562), new Guid("524e5aab-b747-ef78-91df-dd8f36f8e1d9") },
@@ -967,8 +967,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("74057f96-a4db-2d52-0ff3-1052ceb617e3"), "Cotton", new DateTime(2020, 12, 14, 15, 35, 26, 375, DateTimeKind.Local).AddTicks(5778), new Guid("eb7c9d25-a3da-37e3-83ce-596bc3a89bb8") },
@@ -1016,8 +1016,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("6c6b055c-f3cc-e0c1-91c4-7b980478e286"), "Steel", new DateTime(2020, 12, 14, 18, 7, 53, 622, DateTimeKind.Local).AddTicks(3605), new Guid("08265414-cb1e-734c-164d-8d3f93432a85") },
@@ -1065,8 +1065,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("27887d19-d00d-7896-2c3d-78346901ad34"), "Granite", new DateTime(2020, 12, 14, 9, 23, 54, 513, DateTimeKind.Local).AddTicks(9305), new Guid("4266298f-5185-e879-e768-04fffe21bbed") },
@@ -1114,8 +1114,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("c322b9bc-7858-e62b-4996-757dccee96f5"), "Cotton", new DateTime(2020, 12, 14, 21, 16, 22, 559, DateTimeKind.Local).AddTicks(2895), new Guid("5fd0ab4a-8292-e201-35a4-688a1d27c93d") },
@@ -1163,8 +1163,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "account",
-                columns: new[] { "AccountId", "AccountType", "DateCreated", "EmployeeId" },
+                table: "assignment",
+                columns: new[] { "AssignmentId", "AssignmentType", "DateCreated", "EmployeeId" },
                 values: new object[,]
                 {
                     { new Guid("55f9d96f-1e95-8c9d-8b4d-cfa0e0435b11"), "Fresh", new DateTime(2020, 12, 14, 5, 31, 5, 85, DateTimeKind.Local).AddTicks(4625), new Guid("013bfa78-ca8e-6aef-f859-ff9a7b372eb9") },
@@ -2382,7 +2382,7 @@ namespace Entities.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "account");
+                name: "assignment");
 
             migrationBuilder.DropTable(
                 name: "employee");
