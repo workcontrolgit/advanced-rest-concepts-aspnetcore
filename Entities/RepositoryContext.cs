@@ -21,7 +21,7 @@ namespace Entities
 
             //modelBuilder.Entity<Owner>()
             //    .HasData(owner.Generate(1000));
-            FakeData.Init(10);
+            FakeData.Init(1000);
 
             modelBuilder.Entity<Owner>().HasData(FakeData.Owners);
             modelBuilder.Entity<Account>().HasData(FakeData.Accounts);
