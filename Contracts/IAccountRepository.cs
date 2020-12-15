@@ -6,8 +6,8 @@ namespace Contracts
 {
 	public interface IAccountRepository : IRepositoryBase<Account>
 	{
-		PagedList<Entity> GetAccountsByOwner(Guid ownerId, AccountParameters parameters);
-		Entity GetAccountByOwner(Guid ownerId, Guid id, string fields);
-		Account GetAccountByOwner(Guid ownerId, Guid id);
+		PagedList<Entity> GetAccountsByEmployee(Guid employeeId, AccountParameters parameters);
+		Entity GetAccountByEmployee(Guid employeeId, Guid id, string fields);
+		Account GetAccountByEmployee(Guid employeeId, Guid id);
 	}
 }

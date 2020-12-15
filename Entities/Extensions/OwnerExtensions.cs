@@ -5,13 +5,13 @@ using System.Text;
 
 namespace Entities.Extensions
 {
-    public static class OwnerExtensions
+    public static class EmployeeExtensions
     {
-        public static void Map(this Owner dbOwner, Owner owner)
+        public static void Map(this Employee dbEmployee, Employee employee)
         {
-            dbOwner.Name = owner.Name;
-            dbOwner.Address = owner.Address;
-            dbOwner.DateOfBirth = owner.DateOfBirth;
+            dbEmployee.Name = employee.Name;
+            dbEmployee.Address = employee.Address;
+            dbEmployee.DateOfBirth = employee.DateOfBirth;
         }
     }
 }

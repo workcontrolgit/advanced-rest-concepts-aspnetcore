@@ -8,76 +8,76 @@ using System.Linq;
 
 namespace Repository
 {
-	public class OwnerRepository : RepositoryBase<Owner>, IOwnerRepository
+	public class EmployeeRepository : RepositoryBase<Employee>, IEmployeeRepository
 	{
-		private ISortHelper<Owner> _sortHelper;
-		private IDataShaper<Owner> _dataShaper;
+		private ISortHelper<Employee> _sortHelper;
+		private IDataShaper<Employee> _dataShaper;
 
-		public OwnerRepository(RepositoryContext repositoryContext, 
-			ISortHelper<Owner> sortHelper,
-			IDataShaper<Owner> dataShaper)
+		public EmployeeRepository(RepositoryContext repositoryContext, 
+			ISortHelper<Employee> sortHelper,
+			IDataShaper<Employee> dataShaper)
 			: base(repositoryContext)
 		{
 			_sortHelper = sortHelper;
 			_dataShaper = dataShaper;
 		}
 
-		public PagedList<Entity> GetOwners(OwnerParameters ownerParameters)
+		public PagedList<Entity> GetEmployees(EmployeeParameters employeeParameters)
 		{
-			var owners = FindByCondition(o => o.DateOfBirth.Year >= ownerParameters.MinYearOfBirth &&
-										o.DateOfBirth.Year <= ownerParameters.MaxYearOfBirth);
+			var employees = FindByCondition(o => o.DateOfBirth.Year >= employeeParameters.MinYearOfBirth &&
+										o.DateOfBirth.Year <= employeeParameters.MaxYearOfBirth);
 
-			SearchByName(ref owners, ownerParameters.Name);
+			SearchByName(ref employees, employeeParameters.Name);
 
-			var sortedOwners = _sortHelper.ApplySort(owners, ownerParameters.OrderBy);
-			var shapedOwners = _dataShaper.ShapeData(sortedOwners, ownerParameters.Fields);
+			var sortedEmployees = _sortHelper.ApplySort(employees, employeeParameters.OrderBy);
+			var shapedEmployees = _dataShaper.ShapeData(sortedEmployees, employeeParameters.Fields);
 
-			return PagedList<Entity>.ToPagedList(shapedOwners,
-				ownerParameters.PageNumber,
-				ownerParameters.PageSize);
+			return PagedList<Entity>.ToPagedList(shapedEmployees,
+				employeeParameters.PageNumber,
+				employeeParameters.PageSize);
 		}
 
-		private void SearchByName(ref IQueryable<Owner> owners, string ownerName)
+		private void SearchByName(ref IQueryable<Employee> employees, string employeeName)
 		{
-			if (!owners.Any() || string.IsNullOrWhiteSpace(ownerName))
+			if (!employees.Any() || string.IsNullOrWhiteSpace(employeeName))
 				return;
 
-			if (string.IsNullOrEmpty(ownerName))
+			if (string.IsNullOrEmpty(employeeName))
 				return;
 
-			owners = owners.Where(o => o.Name.ToLowerInvariant().Contains(ownerName.Trim().ToLowerInvariant()));
+			employees = employees.Where(o => o.Name.ToLowerInvariant().Contains(employeeName.Trim().ToLowerInvariant()));
 		}
 
-		public Entity GetOwnerById(Guid ownerId, string fields)
+		public Entity GetEmployeeById(Guid employeeId, string fields)
 		{
-			var owner = FindByCondition(owner => owner.Id.Equals(ownerId))
-				.DefaultIfEmpty(new Owner())
+			var employee = FindByCondition(employee => employee.Id.Equals(employeeId))
+				.DefaultIfEmpty(new Employee())
 				.FirstOrDefault();
 
-			return _dataShaper.ShapeData(owner, fields);
+			return _dataShaper.ShapeData(employee, fields);
 		}
 
-		public Owner GetOwnerById(Guid ownerId)
+		public Employee GetEmployeeById(Guid employeeId)
 		{
-			return FindByCondition(owner => owner.Id.Equals(ownerId))
-				.DefaultIfEmpty(new Owner())
+			return FindByCondition(employee => employee.Id.Equals(employeeId))
+				.DefaultIfEmpty(new Employee())
 				.FirstOrDefault();
 		}
 
-		public void CreateOwner(Owner owner)
+		public void CreateEmployee(Employee employee)
 		{
-			Create(owner);
+			Create(employee);
 		}
 
-		public void UpdateOwner(Owner dbOwner, Owner owner)
+		public void UpdateEmployee(Employee dbEmployee, Employee employee)
 		{
-			dbOwner.Map(owner);
-			Update(dbOwner);
+			dbEmployee.Map(employee);
+			Update(dbEmployee);
 		}
 
-		public void DeleteOwner(Owner owner)
+		public void DeleteEmployee(Employee employee)
 		{
-			Delete(owner);
+			Delete(employee);
 		}
 	}
 }

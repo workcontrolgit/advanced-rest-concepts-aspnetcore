@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Repository;
 
-namespace AccountOwnerServer.Extensions
+namespace AccountEmployeeServer.Extensions
 {
 	/// <summary>
 	/// ServiceExtensions
@@ -78,10 +78,10 @@ namespace AccountOwnerServer.Extensions
 		/// <param name="services"></param>
 		public static void ConfigureRepositoryWrapper(this IServiceCollection services)
 		{
-			services.AddScoped<ISortHelper<Owner>, SortHelper<Owner>>();
+			services.AddScoped<ISortHelper<Employee>, SortHelper<Employee>>();
 			services.AddScoped<ISortHelper<Account>, SortHelper<Account>>();
 
-			services.AddScoped<IDataShaper<Owner>, DataShaper<Owner>>();
+			services.AddScoped<IDataShaper<Employee>, DataShaper<Employee>>();
 			services.AddScoped<IDataShaper<Account>, DataShaper<Account>>();
 
 			services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();

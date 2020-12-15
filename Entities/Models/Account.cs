@@ -20,7 +20,7 @@ namespace Entities.Models
         [Required(ErrorMessage = "Account type is required")]
         public string AccountType { get; set; }
 
-        [Required(ErrorMessage = "Owner Id is required")]
-        public Guid OwnerId { get; set; }
+        [Required(ErrorMessage = "Employee Id is required")]
+        public Guid EmployeeId { get; set; }
     }
 }

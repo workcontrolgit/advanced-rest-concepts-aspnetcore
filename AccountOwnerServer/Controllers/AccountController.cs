@@ -6,12 +6,12 @@ using Newtonsoft.Json;
 using System;
 using System.Linq;
 
-namespace AccountOwnerServer.Controllers
+namespace AccountEmployeeServer.Controllers
 {
 	/// <summary>
 	/// AccountController
 	/// </summary>
-	[Route("api/owners/{ownerId}/accounts")]
+	[Route("api/employees/{employeeId}/accounts")]
 	[ApiController]
 	
 	public class AccountController : ControllerBase
@@ -30,15 +30,15 @@ namespace AccountOwnerServer.Controllers
 			_repository = repository;
 		}
 		/// <summary>
-		/// GetAccountsForOwner
+		/// GetAccountsForEmployee
 		/// </summary>
-		/// <param name="ownerId"></param>
+		/// <param name="employeeId"></param>
 		/// <param name="parameters"></param>
 		/// <returns></returns>
 		[HttpGet]
-		public IActionResult GetAccountsForOwner(Guid ownerId, [FromQuery] AccountParameters parameters)
+		public IActionResult GetAccountsForEmployee(Guid employeeId, [FromQuery] AccountParameters parameters)
 		{
-			var accounts = _repository.Account.GetAccountsByOwner(ownerId, parameters);
+			var accounts = _repository.Account.GetAccountsByEmployee(employeeId, parameters);
 
 			var metadata = new
 			{
@@ -57,16 +57,16 @@ namespace AccountOwnerServer.Controllers
 			return Ok(accounts);
 		}
 		/// <summary>
-		/// GetAccountForOwner
+		/// GetAccountForEmployee
 		/// </summary>
-		/// <param name="ownerId"></param>
+		/// <param name="employeeId"></param>
 		/// <param name="id"></param>
 		/// <param name="fields"></param>
 		/// <returns></returns>
 		[HttpGet("{id}")]
-		public IActionResult GetAccountForOwner(Guid ownerId, Guid id, [FromQuery] string fields)
+		public IActionResult GetAccountForEmployee(Guid employeeId, Guid id, [FromQuery] string fields)
 		{
-			var account = _repository.Account.GetAccountByOwner(ownerId, id, fields);
+			var account = _repository.Account.GetAccountByEmployee(employeeId, id, fields);
 
 			if (account == default(Entity))
 			{

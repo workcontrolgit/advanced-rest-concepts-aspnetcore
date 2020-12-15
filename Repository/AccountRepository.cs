@@ -19,9 +19,9 @@ namespace Repository
 			_dataShaper = dataShaper;
 		}
 
-		public PagedList<Entity> GetAccountsByOwner(Guid ownerId, AccountParameters parameters)
+		public PagedList<Entity> GetAccountsByEmployee(Guid employeeId, AccountParameters parameters)
 		{
-			var accounts = FindByCondition(a => a.OwnerId.Equals(ownerId));
+			var accounts = FindByCondition(a => a.EmployeeId.Equals(employeeId));
 
 			var sortedAccounts = _sortHelper.ApplySort(accounts, parameters.OrderBy);
 
@@ -32,15 +32,15 @@ namespace Repository
 				parameters.PageSize);
 		}
 
-		public Entity GetAccountByOwner(Guid ownerId, Guid id, string fields)
+		public Entity GetAccountByEmployee(Guid employeeId, Guid id, string fields)
 		{
-			var account = FindByCondition(a => a.OwnerId.Equals(ownerId) && a.Id.Equals(id)).SingleOrDefault();
+			var account = FindByCondition(a => a.EmployeeId.Equals(employeeId) && a.Id.Equals(id)).SingleOrDefault();
 			return _dataShaper.ShapeData(account, fields);
 		}
 
-		public Account GetAccountByOwner(Guid ownerId, Guid id)
+		public Account GetAccountByEmployee(Guid employeeId, Guid id)
 		{
-			return FindByCondition(a => a.OwnerId.Equals(ownerId) && a.Id.Equals(id)).SingleOrDefault();
+			return FindByCondition(a => a.EmployeeId.Equals(employeeId) && a.Id.Equals(id)).SingleOrDefault();
 		}
 	}
 }

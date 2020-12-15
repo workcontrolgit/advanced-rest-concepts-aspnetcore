@@ -8,152 +8,152 @@ using Newtonsoft.Json;
 using System;
 using System.Linq;
 
-namespace AccountOwnerServer.Controllers
+namespace AccountEmployeeServer.Controllers
 {
 	/// <summary>
-	/// OwnerController
+	/// EmployeeController
 	/// </summary>
-	[Route("api/owners")]
+	[Route("api/employees")]
 	[ApiController]
-	public class OwnerController : ControllerBase
+	public class EmployeeController : ControllerBase
 	{
 		private ILoggerManager _logger;
 		private IRepositoryWrapper _repository;
 		/// <summary>
-		/// OwnerController
+		/// EmployeeController
 		/// </summary>
 		/// <param name="logger"></param>
 		/// <param name="repository"></param>
-		public OwnerController(ILoggerManager logger,
+		public EmployeeController(ILoggerManager logger,
 			IRepositoryWrapper repository)
 		{
 			_logger = logger;
 			_repository = repository;
 		}
 		/// <summary>
-		/// GetOwners
+		/// GetEmployees
 		/// </summary>
-		/// <param name="ownerParameters"></param>
+		/// <param name="employeeParameters"></param>
 		/// <returns></returns>
 		[HttpGet]
-		public IActionResult GetOwners([FromQuery] OwnerParameters ownerParameters)
+		public IActionResult GetEmployees([FromQuery] EmployeeParameters employeeParameters)
 		{
-			if (!ownerParameters.ValidYearRange)
+			if (!employeeParameters.ValidYearRange)
 			{
 				return BadRequest("Max year of birth cannot be less than min year of birth");
 			}
 
-			var owners = _repository.Owner.GetOwners(ownerParameters);
+			var employees = _repository.Employee.GetEmployees(employeeParameters);
 
 			var metadata = new
 			{
-				owners.TotalCount,
-				owners.PageSize,
-				owners.CurrentPage,
-				owners.TotalPages,
-				owners.HasNext,
-				owners.HasPrevious
+				employees.TotalCount,
+				employees.PageSize,
+				employees.CurrentPage,
+				employees.TotalPages,
+				employees.HasNext,
+				employees.HasPrevious
 			};
 
 			Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(metadata));
 
-			_logger.LogInfo($"Returned {owners.TotalCount} owners from database.");
+			_logger.LogInfo($"Returned {employees.TotalCount} employees from database.");
 
-			return Ok(owners);
+			return Ok(employees);
 		}
 		/// <summary>
-		/// GetOwnerById
+		/// GetEmployeeById
 		/// </summary>
 		/// <param name="id"></param>
 		/// <param name="fields"></param>
 		/// <returns></returns>
-		[HttpGet("{id}", Name = "OwnerById")]
-		public IActionResult GetOwnerById(Guid id, [FromQuery] string fields)
+		[HttpGet("{id}", Name = "EmployeeById")]
+		public IActionResult GetEmployeeById(Guid id, [FromQuery] string fields)
 		{
-			var owner = _repository.Owner.GetOwnerById(id, fields);
+			var employee = _repository.Employee.GetEmployeeById(id, fields);
 
-			if (owner == default(Entity))
+			if (employee == default(Entity))
 			{
-				_logger.LogError($"Owner with id: {id}, hasn't been found in db.");
+				_logger.LogError($"Employee with id: {id}, hasn't been found in db.");
 				return NotFound();
 			}
 
-			return Ok(owner);
+			return Ok(employee);
 		}
 		/// <summary>
-		/// CreateOwner
+		/// CreateEmployee
 		/// </summary>
-		/// <param name="owner"></param>
+		/// <param name="employee"></param>
 		/// <returns></returns>
 		[HttpPost]
-		public IActionResult CreateOwner([FromBody]Owner owner)
+		public IActionResult CreateEmployee([FromBody]Employee employee)
 		{
-			if (owner.IsObjectNull())
+			if (employee.IsObjectNull())
 			{
-				_logger.LogError("Owner object sent from client is null.");
-				return BadRequest("Owner object is null");
+				_logger.LogError("Employee object sent from client is null.");
+				return BadRequest("Employee object is null");
 			}
 
 			if (!ModelState.IsValid)
 			{
-				_logger.LogError("Invalid owner object sent from client.");
+				_logger.LogError("Invalid employee object sent from client.");
 				return BadRequest("Invalid model object");
 			}
 
-			_repository.Owner.CreateOwner(owner);
+			_repository.Employee.CreateEmployee(employee);
 			_repository.Save();
 
-			return CreatedAtRoute("OwnerById", new { id = owner.Id }, owner);
+			return CreatedAtRoute("EmployeeById", new { id = employee.Id }, employee);
 		}
 		/// <summary>
-		/// UpdateOwner
+		/// UpdateEmployee
 		/// </summary>
 		/// <param name="id"></param>
-		/// <param name="owner"></param>
+		/// <param name="employee"></param>
 		/// <returns></returns>
 		[HttpPut("{id}")]
-		public IActionResult UpdateOwner(Guid id, [FromBody]Owner owner)
+		public IActionResult UpdateEmployee(Guid id, [FromBody]Employee employee)
 		{
-			if (owner.IsObjectNull())
+			if (employee.IsObjectNull())
 			{
-				_logger.LogError("Owner object sent from client is null.");
-				return BadRequest("Owner object is null");
+				_logger.LogError("Employee object sent from client is null.");
+				return BadRequest("Employee object is null");
 			}
 
 			if (!ModelState.IsValid)
 			{
-				_logger.LogError("Invalid owner object sent from client.");
+				_logger.LogError("Invalid employee object sent from client.");
 				return BadRequest("Invalid model object");
 			}
 
-			var dbOwner = _repository.Owner.GetOwnerById(id);
-			if (dbOwner.IsEmptyObject())
+			var dbEmployee = _repository.Employee.GetEmployeeById(id);
+			if (dbEmployee.IsEmptyObject())
 			{
-				_logger.LogError($"Owner with id: {id}, hasn't been found in db.");
+				_logger.LogError($"Employee with id: {id}, hasn't been found in db.");
 				return NotFound();
 			}
 
-			_repository.Owner.UpdateOwner(dbOwner, owner);
+			_repository.Employee.UpdateEmployee(dbEmployee, employee);
 			_repository.Save();
 
 			return NoContent();
 		}
 		/// <summary>
-		/// DeleteOwner
+		/// DeleteEmployee
 		/// </summary>
 		/// <param name="id"></param>
 		/// <returns></returns>
 		[HttpDelete("{id}")]
-		public IActionResult DeleteOwner(Guid id)
+		public IActionResult DeleteEmployee(Guid id)
 		{
-			var owner = _repository.Owner.GetOwnerById(id);
-			if (owner.IsEmptyObject())
+			var employee = _repository.Employee.GetEmployeeById(id);
+			if (employee.IsEmptyObject())
 			{
-				_logger.LogError($"Owner with id: {id}, hasn't been found in db.");
+				_logger.LogError($"Employee with id: {id}, hasn't been found in db.");
 				return NotFound();
 			}
 
-			_repository.Owner.DeleteOwner(owner);
+			_repository.Employee.DeleteEmployee(employee);
 			_repository.Save();
 
 			return NoContent();

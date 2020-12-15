@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Entities.ExtendedModels
 {
-    public class OwnerExtended : IEntity
+    public class EmployeeExtended : IEntity
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
@@ -14,16 +14,16 @@ namespace Entities.ExtendedModels
 
         public IEnumerable<Account> Accounts { get; set; }
 
-        public OwnerExtended()
+        public EmployeeExtended()
         {
         }
 
-        public OwnerExtended(Owner owner)
+        public EmployeeExtended(Employee employee)
         {
-            Id = owner.Id;
-            Name = owner.Name;
-            DateOfBirth = owner.DateOfBirth;
-            Address = owner.Address;
+            Id = employee.Id;
+            Name = employee.Name;
+            DateOfBirth = employee.DateOfBirth;
+            Address = employee.Address;
         }
     }
 }

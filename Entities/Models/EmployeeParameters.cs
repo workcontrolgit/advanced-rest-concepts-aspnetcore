@@ -2,9 +2,9 @@
 
 namespace Entities.Models
 {
-	public class OwnerParameters : QueryStringParameters
+	public class EmployeeParameters : QueryStringParameters
 	{
-		public OwnerParameters()
+		public EmployeeParameters()
 		{
 			OrderBy = "name";
 		}

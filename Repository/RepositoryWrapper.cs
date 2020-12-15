@@ -8,23 +8,23 @@ namespace Repository
 	public class RepositoryWrapper : IRepositoryWrapper
 	{
 		private RepositoryContext _repoContext;
-		private IOwnerRepository _owner;
+		private IEmployeeRepository _employee;
 		private IAccountRepository _account;
-		private ISortHelper<Owner> _ownerSortHelper;
+		private ISortHelper<Employee> _employeeSortHelper;
 		private ISortHelper<Account> _accountSortHelper;
-		private IDataShaper<Owner> _ownerDataShaper;
+		private IDataShaper<Employee> _employeeDataShaper;
 		private IDataShaper<Account> _accountDataShaper;
 
-		public IOwnerRepository Owner
+		public IEmployeeRepository Employee
 		{
 			get
 			{
-				if (_owner == null)
+				if (_employee == null)
 				{
-					_owner = new OwnerRepository(_repoContext, _ownerSortHelper, _ownerDataShaper);
+					_employee = new EmployeeRepository(_repoContext, _employeeSortHelper, _employeeDataShaper);
 				}
 
-				return _owner;
+				return _employee;
 			}
 		}
 
@@ -42,15 +42,15 @@ namespace Repository
 		}
 
 		public RepositoryWrapper(RepositoryContext repositoryContext,
-			ISortHelper<Owner> ownerSortHelper,
+			ISortHelper<Employee> employeeSortHelper,
 			ISortHelper<Account> accountSortHelper,
-			IDataShaper<Owner> ownerDataShaper,
+			IDataShaper<Employee> employeeDataShaper,
 			IDataShaper<Account> accountDataShaper)
 		{
 			_repoContext = repositoryContext;
-			_ownerSortHelper = ownerSortHelper;
+			_employeeSortHelper = employeeSortHelper;
 			_accountSortHelper = accountSortHelper;
-			_ownerDataShaper = ownerDataShaper;
+			_employeeDataShaper = employeeDataShaper;
 			_accountDataShaper = accountDataShaper;
 		}
 

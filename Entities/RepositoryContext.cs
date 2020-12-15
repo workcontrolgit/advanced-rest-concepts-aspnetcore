@@ -13,20 +13,20 @@ namespace Entities
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //var owner = new Faker<Owner>()
+            //var employee = new Faker<Employee>()
             //.RuleFor(m => m.Id, f => f.Random.Guid())
             //.RuleFor(m => m.Name, f => f.Name.FullName())
             //.RuleFor(m => m.Address, f => f.Address.FullAddress())
             //.RuleFor(m => m.DateOfBirth, f => f.Date.Past());
 
-            //modelBuilder.Entity<Owner>()
-            //    .HasData(owner.Generate(1000));
+            //modelBuilder.Entity<Employee>()
+            //    .HasData(employee.Generate(1000));
             FakeData.Init(1000);
 
-            modelBuilder.Entity<Owner>().HasData(FakeData.Owners);
+            modelBuilder.Entity<Employee>().HasData(FakeData.Employees);
             modelBuilder.Entity<Account>().HasData(FakeData.Accounts);
         }
-        public DbSet<Owner> Owners { get; set; }
+        public DbSet<Employee> Employees { get; set; }
         public DbSet<Account> Accounts { get; set; }
 	}
 }

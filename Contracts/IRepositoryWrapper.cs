@@ -6,7 +6,7 @@ namespace Contracts
 {
     public interface IRepositoryWrapper
     {
-        IOwnerRepository Owner { get; }
+        IEmployeeRepository Employee { get; }
         IAccountRepository Account { get; }
 		void Save();
 	}
