@@ -51,16 +51,6 @@ namespace GtmWebAPI.Extensions
 			services.AddSingleton<ILoggerManager, LoggerManager>();
 		}
 		/// <summary>
-		/// ConfigureMySqlContext
-		/// </summary>
-		/// <param name="services"></param>
-		/// <param name="config"></param>
-		public static void ConfigureMySqlContext(this IServiceCollection services, IConfiguration config)
-		{
-			var connectionString = config["mysqlconnection:connectionString"];
-			services.AddDbContext<RepositoryContext>(o => o.UseMySql(connectionString));
-		}
-		/// <summary>
 		/// ConfigureMsSqlContext
 		/// </summary>
 		/// <param name="services"></param>

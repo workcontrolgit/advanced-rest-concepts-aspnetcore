@@ -15,16 +15,16 @@ namespace GtmWebAPI.Controllers
 	/// </summary>
 	[Route("api/employees")]
 	[ApiController]
-	public class EmployeeController : ControllerBase
+	public class EmployeesController : ControllerBase
 	{
 		private ILoggerManager _logger;
 		private IRepositoryWrapper _repository;
 		/// <summary>
-		/// EmployeeController
+		/// EmployeesController
 		/// </summary>
 		/// <param name="logger"></param>
 		/// <param name="repository"></param>
-		public EmployeeController(ILoggerManager logger,
+		public EmployeesController(ILoggerManager logger,
 			IRepositoryWrapper repository)
 		{
 			_logger = logger;

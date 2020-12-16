@@ -14,6 +14,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using System.Text.Json;
 
 namespace GtmWebAPI
 {
@@ -60,11 +61,11 @@ namespace GtmWebAPI
 				c.SwaggerDoc("v1", new OpenApiInfo
 				{
 					Version = "v1",
-					Title = "Clean Architecture - GtmWebAPI",
+					Title = "GTM Enterprise WebAPI",
 					Description = "This Api will be responsible for overall data distribution and authorization.",
 					Contact = new OpenApiContact
 					{
-						Name = "codewithmukesh",
+						Name = "GTMWebAPI Team",
 						Email = "hello@codewithmukesh.com",
 						Url = new Uri("https://codewithmukesh.com/contact"),
 					}
@@ -95,16 +96,25 @@ namespace GtmWebAPI
 					},
 				});
 			});
-			services.AddControllers();
+			//services.AddControllers();
+			services.AddControllers().AddJsonOptions(options => {
+				options.JsonSerializerOptions.DictionaryKeyPolicy = JsonNamingPolicy.CamelCase;
+				options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+			});
+			//services.AddControllers()
+			//		.AddJsonOptions(options =>
+			//		{
+			//			options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+			//		});
 
-            //services.AddControllers(config =>
-            //{
-            //    config.RespectBrowserAcceptHeader = true;
-            //    config.ReturnHttpNotAcceptable = true;
-            //}).AddXmlDataContractSerializerFormatters()
-            //.AddNewtonsoftJson();
+			//services.AddControllers(config =>
+			//{
+			//    config.RespectBrowserAcceptHeader = true;
+			//    config.ReturnHttpNotAcceptable = true;
+			//}).AddXmlDataContractSerializerFormatters()
+			//.AddNewtonsoftJson();
 
-        }
+		}
 
 		/// <summary>
 		/// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

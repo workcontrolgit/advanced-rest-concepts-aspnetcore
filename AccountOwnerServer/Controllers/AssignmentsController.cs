@@ -14,7 +14,7 @@ namespace GtmWebAPI.Controllers
 	[Route("api/employees/{employeeId}/assignments")]
 	[ApiController]
 	
-	public class AssignmentController : ControllerBase
+	public class AssignmentsController : ControllerBase
 	{
 		private ILoggerManager _logger;
 		private IRepositoryWrapper _repository;
@@ -23,7 +23,7 @@ namespace GtmWebAPI.Controllers
 		/// </summary>
 		/// <param name="logger"></param>
 		/// <param name="repository"></param>
-		public AssignmentController(ILoggerManager logger,
+		public AssignmentsController(ILoggerManager logger,
 			IRepositoryWrapper repository)
 		{
 			_logger = logger;
