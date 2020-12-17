@@ -1,11 +1,8 @@
 ﻿using Bogus;
-using Bogus.Extensions;
 using DataServices.Domain.Models;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace DataServices.Domain.Helpers
+namespace DataServices.Repository.Mock
 {
     static class FakeData
     {

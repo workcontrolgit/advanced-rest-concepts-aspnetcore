@@ -49,10 +49,7 @@ namespace DataServices.EmployeeProfile
 
 			services.ConfigureLoggerService();
 
-			//services.ConfigureMySqlContext(Configuration);
-
 			services.ConfigureMsSqlContext(Configuration);
-
 
 			services.ConfigureRepositoryWrapper();
 			services.AddSwaggerGen(c =>
