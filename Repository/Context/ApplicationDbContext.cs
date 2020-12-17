@@ -2,11 +2,11 @@
 using DataServices.Persistence.Mock;
 using Microsoft.EntityFrameworkCore;
 
-namespace DataServices.Domain
+namespace DataServices.Domain.Context
 {
-    public class RepositoryContext: DbContext
+    public class ApplicationDbContext: DbContext
     {
-        public RepositoryContext(DbContextOptions options)
+        public ApplicationDbContext(DbContextOptions options)
             :base(options)
         {
         }

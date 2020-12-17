@@ -1,22 +1,22 @@
 ﻿using Contracts;
-using DataServices.Domain;
+using DataServices.Domain.Context;
 using DataServices.Domain.Extensions;
 using DataServices.Domain.Helpers;
 using DataServices.Domain.Models;
 using System;
 using System.Linq;
 
-namespace DataServices.Persistence
+namespace DataServices.Persistence.Repositories
 {
 	public class EmployeeRepository : RepositoryBase<Employee>, IEmployeeRepository
 	{
 		private ISortHelper<Employee> _sortHelper;
 		private IDataShaper<Employee> _dataShaper;
 
-		public EmployeeRepository(RepositoryContext repositoryContext, 
+		public EmployeeRepository(ApplicationDbContext ApplicationDbContext, 
 			ISortHelper<Employee> sortHelper,
 			IDataShaper<Employee> dataShaper)
-			: base(repositoryContext)
+			: base(ApplicationDbContext)
 		{
 			_sortHelper = sortHelper;
 			_dataShaper = dataShaper;

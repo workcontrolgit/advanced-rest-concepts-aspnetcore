@@ -1,20 +1,20 @@
 ﻿using Contracts;
-using DataServices.Domain;
+using DataServices.Domain.Context;
 using DataServices.Domain.Helpers;
 using DataServices.Domain.Models;
 using DataServices.LoggerService;
+using DataServices.Persistence.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using DataServices.Persistence;
 
 namespace DataServices.EmployeeProfile.Extensions
 {
-	/// <summary>
-	/// ServiceExtensions
-	/// </summary>
-	public static class ServiceExtensions
+    /// <summary>
+    /// ServiceExtensions
+    /// </summary>
+    public static class ServiceExtensions
 	{
 		/// <summary>
 		/// ConfigureCors
@@ -57,10 +57,10 @@ namespace DataServices.EmployeeProfile.Extensions
 		/// <param name="config"></param>
 		public static void ConfigureMsSqlContext(this IServiceCollection services, IConfiguration config)
 		{
-			services.AddDbContext<RepositoryContext>(options =>
+			services.AddDbContext<ApplicationDbContext>(options =>
 		   options.UseSqlServer(
 			   config.GetConnectionString("DefaultConnection"),
-			   b => b.MigrationsAssembly(typeof(RepositoryContext).Assembly.FullName)));
+			   b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
 		}
 		/// <summary>
 		/// ConfigureRepositoryWrapper

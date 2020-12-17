@@ -1,19 +1,19 @@
 ﻿using Contracts;
-using DataServices.Domain;
+using DataServices.Domain.Context;
 using DataServices.Domain.Helpers;
 using DataServices.Domain.Models;
 using System;
 using System.Linq;
 
-namespace DataServices.Persistence
+namespace DataServices.Persistence.Repositories
 {
 	public class AssignmentRepository : RepositoryBase<Assignment>, IAssignmentRepository
 	{
 		private ISortHelper<Assignment> _sortHelper;
 		private IDataShaper<Assignment> _dataShaper;
 
-		public AssignmentRepository(RepositoryContext repositoryContext, ISortHelper<Assignment> sortHelper, IDataShaper<Assignment> dataShaper)
-			: base(repositoryContext)
+		public AssignmentRepository(ApplicationDbContext ApplicationDbContext, ISortHelper<Assignment> sortHelper, IDataShaper<Assignment> dataShaper)
+			: base(ApplicationDbContext)
 		{
 			_sortHelper = sortHelper;
 			_dataShaper = dataShaper;

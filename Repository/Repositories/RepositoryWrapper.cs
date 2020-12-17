@@ -1,13 +1,13 @@
 ﻿using Contracts;
-using DataServices.Domain;
+using DataServices.Domain.Context;
 using DataServices.Domain.Helpers;
 using DataServices.Domain.Models;
 
-namespace DataServices.Persistence
+namespace DataServices.Persistence.Repositories
 {
 	public class RepositoryWrapper : IRepositoryWrapper
 	{
-		private RepositoryContext _repoContext;
+		private ApplicationDbContext _repoContext;
 		private IEmployeeRepository _employee;
 		private IAssignmentRepository _assignment;
 		private ISortHelper<Employee> _employeeSortHelper;
@@ -41,13 +41,13 @@ namespace DataServices.Persistence
 			}
 		}
 
-		public RepositoryWrapper(RepositoryContext repositoryContext,
+		public RepositoryWrapper(ApplicationDbContext ApplicationDbContext,
 			ISortHelper<Employee> employeeSortHelper,
 			ISortHelper<Assignment> assignmentSortHelper,
 			IDataShaper<Employee> employeeDataShaper,
 			IDataShaper<Assignment> assignmentDataShaper)
 		{
-			_repoContext = repositoryContext;
+			_repoContext = ApplicationDbContext;
 			_employeeSortHelper = employeeSortHelper;
 			_assignmentSortHelper = assignmentSortHelper;
 			_employeeDataShaper = employeeDataShaper;
