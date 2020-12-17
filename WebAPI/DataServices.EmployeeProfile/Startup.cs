@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpOverrides;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -18,10 +17,10 @@ using System.Text.Json;
 
 namespace DataServices.EmployeeProfile
 {
-	/// <summary>
-	/// Startup
-	/// </summary>
-	public class Startup
+    /// <summary>
+    /// Startup
+    /// </summary>
+    public class Startup
 	{
 		/// <summary>
 		/// Startup
@@ -52,49 +51,50 @@ namespace DataServices.EmployeeProfile
 			services.ConfigureMsSqlContext(Configuration);
 
 			services.ConfigureRepositoryWrapper();
-			services.AddSwaggerGen(c =>
-			{
-				c.IncludeXmlComments(string.Format(@"{0}\DataServices.EmployeeProfile.xml", System.AppDomain.CurrentDomain.BaseDirectory));
-				c.SwaggerDoc("v1", new OpenApiInfo
-				{
-					Version = "v1",
-					Title = "GTM Data Services - Employee Profile",
-					Description = "This Api will be responsible for overall data distribution and authorization.",
-					Contact = new OpenApiContact
-					{
-						Name = "GTMWebAPI Team",
-						Email = "hello@gtmmiddlewareteam.com",
-						Url = new Uri("https://gtmmiddlewareteam.com/contact"),
-					}
-				});
-				c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-				{
-					Name = "Authorization",
-					In = ParameterLocation.Header,
-					Type = SecuritySchemeType.ApiKey,
-					Scheme = "Bearer",
-					BearerFormat = "JWT",
-					Description = "Input your Bearer token in this format - Bearer {your token here} to access this API",
-				});
-				c.AddSecurityRequirement(new OpenApiSecurityRequirement
-				{
-					{
-						new OpenApiSecurityScheme
-						{
-							Reference = new OpenApiReference
-							{
-								Type = ReferenceType.SecurityScheme,
-								Id = "Bearer",
-							},
-							Scheme = "Bearer",
-							Name = "Bearer",
-							In = ParameterLocation.Header,
-						}, new List<string>()
-					},
-				});
-			});
-			//services.AddControllers();
-			services.AddControllers().AddJsonOptions(options => {
+			services.ConfigureSwaggerExtension();
+            //services.AddSwaggerGen(c =>
+            //{
+            //    c.IncludeXmlComments(string.Format(@"{0}\DataServices.EmployeeProfile.xml", System.AppDomain.CurrentDomain.BaseDirectory));
+            //    c.SwaggerDoc("v1", new OpenApiInfo
+            //    {
+            //        Version = "v1",
+            //        Title = "GTM Data Services - Employee Profile",
+            //        Description = "This Api will be responsible for overall data distribution and authorization.",
+            //        Contact = new OpenApiContact
+            //        {
+            //            Name = "GTMWebAPI Team",
+            //            Email = "hello@gtmmiddlewareteam.com",
+            //            Url = new Uri("https://gtmmiddlewareteam.com/contact"),
+            //        }
+            //    });
+            //    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+            //    {
+            //        Name = "Authorization",
+            //        In = ParameterLocation.Header,
+            //        Type = SecuritySchemeType.ApiKey,
+            //        Scheme = "Bearer",
+            //        BearerFormat = "JWT",
+            //        Description = "Input your Bearer token in this format - Bearer {your token here} to access this API",
+            //    });
+            //    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+            //    {
+            //        {
+            //            new OpenApiSecurityScheme
+            //            {
+            //                Reference = new OpenApiReference
+            //                {
+            //                    Type = ReferenceType.SecurityScheme,
+            //                    Id = "Bearer",
+            //                },
+            //                Scheme = "Bearer",
+            //                Name = "Bearer",
+            //                In = ParameterLocation.Header,
+            //            }, new List<string>()
+            //        },
+            //    });
+            //});
+
+            services.AddControllers().AddJsonOptions(options => {
 				options.JsonSerializerOptions.DictionaryKeyPolicy = JsonNamingPolicy.CamelCase;
 				options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
 			});

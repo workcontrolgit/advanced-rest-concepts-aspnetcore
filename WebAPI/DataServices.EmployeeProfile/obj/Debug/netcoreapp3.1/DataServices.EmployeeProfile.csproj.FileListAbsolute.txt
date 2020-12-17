@@ -86,3 +86,4 @@ C:\apps\patterns\advanced-rest-concepts-aspnetcore\WebAPI\DataServices.EmployeeP
 C:\apps\patterns\advanced-rest-concepts-aspnetcore\WebAPI\DataServices.EmployeeProfile\obj\Debug\netcoreapp3.1\DataServices.EmployeeProfile.pdb
 C:\apps\patterns\advanced-rest-concepts-aspnetcore\WebAPI\DataServices.EmployeeProfile\obj\Debug\netcoreapp3.1\DataServices.EmployeeProfile.genruntimeconfig.cache
 C:\apps\patterns\advanced-rest-concepts-aspnetcore\WebAPI\DataServices.EmployeeProfile\bin\Debug\netcoreapp3.1\DataServices.EmployeeProfile.xml
+C:\apps\patterns\advanced-rest-concepts-aspnetcore\WebAPI\DataServices.EmployeeProfile\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll

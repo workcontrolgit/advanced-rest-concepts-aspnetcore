@@ -87,6 +87,12 @@
             ServiceExtensions
             </summary>
         </member>
+        <member name="M:DataServices.EmployeeProfile.Extensions.ServiceExtensions.AddSwaggerExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            AddSwaggerExtension
+            </summary>
+            <param name="services"></param>
+        </member>
         <member name="M:DataServices.EmployeeProfile.Extensions.ServiceExtensions.ConfigureCors(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             ConfigureCors
