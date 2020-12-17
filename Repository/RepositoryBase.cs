@@ -5,7 +5,7 @@ using System;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace DataServices.Repository
+namespace DataServices.Persistence
 {
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
 	{

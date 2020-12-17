@@ -2,7 +2,7 @@
 using DataServices.Domain.Models;
 using System.Collections.Generic;
 
-namespace DataServices.Repository.Mock
+namespace DataServices.Persistence.Mock
 {
     static class FakeData
     {

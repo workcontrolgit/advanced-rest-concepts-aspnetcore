@@ -5,7 +5,7 @@ using DataServices.Domain.Models;
 using System;
 using System.Linq;
 
-namespace DataServices.Repository
+namespace DataServices.Persistence
 {
 	public class AssignmentRepository : RepositoryBase<Assignment>, IAssignmentRepository
 	{

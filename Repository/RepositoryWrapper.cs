@@ -3,7 +3,7 @@ using DataServices.Domain;
 using DataServices.Domain.Helpers;
 using DataServices.Domain.Models;
 
-namespace DataServices.Repository
+namespace DataServices.Persistence
 {
 	public class RepositoryWrapper : IRepositoryWrapper
 	{

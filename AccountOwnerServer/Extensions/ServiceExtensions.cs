@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using DataServices.Repository;
+using DataServices.Persistence;
 
 namespace DataServices.EmployeeProfile.Extensions
 {

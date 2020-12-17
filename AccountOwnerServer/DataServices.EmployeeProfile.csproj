@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LoggerService\DataServices.LoggerService.csproj" />
-    <ProjectReference Include="..\Repository\DataServices.Repository.csproj" />
+    <ProjectReference Include="..\Repository\DataServices.Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>

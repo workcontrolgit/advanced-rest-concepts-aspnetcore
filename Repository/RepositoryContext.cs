@@ -1,5 +1,5 @@
 ﻿using DataServices.Domain.Models;
-using DataServices.Repository.Mock;
+using DataServices.Persistence.Mock;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataServices.Domain

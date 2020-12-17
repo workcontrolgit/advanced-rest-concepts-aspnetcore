@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataServices.LoggerService"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataServices.Domain", "Entities\DataServices.Domain.csproj", "{CA018972-3651-4802-9930-69E855892B7A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataServices.Repository", "Repository\DataServices.Repository.csproj", "{A1DEC662-9D40-45E3-A8DE-22AF6A1BE970}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataServices.Persistence", "Repository\DataServices.Persistence.csproj", "{A1DEC662-9D40-45E3-A8DE-22AF6A1BE970}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{CE277548-37B3-4C9E-AC06-419016C839CF}"
 EndProject
