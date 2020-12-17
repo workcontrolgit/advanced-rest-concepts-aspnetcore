@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Entities.Extensions
+namespace DataServices.Domain.Extensions
 {
     public static class IEntityExtensions
     {

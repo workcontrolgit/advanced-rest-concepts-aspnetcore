@@ -1,4 +1,4 @@
-﻿using GtmWebAPI.Extensions;
+﻿using DataServices.EmployeeProfile.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
@@ -16,7 +16,7 @@ using System.IO;
 using System.Net;
 using System.Text.Json;
 
-namespace GtmWebAPI
+namespace DataServices.EmployeeProfile
 {
 	/// <summary>
 	/// Startup
@@ -61,13 +61,13 @@ namespace GtmWebAPI
 				c.SwaggerDoc("v1", new OpenApiInfo
 				{
 					Version = "v1",
-					Title = "GTM Enterprise WebAPI",
+					Title = "GTM Data Services - Employee Profile",
 					Description = "This Api will be responsible for overall data distribution and authorization.",
 					Contact = new OpenApiContact
 					{
 						Name = "GTMWebAPI Team",
-						Email = "hello@codewithmukesh.com",
-						Url = new Uri("https://codewithmukesh.com/contact"),
+						Email = "hello@gtmmiddlewareteam.com",
+						Url = new Uri("https://gtmmiddlewareteam.com/contact"),
 					}
 				});
 				c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -101,18 +101,6 @@ namespace GtmWebAPI
 				options.JsonSerializerOptions.DictionaryKeyPolicy = JsonNamingPolicy.CamelCase;
 				options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
 			});
-			//services.AddControllers()
-			//		.AddJsonOptions(options =>
-			//		{
-			//			options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
-			//		});
-
-			//services.AddControllers(config =>
-			//{
-			//    config.RespectBrowserAcceptHeader = true;
-			//    config.ReturnHttpNotAcceptable = true;
-			//}).AddXmlDataContractSerializerFormatters()
-			//.AddNewtonsoftJson();
 
 		}
 

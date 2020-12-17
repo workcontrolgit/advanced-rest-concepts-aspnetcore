@@ -1,11 +1,11 @@
 ﻿using Contracts;
-using Entities;
-using Entities.Helpers;
-using Entities.Models;
+using DataServices.Domain;
+using DataServices.Domain.Helpers;
+using DataServices.Domain.Models;
 using System;
 using System.Linq;
 
-namespace Repository
+namespace DataServices.Repository
 {
 	public class AssignmentRepository : RepositoryBase<Assignment>, IAssignmentRepository
 	{

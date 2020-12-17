@@ -1,9 +1,9 @@
 ﻿using Bogus;
-using Entities.Helpers;
-using Entities.Models;
+using DataServices.Domain.Helpers;
+using DataServices.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Entities
+namespace DataServices.Domain
 {
     public class RepositoryContext: DbContext
     {

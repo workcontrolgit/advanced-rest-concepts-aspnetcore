@@ -1,4 +1,4 @@
-﻿namespace Entities.Models
+﻿namespace DataServices.Domain.Models
 {
 	public abstract class QueryStringParameters
 	{

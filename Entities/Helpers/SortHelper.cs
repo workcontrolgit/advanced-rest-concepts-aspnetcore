@@ -4,12 +4,15 @@ using System.Reflection;
 using System.Text;
 using System.Linq.Dynamic.Core;
 
-namespace Entities.Helpers
+namespace DataServices.Domain.Helpers
 {
 	public class SortHelper<T> : ISortHelper<T>
 	{
 		public IQueryable<T> ApplySort(IQueryable<T> entities, string orderByQueryString)
 		{
+			//if (!entities.Any())
+			//	return entities;
+			
 			if (!entities.Any())
 				return entities;
 

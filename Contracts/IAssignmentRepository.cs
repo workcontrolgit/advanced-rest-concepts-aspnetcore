@@ -1,5 +1,5 @@
-﻿using Entities.Helpers;
-using Entities.Models;
+﻿using DataServices.Domain.Helpers;
+using DataServices.Domain.Models;
 using System;
 
 namespace Contracts

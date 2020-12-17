@@ -1,9 +1,9 @@
-﻿using Entities.Models;
+﻿using DataServices.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Entities.ExtendedModels
+namespace DataServices.Domain.ExtendedModels
 {
     public class EmployeeExtended : IEntity
     {

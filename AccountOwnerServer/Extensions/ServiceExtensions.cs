@@ -1,15 +1,15 @@
 ﻿using Contracts;
-using Entities;
-using Entities.Helpers;
-using Entities.Models;
-using LoggerService;
+using DataServices.Domain;
+using DataServices.Domain.Helpers;
+using DataServices.Domain.Models;
+using DataServices.LoggerService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Repository;
+using DataServices.Repository;
 
-namespace GtmWebAPI.Extensions
+namespace DataServices.EmployeeProfile.Extensions
 {
 	/// <summary>
 	/// ServiceExtensions

@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace Entities.Helpers
+namespace DataServices.Domain.Helpers
 {
 	public interface ISortHelper<T>
 	{

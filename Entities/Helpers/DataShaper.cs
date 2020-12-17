@@ -1,10 +1,10 @@
-﻿using Entities.Models;
+﻿using DataServices.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace Entities.Helpers
+namespace DataServices.Domain.Helpers
 {
 	public class DataShaper<T> : IDataShaper<T>
 	{

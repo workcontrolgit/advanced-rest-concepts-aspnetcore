@@ -1,11 +1,11 @@
 ﻿using Bogus;
 using Bogus.Extensions;
-using Entities.Models;
+using DataServices.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Entities.Helpers
+namespace DataServices.Domain.Helpers
 {
     static class FakeData
     {
@@ -34,33 +34,6 @@ namespace Entities.Helpers
             var assignments = assignmentFaker.Generate(count);
 
             Assignments.AddRange(assignments);
-
-
-            //var assignmentFaker = new Faker<Assignment>()
-            //   .RuleFor(p => p.Id, f => f.Random.Guid())
-            //   .RuleFor(p => p.AssignmentType, f => f.Commerce.ProductMaterial())
-            //   .RuleFor(p => p.DateCreated, f => f.Date.Recent())
-            //   .RuleFor(p => p.EmployeeId, (f, b) =>
-            //   {
-            //       employeeFaker.RuleFor(p => p.Id, _ => b.EmployeeId);
-            //       var employees = employeeFaker.GenerateBetween(3, 5);
-            //       FakeData.Employees.AddRange(employees);
-            //       return default;
-            //   });
-            //var employeeFaker = new Faker<Employee>()
-            //   .RuleFor(b => b.Id, f => f.Random.Guid())
-            //   .RuleFor(b => b.Name, f => f.Name.FullName())
-            //   .RuleFor(b => b.Id, (f, b) =>
-            //   {
-            //       assignmentFaker.RuleFor(p => p.EmployeeId, _ => b.Id);
-
-            //       var assignments = assignmentFaker.GenerateBetween(3, 5);
-
-            //       FakeData.Assignments.AddRange(assignments);
-
-            //       return default; // Employee.Assignments is a getter only. The return value has no impact.
-            //   });
-
         }
     }
 }

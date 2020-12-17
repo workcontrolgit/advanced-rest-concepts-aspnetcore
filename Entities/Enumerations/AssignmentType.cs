@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Entities.Enumerations
+namespace DataServices.Domain.Enumerations
 {
     public enum AssignmentType
     {

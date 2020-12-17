@@ -6,7 +6,7 @@ using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
 
-namespace Entities.Models
+namespace DataServices.Domain.Models
 {
 	public class Entity : DynamicObject, IXmlSerializable, IDictionary<string, object>
 	{

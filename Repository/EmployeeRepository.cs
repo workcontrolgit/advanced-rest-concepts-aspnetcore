@@ -1,12 +1,12 @@
 ﻿using Contracts;
-using Entities;
-using Entities.Extensions;
-using Entities.Helpers;
-using Entities.Models;
+using DataServices.Domain;
+using DataServices.Domain.Extensions;
+using DataServices.Domain.Helpers;
+using DataServices.Domain.Models;
 using System;
 using System.Linq;
 
-namespace Repository
+namespace DataServices.Repository
 {
 	public class EmployeeRepository : RepositoryBase<Employee>, IEmployeeRepository
 	{
@@ -45,7 +45,9 @@ namespace Repository
 			if (string.IsNullOrEmpty(employeeName))
 				return;
 
-			employees = employees.Where(o => o.Name.ToLowerInvariant().Contains(employeeName.Trim().ToLowerInvariant()));
+			//employees = employees.Where(o => o.Name.ToUpperInvariant().Contains(employeeName.Trim().ToUpperInvariant()));
+			employees = employees.Where(o => o.Name.Contains(employeeName.Trim()));
+			//employees = employees.Where(c => c.Name.IndexOf(employeeName.Trim(), StringComparison.OrdinalIgnoreCase) >= 0);
 		}
 
 		public Entity GetEmployeeById(Guid employeeId, string fields)

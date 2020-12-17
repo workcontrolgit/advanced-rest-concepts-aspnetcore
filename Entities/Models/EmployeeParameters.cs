@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Entities.Models
+namespace DataServices.Domain.Models
 {
 	public class EmployeeParameters : QueryStringParameters
 	{

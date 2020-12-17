@@ -1,14 +1,13 @@
 ﻿using Contracts;
-using Entities;
-using Entities.Helpers;
+using DataServices.Domain;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Repository
+namespace DataServices.Repository
 {
-	public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
+    public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
 	{
 		protected RepositoryContext RepositoryContext { get; set; }
 

@@ -1,14 +1,14 @@
 ﻿using Contracts;
-using Entities.Extensions;
-using Entities.Helpers;
-using Entities.Models;
+using DataServices.Domain.Extensions;
+using DataServices.Domain.Helpers;
+using DataServices.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Newtonsoft.Json;
 using System;
 using System.Linq;
 
-namespace GtmWebAPI.Controllers
+namespace DataServices.EmployeeProfile.Controllers
 {
 	/// <summary>
 	/// EmployeeController
@@ -20,7 +20,7 @@ namespace GtmWebAPI.Controllers
 		private ILoggerManager _logger;
 		private IRepositoryWrapper _repository;
 		/// <summary>
-		/// EmployeesController
+		/// Documentation for EmployeesController goes here
 		/// </summary>
 		/// <param name="logger"></param>
 		/// <param name="repository"></param>
@@ -31,7 +31,7 @@ namespace GtmWebAPI.Controllers
 			_repository = repository;
 		}
 		/// <summary>
-		/// GetEmployees
+		/// Documentation for GetEmployees goes here
 		/// </summary>
 		/// <param name="employeeParameters"></param>
 		/// <returns></returns>
@@ -62,7 +62,7 @@ namespace GtmWebAPI.Controllers
 			return Ok(employees);
 		}
 		/// <summary>
-		/// GetEmployeeById
+		/// GetEmployeeById goes here
 		/// </summary>
 		/// <param name="id"></param>
 		/// <param name="fields"></param>
@@ -81,7 +81,7 @@ namespace GtmWebAPI.Controllers
 			return Ok(employee);
 		}
 		/// <summary>
-		/// CreateEmployee
+		/// Documentation for CreateEmployee goes here
 		/// </summary>
 		/// <param name="employee"></param>
 		/// <returns></returns>
@@ -106,7 +106,7 @@ namespace GtmWebAPI.Controllers
 			return CreatedAtRoute("EmployeeById", new { id = employee.Id }, employee);
 		}
 		/// <summary>
-		/// UpdateEmployee
+		/// Documentation for UpdateEmployee goes here
 		/// </summary>
 		/// <param name="id"></param>
 		/// <param name="employee"></param>
@@ -139,7 +139,7 @@ namespace GtmWebAPI.Controllers
 			return NoContent();
 		}
 		/// <summary>
-		/// DeleteEmployee
+		/// Documentation for DeleteEmployee goes here
 		/// </summary>
 		/// <param name="id"></param>
 		/// <returns></returns>

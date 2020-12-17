@@ -1,11 +1,11 @@
-﻿using Entities.Enumerations;
+﻿using DataServices.Domain.Enumerations;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace Entities.Models
+namespace DataServices.Domain.Models
 {
     [Table("assignment")]
     public class Assignment : IEntity

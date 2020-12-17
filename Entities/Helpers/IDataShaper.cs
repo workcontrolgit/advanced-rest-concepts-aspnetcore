@@ -1,7 +1,7 @@
-﻿using Entities.Models;
+﻿using DataServices.Domain.Models;
 using System.Collections.Generic;
 
-namespace Entities.Helpers
+namespace DataServices.Domain.Helpers
 {
 	public interface IDataShaper<T>
 	{

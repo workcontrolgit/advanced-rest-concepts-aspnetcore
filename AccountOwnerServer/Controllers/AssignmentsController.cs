@@ -1,12 +1,12 @@
 ﻿using Contracts;
-using Entities.Models;
+using DataServices.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Newtonsoft.Json;
 using System;
 using System.Linq;
 
-namespace GtmWebAPI.Controllers
+namespace DataServices.EmployeeProfile.Controllers
 {
 	/// <summary>
 	/// AssignmentController
@@ -19,7 +19,7 @@ namespace GtmWebAPI.Controllers
 		private ILoggerManager _logger;
 		private IRepositoryWrapper _repository;
 		/// <summary>
-		/// AssignmentController
+		/// Documentation for AssignmentController goes here
 		/// </summary>
 		/// <param name="logger"></param>
 		/// <param name="repository"></param>
@@ -30,7 +30,7 @@ namespace GtmWebAPI.Controllers
 			_repository = repository;
 		}
 		/// <summary>
-		/// GetAssignmentsForEmployee
+		/// Documentation for GetAssignmentsForEmployee goes here
 		/// </summary>
 		/// <param name="employeeId"></param>
 		/// <param name="parameters"></param>
@@ -57,7 +57,7 @@ namespace GtmWebAPI.Controllers
 			return Ok(assignments);
 		}
 		/// <summary>
-		/// GetAssignmentForEmployee
+		/// Documentation for GetAssignmentForEmployee goes here
 		/// </summary>
 		/// <param name="employeeId"></param>
 		/// <param name="id"></param>

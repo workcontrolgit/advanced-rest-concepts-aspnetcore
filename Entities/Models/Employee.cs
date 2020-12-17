@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Entities.Models
+namespace DataServices.Domain.Models
 {
 	[Table("employee")]
 	public class Employee : IEntity

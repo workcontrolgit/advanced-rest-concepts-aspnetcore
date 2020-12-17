@@ -1,164 +1,164 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>WebAPI</name>
+        <name>DataServices.EmployeeProfile</name>
     </assembly>
     <members>
-        <member name="T:GtmWebAPI.Controllers.AssignmentsController">
+        <member name="T:DataServices.EmployeeProfile.Controllers.AssignmentsController">
             <summary>
             AssignmentController
             </summary>
         </member>
-        <member name="M:GtmWebAPI.Controllers.AssignmentsController.#ctor(Contracts.ILoggerManager,Contracts.IRepositoryWrapper)">
+        <member name="M:DataServices.EmployeeProfile.Controllers.AssignmentsController.#ctor(Contracts.ILoggerManager,Contracts.IRepositoryWrapper)">
             <summary>
-            AssignmentController
+            Documentation for AssignmentController goes here
             </summary>
             <param name="logger"></param>
             <param name="repository"></param>
         </member>
-        <member name="M:GtmWebAPI.Controllers.AssignmentsController.GetAssignmentsForEmployee(System.Guid,Entities.Models.AssignmentParameters)">
+        <member name="M:DataServices.EmployeeProfile.Controllers.AssignmentsController.GetAssignmentsForEmployee(System.Guid,DataServices.Domain.Models.AssignmentParameters)">
             <summary>
-            GetAssignmentsForEmployee
+            Documentation for GetAssignmentsForEmployee goes here
             </summary>
             <param name="employeeId"></param>
             <param name="parameters"></param>
             <returns></returns>
         </member>
-        <member name="M:GtmWebAPI.Controllers.AssignmentsController.GetAssignmentForEmployee(System.Guid,System.Guid,System.String)">
+        <member name="M:DataServices.EmployeeProfile.Controllers.AssignmentsController.GetAssignmentForEmployee(System.Guid,System.Guid,System.String)">
             <summary>
-            GetAssignmentForEmployee
+            Documentation for GetAssignmentForEmployee goes here
             </summary>
             <param name="employeeId"></param>
             <param name="id"></param>
             <param name="fields"></param>
             <returns></returns>
         </member>
-        <member name="T:GtmWebAPI.Controllers.EmployeesController">
+        <member name="T:DataServices.EmployeeProfile.Controllers.EmployeesController">
             <summary>
             EmployeeController
             </summary>
         </member>
-        <member name="M:GtmWebAPI.Controllers.EmployeesController.#ctor(Contracts.ILoggerManager,Contracts.IRepositoryWrapper)">
+        <member name="M:DataServices.EmployeeProfile.Controllers.EmployeesController.#ctor(Contracts.ILoggerManager,Contracts.IRepositoryWrapper)">
             <summary>
-            EmployeesController
+            Documentation for EmployeesController goes here
             </summary>
             <param name="logger"></param>
             <param name="repository"></param>
         </member>
-        <member name="M:GtmWebAPI.Controllers.EmployeesController.GetEmployees(Entities.Models.EmployeeParameters)">
+        <member name="M:DataServices.EmployeeProfile.Controllers.EmployeesController.GetEmployees(DataServices.Domain.Models.EmployeeParameters)">
             <summary>
-            GetEmployees
+            Documentation for GetEmployees goes here
             </summary>
             <param name="employeeParameters"></param>
             <returns></returns>
         </member>
-        <member name="M:GtmWebAPI.Controllers.EmployeesController.GetEmployeeById(System.Guid,System.String)">
+        <member name="M:DataServices.EmployeeProfile.Controllers.EmployeesController.GetEmployeeById(System.Guid,System.String)">
             <summary>
-            GetEmployeeById
+            GetEmployeeById goes here
             </summary>
             <param name="id"></param>
             <param name="fields"></param>
             <returns></returns>
         </member>
-        <member name="M:GtmWebAPI.Controllers.EmployeesController.CreateEmployee(Entities.Models.Employee)">
+        <member name="M:DataServices.EmployeeProfile.Controllers.EmployeesController.CreateEmployee(DataServices.Domain.Models.Employee)">
             <summary>
-            CreateEmployee
+            Documentation for CreateEmployee goes here
             </summary>
             <param name="employee"></param>
             <returns></returns>
         </member>
-        <member name="M:GtmWebAPI.Controllers.EmployeesController.UpdateEmployee(System.Guid,Entities.Models.Employee)">
+        <member name="M:DataServices.EmployeeProfile.Controllers.EmployeesController.UpdateEmployee(System.Guid,DataServices.Domain.Models.Employee)">
             <summary>
-            UpdateEmployee
+            Documentation for UpdateEmployee goes here
             </summary>
             <param name="id"></param>
             <param name="employee"></param>
             <returns></returns>
         </member>
-        <member name="M:GtmWebAPI.Controllers.EmployeesController.DeleteEmployee(System.Guid)">
+        <member name="M:DataServices.EmployeeProfile.Controllers.EmployeesController.DeleteEmployee(System.Guid)">
             <summary>
-            DeleteEmployee
+            Documentation for DeleteEmployee goes here
             </summary>
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="T:GtmWebAPI.Extensions.ServiceExtensions">
+        <member name="T:DataServices.EmployeeProfile.Extensions.ServiceExtensions">
             <summary>
             ServiceExtensions
             </summary>
         </member>
-        <member name="M:GtmWebAPI.Extensions.ServiceExtensions.ConfigureCors(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:DataServices.EmployeeProfile.Extensions.ServiceExtensions.ConfigureCors(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             ConfigureCors
             </summary>
             <param name="services"></param>
         </member>
-        <member name="M:GtmWebAPI.Extensions.ServiceExtensions.ConfigureIISIntegration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:DataServices.EmployeeProfile.Extensions.ServiceExtensions.ConfigureIISIntegration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             ConfigureIISIntegration
             </summary>
             <param name="services"></param>
         </member>
-        <member name="M:GtmWebAPI.Extensions.ServiceExtensions.ConfigureLoggerService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:DataServices.EmployeeProfile.Extensions.ServiceExtensions.ConfigureLoggerService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             ConfigureLoggerService
             </summary>
             <param name="services"></param>
         </member>
-        <member name="M:GtmWebAPI.Extensions.ServiceExtensions.ConfigureMsSqlContext(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+        <member name="M:DataServices.EmployeeProfile.Extensions.ServiceExtensions.ConfigureMsSqlContext(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
             <summary>
             ConfigureMsSqlContext
             </summary>
             <param name="services"></param>
             <param name="config"></param>
         </member>
-        <member name="M:GtmWebAPI.Extensions.ServiceExtensions.ConfigureRepositoryWrapper(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:DataServices.EmployeeProfile.Extensions.ServiceExtensions.ConfigureRepositoryWrapper(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             ConfigureRepositoryWrapper
             </summary>
             <param name="services"></param>
         </member>
-        <member name="T:GtmWebAPI.Program">
+        <member name="T:DataServices.EmployeeProfile.Program">
             <summary>
             Program
             </summary>
         </member>
-        <member name="M:GtmWebAPI.Program.Main(System.String[])">
+        <member name="M:DataServices.EmployeeProfile.Program.Main(System.String[])">
             <summary>
             Main
             </summary>
             <param name="args"></param>
         </member>
-        <member name="M:GtmWebAPI.Program.CreateWebHostBuilder(System.String[])">
+        <member name="M:DataServices.EmployeeProfile.Program.CreateWebHostBuilder(System.String[])">
             <summary>
             CreateWebHostBuilder
             </summary>
             <param name="args"></param>
             <returns></returns>
         </member>
-        <member name="T:GtmWebAPI.Startup">
+        <member name="T:DataServices.EmployeeProfile.Startup">
             <summary>
             Startup
             </summary>
         </member>
-        <member name="M:GtmWebAPI.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+        <member name="M:DataServices.EmployeeProfile.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
             <summary>
             Startup
             </summary>
             <param name="configuration"></param>
         </member>
-        <member name="P:GtmWebAPI.Startup.Configuration">
+        <member name="P:DataServices.EmployeeProfile.Startup.Configuration">
             <summary>
             Configuration
             </summary>
         </member>
-        <member name="M:GtmWebAPI.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:DataServices.EmployeeProfile.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             This method gets called by the runtime. Use this method to add services to the container.
             </summary>
             <param name="services"></param>
         </member>
-        <member name="M:GtmWebAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+        <member name="M:DataServices.EmployeeProfile.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
             <summary>
             This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
             </summary>
