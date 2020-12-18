@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace DataServices.WebAPI.EmployeeProfile
+namespace DataServices.WebAPI
 {
     /// <summary>
     /// Program

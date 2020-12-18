@@ -16,7 +16,7 @@ using System.IO;
 using System.Reflection;
 using DataServices.Core.Domain.Common;
 
-namespace DataServices.WebAPI.EmployeeProfile.Extensions
+namespace DataServices.WebAPI.Extensions
 {
     /// <summary>
     /// ServiceExtensions
@@ -136,7 +136,7 @@ namespace DataServices.WebAPI.EmployeeProfile.Extensions
 			get
 			{
 				var basePath = PlatformServices.Default.Application.ApplicationBasePath;
-				var fileName = typeof(EmployeeProfile.Startup).GetTypeInfo().Assembly.GetName().Name + ".xml";
+				var fileName = typeof(Startup).GetTypeInfo().Assembly.GetName().Name + ".xml";
 				return Path.Combine(basePath, fileName);
 			}
 		}

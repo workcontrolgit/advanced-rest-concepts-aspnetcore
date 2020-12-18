@@ -7753,9 +7753,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\WebAPI\\DataServices.EmployeeProfile\\DataServices.WebAPI.EmployeeProfile.csproj",
-      "projectName": "DataServices.WebAPI.EmployeeProfile",
-      "projectPath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\WebAPI\\DataServices.EmployeeProfile\\DataServices.WebAPI.EmployeeProfile.csproj",
+      "projectUniqueName": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\WebAPI\\DataServices.EmployeeProfile\\DataServices.WebAPI.csproj",
+      "projectName": "DataServices.WebAPI",
+      "projectPath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\WebAPI\\DataServices.EmployeeProfile\\DataServices.WebAPI.csproj",
       "packagesPath": "C:\\Users\\fujin\\.nuget\\packages\\",
       "outputPath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\WebAPI\\DataServices.EmployeeProfile\\obj\\",
       "projectStyle": "PackageReference",

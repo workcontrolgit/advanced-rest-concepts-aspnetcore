@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 using System;
 using System.Linq;
 
-namespace DataServices.WebAPI.EmployeeProfile.Controllers
+namespace DataServices.WebAPI.Controllers
 {
 	/// <summary>
 	/// EmployeeController

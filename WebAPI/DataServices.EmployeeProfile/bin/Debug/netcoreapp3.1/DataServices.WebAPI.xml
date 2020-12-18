@@ -1,22 +1,22 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>DataServices.WebAPI.EmployeeProfile</name>
+        <name>DataServices.WebAPI</name>
     </assembly>
     <members>
-        <member name="T:DataServices.WebAPI.EmployeeProfile.Controllers.AssignmentsController">
+        <member name="T:DataServices.WebAPI.Controllers.AssignmentsController">
             <summary>
             AssignmentController
             </summary>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Controllers.AssignmentsController.#ctor(DataServices.Core.Application.Interfaces.ILoggerManager,DataServices.Core.Application.Interfaces.IRepositoryWrapper)">
+        <member name="M:DataServices.WebAPI.Controllers.AssignmentsController.#ctor(DataServices.Core.Application.Interfaces.ILoggerManager,DataServices.Core.Application.Interfaces.IRepositoryWrapper)">
             <summary>
             Documentation for AssignmentController goes here
             </summary>
             <param name="logger"></param>
             <param name="repository"></param>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Controllers.AssignmentsController.GetAssignmentsForEmployee(System.Guid,DataServices.Core.Domain.Entities.AssignmentParameters)">
+        <member name="M:DataServices.WebAPI.Controllers.AssignmentsController.GetAssignmentsForEmployee(System.Guid,DataServices.Core.Domain.Entities.AssignmentParameters)">
             <summary>
             Documentation for GetAssignmentsForEmployee goes here
             </summary>
@@ -24,7 +24,7 @@
             <param name="parameters"></param>
             <returns></returns>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Controllers.AssignmentsController.GetAssignmentForEmployee(System.Guid,System.Guid,System.String)">
+        <member name="M:DataServices.WebAPI.Controllers.AssignmentsController.GetAssignmentForEmployee(System.Guid,System.Guid,System.String)">
             <summary>
             Documentation for GetAssignmentForEmployee goes here
             </summary>
@@ -33,26 +33,26 @@
             <param name="fields"></param>
             <returns></returns>
         </member>
-        <member name="T:DataServices.WebAPI.EmployeeProfile.Controllers.EmployeesController">
+        <member name="T:DataServices.WebAPI.Controllers.EmployeesController">
             <summary>
             EmployeeController
             </summary>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Controllers.EmployeesController.#ctor(DataServices.Core.Application.Interfaces.ILoggerManager,DataServices.Core.Application.Interfaces.IRepositoryWrapper)">
+        <member name="M:DataServices.WebAPI.Controllers.EmployeesController.#ctor(DataServices.Core.Application.Interfaces.ILoggerManager,DataServices.Core.Application.Interfaces.IRepositoryWrapper)">
             <summary>
             Documentation for EmployeesController goes here
             </summary>
             <param name="logger"></param>
             <param name="repository"></param>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Controllers.EmployeesController.GetEmployees(DataServices.Core.Domain.Entities.EmployeeParameters)">
+        <member name="M:DataServices.WebAPI.Controllers.EmployeesController.GetEmployees(DataServices.Core.Domain.Entities.EmployeeParameters)">
             <summary>
             Documentation for GetEmployees goes here
             </summary>
             <param name="employeeParameters"></param>
             <returns></returns>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Controllers.EmployeesController.GetEmployeeById(System.Guid,System.String)">
+        <member name="M:DataServices.WebAPI.Controllers.EmployeesController.GetEmployeeById(System.Guid,System.String)">
             <summary>
             GetEmployeeById goes here
             </summary>
@@ -60,14 +60,14 @@
             <param name="fields"></param>
             <returns></returns>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Controllers.EmployeesController.CreateEmployee(DataServices.Core.Domain.Entities.Employee)">
+        <member name="M:DataServices.WebAPI.Controllers.EmployeesController.CreateEmployee(DataServices.Core.Domain.Entities.Employee)">
             <summary>
             Documentation for CreateEmployee goes here
             </summary>
             <param name="employee"></param>
             <returns></returns>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Controllers.EmployeesController.UpdateEmployee(System.Guid,DataServices.Core.Domain.Entities.Employee)">
+        <member name="M:DataServices.WebAPI.Controllers.EmployeesController.UpdateEmployee(System.Guid,DataServices.Core.Domain.Entities.Employee)">
             <summary>
             Documentation for UpdateEmployee goes here
             </summary>
@@ -75,96 +75,96 @@
             <param name="employee"></param>
             <returns></returns>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Controllers.EmployeesController.DeleteEmployee(System.Guid)">
+        <member name="M:DataServices.WebAPI.Controllers.EmployeesController.DeleteEmployee(System.Guid)">
             <summary>
             Documentation for DeleteEmployee goes here
             </summary>
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="T:DataServices.WebAPI.EmployeeProfile.Extensions.ServiceExtensions">
+        <member name="T:DataServices.WebAPI.Extensions.ServiceExtensions">
             <summary>
             ServiceExtensions
             </summary>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Extensions.ServiceExtensions.ConfigureSwaggerExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:DataServices.WebAPI.Extensions.ServiceExtensions.ConfigureSwaggerExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             ConfigureSwaggerExtension
             </summary>
             <param name="services"></param>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Extensions.ServiceExtensions.ConfigureCors(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:DataServices.WebAPI.Extensions.ServiceExtensions.ConfigureCors(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             ConfigureCors
             </summary>
             <param name="services"></param>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Extensions.ServiceExtensions.ConfigureIISIntegration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:DataServices.WebAPI.Extensions.ServiceExtensions.ConfigureIISIntegration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             ConfigureIISIntegration
             </summary>
             <param name="services"></param>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Extensions.ServiceExtensions.ConfigureLoggerService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:DataServices.WebAPI.Extensions.ServiceExtensions.ConfigureLoggerService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             ConfigureLoggerService
             </summary>
             <param name="services"></param>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Extensions.ServiceExtensions.ConfigureMsSqlContext(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+        <member name="M:DataServices.WebAPI.Extensions.ServiceExtensions.ConfigureMsSqlContext(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
             <summary>
             ConfigureMsSqlContext
             </summary>
             <param name="services"></param>
             <param name="config"></param>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Extensions.ServiceExtensions.ConfigureRepositoryWrapper(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:DataServices.WebAPI.Extensions.ServiceExtensions.ConfigureRepositoryWrapper(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             ConfigureRepositoryWrapper
             </summary>
             <param name="services"></param>
         </member>
-        <member name="T:DataServices.WebAPI.EmployeeProfile.Program">
+        <member name="T:DataServices.WebAPI.Program">
             <summary>
             Program
             </summary>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Program.Main(System.String[])">
+        <member name="M:DataServices.WebAPI.Program.Main(System.String[])">
             <summary>
             Main
             </summary>
             <param name="args"></param>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Program.CreateWebHostBuilder(System.String[])">
+        <member name="M:DataServices.WebAPI.Program.CreateWebHostBuilder(System.String[])">
             <summary>
             CreateWebHostBuilder
             </summary>
             <param name="args"></param>
             <returns></returns>
         </member>
-        <member name="T:DataServices.WebAPI.EmployeeProfile.Startup">
+        <member name="T:DataServices.WebAPI.Startup">
             <summary>
             Startup
             </summary>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+        <member name="M:DataServices.WebAPI.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
             <summary>
             Startup
             </summary>
             <param name="configuration"></param>
         </member>
-        <member name="P:DataServices.WebAPI.EmployeeProfile.Startup.Configuration">
+        <member name="P:DataServices.WebAPI.Startup.Configuration">
             <summary>
             Configuration
             </summary>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+        <member name="M:DataServices.WebAPI.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             This method gets called by the runtime. Use this method to add services to the container.
             </summary>
             <param name="services"></param>
         </member>
-        <member name="M:DataServices.WebAPI.EmployeeProfile.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+        <member name="M:DataServices.WebAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
             <summary>
             This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
             </summary>
