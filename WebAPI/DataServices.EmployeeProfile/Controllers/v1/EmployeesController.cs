@@ -6,15 +6,15 @@ using Microsoft.AspNetCore.Routing;
 using Newtonsoft.Json;
 using System;
 using System.Linq;
+using DataServices.WebApi.Controllers;
 
-namespace DataServices.WebAPI.Controllers
+namespace DataServices.WebAPI.Controllers.v1
 {
 	/// <summary>
 	/// EmployeeController
 	/// </summary>
-	[Route("api/employees")]
-	[ApiController]
-	public class EmployeesController : ControllerBase
+	[ApiVersion("1.0")]
+	public class EmployeesController : BaseApiController
 	{
 		private ILoggerManager _logger;
 		private IRepositoryWrapper _repository;

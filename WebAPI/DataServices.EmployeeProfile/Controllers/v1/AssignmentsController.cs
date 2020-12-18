@@ -1,20 +1,20 @@
 ﻿using DataServices.Core.Application.Interfaces;
 using DataServices.Core.Domain.Entities;
+using DataServices.WebApi.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Newtonsoft.Json;
 using System;
 using System.Linq;
 
-namespace DataServices.WebAPI.Controllers
+namespace DataServices.WebAPI.Controllers.v1
 {
 	/// <summary>
 	/// AssignmentController
 	/// </summary>
-	[Route("api/employees/{employeeId}/assignments")]
-	[ApiController]
-	
-	public class AssignmentsController : ControllerBase
+
+	[ApiVersion("1.0")]
+	public class AssignmentsController : BaseApiController
 	{
 		private ILoggerManager _logger;
 		private IRepositoryWrapper _repository;

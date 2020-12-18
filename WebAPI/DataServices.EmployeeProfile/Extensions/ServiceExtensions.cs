@@ -15,6 +15,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using DataServices.Core.Domain.Common;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DataServices.WebAPI.Extensions
 {
@@ -24,10 +25,10 @@ namespace DataServices.WebAPI.Extensions
     public static class ServiceExtensions
 	{
 		/// <summary>
-		/// ConfigureSwaggerExtension
+		/// AddSwaggerExtension
 		/// </summary>
 		/// <param name="services"></param>
-		public static void ConfigureSwaggerExtension(this IServiceCollection services)
+		public static void AddSwaggerExtension(this IServiceCollection services)
 		{
 			services.AddSwaggerGen(c =>
 			{
@@ -72,10 +73,10 @@ namespace DataServices.WebAPI.Extensions
 			});
 		}
 		/// <summary>
-		/// ConfigureCors
+		/// AddCors
 		/// </summary>
 		/// <param name="services"></param>
-		public static void ConfigureCors(this IServiceCollection services)
+		public static void AddCors(this IServiceCollection services)
 		{
 			services.AddCors(options =>
 			{
@@ -90,27 +91,44 @@ namespace DataServices.WebAPI.Extensions
 		/// ConfigureIISIntegration
 		/// </summary>
 		/// <param name="services"></param>
-		public static void ConfigureIISIntegration(this IServiceCollection services)
+		public static void AddApiVersioningExtension(this IServiceCollection services)
 		{
-			services.Configure<IISOptions>(options =>
+			services.AddApiVersioning(config =>
 			{
-
+				// Specify the default API Version as 1.0
+				config.DefaultApiVersion = new ApiVersion(1, 0);
+				// If the client hasn't specified the API version in the request, use the default API version number 
+				config.AssumeDefaultVersionWhenUnspecified = true;
+				// Advertise the API versions supported for the particular endpoint
+				config.ReportApiVersions = true;
+			});
+		}
+		public static void AddVersionedApiExplorerExtension(this IServiceCollection services)
+		{
+			services.AddVersionedApiExplorer(config =>
+			{
+				// add the versioned api explorer, which also adds IApiVersionDescriptionProvider service
+				// note: the specified format code will format the version as "'v'major[.minor][-status]"
+				config.GroupNameFormat = "'v'VVV";
+				// note: this option is only necessary when versioning by url segment. the SubstitutionFormat
+				// can also be used to control the format of the API version in route templates                
+				config.SubstituteApiVersionInUrl = true;
 			});
 		}
 		/// <summary>
-		/// ConfigureLoggerService
+		/// AddLoggerService
 		/// </summary>
 		/// <param name="services"></param>
-		public static void ConfigureLoggerService(this IServiceCollection services)
+		public static void AddLoggerService(this IServiceCollection services)
 		{
 			services.AddSingleton<ILoggerManager, LoggerManager>();
 		}
 		/// <summary>
-		/// ConfigureMsSqlContext
+		/// AddMsSqlContext
 		/// </summary>
 		/// <param name="services"></param>
 		/// <param name="config"></param>
-		public static void ConfigureMsSqlContext(this IServiceCollection services, IConfiguration config)
+		public static void AddMsSqlContext(this IServiceCollection services, IConfiguration config)
 		{
 			services.AddDbContext<ApplicationDbContext>(options =>
 		   options.UseSqlServer(
@@ -118,10 +136,10 @@ namespace DataServices.WebAPI.Extensions
 			   b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
 		}
 		/// <summary>
-		/// ConfigureRepositoryWrapper
+		/// AddRepositoryWrapper
 		/// </summary>
 		/// <param name="services"></param>
-		public static void ConfigureRepositoryWrapper(this IServiceCollection services)
+		public static void AddRepositoryWrapper(this IServiceCollection services)
 		{
 			services.AddScoped<ISortHelper<Employee>, SortHelper<Employee>>();
 			services.AddScoped<ISortHelper<Assignment>, SortHelper<Assignment>>();

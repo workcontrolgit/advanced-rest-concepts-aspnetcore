@@ -40,16 +40,17 @@ namespace DataServices.WebAPI
 		/// <param name="services"></param>
 		public void ConfigureServices(IServiceCollection services)
 		{
-			services.ConfigureCors();
+			//services.AddCors();
 
-			services.ConfigureIISIntegration();
+			services.AddApiVersioningExtension();
+			services.AddVersionedApiExplorerExtension();
 
-			services.ConfigureLoggerService();
+			services.AddLoggerService();
 
-			services.ConfigureMsSqlContext(Configuration);
+			services.AddMsSqlContext(Configuration);
 
-			services.ConfigureRepositoryWrapper();
-			services.ConfigureSwaggerExtension();
+			services.AddRepositoryWrapper();
+			services.AddSwaggerExtension();
 
 
             services.AddControllers().AddJsonOptions(options => {
@@ -72,30 +73,31 @@ namespace DataServices.WebAPI
 			}
 			else
 			{
+				app.UseExceptionHandler("/Error");
 				// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
 				app.UseHsts();
 			}
 
-			app.UseExceptionHandler(appError =>
-			{
-				appError.Run(async context =>
-				{
-					context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-					context.Response.ContentType = "application/json";
+			//app.UseExceptionHandler(appError =>
+			//{
+			//	appError.Run(async context =>
+			//	{
+			//		context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+			//		context.Response.ContentType = "application/json";
 
-					var contextFeature = context.Features.Get<IExceptionHandlerFeature>();
-					if (contextFeature != null)
-					{
-						Console.WriteLine($"Something went wrong: {contextFeature.Error}");
+			//		var contextFeature = context.Features.Get<IExceptionHandlerFeature>();
+			//		if (contextFeature != null)
+			//		{
+			//			Console.WriteLine($"Something went wrong: {contextFeature.Error}");
 
-						await context.Response.WriteAsync(new
-						{
-							context.Response.StatusCode,
-							Message = "Internal Server Error."
-						}.ToString());
-					}
-				});
-			});
+			//			await context.Response.WriteAsync(new
+			//			{
+			//				context.Response.StatusCode,
+			//				Message = "Internal Server Error."
+			//			}.ToString());
+			//		}
+			//	});
+			//});
 
 			app.UseHttpsRedirection();
 
@@ -106,15 +108,12 @@ namespace DataServices.WebAPI
 				ForwardedHeaders = ForwardedHeaders.All
 			});
 
-			//app.UseStaticFiles();
-
 			app.UseRouting();
+			app.UseAuthentication();
+			app.UseAuthorization();
 			app.UseSwagger();
-			app.UseSwaggerUI(c =>
-			{
-				c.SwaggerEndpoint("/swagger/v1/swagger.json", "GtmWebAPI");
-			});
-
+			app.UseSwaggerExtension();
+			app.UseErrorHandlingMiddleware();
 			app.UseEndpoints(endpoints =>
 			{
 				endpoints.MapControllers();

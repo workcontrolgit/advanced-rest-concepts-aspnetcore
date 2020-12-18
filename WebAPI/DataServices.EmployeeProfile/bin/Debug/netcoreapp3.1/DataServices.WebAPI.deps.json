@@ -26,7 +26,10 @@
         "dependencies": {
           "DataServices.Infrastructure.LoggerService": "1.0.0",
           "DataServices.Infrastructure.Persistence": "1.0.0",
+          "FluentValidation.AspNetCore": "9.3.0",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "3.0.0",
+          "Microsoft.AspNetCore.Mvc.Versioning": "4.2.0",
+          "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": "4.2.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.1",
           "Microsoft.Extensions.PlatformAbstractions": "1.1.0",
           "Pomelo.EntityFrameworkCore.MySql": "2.2.0",
@@ -320,6 +323,47 @@
           "lib/netstandard2.0/Bogus.dll": {}
         }
       },
+      "FluentValidation/9.3.0": {
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.3.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation.AspNetCore/9.3.0": {
+        "dependencies": {
+          "FluentValidation": "9.3.0",
+          "FluentValidation.DependencyInjectionExtensions": "9.3.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.3.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {}
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/9.3.0": {
+        "dependencies": {
+          "FluentValidation": "9.3.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.3.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {
@@ -357,6 +401,31 @@
         },
         "compile": {
           "lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Versioning/4.2.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.2.7612.3743"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer/4.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Versioning": "4.2.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.2.7612.3763"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {},
@@ -1868,7 +1937,9 @@
       },
       "DataServices.Core.Application/1.0.0": {
         "dependencies": {
-          "DataServices.Core.Domain": "1.0.0"
+          "DataServices.Core.Domain": "1.0.0",
+          "FluentValidation": "9.3.0",
+          "FluentValidation.DependencyInjectionExtensions": "9.3.0"
         },
         "runtime": {
           "DataServices.Core.Application.dll": {}
@@ -3550,6 +3621,27 @@
       "path": "bogus/32.0.2",
       "hashPath": "bogus.32.0.2.nupkg.sha512"
     },
+    "FluentValidation/9.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-C44l6Ih+YwpED/TsXfl6LIq6Z4wLXahstnr6T70uUg1Hs7/bLBKKAo9Nl0sLhVjDE8TA+fF+O3IM4nDrwabcSQ==",
+      "path": "fluentvalidation/9.3.0",
+      "hashPath": "fluentvalidation.9.3.0.nupkg.sha512"
+    },
+    "FluentValidation.AspNetCore/9.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0ZKHVvNIVgZEGgCe8z4NyVoPaCmM0kTRM0EySC23Enuc4jzBdhI+LtGhcvkF7lAulNlxR2S9IDnLibOM6RDaHg==",
+      "path": "fluentvalidation.aspnetcore/9.3.0",
+      "hashPath": "fluentvalidation.aspnetcore.9.3.0.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/9.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5PnAIlsApzWPp9rjxfu3xVWSj2qMDeFnEE3P4yx/oIQO1aLhPEEn4yW7JiydP9kpQKAtZ53qwNaOoQ1xSxajuA==",
+      "path": "fluentvalidation.dependencyinjectionextensions/9.3.0",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.9.3.0.nupkg.sha512"
+    },
     "Humanizer.Core/2.8.26": {
       "type": "package",
       "serviceable": true,
@@ -3570,6 +3662,20 @@
       "sha512": "sha512-euuKDPev8bb87dzyyDd252jxafKkCNCU0Yh1ujLq7DT7g4sUwUsq1bVnow9isaYFFx+DBWSywUcL8ngSra0QHg==",
       "path": "microsoft.aspnetcore.mvc.newtonsoftjson/3.0.0",
       "hashPath": "microsoft.aspnetcore.mvc.newtonsoftjson.3.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Mvc.Versioning/4.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-d536XDKU4kRXXwSKPImb7X2viJhxwHkqneadAI6Snqd3JaxtMM6nvzhF3Br49rZT48EAJcH1oHPq2zLRBu3CcQ==",
+      "path": "microsoft.aspnetcore.mvc.versioning/4.2.0",
+      "hashPath": "microsoft.aspnetcore.mvc.versioning.4.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer/4.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XI1Gngedu3KuhVKtxrpTr5ZjElyFpDv/XO/nyMdTdnM1lOKPJIAtFgY3hdDC6YVVqfJ72t8EE0BWIzn2/tfALQ==",
+      "path": "microsoft.aspnetcore.mvc.versioning.apiexplorer/4.2.0",
+      "hashPath": "microsoft.aspnetcore.mvc.versioning.apiexplorer.4.2.0.nupkg.sha512"
     },
     "Microsoft.CSharp/4.7.0": {
       "type": "package",

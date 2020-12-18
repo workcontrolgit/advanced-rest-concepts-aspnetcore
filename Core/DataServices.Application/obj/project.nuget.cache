@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "StQnpv/ds+yjBDDZCI+zZxSh8AJ03iRNbrofeCEdW8QlTYojtVXQmPg1O6VKgaPi8GVXPNjFM8h0G9mWmdgRUw==",
+  "dgSpecHash": "sNmb95CbYCTKgOQGDw0ogws65VBiHUfTagNwTxsia/0tZezl83DjjLXt8Ge3qQuymoRsmn2d/Jur4fm/deyOnw==",
   "success": true,
   "projectFilePath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Core\\DataServices.Application\\DataServices.Core.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\fujin\\.nuget\\packages\\fluentvalidation\\9.3.0\\fluentvalidation.9.3.0.nupkg.sha512",
+    "C:\\Users\\fujin\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.3.0\\fluentvalidation.dependencyinjectionextensions.9.3.0.nupkg.sha512",
     "C:\\Users\\fujin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\fujin\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\fujin\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

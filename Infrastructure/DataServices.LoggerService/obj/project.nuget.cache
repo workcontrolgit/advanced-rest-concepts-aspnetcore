@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "m61JJA2hbbXnn2/un36zMwU1dG9nmLdaKLVRTQ9CBZV8yEfIwzt6AAs0lknXPZIbdc0K963yUA5RsdIDEoFYUQ==",
+  "dgSpecHash": "rI2NSVRhH5BFr1S6BToXSmmU4d5VVR0cYuMia4lv+PTX37WdIuPKGUoeSnpSA75gisN4s9rCKBQG8DNj2ajRBg==",
   "success": true,
   "projectFilePath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Infrastructure\\DataServices.LoggerService\\DataServices.Infrastructure.LoggerService.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\fujin\\.nuget\\packages\\fluentvalidation\\9.3.0\\fluentvalidation.9.3.0.nupkg.sha512",
+    "C:\\Users\\fujin\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.3.0\\fluentvalidation.dependencyinjectionextensions.9.3.0.nupkg.sha512",
     "C:\\Users\\fujin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\fujin\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\fujin\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

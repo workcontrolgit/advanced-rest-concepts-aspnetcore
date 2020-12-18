@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "vR9uJBVXlM1l+fDrFoVQn/IydGdmbj+lu/GX9CL2ocaNcAEvHFANsxrCRlqajKRXLc4ishPcBFgIZ4S9ipXOdA==",
+  "dgSpecHash": "ccP1u+9ZXx8Y7NZfdzff64QfsxOut1TaJ7nggJumn7e5cQAU5SAK9kBd7dyJRYu+bc+BnIOn1sb6DRQEmq77Aw==",
   "success": true,
   "projectFilePath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Infrastructure\\DataServices.Persistence\\DataServices.Infrastructure.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fujin\\.nuget\\packages\\bogus\\32.0.2\\bogus.32.0.2.nupkg.sha512",
+    "C:\\Users\\fujin\\.nuget\\packages\\fluentvalidation\\9.3.0\\fluentvalidation.9.3.0.nupkg.sha512",
+    "C:\\Users\\fujin\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.3.0\\fluentvalidation.dependencyinjectionextensions.9.3.0.nupkg.sha512",
     "C:\\Users\\fujin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\fujin\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\fujin\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
