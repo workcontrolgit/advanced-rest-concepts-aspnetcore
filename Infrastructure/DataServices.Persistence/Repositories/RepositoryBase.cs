@@ -1,6 +1,6 @@
-﻿using Contracts;
-using DataServices.Domain;
-using DataServices.Domain.Context;
+﻿using DataServices.Core.Application.Interfaces;
+using DataServices.Core.Domain;
+using DataServices.Core.Domain.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;

@@ -1,8 +1,8 @@
-﻿using DataServices.Domain.Models;
+﻿using DataServices.Core.Domain.Entities;
 using DataServices.Persistence.Mock;
 using Microsoft.EntityFrameworkCore;
 
-namespace DataServices.Domain.Context
+namespace DataServices.Core.Domain.Context
 {
     public class ApplicationDbContext: DbContext
     {

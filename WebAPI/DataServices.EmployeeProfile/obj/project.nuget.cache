@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jTW0uLXOnKArFupBNcNUrl2QOs89jC2xGyBcPdyzt5KjEcCesPT8qT+gTnZjhgP57WIdjQ0bj+VoxzU0uNO95Q==",
+  "dgSpecHash": "VBAT3PtwuISvsqm9RaIJn2p4v+F+AFoTA5q3hCteCl+51X+sGTYGXO7I7BjP+9bGGM+LZ3uIlI92GoRhzxxCHg==",
   "success": true,
-  "projectFilePath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\WebAPI\\DataServices.EmployeeProfile\\DataServices.EmployeeProfile.csproj",
+  "projectFilePath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\WebAPI\\DataServices.EmployeeProfile\\DataServices.WebAPI.EmployeeProfile.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fujin\\.nuget\\packages\\bogus\\32.0.2\\bogus.32.0.2.nupkg.sha512",
     "C:\\Users\\fujin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0C9g7CPGtp35na8ZSinbu51/B2f+dtERP0UK9DTP69KnD+x9DL6kXr/K8tDBTkrrlu6Su8yhl+XYxfvWq9IVbA==",
+  "dgSpecHash": "vR9uJBVXlM1l+fDrFoVQn/IydGdmbj+lu/GX9CL2ocaNcAEvHFANsxrCRlqajKRXLc4ishPcBFgIZ4S9ipXOdA==",
   "success": true,
-  "projectFilePath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Infrastructure\\DataServices.Persistence\\DataServices.Persistence.csproj",
+  "projectFilePath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Infrastructure\\DataServices.Persistence\\DataServices.Infrastructure.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fujin\\.nuget\\packages\\bogus\\32.0.2\\bogus.32.0.2.nupkg.sha512",
     "C:\\Users\\fujin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

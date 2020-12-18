@@ -9,7 +9,7 @@
       "DataServices.Persistence/1.0.0": {
         "dependencies": {
           "Bogus": "32.0.2",
-          "DataServices.Application": "1.0.0",
+          "DataServices.Core.Application": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.1"
         },
         "runtime": {
@@ -1072,22 +1072,22 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
-      "DataServices.Application/1.0.0": {
+      "DataServices.Core.Application/1.0.0": {
         "dependencies": {
-          "DataServices.Domain": "1.0.0"
+          "DataServices.Core.Domain": "1.0.0"
         },
         "runtime": {
-          "DataServices.Application.dll": {}
+          "DataServices.Core.Application.dll": {}
         }
       },
-      "DataServices.Domain/1.0.0": {
+      "DataServices.Core.Domain/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.1",
           "System.Linq.Dynamic.Core": "1.2.6"
         },
         "runtime": {
-          "DataServices.Domain.dll": {}
+          "DataServices.Core.Domain.dll": {}
         }
       }
     }
@@ -1770,12 +1770,12 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
-    "DataServices.Application/1.0.0": {
+    "DataServices.Core.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "DataServices.Domain/1.0.0": {
+    "DataServices.Core.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

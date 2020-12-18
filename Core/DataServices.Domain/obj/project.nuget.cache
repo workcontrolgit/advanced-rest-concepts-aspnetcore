@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aKyJQOQdRjVObZ4hJjaEIG5WG5pKYJsGzoPosgCb4wzL88VoOYGYCbVMid9AjQmUB53xMxwCReTqQS/k7PjTRw==",
+  "dgSpecHash": "9eozQ8EHtLgDBupIlB5ZGXJg/FcIkOgRuS1ZKpUw3sWcZUc3kmIt9hvnryIiHMgOEd6/stKpxrW87uMLWC2/Mg==",
   "success": true,
-  "projectFilePath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Core\\DataServices.Domain\\DataServices.Domain.csproj",
+  "projectFilePath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Core\\DataServices.Domain\\DataServices.Core.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fujin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\fujin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -5850,9 +5850,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Core\\DataServices.Domain\\DataServices.Domain.csproj",
-      "projectName": "DataServices.Domain",
-      "projectPath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Core\\DataServices.Domain\\DataServices.Domain.csproj",
+      "projectUniqueName": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Core\\DataServices.Domain\\DataServices.Core.Domain.csproj",
+      "projectName": "DataServices.Core.Domain",
+      "projectPath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Core\\DataServices.Domain\\DataServices.Core.Domain.csproj",
       "packagesPath": "C:\\Users\\fujin\\.nuget\\packages\\",
       "outputPath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Core\\DataServices.Domain\\obj\\",
       "projectStyle": "PackageReference",

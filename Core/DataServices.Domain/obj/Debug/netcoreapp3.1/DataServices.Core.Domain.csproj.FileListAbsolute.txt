@@ -1,0 +1,12 @@
+C:\apps\patterns\advanced-rest-concepts-aspnetcore\Core\DataServices.Domain\bin\Debug\netcoreapp3.1\DataServices.Core.Domain.deps.json
+C:\apps\patterns\advanced-rest-concepts-aspnetcore\Core\DataServices.Domain\bin\Debug\netcoreapp3.1\DataServices.Core.Domain.runtimeconfig.json
+C:\apps\patterns\advanced-rest-concepts-aspnetcore\Core\DataServices.Domain\bin\Debug\netcoreapp3.1\DataServices.Core.Domain.runtimeconfig.dev.json
+C:\apps\patterns\advanced-rest-concepts-aspnetcore\Core\DataServices.Domain\bin\Debug\netcoreapp3.1\DataServices.Core.Domain.dll
+C:\apps\patterns\advanced-rest-concepts-aspnetcore\Core\DataServices.Domain\bin\Debug\netcoreapp3.1\DataServices.Core.Domain.pdb
+C:\apps\patterns\advanced-rest-concepts-aspnetcore\Core\DataServices.Domain\obj\Debug\netcoreapp3.1\DataServices.Core.Domain.csprojAssemblyReference.cache
+C:\apps\patterns\advanced-rest-concepts-aspnetcore\Core\DataServices.Domain\obj\Debug\netcoreapp3.1\DataServices.Core.Domain.AssemblyInfoInputs.cache
+C:\apps\patterns\advanced-rest-concepts-aspnetcore\Core\DataServices.Domain\obj\Debug\netcoreapp3.1\DataServices.Core.Domain.AssemblyInfo.cs
+C:\apps\patterns\advanced-rest-concepts-aspnetcore\Core\DataServices.Domain\obj\Debug\netcoreapp3.1\DataServices.Core.Domain.csproj.CoreCompileInputs.cache
+C:\apps\patterns\advanced-rest-concepts-aspnetcore\Core\DataServices.Domain\obj\Debug\netcoreapp3.1\DataServices.Core.Domain.dll
+C:\apps\patterns\advanced-rest-concepts-aspnetcore\Core\DataServices.Domain\obj\Debug\netcoreapp3.1\DataServices.Core.Domain.pdb
+C:\apps\patterns\advanced-rest-concepts-aspnetcore\Core\DataServices.Domain\obj\Debug\netcoreapp3.1\DataServices.Core.Domain.genruntimeconfig.cache

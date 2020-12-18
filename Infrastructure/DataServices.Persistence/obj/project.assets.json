@@ -1501,20 +1501,20 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "DataServices.Application/1.0.0": {
+      "DataServices.Core.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "DataServices.Domain": "1.0.0"
+          "DataServices.Core.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/DataServices.Application.dll": {}
+          "bin/placeholder/DataServices.Core.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataServices.Application.dll": {}
+          "bin/placeholder/DataServices.Core.Application.dll": {}
         }
       },
-      "DataServices.Domain/1.0.0": {
+      "DataServices.Core.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -1523,10 +1523,10 @@
           "System.Linq.Dynamic.Core": "1.2.6"
         },
         "compile": {
-          "bin/placeholder/DataServices.Domain.dll": {}
+          "bin/placeholder/DataServices.Core.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataServices.Domain.dll": {}
+          "bin/placeholder/DataServices.Core.Domain.dll": {}
         }
       }
     }
@@ -5794,21 +5794,21 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "DataServices.Application/1.0.0": {
+    "DataServices.Core.Application/1.0.0": {
       "type": "project",
-      "path": "../../Core/DataServices.Application/DataServices.Application.csproj",
-      "msbuildProject": "../../Core/DataServices.Application/DataServices.Application.csproj"
+      "path": "../../Core/DataServices.Application/DataServices.Core.Application.csproj",
+      "msbuildProject": "../../Core/DataServices.Application/DataServices.Core.Application.csproj"
     },
-    "DataServices.Domain/1.0.0": {
+    "DataServices.Core.Domain/1.0.0": {
       "type": "project",
-      "path": "../../Core/DataServices.Domain/DataServices.Domain.csproj",
-      "msbuildProject": "../../Core/DataServices.Domain/DataServices.Domain.csproj"
+      "path": "../../Core/DataServices.Domain/DataServices.Core.Domain.csproj",
+      "msbuildProject": "../../Core/DataServices.Domain/DataServices.Core.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Bogus >= 32.0.2",
-      "DataServices.Application >= 1.0.0",
+      "DataServices.Core.Application >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.1"
     ]
   },
@@ -5818,9 +5818,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Infrastructure\\DataServices.Persistence\\DataServices.Persistence.csproj",
-      "projectName": "DataServices.Persistence",
-      "projectPath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Infrastructure\\DataServices.Persistence\\DataServices.Persistence.csproj",
+      "projectUniqueName": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Infrastructure\\DataServices.Persistence\\DataServices.Infrastructure.Persistence.csproj",
+      "projectName": "DataServices.Infrastructure.Persistence",
+      "projectPath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Infrastructure\\DataServices.Persistence\\DataServices.Infrastructure.Persistence.csproj",
       "packagesPath": "C:\\Users\\fujin\\.nuget\\packages\\",
       "outputPath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Infrastructure\\DataServices.Persistence\\obj\\",
       "projectStyle": "PackageReference",
@@ -5839,8 +5839,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Core\\DataServices.Application\\DataServices.Application.csproj": {
-              "projectPath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Core\\DataServices.Application\\DataServices.Application.csproj"
+            "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Core\\DataServices.Application\\DataServices.Core.Application.csproj": {
+              "projectPath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Core\\DataServices.Application\\DataServices.Core.Application.csproj"
             }
           }
         }

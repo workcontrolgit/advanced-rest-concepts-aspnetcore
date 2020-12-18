@@ -1,7 +1,7 @@
-﻿using Contracts;
+﻿using DataServices.Core.Application.Interfaces;
 using NLog;
 
-namespace DataServices.LoggerService
+namespace DataServices.Infrastructure.LoggerService
 {
     public class LoggerManager : ILoggerManager
     {

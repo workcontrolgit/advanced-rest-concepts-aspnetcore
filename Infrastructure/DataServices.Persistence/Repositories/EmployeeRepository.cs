@@ -1,10 +1,11 @@
-﻿using Contracts;
-using DataServices.Domain.Context;
-using DataServices.Domain.Extensions;
-using DataServices.Domain.Helpers;
-using DataServices.Domain.Models;
+﻿using DataServices.Core.Application.Interfaces;
+using DataServices.Core.Domain.Context;
+using DataServices.Core.Domain.Extensions;
+using DataServices.Core.Domain.Interfaces;
+using DataServices.Core.Domain.Entities;
 using System;
 using System.Linq;
+using DataServices.Core.Domain.Common;
 
 namespace DataServices.Persistence.Repositories
 {

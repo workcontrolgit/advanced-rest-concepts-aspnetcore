@@ -2252,20 +2252,20 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "DataServices.Application/1.0.0": {
+      "DataServices.Core.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "DataServices.Domain": "1.0.0"
+          "DataServices.Core.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/DataServices.Application.dll": {}
+          "bin/placeholder/DataServices.Core.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataServices.Application.dll": {}
+          "bin/placeholder/DataServices.Core.Application.dll": {}
         }
       },
-      "DataServices.Domain/1.0.0": {
+      "DataServices.Core.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -2274,39 +2274,39 @@
           "System.Linq.Dynamic.Core": "1.2.6"
         },
         "compile": {
-          "bin/placeholder/DataServices.Domain.dll": {}
+          "bin/placeholder/DataServices.Core.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataServices.Domain.dll": {}
+          "bin/placeholder/DataServices.Core.Domain.dll": {}
         }
       },
-      "DataServices.LoggerService/1.0.0": {
+      "DataServices.Infrastructure.LoggerService/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "DataServices.Application": "1.0.0",
+          "DataServices.Core.Application": "1.0.0",
           "NLog.Extensions.Logging": "1.4.0"
         },
         "compile": {
-          "bin/placeholder/DataServices.LoggerService.dll": {}
+          "bin/placeholder/DataServices.Infrastructure.LoggerService.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataServices.LoggerService.dll": {}
+          "bin/placeholder/DataServices.Infrastructure.LoggerService.dll": {}
         }
       },
-      "DataServices.Persistence/1.0.0": {
+      "DataServices.Infrastructure.Persistence/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Bogus": "32.0.2",
-          "DataServices.Application": "1.0.0",
+          "DataServices.Core.Application": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.1"
         },
         "compile": {
-          "bin/placeholder/DataServices.Persistence.dll": {}
+          "bin/placeholder/DataServices.Infrastructure.Persistence.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataServices.Persistence.dll": {}
+          "bin/placeholder/DataServices.Infrastructure.Persistence.dll": {}
         }
       }
     }
@@ -7715,31 +7715,31 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "DataServices.Application/1.0.0": {
+    "DataServices.Core.Application/1.0.0": {
       "type": "project",
-      "path": "../../Core/DataServices.Application/DataServices.Application.csproj",
-      "msbuildProject": "../../Core/DataServices.Application/DataServices.Application.csproj"
+      "path": "../../Core/DataServices.Application/DataServices.Core.Application.csproj",
+      "msbuildProject": "../../Core/DataServices.Application/DataServices.Core.Application.csproj"
     },
-    "DataServices.Domain/1.0.0": {
+    "DataServices.Core.Domain/1.0.0": {
       "type": "project",
-      "path": "../../Core/DataServices.Domain/DataServices.Domain.csproj",
-      "msbuildProject": "../../Core/DataServices.Domain/DataServices.Domain.csproj"
+      "path": "../../Core/DataServices.Domain/DataServices.Core.Domain.csproj",
+      "msbuildProject": "../../Core/DataServices.Domain/DataServices.Core.Domain.csproj"
     },
-    "DataServices.LoggerService/1.0.0": {
+    "DataServices.Infrastructure.LoggerService/1.0.0": {
       "type": "project",
-      "path": "../../Infrastructure/DataServices.LoggerService/DataServices.LoggerService.csproj",
-      "msbuildProject": "../../Infrastructure/DataServices.LoggerService/DataServices.LoggerService.csproj"
+      "path": "../../Infrastructure/DataServices.LoggerService/DataServices.Infrastructure.LoggerService.csproj",
+      "msbuildProject": "../../Infrastructure/DataServices.LoggerService/DataServices.Infrastructure.LoggerService.csproj"
     },
-    "DataServices.Persistence/1.0.0": {
+    "DataServices.Infrastructure.Persistence/1.0.0": {
       "type": "project",
-      "path": "../../Infrastructure/DataServices.Persistence/DataServices.Persistence.csproj",
-      "msbuildProject": "../../Infrastructure/DataServices.Persistence/DataServices.Persistence.csproj"
+      "path": "../../Infrastructure/DataServices.Persistence/DataServices.Infrastructure.Persistence.csproj",
+      "msbuildProject": "../../Infrastructure/DataServices.Persistence/DataServices.Infrastructure.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "DataServices.LoggerService >= 1.0.0",
-      "DataServices.Persistence >= 1.0.0",
+      "DataServices.Infrastructure.LoggerService >= 1.0.0",
+      "DataServices.Infrastructure.Persistence >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.1",
       "Microsoft.Extensions.PlatformAbstractions >= 1.1.0",
@@ -7753,9 +7753,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\WebAPI\\DataServices.EmployeeProfile\\DataServices.EmployeeProfile.csproj",
-      "projectName": "DataServices.EmployeeProfile",
-      "projectPath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\WebAPI\\DataServices.EmployeeProfile\\DataServices.EmployeeProfile.csproj",
+      "projectUniqueName": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\WebAPI\\DataServices.EmployeeProfile\\DataServices.WebAPI.EmployeeProfile.csproj",
+      "projectName": "DataServices.WebAPI.EmployeeProfile",
+      "projectPath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\WebAPI\\DataServices.EmployeeProfile\\DataServices.WebAPI.EmployeeProfile.csproj",
       "packagesPath": "C:\\Users\\fujin\\.nuget\\packages\\",
       "outputPath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\WebAPI\\DataServices.EmployeeProfile\\obj\\",
       "projectStyle": "PackageReference",
@@ -7774,11 +7774,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Infrastructure\\DataServices.LoggerService\\DataServices.LoggerService.csproj": {
-              "projectPath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Infrastructure\\DataServices.LoggerService\\DataServices.LoggerService.csproj"
+            "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Infrastructure\\DataServices.LoggerService\\DataServices.Infrastructure.LoggerService.csproj": {
+              "projectPath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Infrastructure\\DataServices.LoggerService\\DataServices.Infrastructure.LoggerService.csproj"
             },
-            "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Infrastructure\\DataServices.Persistence\\DataServices.Persistence.csproj": {
-              "projectPath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Infrastructure\\DataServices.Persistence\\DataServices.Persistence.csproj"
+            "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Infrastructure\\DataServices.Persistence\\DataServices.Infrastructure.Persistence.csproj": {
+              "projectPath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Infrastructure\\DataServices.Persistence\\DataServices.Infrastructure.Persistence.csproj"
             }
           }
         }

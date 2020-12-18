@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>DataServices.Infrastructure.LoggerService</AssemblyName>
+    <RootNamespace>DataServices.Infrastructure.LoggerService</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog.Extensions.Logging" Version="1.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\DataServices.Application\DataServices.Core.Application.csproj" />
+  </ItemGroup>
+
+</Project>

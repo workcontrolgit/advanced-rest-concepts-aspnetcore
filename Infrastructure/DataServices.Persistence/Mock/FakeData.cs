@@ -1,5 +1,5 @@
 ﻿using Bogus;
-using DataServices.Domain.Models;
+using DataServices.Core.Domain.Entities;
 using System.Collections.Generic;
 
 namespace DataServices.Persistence.Mock

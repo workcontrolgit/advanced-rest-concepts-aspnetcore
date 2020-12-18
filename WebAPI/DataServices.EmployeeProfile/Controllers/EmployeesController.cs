@@ -1,13 +1,13 @@
-﻿using Contracts;
-using DataServices.Domain.Extensions;
-using DataServices.Domain.Models;
+﻿using DataServices.Core.Application.Interfaces;
+using DataServices.Core.Domain.Extensions;
+using DataServices.Core.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Newtonsoft.Json;
 using System;
 using System.Linq;
 
-namespace DataServices.EmployeeProfile.Controllers
+namespace DataServices.WebAPI.EmployeeProfile.Controllers
 {
 	/// <summary>
 	/// EmployeeController

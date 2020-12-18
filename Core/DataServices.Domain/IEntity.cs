@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DataServices.Domain
+namespace DataServices.Core.Domain
 {
     public interface IEntity
     {

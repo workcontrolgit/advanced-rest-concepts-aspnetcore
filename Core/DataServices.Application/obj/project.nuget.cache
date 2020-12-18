@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hp0g6a8aA6krkAK4Nvd1wAog6bpa1jJcvbxINlT3TKpkG/heerDZ/YDTtXAUo9UOrAF/mmYAokqQwgu9UWmf3A==",
+  "dgSpecHash": "StQnpv/ds+yjBDDZCI+zZxSh8AJ03iRNbrofeCEdW8QlTYojtVXQmPg1O6VKgaPi8GVXPNjFM8h0G9mWmdgRUw==",
   "success": true,
-  "projectFilePath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Core\\DataServices.Application\\DataServices.Application.csproj",
+  "projectFilePath": "C:\\apps\\patterns\\advanced-rest-concepts-aspnetcore\\Core\\DataServices.Application\\DataServices.Core.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fujin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\fujin\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

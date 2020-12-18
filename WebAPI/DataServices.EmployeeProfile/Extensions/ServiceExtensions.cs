@@ -1,8 +1,8 @@
-﻿using Contracts;
-using DataServices.Domain.Context;
-using DataServices.Domain.Helpers;
-using DataServices.Domain.Models;
-using DataServices.LoggerService;
+﻿using DataServices.Core.Application.Interfaces;
+using DataServices.Core.Domain.Context;
+using DataServices.Core.Domain.Interfaces;
+using DataServices.Core.Domain.Entities;
+using DataServices.Infrastructure.LoggerService;
 using DataServices.Persistence.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
@@ -14,8 +14,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using DataServices.Core.Domain.Common;
 
-namespace DataServices.EmployeeProfile.Extensions
+namespace DataServices.WebAPI.EmployeeProfile.Extensions
 {
     /// <summary>
     /// ServiceExtensions

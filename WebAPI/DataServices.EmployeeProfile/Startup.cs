@@ -1,4 +1,4 @@
-﻿using DataServices.EmployeeProfile.Extensions;
+﻿using DataServices.WebAPI.EmployeeProfile.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
@@ -7,15 +7,13 @@ using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
 using NLog;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Text.Json;
 
-namespace DataServices.EmployeeProfile
+namespace DataServices.WebAPI.EmployeeProfile
 {
     /// <summary>
     /// Startup
@@ -54,7 +52,7 @@ namespace DataServices.EmployeeProfile
 			services.ConfigureSwaggerExtension();
             //services.AddSwaggerGen(c =>
             //{
-            //    c.IncludeXmlComments(string.Format(@"{0}\DataServices.EmployeeProfile.xml", System.AppDomain.CurrentDomain.BaseDirectory));
+            //    c.IncludeXmlComments(string.Format(@"{0}\DataServices.WebAPI.EmployeeProfile.xml", System.AppDomain.CurrentDomain.BaseDirectory));
             //    c.SwaggerDoc("v1", new OpenApiInfo
             //    {
             //        Version = "v1",

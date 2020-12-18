@@ -1,10 +1,6 @@
 C:\apps\patterns\advanced-rest-concepts-aspnetcore\Infrastructure\DataServices.Persistence\bin\Debug\netcoreapp3.1\DataServices.Persistence.deps.json
 C:\apps\patterns\advanced-rest-concepts-aspnetcore\Infrastructure\DataServices.Persistence\bin\Debug\netcoreapp3.1\DataServices.Persistence.dll
 C:\apps\patterns\advanced-rest-concepts-aspnetcore\Infrastructure\DataServices.Persistence\bin\Debug\netcoreapp3.1\DataServices.Persistence.pdb
-C:\apps\patterns\advanced-rest-concepts-aspnetcore\Infrastructure\DataServices.Persistence\bin\Debug\netcoreapp3.1\DataServices.Application.dll
-C:\apps\patterns\advanced-rest-concepts-aspnetcore\Infrastructure\DataServices.Persistence\bin\Debug\netcoreapp3.1\DataServices.Domain.dll
-C:\apps\patterns\advanced-rest-concepts-aspnetcore\Infrastructure\DataServices.Persistence\bin\Debug\netcoreapp3.1\DataServices.Application.pdb
-C:\apps\patterns\advanced-rest-concepts-aspnetcore\Infrastructure\DataServices.Persistence\bin\Debug\netcoreapp3.1\DataServices.Domain.pdb
 C:\apps\patterns\advanced-rest-concepts-aspnetcore\Infrastructure\DataServices.Persistence\obj\Debug\netcoreapp3.1\DataServices.Persistence.csprojAssemblyReference.cache
 C:\apps\patterns\advanced-rest-concepts-aspnetcore\Infrastructure\DataServices.Persistence\obj\Debug\netcoreapp3.1\DataServices.Persistence.AssemblyInfoInputs.cache
 C:\apps\patterns\advanced-rest-concepts-aspnetcore\Infrastructure\DataServices.Persistence\obj\Debug\netcoreapp3.1\DataServices.Persistence.AssemblyInfo.cs
@@ -12,3 +8,7 @@ C:\apps\patterns\advanced-rest-concepts-aspnetcore\Infrastructure\DataServices.P
 C:\apps\patterns\advanced-rest-concepts-aspnetcore\Infrastructure\DataServices.Persistence\obj\Debug\netcoreapp3.1\DataServices.Persistence.csproj.CopyComplete
 C:\apps\patterns\advanced-rest-concepts-aspnetcore\Infrastructure\DataServices.Persistence\obj\Debug\netcoreapp3.1\DataServices.Persistence.dll
 C:\apps\patterns\advanced-rest-concepts-aspnetcore\Infrastructure\DataServices.Persistence\obj\Debug\netcoreapp3.1\DataServices.Persistence.pdb
+C:\apps\patterns\advanced-rest-concepts-aspnetcore\Infrastructure\DataServices.Persistence\bin\Debug\netcoreapp3.1\DataServices.Core.Application.dll
+C:\apps\patterns\advanced-rest-concepts-aspnetcore\Infrastructure\DataServices.Persistence\bin\Debug\netcoreapp3.1\DataServices.Core.Domain.dll
+C:\apps\patterns\advanced-rest-concepts-aspnetcore\Infrastructure\DataServices.Persistence\bin\Debug\netcoreapp3.1\DataServices.Core.Application.pdb
+C:\apps\patterns\advanced-rest-concepts-aspnetcore\Infrastructure\DataServices.Persistence\bin\Debug\netcoreapp3.1\DataServices.Core.Domain.pdb

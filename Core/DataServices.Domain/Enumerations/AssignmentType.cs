@@ -1,4 +1,4 @@
-﻿namespace DataServices.Domain.Enumerations
+﻿namespace DataServices.Core.Domain.Enumerations
 {
     public enum AssignmentType
     {

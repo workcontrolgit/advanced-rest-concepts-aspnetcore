@@ -1,6 +1,6 @@
-﻿using DataServices.Domain.Models;
+﻿using DataServices.Core.Domain.Entities;
 
-namespace DataServices.Domain.Extensions
+namespace DataServices.Core.Domain.Extensions
 {
     public static class EmployeeExtensions
     {
